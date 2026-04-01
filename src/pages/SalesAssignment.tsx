@@ -216,13 +216,13 @@ export const SalesAssignment: React.FC = () => {
         <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>2) DICHIARAZIONI DEL VENDITORE</h3>
         <div style={{ marginBottom: '0.2rem' }}><span>con riguardo alla conformità edilizia/urbanistica: </span>{inpFull('confUrbanistica')}</div>
         <div style={{ marginBottom: '0.2rem' }}><span>con riguardo alla conformità degli impianti: </span>{inpFull('confImpianti')}</div>
-        <row>
+        {row(<>
           <span>con riguardo a esistenza di gravami:</span>{inp('confPregiudizievoli', '300px')}
-        </row>
+        </>)}
         {row(<>
           <span>APE da predisporre entro il:</span>{inp('confApeEntro', '110px', 'date')}
           <span>spese cond. €</span>{inp('spesOrdinarie', '60px')} / annui
-        </row>
+        </>)}
 
         {/* 3) PREZZO */}
         <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>3) PREZZO DI VENDITA RICHIESTO</h3>
