@@ -11,7 +11,7 @@ export const LeaseAssignment: React.FC = () => {
     // LOCATORE 2
     v2Nome: '', v2NatoA: '', v2NatoIl: '', v2ResidenteA: '', v2Via: '', v2Civico: '', v2Tel: '', v2CF: '', v2Email: '',
     
-    // AGENZIA
+    // AGENZIA (Recipient Box)
     agNome: '', agSede: '', agVia: '', agCivico: '', agCciaa: '', agRea: '', agPec: '',
     
     // IMMOBILE
@@ -55,156 +55,225 @@ export const LeaseAssignment: React.FC = () => {
     }
   };
 
-  const f = (val: string | undefined, length: number = 20) => val || '_'.repeat(length);
+  const inp = (name: keyof typeof data, width: string = '120px', type: string = 'text') => (
+    <input type={type} name={name} value={data[name] as any} onChange={handleChange} className="inline-input" style={{ width, maxWidth: '100%' }} />
+  );
 
-  
+  const inpFull = (name: keyof typeof data, type: string = 'text') => (
+    <input type={type} name={name} value={data[name] as any} onChange={handleChange} className="inline-input" style={{ width: '100%', display: 'block', marginTop: '2px' }} />
+  );
+
+  const row = (children: React.ReactNode) => (
+    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '2px 4px', marginBottom: '0.15rem' }}>
+      {children}
+    </div>
+  );
+
+  const chk = (field: keyof typeof data, val: string, label: string) => (
+    <span>
+      <span className="inline-checkbox" onClick={() => setData(prev => ({ ...prev, [field]: val }))}>
+        {data[field] === val ? '☑' : '☐'}
+      </span>
+      {' '}{label}
+    </span>
+  );
+
+  const f = (val: string | undefined, length: number = 20) => val || '_'.repeat(length);
 
   const renderPreview = () => (
     <>
-      <div className="a4-page" style={{fontSize: '9.5pt', lineHeight: '1.4'}}>
-      <div className="contract-header"><img src="/logo.png" alt="Gemüt Real Estate" className="contract-logo" /></div>
-      <p style={{marginBottom: '0.2rem'}}>il sottoscritto <input type="text" name="v1Nome" value={data.v1Nome} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /> il <input type="date" name="v1NatoIl" value={data.v1NatoIl} onChange={handleChange} className="inline-input" style={{ width: '130px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>residente a <input type="text" name="v1ResidenteA" value={data.v1ResidenteA} onChange={handleChange} className="inline-input" style={{ width: '240px' }} /> via <input type="text" name="v1Via" value={data.v1Via} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /> n° <input type="text" name="v1Civico" value={data.v1Civico} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>tel. <input type="text" name="v1Tel" value={data.v1Tel} onChange={handleChange} className="inline-input" style={{ width: '90px' }} /> C.F. <input type="text" name="v1CF" value={data.v1CF} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>e-mail / PEC <input type="text" name="v1Email" value={data.v1Email} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>in qualità di <input type="text" name="v1Qualita" value={data.v1Qualita} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /> della <input type="text" name="v1Societa" value={data.v1Societa} onChange={handleChange} className="inline-input" style={{ width: '240px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>C.F. <input type="text" name="v1SocCF" value={data.v1SocCF} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /> P.I. <input type="text" name="v1SocPI" value={data.v1SocPI} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /></p>
-      <p style={{marginBottom: '1rem'}}>Sede legale: <input type="text" name="v1Sede" value={data.v1Sede} onChange={handleChange} className="inline-input" style={{ width: '360px' }} /></p>
+      <div className="a4-page" style={{fontSize: '9.2pt', lineHeight: '1.4'}}>
+        <div className="contract-header"><img src="/logo.png" alt="Gemüt Real Estate" className="contract-logo" /></div>
 
-      {data.v2Nome && (
-        <>
-          <p style={{marginBottom: '0.2rem'}}><input type="text" name="v2Nome" value={data.v2Nome} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /> il <input type="date" name="v2NatoIl" value={data.v2NatoIl} onChange={handleChange} className="inline-input" style={{ width: '130px' }} /></p>
-          <p style={{marginBottom: '0.2rem'}}>residente a <input type="text" name="v2ResidenteA" value={data.v2ResidenteA} onChange={handleChange} className="inline-input" style={{ width: '240px' }} /> via <input type="text" name="v2Via" value={data.v2Via} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /> n° <input type="text" name="v2Civico" value={data.v2Civico} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /></p>
-          <p style={{marginBottom: '0.2rem'}}>tel. <input type="text" name="v2Tel" value={data.v2Tel} onChange={handleChange} className="inline-input" style={{ width: '90px' }} /> C.F. <input type="text" name="v2CF" value={data.v2CF} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /></p>
-          <p style={{marginBottom: '0.2rem'}}>e-mail / PEC <input type="text" name="v2Email" value={data.v2Email} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /></p>
-        </>
-      )}
-      <p style={{marginBottom: '1rem', marginTop:'0.5rem'}}>in seguito “LOCATORE” e/o “MANDANTE”, dichiarando di avere e/o rappresentare la piena proprietà o la disponibilità dell’immobile,</p>
-
-      <h2 style={{textAlign: 'center', margin: '1rem 0', fontSize: '11pt'}}>CONFERISCE</h2>
-      <p style={{marginBottom: '0.2rem'}}>all’agenzia di mediazione immobiliare <input type="text" name="agNome" value={data.agNome} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>con sede in <input type="text" name="agSede" value={data.agSede} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /> via <input type="text" name="agVia" value={data.agVia} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /> n° <input type="text" name="agCivico" value={data.agCivico} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>iscritta alla C.C.I.A.A. di <input type="text" name="agCciaa" value={data.agCciaa} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /> REA n° <input type="text" name="agRea" value={data.agRea} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /></p>
-      <p style={{marginBottom: '1rem'}}>PEC <input type="text" name="agPec" value={data.agPec} onChange={handleChange} className="inline-input" style={{ width: '240px' }} /> in seguito denominata “AGENZIA IMMOBILIARE”;</p>
-
-      <h2 style={{textAlign: 'center', margin: '1rem 0', fontSize: '12pt'}}>INCARICO DI MEDIAZIONE</h2>
-      <p style={{marginBottom: '1rem'}}>affinché procuri un conduttore per l’immobile sotto descritto, alle condizioni di seguito indicate.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>1) DESCRIZIONE IMMOBILE</h3>
-      <p style={{marginBottom: '0.2rem'}}>Comune <input type="text" name="immComune" value={data.immComune} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /> via <input type="text" name="immVia" value={data.immVia} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /> n° <input type="text" name="immCivico" value={data.immCivico} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /> Int. <input type="text" name="immInt" value={data.immInt} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>Proprietà intestata a <input type="text" name="immIntestataA" value={data.immIntestataA} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /> Destinazione d’uso <input type="text" name="immUso" value={data.immUso} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>Composizione <input type="text" name="immComposizione" value={data.immComposizione} onChange={handleChange} className="inline-input" style={{ width: '360px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>Titolo di Provenienza <input type="text" name="immProvenienza" value={data.immProvenienza} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /></p>
-      
-      {[1,2,3].map(i => {
-        const di = data as any;
-        const foglio = di[`c${i}F`];
-        if(i > 1 && !foglio) return <span key={i}></span>;
-        return (
-          <p key={i} style={{marginBottom: '0.2rem'}}>
-            {i > 1 ? 'e ' : ''}Dati Catastali: Foglio <span className="field">{f(foglio, 4)}</span> Mappale <span className="field">{f(di[`c${i}M`], 4)}</span> Sub <span className="field">{f(di[`c${i}S`], 4)}</span> categ. cat. <span className="field">{f(di[`c${i}Cat`], 4)}</span> classe <span className="field">{f(di[`c${i}Cl`], 4)}</span> vani <span className="field">{f(di[`c${i}Vani`], 4)}</span> mq <span className="field">{f(di[`c${i}Mq`], 4)}</span> rendita € <span className="field">{f(di[`c${i}Rend`], 10)}</span>
-          </p>
-        );
-      })}
-
-      <p style={{marginBottom: '0.2rem'}}>
-        <span className="inline-checkbox" onClick={() => setData({...data, statoImm: 'libero'})}>{data.statoImm === 'libero' ? '☑' : '☐'}</span> libero o occupato dal proprietario e libero alla firma
-        &nbsp;&nbsp;&nbsp;<span className="inline-checkbox" onClick={() => setData({...data, statoImm: 'locato'})}>{data.statoImm === 'locato' ? '☑' : '☐'}</span> locato al canone annuo attuale di € <input type="text" name="canoneAnnuo" value={data.canoneAnnuo} onChange={handleChange} className="inline-input" style={{ width: '60px' }} /> con contratto scadente il <input type="date" name="scadenzaContratto" value={data.scadenzaContratto} onChange={handleChange} className="inline-input" style={{ width: '130px' }} />
-      </p>
-      <p style={{marginBottom: '1rem'}}><span className="inline-checkbox" onClick={() => setData({...data, statoImm: 'altro'})}>{data.statoImm === 'altro' ? '☑' : '☐'}</span> altro <input type="text" name="altroStato" value={data.altroStato} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /></p>
-
-      <p style={{marginBottom: '0.2rem'}}>Il Locatore consegna all’Agenzia Immobiliare i seguenti documenti:</p>
-      <p style={{marginBottom: '0.2rem'}}>
-        {data.docProvenienza ? '☑' : '☐'} copia atto di titolo/provenienza &nbsp;&nbsp; {data.docPlanimetrie ? '☑' : '☐'} copia planimetrie catastali &nbsp;&nbsp; {data.docRegolamento ? '☑' : '☐'} regol. condominiale &nbsp;&nbsp; {data.docApe ? '☑' : '☐'} ACE/APE
-      </p>
-      <p style={{marginBottom: '1rem'}}>
-        {data.docAltroTesto ? '☑' : '☐'} altro <input type="text" name="docAltroTesto" value={data.docAltroTesto} onChange={handleChange} className="inline-input" style={{ width: '360px' }} />
-      </p>
-      <p style={{marginBottom: '1rem'}}>Il Locatore si obbliga a fornire all’Agenzia Immobiliare tutta la documentazione necessaria per l’espletamento del presente incarico.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>2) DICHIARAZIONI DEL LOCATORE</h3>
-      <p style={{marginBottom: '0.2rem'}}>Il Locatore dichiara che l’immobile è:</p>
-      <p style={{marginBottom: '0.2rem'}}>con riguardo alla conformità edilizia e urbanistica per la destinazione d'uso: <input type="text" name="confUrbanistica" value={data.confUrbanistica} onChange={handleChange} className="inline-input" style={{ width: '360px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>con riguardo alla conformità e allo stato degli impianti alle normative vigenti: <input type="text" name="confImpianti" value={data.confImpianti} onChange={handleChange} className="inline-input" style={{ width: '360px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>con riguardo all’APE (Attestato Prestazione Energetica) da predisporre a cura del Locatore entro il <input type="date" name="confApeEntro" value={data.confApeEntro} onChange={handleChange} className="inline-input" style={{ width: '130px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>con riguardo all’intestazione della ditta catastale e conformità della planimetria: <input type="text" name="confCatastale" value={data.confCatastale} onChange={handleChange} className="inline-input" style={{ width: '300px' }} /></p>
-      <p style={{marginBottom: '0.2rem'}}>con riguardo alle spese condominiali: - spese gestione ordinaria e/o riscaldamento circa € <input type="text" name="speseCondominiali" value={data.speseCondominiali} onChange={handleChange} className="inline-input" style={{ width: '60px' }} /> + € <input type="text" name="speseRiscaldamento" value={data.speseRiscaldamento} onChange={handleChange} className="inline-input" style={{ width: '60px' }} /> annui;</p>
-      <p style={{marginBottom: '1rem'}}>- eventuali spese straordinarie previste circa € <input type="text" name="speseStraordinarie" value={data.speseStraordinarie} onChange={handleChange} className="inline-input" style={{ width: '60px' }} /></p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>3) CANONE DI LOCAZIONE RICHIESTO</h3>
-      <p style={{marginBottom: '1rem'}}>€ <input type="text" name="prezzo" value={data.prezzo} onChange={handleChange} className="inline-input" style={{ width: '90px' }} /> annui, oltre spese accessorie stimate in circa € <input type="text" name="speseExtraMese" value={data.speseExtraMese} onChange={handleChange} className="inline-input" style={{ width: '60px' }} /> / mese. E' richiesta una cauzione pari a <input type="text" name="cauzioneMesi" value={data.cauzioneMesi} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /> mensilità del canone.</p>
-      </div>
-      
-      <div className="a4-page" style={{fontSize: '9.5pt', lineHeight: '1.4'}}>
-      <div className="contract-header"><img src="/logo.png" alt="Gemüt Real Estate" className="contract-logo" /></div>
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>4) COMPENSO DI MEDIAZIONE</h3>
-      <p style={{marginBottom: '0.2rem'}}>PROVVIGIONE del <input type="text" name="provvigionePerc" value={data.provvigionePerc} onChange={handleChange} className="inline-input" style={{ width: '30px' }} />% + IVA, CALCOLATA SUL CANONE DI LOCAZIONE ANNUO A REGIME.</p>
-      <p style={{marginBottom: '1rem', textAlign: 'justify'}}>Il compenso maturerà all’avvenuta conoscenza da parte del conduttore dell’accettazione della proposta di locazione e sarà corrisposto dal Locatore all’Agenzia Immobiliare. La provvigione pattuita sarà comunque dovuta nel caso di locazione con soggetti che l’agente immobiliare abbia segnalato in esecuzione dell’incarico, anche qualora la stipulazione avvenga dopo la scadenza di quest’ultimo.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>5) DURATA DELL’INCARICO</h3>
-      <p style={{marginBottom: '0.2rem'}}>La durata dell’incarico è da oggi fino al giorno <input type="date" name="durataFinoAl" value={data.durataFinoAl} onChange={handleChange} className="inline-input" style={{ width: '130px' }} />, dopodiché:</p>
-      <p style={{marginBottom: '0.2rem'}}>☐ si intenderà cessato a tutti gli effetti senza oneri e vincoli per il Locatore;</p>
-      <p style={{marginBottom: '1rem'}}>☑ si intenderà tacitamente rinnovato per ugual periodo e per una sola volta alle stesse condizioni dell’incarico originario, salvo disdetta pervenuta all’Agenzia Immobiliare a mezzo raccomandata A/R, fax o PEC, almeno <input type="text" name="disdettaGiorni" value={data.disdettaGiorni} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /> giorni prima della scadenza.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>6) PROPOSTA DI LOCAZIONE</h3>
-      <p style={{marginBottom: '1rem', textAlign: 'justify'}}>L’Agenzia Immobiliare è autorizzata a far sottoscrivere agli aspiranti conduttori una proposta di locazione, e a comunicare agli stessi l’avvenuta accettazione; a ricevere e trattenere fiduciariamente gli eventuali assegni o importi non trasferibili intestati al Locatore a titolo di deposito, i quali dovranno essere consegnati dopo che l’aspirante conduttore avrà avuto conoscenza dell’accettazione del Locatore (diventando caparra confirmatoria), ovvero dovranno essere restituiti agli aspiranti conduttori in caso di mancata accettazione.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>7, 8) SOTTOSCRIZIONE CONTRATTO</h3>
-      <p style={{marginBottom: '1rem', textAlign: 'justify'}}>Il contratto di locazione dovrà essere stipulato e sottoscritto entro <input type="text" name="giorniContratto" value={data.giorniContratto} onChange={handleChange} className="inline-input" style={{ width: '30px' }} /> giorni dal perfezionamento in vincolo contrattuale della proposta di locazione. I costi di registrazione, di bollo ed eventuali altri oneri di legge saranno ripartiti tra le parti come per norma. L'immobile dovrà essere consegnato nello stato di fatto promesso, libero da oneri e in regola per l'uso prestabilito.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>9) CONSEGNA DELL’IMMOBILE</h3>
-      <p style={{marginBottom: '1rem'}}>L’immobile sarà consegnato alla data del <input type="date" name="dataConsegna" value={data.dataConsegna} onChange={handleChange} className="inline-input" style={{ width: '130px' }} />, libero da cose e persone (salvo diversamente concordato).</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>10) ESCLUSIVA</h3>
-      <p style={{marginBottom: '0.2rem'}}>Il presente incarico viene conferito:</p>
-      <p style={{marginBottom: '0.2rem'}}><strong>A) non in esclusiva</strong><br/>In tal caso il Locatore potrà locare l’immobile direttamente o tramite altre agenzie senza nulla dovere all’Agenzia Immobiliare, rimborsando alla stessa le spese documentate sostenute fino all’ammontare massimo di € <input type="text" name="speseMaxRecesso" value={data.speseMaxRecesso} onChange={handleChange} className="inline-input" style={{ width: '60px' }} />. Il Locatore si obbliga a comunicare immediatamente l’avvenuta locazione.</p>
-      <p style={{marginBottom: '0.2rem'}}><strong>B) in esclusiva</strong><br/>In tal caso il Locatore si impegna a non conferire incarico ad altre agenzie, né a terzi, né a locare l’immobile direttamente. La violazione comporterà il pagamento della penale al punto 11a). In tal ipotesi l'Agenzia rinuncia al rimborso spese in caso di mancata conclusione.</p>
-      <p style={{marginBottom: '1rem'}}>In relazione a quanto sopra il Locatore dichiara di optare per l’alternativa: <br/><span className="inline-checkbox" onClick={() => setData({...data, esclusiva: 'A'})}>{data.esclusiva === 'A' ? '☑' : '☐'}</span> A) non in esclusiva &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className="inline-checkbox" onClick={() => setData({...data, esclusiva: 'B'})}>{data.esclusiva === 'B' ? '☑' : '☐'}</span> B) in esclusiva</p>
-      </div>
-
-      <div className="a4-page" style={{fontSize: '9.5pt', lineHeight: '1.4'}}>
-      <div className="contract-header"><img src="/logo.png" alt="Gemüt Real Estate" className="contract-logo" /></div>
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>11) CLAUSOLA PENALE</h3>
-      <p style={{marginBottom: '0.2rem', textAlign: 'justify'}}>Una penale sarà dovuta dal Locatore all’Agenzia Immobiliare nella misura e per i casi indicati:<br/>a) penale pari al <input type="text" name="penaleRecessoPerc" value={data.penaleRecessoPerc} onChange={handleChange} className="inline-input" style={{ width: '30px' }} />% della provvigione nei seguenti casi: recesso dall’incarico prima della sua naturale scadenza; violazione dell’eventuale obbligo di esclusiva;<br/>b) penale pari al <input type="text" name="penaleRifiutoPerc" value={data.penaleRifiutoPerc} onChange={handleChange} className="inline-input" style={{ width: '30px' }} />% della provvigione pattuita in caso di rifiuto del Locatore di accettare una proposta di locazione conforme al presente incarico e con buone garanzie del conduttore.<br/>Sarà invece dovuta dall’Agenzia al Locatore una penale pari alla provvigione in caso di: recesso ingiustificato dall'incarico o mancata comunicazione di proposte conformi.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>12, 13) CORRISPONDENTI E OBBLIGHI AGENZIA</h3>
-      <p style={{marginBottom: '0.2rem'}}>L’Agenzia Immobiliare: <span style={{fontWeight:'bold'}}>{data.cartello}</span> autorizzata ad esporre il cartello di locazione in loco.</p>
-      <p style={{marginBottom: '1rem'}}><span style={{fontWeight:'bold'}}>{data.media}</span> autorizzata a diffondere foto e planimetrie sia in forma cartacea che telematica.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>14) COMUNICAZIONI ED ACCETTAZIONE DELL’INCARICO</h3>
-      <p style={{marginBottom: '0.2rem', textAlign: 'justify'}}>Il Locatore autorizza l’Agenzia ad effettuare comunicazioni al n. tel. <input type="text" name="comTel" value={data.comTel} onChange={handleChange} className="inline-input" style={{ width: '120px' }} /> e/o a mezzo PEC all'indirizzo <input type="text" name="comPec" value={data.comPec} onChange={handleChange} className="inline-input" style={{ width: '180px' }} /> o fax al numero <input type="text" name="comFax" value={data.comFax} onChange={handleChange} className="inline-input" style={{ width: '120px' }} />.</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>15) DIRITTO DI RECESSO</h3>
-      <p style={{marginBottom: '0.2rem', textAlign: 'justify'}}>Ai sensi del d.Lgs. 206/2005 (Codice del consumo) se stipulato fuori dai locali commerciali, è concessa al locatore consumatore la facoltà di recesso entro 14 giorni. Il presente incarico viene conferito presso:</p>
-      <p style={{marginBottom: '1rem'}}><span className="inline-checkbox" onClick={() => setData({...data, recessoLuogo: 'locale'})}>{data.recessoLuogo === 'locale' ? '☑' : '☐'}</span> Il locale commerciale dell’agenzia &nbsp;&nbsp;&nbsp;&nbsp; <span className="inline-checkbox" onClick={() => setData({...data, recessoLuogo: 'domicilio'})}>{data.recessoLuogo === 'domicilio' ? '☑' : '☐'}</span> Il domicilio del locatore o altro luogo</p>
-
-      <h3 style={{fontSize: '10pt', margin: '0.8rem 0 0.4rem 0'}}>16) OSSERVAZIONI e NOTE</h3>
-      <p style={{marginBottom: '2rem'}}><input type="text" name="note" value={data.note} onChange={handleChange} className="inline-input" style={{ width: '600px' }} /></p>
-
-      <div className="signature-grid">
-        <div className="signature-box" style={{textAlign: 'left'}}>
-          Luogo e data<br/>
-          ...............................................................................<br/><br/>
-          Firma Locatore<br/>
-          ...............................................................................<br/><br/>
-          Agenzia Immobiliare per accettazione incarico<br/>
-          ...............................................................................<br/>
+        {/* BARRA TITOLO */}
+        <div style={{
+          background: '#4a4a4a',
+          color: 'white',
+          textAlign: 'center',
+          fontWeight: 'bold',
+          fontSize: '10pt',
+          padding: '4px 8px',
+          marginBottom: '6px',
+          letterSpacing: '0.5px',
+          textTransform: 'uppercase'
+        }}>
+          Incarico di Locazione Immobiliare
         </div>
+
+        {/* BOX AGENZIA (Destinatario) */}
+        <div style={{ border: '1px solid #000', marginBottom: '8px', padding: '3px 6px' }}>
+          {row(<>
+            <span>Destinatario (<strong>AGENZIA</strong>):</span>
+            <strong>{inp('agNome', '200px')}</strong>
+          </>)}
+          {row(<>
+            <span>Sede</span>{inp('agSede', '180px')}
+            <span>via</span>{inp('agVia', '160px')}
+            <span>n°</span>{inp('agCivico', '30px')}
+          </>)}
+          {row(<>
+            <span>Iscritta CCIAA di</span>{inp('agCciaa', '120px')}
+            <span>REA</span>{inp('agRea', '120px')}
+            <span style={{ marginLeft: '1rem' }}>PEC</span>{inp('agPec', '220px')}
+          </>)}
+        </div>
+
+        {/* LOCATORE / MANDANTE */}
+        <div style={{ marginBottom: '0.5rem' }}>
+          {row(<>
+            <span>Il sottoscritto</span>
+            <strong>{inp('v1Nome', '220px')}</strong>
+            <span>nato/a il</span>
+            <strong>{inp('v1NatoIl', '100px', 'date')}</strong>
+          </>)}
+          {row(<>
+            <span>residente a</span>{inp('v1ResidenteA', '180px')}
+            <span>via</span>{inp('v1Via', '160px')}
+            <span>n°</span>{inp('v1Civico', '30px')}
+          </>)}
+          {row(<>
+            <span>tel.</span>{inp('v1Tel', '90px')}
+            <span>C.F.</span><strong>{inp('v1CF', '170px')}</strong>
+          </>)}
+          {row(<>
+            <span>e-mail / PEC</span>{inp('v1Email', '280px')}
+          </>)}
+          {row(<>
+            <span>in qualità di</span>{inp('v1Qualita', '120px')}
+            <span>della</span>{inp('v1Societa', '220px')}
+          </>)}
+          {row(<>
+            <span>Sede legale:</span>{inp('v1Sede', '360px')}
+          </>)}
+
+          {data.v2Nome && (
+            <div style={{ marginTop: '0.4rem', borderTop: '1px dotted #ccc', paddingTop: '0.4rem' }}>
+              {row(<><strong>{inp('v2Nome', '220px')}</strong><span>nato/a il</span>{inp('v2NatoIl', '100px', 'date')}</>)}
+              {row(<><span>residente a</span>{inp('v2ResidenteA', '180px')}<span>via</span>{inp('v2Via', '160px')}<span>n°</span>{inp('v2Civico', '30px')}</>)}
+              {row(<><span>tel.</span>{inp('v2Tel', '90px')}<span>C.F.</span><strong>{inp('v2CF', '170px')}</strong></>)}
+            </div>
+          )}
+        </div>
+
+        <p style={{ textAlign: 'center', margin: '0.6rem 0', fontWeight: 'bold', fontSize: '11pt' }}>
+          CONFERISCE INCARICO DI MEDIAZIONE
+        </p>
+        <p style={{ textAlign: 'center', marginBottom: '0.6rem', fontSize: '9pt', fontStyle: 'italic' }}>
+          affinché l'Agenzia procuri un conduttore per l'immobile sotto descritto.
+        </p>
+
+        {/* 1) DESCRIZIONE IMMOBILE */}
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>1) DESCRIZIONE IMMOBILE</h3>
+        {row(<>
+          <span>Comune</span>{inp('immComune', '130px')}
+          <span>via</span>{inp('immVia', '180px')}
+          <span>n°</span>{inp('immCivico', '30px')}
+          <span>Int.</span>{inp('immInt', '30px')}
+        </>)}
+        {row(<>
+          <span>Proprietà intestata a</span>{inp('immIntestataA', '220px')}
+          <span>Destinazione d'uso</span>{inp('immUso', '120px')}
+        </>)}
+        <div style={{ marginBottom: '0.2rem' }}><span>Composizione: </span>{inpFull('immComposizione')}</div>
+        
+        {[1,2,3].map(i => {
+          const di = data as any;
+          const foglio = di[`c${i}F`];
+          if(i > 1 && !foglio) return <span key={i}></span>;
+          return (
+            <div key={i} style={{ marginBottom: '0.15rem' }}>
+              {row(<>
+                {i > 1 ? <span>e</span> : null}
+                <span>Dati Catastali: Foglio</span><strong>{inp(`c${i}F` as any, '35px')}</strong>
+                <span>Mappale</span><strong>{inp(`c${i}M` as any, '45px')}</strong>
+                <span>Sub</span><strong>{inp(`c${i}S` as any, '35px')}</strong>
+                <span>cat.</span>{inp(`c${i}Cat` as any, '35px')}
+                <span>cl.</span>{inp(`c${i}Cl` as any, '30px')}
+                <span>vani</span>{inp(`c${i}Vani` as any, '30px')}
+                <span>mq</span>{inp(`c${i}Mq` as any, '35px')}
+                <span>rendita €</span>{inp(`c${i}Rend` as any, '65px')}
+              </>)}
+            </div>
+          );
+        })}
+
+        <div style={{ marginTop: '0.4rem' }}>
+          {chk('statoImm', 'libero', 'libero o occupato dal proprietario e libero alla firma')}
+          <span style={{marginLeft: '1rem'}}>
+            {chk('statoImm', 'locato', 'locato con canone €')} {inp('canoneAnnuo', '65px')}
+          </span>
+        </div>
+
+        {/* 2) DICHIARAZIONI DEL LOCATORE */}
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>2) DICHIARAZIONI DEL LOCATORE</h3>
+        <div style={{ marginBottom: '0.2rem' }}><span>con riguardo alla conformità edilizia/urbanistica: </span>{inpFull('confUrbanistica')}</div>
+        <div style={{ marginBottom: '0.2rem' }}><span>con riguardo alla conformità degli impianti: </span>{inpFull('confImpianti')}</div>
+        {row(<>
+          <span>spese condominiali €</span>{inp('speseCondominiali', '50px')}
+          <span>riscaldamento €</span>{inp('speseRiscaldamento', '50px')}
+          <span>APE entro il:</span>{inp('confApeEntro', '100px', 'date')}
+        </>)}
+
+        {/* 3) CANONE */}
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>3) CANONE DI LOCAZIONE RICHIESTO</h3>
+        {row(<>
+          <span>€</span><strong>{inp('prezzo', '90px')}</strong> / annui &nbsp;&nbsp;
+          <span>spese accessorie stimate €</span>{inp('speseExtraMese', '55px')} / mese
+        </>)}
+        {row(<>
+          <span>Cauzione richiesta:</span>{inp('cauzioneMesi', '30px')} <span>mensilità.</span>
+        </>)}
+
+        {/* 4, 5) COMPENSO E DURATA */}
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>4.5) COMPENSO E DURATA</h3>
+        {row(<>
+          <span>Provvigione:</span><strong>{inp('provvigionePerc', '30px')} % + IVA</strong>
+          <span>Durata fino al:</span><strong>{inp('durataFinoAl', '100px', 'date')}</strong>
+        </>)}
       </div>
-      
-      <p style={{marginTop: '2rem', fontSize: '9pt', textAlign: 'justify'}}>
-        Ai sensi e per gli effetti degli articoli 1341 e 1342 Cod. Civ. il Locatore dichiara di approvare espressamente le seguenti clausole: 5) durata e proroga dell’incarico; 10) esclusiva se concessa; 11) penale.
-      </p>
-      <div className="signature-box" style={{textAlign: 'left', marginTop: '1rem'}}>
-          Firma Locatore<br/>
-          ...............................................................................<br/>
-      </div>
+
+      {/* PAGINA 2 */}
+      <div className="a4-page" style={{fontSize: '9.2pt', lineHeight: '1.4'}}>
+        <div className="contract-header"><img src="/logo.png" alt="Gemüt Real Estate" className="contract-logo" /></div>
+        
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.4rem 0'}}>7, 8, 9) SOTTOSCRIZIONE E CONSEGNA</h3>
+        <p style={{fontSize: '8.5pt', textAlign: 'justify'}}>
+          Contratto entro {inp('giorniContratto', '30px')} giorni dalla proposta. Consegna il {inp('dataConsegna', '100px', 'date')}.
+        </p>
+
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>10) ESCLUSIVA</h3>
+        {chk('esclusiva', 'A', 'A) Non in esclusiva (rimborso spese max €')} {inp('speseMaxRecesso', '55px')} {')'}
+        <br/>
+        {chk('esclusiva', 'B', 'B) In esclusiva (penale se violata)')}
+
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>11) PENALI</h3>
+        {row(<>
+          <span>Recesso/Violazione:</span>{inp('penaleRecessoPerc', '30px')} %
+          <span>Rifiuto proposta conforme:</span>{inp('penaleRifiutoPerc', '30px')} %
+        </>)}
+
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>12, 14, 15, 16) NOTE E FIRME</h3>
+        <div style={{ fontSize: '8.5pt' }}>
+          {row(<><span>Esposizione cartello/media:</span><strong>{data.cartello}</strong>; <strong>{data.media}</strong></>)}
+          {row(<><span>Comunicazioni tel/PEC:</span>{inp('comTel', '110px')} / {inp('comPec', '180px')}</>)}
+          <br/>
+          <span>Osservazioni:</span>
+          {inpFull('note')}
+        </div>
+
+        <div className="signature-grid" style={{marginTop: '2rem'}}>
+          <div className="signature-box" style={{textAlign: 'left'}}>
+            Luogo e data: <br/><br/>
+            Firma Locatore: <br/><br/>
+            Firma Agenzia: <br/>
+          </div>
+        </div>
       </div>
     </>
   );
 
   return (
     <ContractLayout title="Incarico di Locazione" icon={<FileSignature size={20} />} preview={renderPreview()} clientName={data.v1Nome}>
-          </ContractLayout>
+    </ContractLayout>
   );
 };
