@@ -4,55 +4,30 @@ import { ContractLayout } from '../components/ContractLayout';
 
 export const LeaseAssignment: React.FC = () => {
   const [data, setData] = useState({
-    // LOCATORE 1
-    v1Nome: '', v1NatoA: '', v1NatoIl: '', v1ResidenteA: '', v1Via: '', v1Civico: '', v1Tel: '', v1CF: '', v1Email: '',
-    v1Qualita: '', v1Societa: '', v1SocCF: '', v1SocPI: '', v1Sede: '',
+    // LOCATORE / MANDANTE
+    v1Nome: '', v1NatoA: '', v1CF: '', v1ResidenteA: '', v1Via: '', v1Email: '',
     
-    // LOCATORE 2
-    v2Nome: '', v2NatoA: '', v2NatoIl: '', v2ResidenteA: '', v2Via: '', v2Civico: '', v2Tel: '', v2CF: '', v2Email: '',
-    
-    // AGENZIA (Recipient Box)
-    agNome: '', agSede: '', agVia: '', agCivico: '', agCciaa: '', agRea: '', agPec: '',
+    // SOGGETTO INCARICATO (Gemüt)
+    agNome: 'Gemüt Capital',
     
     // IMMOBILE
-    immComune: '', immVia: '', immCivico: '', immInt: '', immIntestataA: '', immUso: '', immComposizione: '', immProvenienza: '',
+    immComune: '', immVia: '', immCivico: '', immUso: '',
     
-    // CATASTO (3 righe)
-    c1F: '', c1M: '', c1S: '', c1Cat: '', c1Cl: '', c1Vani: '', c1Mq: '', c1Rend: '',
-    c2F: '', c2M: '', c2S: '', c2Cat: '', c2Cl: '', c2Vani: '', c2Mq: '', c2Rend: '',
-    c3F: '', c3M: '', c3S: '', c3Cat: '', c3Cl: '', c3Vani: '', c3Mq: '', c3Rend: '',
+    // CATASO
+    c1F: '', c1M: '', c1S: '',
     
-    // STATO IMMOBILE
-    statoImm: 'libero', canoneAnnuo: '', scadenzaContratto: '', altroStato: '',
+    // CANONE E CORRISPETTIVO
+    prezzo: '', speseExtraMese: '', cauzioneMesi: '', corrispettivo: '', corrispettivoPerc: '', durataFinoAl: '',
     
-    // DOCUMENTI
-    docProvenienza: false, docPlanimetrie: false, docRegolamento: false, docApe: false, docAltroTesto: '',
+    // ESCLUSIVA
+    esclusiva: 'B', speseMaxRecesso: '',
     
-    // CONFORMITA E SPESE
-    confUrbanistica: '', confImpianti: '', confPregiudizievoli: '', confApeEntro: '', confCatastale: '',
-    speseCondominiali: '', speseRiscaldamento: '', speseStraordinarie: '',
-    
-    // CANONE E PROVVIGIONE E DURATA
-    prezzo: '', speseExtraMese: '', cauzioneMesi: '', provvigionePerc: '', durataFinoAl: '', disdettaGiorni: '',
-    
-    // CONDIZIONI E PAGAMENTI
-    giorniContratto: '', dataConsegna: '',
-    
-    // ESCLUSIVA E PENALI
-    esclusiva: 'B', speseMaxRecesso: '', penaleRecessoPerc: '', penaleRifiutoPerc: '',
-    
-    // AUTORIZZAZIONI E COMUNICAZIONI
-    cartello: 'è', media: 'è', comTel: '', comPec: '', comFax: '', recessoLuogo: 'locale', note: ''
+    note: ''
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
-    if (type === 'checkbox') {
-      const checked = (e.target as HTMLInputElement).checked;
-      setData(prev => ({ ...prev, [name]: checked }));
-    } else {
-      setData(prev => ({ ...prev, [name]: value }));
-    }
+    setData(prev => ({ ...prev, [name]: value }));
   };
 
   const inp = (name: keyof typeof data, width: string = '120px', type: string = 'text') => (
@@ -78,194 +53,68 @@ export const LeaseAssignment: React.FC = () => {
     </span>
   );
 
-  const f = (val: string | undefined, length: number = 20) => val || '_'.repeat(length);
-
   const renderPreview = () => (
     <>
-      <div className="a4-page" style={{fontSize: '9.2pt', lineHeight: '1.4'}}>
-        <div className="contract-header"><img src="/logo.png" alt="Gemüt Real Estate" className="contract-logo" /></div>
+      <div className="a4-page" style={{fontSize: '9.5pt', lineHeight: '1.5'}}>
+        <div className="contract-header"><img src="/logo.png" alt="Gemüt" className="contract-logo" /></div>
 
-        {/* BARRA TITOLO */}
         <div style={{
           background: '#4a4a4a',
           color: 'white',
           textAlign: 'center',
           fontWeight: 'bold',
-          fontSize: '10pt',
-          padding: '4px 8px',
-          marginBottom: '6px',
-          letterSpacing: '0.5px',
+          fontSize: '11pt',
+          padding: '6px 8px',
+          marginBottom: '1rem',
           textTransform: 'uppercase'
         }}>
-          Incarico di Locazione Immobiliare
+          Incarico Professionale di Valorizzazione per la Locazione
         </div>
 
-        {/* BOX AGENZIA (Destinatario) */}
-        <div style={{ border: '1px solid #000', marginBottom: '8px', padding: '3px 6px' }}>
-          {row(<>
-            <span>Destinatario (<strong>AGENZIA</strong>):</span>
-            <strong>{inp('agNome', '200px')}</strong>
-          </>)}
-          {row(<>
-            <span>Sede</span>{inp('agSede', '180px')}
-            <span>via</span>{inp('agVia', '160px')}
-            <span>n°</span>{inp('agCivico', '30px')}
-          </>)}
-          {row(<>
-            <span>Iscritta CCIAA di</span>{inp('agCciaa', '120px')}
-            <span>REA</span>{inp('agRea', '120px')}
-            <span style={{ marginLeft: '1rem' }}>PEC</span>{inp('agPec', '220px')}
-          </>)}
+        <div style={{ marginBottom: '1rem' }}>
+          {row(<><span>Il sottoscritto</span><strong>{inp('v1Nome', '220px')}</strong><span>nato a</span>{inp('v1NatoA', '130px')}<span>C.F.</span><strong>{inp('v1CF', '170px')}</strong></>)}
+          {row(<><span>residente a</span>{inp('v1ResidenteA', '180px')}<span>via</span>{inp('v1Via', '180px')}<span>e-mail</span>{inp('v1Email', '240px')}</>)}
         </div>
 
-        {/* LOCATORE / MANDANTE */}
-        <div style={{ marginBottom: '0.5rem' }}>
-          {row(<>
-            <span>Il sottoscritto</span>
-            <strong>{inp('v1Nome', '220px')}</strong>
-            <span>nato/a il</span>
-            <strong>{inp('v1NatoIl', '100px', 'date')}</strong>
-          </>)}
-          {row(<>
-            <span>residente a</span>{inp('v1ResidenteA', '180px')}
-            <span>via</span>{inp('v1Via', '160px')}
-            <span>n°</span>{inp('v1Civico', '30px')}
-          </>)}
-          {row(<>
-            <span>tel.</span>{inp('v1Tel', '90px')}
-            <span>C.F.</span><strong>{inp('v1CF', '170px')}</strong>
-          </>)}
-          {row(<>
-            <span>e-mail / PEC</span>{inp('v1Email', '280px')}
-          </>)}
-          {row(<>
-            <span>in qualità di</span>{inp('v1Qualita', '120px')}
-            <span>della</span>{inp('v1Societa', '220px')}
-          </>)}
-          {row(<>
-            <span>Sede legale:</span>{inp('v1Sede', '360px')}
-          </>)}
-
-          {data.v2Nome && (
-            <div style={{ marginTop: '0.4rem', borderTop: '1px dotted #ccc', paddingTop: '0.4rem' }}>
-              {row(<><strong>{inp('v2Nome', '220px')}</strong><span>nato/a il</span>{inp('v2NatoIl', '100px', 'date')}</>)}
-              {row(<><span>residente a</span>{inp('v2ResidenteA', '180px')}<span>via</span>{inp('v2Via', '160px')}<span>n°</span>{inp('v2Civico', '30px')}</>)}
-              {row(<><span>tel.</span>{inp('v2Tel', '90px')}<span>C.F.</span><strong>{inp('v2CF', '170px')}</strong></>)}
-            </div>
-          )}
-        </div>
-
-        <p style={{ textAlign: 'center', margin: '0.6rem 0', fontWeight: 'bold', fontSize: '11pt' }}>
-          CONFERISCE INCARICO DI MEDIAZIONE
-        </p>
-        <p style={{ textAlign: 'center', marginBottom: '0.6rem', fontSize: '9pt', fontStyle: 'italic' }}>
-          affinché l'Agenzia procuri un conduttore per l'immobile sotto descritto.
-        </p>
-
-        {/* 1) DESCRIZIONE IMMOBILE */}
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>1) DESCRIZIONE IMMOBILE</h3>
-        {row(<>
-          <span>Comune</span>{inp('immComune', '130px')}
-          <span>via</span>{inp('immVia', '180px')}
-          <span>n°</span>{inp('immCivico', '30px')}
-          <span>Int.</span>{inp('immInt', '30px')}
-        </>)}
-        {row(<>
-          <span>Proprietà intestata a</span>{inp('immIntestataA', '220px')}
-          <span>Destinazione d'uso</span>{inp('immUso', '120px')}
-        </>)}
-        <div style={{ marginBottom: '0.2rem' }}><span>Composizione: </span>{inpFull('immComposizione')}</div>
+        <p style={{ textAlign: 'center', margin: '1rem 0', fontWeight: 'bold' }}>CONFERISCE INCARICO A</p>
         
-        {[1,2,3].map(i => {
-          const di = data as any;
-          const foglio = di[`c${i}F`];
-          if(i > 1 && !foglio) return <span key={i}></span>;
-          return (
-            <div key={i} style={{ marginBottom: '0.15rem' }}>
-              {row(<>
-                {i > 1 ? <span>e</span> : null}
-                <span>Dati Catastali: Foglio</span><strong>{inp(`c${i}F` as any, '35px')}</strong>
-                <span>Mappale</span><strong>{inp(`c${i}M` as any, '45px')}</strong>
-                <span>Sub</span><strong>{inp(`c${i}S` as any, '35px')}</strong>
-                <span>cat.</span>{inp(`c${i}Cat` as any, '35px')}
-                <span>cl.</span>{inp(`c${i}Cl` as any, '30px')}
-                <span>vani</span>{inp(`c${i}Vani` as any, '30px')}
-                <span>mq</span>{inp(`c${i}Mq` as any, '35px')}
-                <span>rendita €</span>{inp(`c${i}Rend` as any, '65px')}
-              </>)}
-            </div>
-          );
-        })}
-
-        <div style={{ marginTop: '0.4rem' }}>
-          {chk('statoImm', 'libero', 'libero o occupato dal proprietario e libero alla firma')}
-          <span style={{marginLeft: '1rem'}}>
-            {chk('statoImm', 'locato', 'locato con canone €')} {inp('canoneAnnuo', '65px')}
-          </span>
-        </div>
-
-        {/* 2) DICHIARAZIONI DEL LOCATORE */}
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>2) DICHIARAZIONI DEL LOCATORE</h3>
-        <div style={{ marginBottom: '0.2rem' }}><span>con riguardo alla conformità edilizia/urbanistica: </span>{inpFull('confUrbanistica')}</div>
-        <div style={{ marginBottom: '0.2rem' }}><span>con riguardo alla conformità degli impianti: </span>{inpFull('confImpianti')}</div>
-        {row(<>
-          <span>spese condominiali €</span>{inp('speseCondominiali', '50px')}
-          <span>riscaldamento €</span>{inp('speseRiscaldamento', '50px')}
-          <span>APE entro il:</span>{inp('confApeEntro', '100px', 'date')}
-        </>)}
-
-        {/* 3) CANONE */}
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>3) CANONE DI LOCAZIONE RICHIESTO</h3>
-        {row(<>
-          <span>€</span><strong>{inp('prezzo', '90px')}</strong> / annui &nbsp;&nbsp;
-          <span>spese accessorie stimate €</span>{inp('speseExtraMese', '55px')} / mese
-        </>)}
-        {row(<>
-          <span>Cauzione richiesta:</span>{inp('cauzioneMesi', '30px')} <span>mensilità.</span>
-        </>)}
-
-        {/* 4, 5) COMPENSO E DURATA */}
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.8rem 0 0.3rem 0'}}>4.5) COMPENSO E DURATA</h3>
-        {row(<>
-          <span>Provvigione:</span><strong>{inp('provvigionePerc', '30px')} % + IVA</strong>
-          <span>Durata fino al:</span><strong>{inp('durataFinoAl', '100px', 'date')}</strong>
-        </>)}
-      </div>
-
-      {/* PAGINA 2 */}
-      <div className="a4-page" style={{fontSize: '9.2pt', lineHeight: '1.4'}}>
-        <div className="contract-header"><img src="/logo.png" alt="Gemüt Real Estate" className="contract-logo" /></div>
-        
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.4rem 0'}}>7, 8, 9) SOTTOSCRIZIONE E CONSEGNA</h3>
-        <p style={{fontSize: '8.5pt', textAlign: 'justify'}}>
-          Contratto entro {inp('giorniContratto', '30px')} giorni dalla proposta. Consegna il {inp('dataConsegna', '100px', 'date')}.
-        </p>
-
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>10) ESCLUSIVA</h3>
-        {chk('esclusiva', 'A', 'A) Non in esclusiva (rimborso spese max €')} {inp('speseMaxRecesso', '55px')} {')'}
-        <br/>
-        {chk('esclusiva', 'B', 'B) In esclusiva (penale se violata)')}
-
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>11) PENALI</h3>
-        {row(<>
-          <span>Recesso/Violazione:</span>{inp('penaleRecessoPerc', '30px')} %
-          <span>Rifiuto proposta conforme:</span>{inp('penaleRifiutoPerc', '30px')} %
-        </>)}
-
-        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #eee', margin: '0.6rem 0 0.3rem 0'}}>12, 14, 15, 16) NOTE E FIRME</h3>
-        <div style={{ fontSize: '8.5pt' }}>
-          {row(<><span>Esposizione cartello/media:</span><strong>{data.cartello}</strong>; <strong>{data.media}</strong></>)}
-          {row(<><span>Comunicazioni tel/PEC:</span>{inp('comTel', '110px')} / {inp('comPec', '180px')}</>)}
+        <div style={{ border: '2px solid #000', padding: '10px', marginBottom: '1.5rem' }}>
+          <strong>{data.agNome}</strong>, che accetta, per l'espletamento delle attività di valorizzazione e scouting finalizzate all'individuazione di potenziali conduttori per l'immobile sito in:
+          <br/><br/>
+          {row(<><span>Comune di</span>{inp('immComune', '180px')}<span>via</span>{inp('immVia', '200px')}<span>n.</span>{inp('immCivico', '40px')}</>)}
+          {row(<><span>Dati Catastali: Foglio</span>{inp('c1F', '40px')}<span>Mappale</span>{inp('c1M', '50px')}<span>Sub</span>{inp('c1S', '40px')}</>)}
           <br/>
-          <span>Osservazioni:</span>
-          {inpFull('note')}
+          <span>Destinazione d'uso: </span>{inp('immUso', '200px')}
         </div>
 
-        <div className="signature-grid" style={{marginTop: '2rem'}}>
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #333', marginBottom: '0.4rem'}}>OGGETTO DELL'ATTIVITÀ</h3>
+        <p style={{fontSize: '9pt', textAlign: 'justify', marginBottom: '1rem'}}>
+          L'attività di marketing e supporto operativo sarà finalizzata alla locazione dell'immobile al canone indicativo di <strong>€ {inp('prezzo', '90px')}</strong> / anno.
+        </p>
+
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #333', marginBottom: '0.4rem'}}>DURATA E CORRISPETTIVO</h3>
+        {row(<><span>Il presente incarico ha validità fino al</span><strong>{inp('durataFinoAl', '110px', 'date')}</strong></>)}
+        <p style={{marginTop: '0.5rem', textAlign: 'justify'}}>
+          A fronte dell'attività svolta, il Mandante riconoscerà a {data.agNome} un corrispettivo professionale pari a:
+          <br/>
+          <strong>€ {inp('corrispettivo', '80px')}</strong> oltre IVA.
+        </p>
+
+        <h3 style={{fontSize: '10pt', fontWeight: 'bold', borderBottom: '1px solid #333', marginTop: '1rem', marginBottom: '0.4rem'}}>ESCLUSIVITÀ</h3>
+        <p style={{fontSize: '9pt'}}>
+          {chk('esclusiva', 'B', 'L\'incarico è conferito in esclusiva.')}
+          <br/>
+          {chk('esclusiva', 'A', 'L\'incarico NON è conferito in esclusiva.')}
+        </p>
+
+        <p style={{marginTop: '1.5rem'}}>Note:</p>
+        <div style={{marginBottom: '1rem'}}>{inpFull('note')}</div>
+
+        <div className="signature-grid" style={{marginTop: '3rem'}}>
           <div className="signature-box" style={{textAlign: 'left'}}>
             Luogo e data: <br/><br/>
-            Firma Locatore: <br/><br/>
-            Firma Agenzia: <br/>
+            Firma Mandante: <br/><br/>
+            Firma per Accettazione: <br/>
           </div>
         </div>
       </div>
@@ -273,7 +122,7 @@ export const LeaseAssignment: React.FC = () => {
   );
 
   return (
-    <ContractLayout title="Incarico di Locazione" icon={<FileSignature size={20} />} preview={renderPreview()} clientName={data.v1Nome}>
+    <ContractLayout title="Incarico Valorizzazione Loc." icon={<FileSignature size={20} />} preview={renderPreview()} clientName={data.v1Nome}>
     </ContractLayout>
   );
 };
