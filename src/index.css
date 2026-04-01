@@ -385,7 +385,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 11pt;
   position: relative;
   border: 1px solid var(--primary-light);
-  border-left: 8px solid var(--primary); /* Minimal professional blue visual */
+  border-left: 8px solid var(--primary);
+  box-sizing: border-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Contract Header with Logo */
@@ -446,6 +450,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   transition: all 0.2s ease;
   font-weight: bold;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .inline-input:focus, .inline-select:focus {
