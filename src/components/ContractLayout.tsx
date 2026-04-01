@@ -19,63 +19,73 @@ export const ContractLayout: React.FC<ContractLayoutProps> = ({ title, icon, pre
     if (!documentRef.current) return;
     
     setIsExporting(true);
-    await new Promise(resolve => setTimeout(resolve, 100));
+    const currentScale = previewScale;
+    setPreviewScale(1);
+    
+    await new Promise(resolve => setTimeout(resolve, 800));
 
-    // Replace all inline inputs/selects with styled spans so html2canvas captures the values
     const container = documentRef.current;
-    const replacements: { original: HTMLElement; span: HTMLSpanElement }[] = [];
-
-    container.querySelectorAll<HTMLElement>('input.inline-input, select.inline-select, textarea.inline-input').forEach(el => {
-      const span = document.createElement('span');
-      const val = el instanceof HTMLSelectElement
-        ? (el.options[el.selectedIndex]?.text ?? '')
-        : (el as HTMLInputElement).value;
-      span.textContent = val || '';
-      span.style.cssText = 'font-weight:bold;color:#000;font-family:inherit;font-size:inherit;display:inline;';
-      el.parentNode?.insertBefore(span, el);
-      el.style.display = 'none';
-      replacements.push({ original: el, span });
-    });
 
     try {
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
-        format: 'a4'
+        format: 'a4',
+        compress: true
       });
       
       const pages = container.querySelectorAll('.a4-page');
       
       if (pages.length === 0) {
-        const canvas = await html2canvas(container, { scale: 2, useCORS: true });
-        const imgData = canvas.toDataURL('image/png');
+        // Fallback for single page
+        const canvas = await html2canvas(container, { 
+          scale: 2, 
+          useCORS: true, 
+          logging: true,
+          backgroundColor: '#ffffff'
+        });
+        const imgData = canvas.toDataURL('image/jpeg', 0.95);
         const pdfWidth = pdf.internal.pageSize.getWidth();
         const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);
       } else {
         for (let i = 0; i < pages.length; i++) {
           if (i > 0) pdf.addPage();
           const element = pages[i] as HTMLElement;
-          const canvas = await html2canvas(element, { scale: 2, useCORS: true, logging: false });
-          const imgData = canvas.toDataURL('image/png');
+          
+          const canvas = await html2canvas(element, { 
+            scale: 2, 
+            useCORS: true, 
+            logging: false,
+            allowTaint: true,
+            backgroundColor: '#ffffff',
+            onclone: (clonedDoc) => {
+              const clonedElement = clonedDoc.querySelector('.a4-page') as HTMLElement;
+              if (clonedElement) {
+                clonedElement.style.border = 'none';
+                clonedElement.style.boxShadow = 'none';
+              }
+            }
+          });
+          
+          const imgData = canvas.toDataURL('image/jpeg', 0.95);
           const pdfWidth = pdf.internal.pageSize.getWidth();
           const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-          pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+          pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);
         }
       }
+      
       const safeTitle = title.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
       const safeName = clientName ? `_${clientName.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}` : '';
-      pdf.save(`${safeTitle}${safeName}.pdf`);
+      const filename = `${safeTitle}${safeName}.pdf`;
+      
+      pdf.save(filename);
     } catch (error) {
       console.error('Error generating PDF:', error);
-      alert('Errore durante la generazione del PDF.');
+      alert('Errore durante la generazione del PDF. Riprova tra un istante.');
     } finally {
-      // Restore all original inputs
-      replacements.forEach(({ original, span }) => {
-        original.style.display = '';
-        span.remove();
-      });
       setIsExporting(false);
+      setPreviewScale(currentScale);
     }
   };
 
