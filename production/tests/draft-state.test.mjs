@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readDraft,writeDraft,exportDraft,importDraft} from '../src/ContractDraft.js';
+const map=new Map();const storage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v)};
+writeDraft(storage,'/lease-contract-students','tenants',[{id:'a',nome:'Gianna',university:{matricola:'01'}},{id:'b',nome:'Monica',university:{matricola:'02'}}]);
+assert.deepEqual(readDraft(storage,'/lease-contract-students','tenants',[]).map(p=>p.id),['a','b']);
+writeDraft(storage,'/lease-contract-students','tenants',[{id:'b',nome:'Monica',university:{matricola:'02'}}]);
+assert.equal(readDraft(storage,'/lease-contract-students','tenants',[])[0].university.matricola,'02');
+assert.deepEqual(readDraft(storage,'/lease-contract-4-4','tenants',[]),[]);
+const file=exportDraft(storage,'/lease-contract-students');
+const imported=new Map();const target={getItem:k=>imported.get(k)??null,setItem:(k,v)=>imported.set(k,v)};
+importDraft(target,'/lease-contract-students',file);
+assert.deepEqual(readDraft(target,'/lease-contract-students','tenants',[]),readDraft(storage,'/lease-contract-students','tenants',[]));
+assert.throws(()=>importDraft(target,'/lease-contract-4-4',file),/modello/);
+console.log('PASS drafts: stable associations, separate models, export/import');

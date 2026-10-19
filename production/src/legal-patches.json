@@ -1,0 +1,457 @@
+[
+  {
+    "owner": "Or",
+    "start": 251814,
+    "end": 251881,
+    "value": " vengono versati alla firma a titolo di deposito, con assegno n° ",
+    "replacement": " sono affidati in deposito fiduciario al Mediatore, che ne rilascia ricevuta, mediante assegno non trasferibile n° "
+  },
+  {
+    "owner": "Or",
+    "start": 251909,
+    "end": 251979,
+    "value": " intestato al Venditore. In caso di accettazione tale somma diverrà ",
+    "replacement": " intestato al Venditore. Solo alla conoscenza dell’accettazione conforme e, in presenza di condizioni sospensive, al loro avveramento, l’assegno è consegnato e la somma assume la natura di "
+  },
+  {
+    "owner": "Or",
+    "start": 252666,
+    "end": 252791,
+    "value": "Il contratto si riterrà perfezionato non appena il Proponente avrà conoscenza dell'accettazione sottoscritta dal Venditore.",
+    "replacement": "L’accettazione integrale e conforme deve giungere a conoscenza del Proponente entro il termine indicato. Si conclude così un contratto preliminare, senza trasferimento della proprietà, soggetto a registrazione entro trenta giorni nei casi previsti. Le modifiche costituiscono nuova proposta. Le condizioni sospensive espressamente pattuite regolano l’efficacia del vincolo e delle somme. Il deposito è restituito se l’accettazione non perviene nel termine o se le condizioni sospensive non si avverano, salve le conseguenze previste dalla legge."
+  },
+  {
+    "owner": "Gs",
+    "start": 571537,
+    "end": 571572,
+    "value": ". Aggiornamento ISTAT annuale al ",
+    "replacement": ". Aggiornamento ISTAT, solo se pattuito e ammesso dal regime e dall’accordo applicabili, sospeso durante la cedolare secca, nella misura del "
+  },
+  {
+    "owner": "Gs",
+    "start": 572991,
+    "end": 573136,
+    "value": ". Tale somma, in caso di accettazione della proposta, sarà imputata a deposito cauzionale o prima rata di canone, come concordato tra le parti.",
+    "replacement": ". L’imputazione della somma a cauzione oppure a canone deve essere specificata espressamente nei patti aggiuntivi prima della sottoscrizione; in mancanza resta deposito fiduciario, senza facoltà di incasso del locatore. È restituita senza trattenute in caso di mancata accettazione nel termine o mancato avveramento di condizioni sospensive. La cauzione non supera tre mensilità e produce interessi legali annuali."
+  },
+  {
+    "owner": "Gs",
+    "start": 574144,
+    "end": 574451,
+    "value": "Il proponente si impegna a comunicare la presente proposta al Locatore. Il vincolo contrattuale si intende perfezionato nel momento in cui il proponente riceve notizia dell'accettazione sottoscritta da parte del Locatore. L'accettazione potrà essere comunicata tramite raccomandata, PEC o consegna a mani.",
+    "replacement": "La proposta è trasmessa al locatore. L’accettazione conforme deve pervenire al proponente entro il termine di irrevocabilità, tramite PEC, raccomandata o consegna documentata. La conoscenza dell’accettazione perfeziona un accordo preliminare di locazione; il contratto locativo sarà stipulato per iscritto entro il termine indicato, nel rispetto del regime scelto. Le modifiche del locatore costituiscono nuova proposta."
+  },
+  {
+    "owner": "ac",
+    "start": 601829,
+    "end": 601878,
+    "value": "Il contratto è stipulato per la durata di mesi ",
+    "replacement": "Il contratto è stipulato, nel limite di sei–trentasei mesi, per la durata di mesi "
+  },
+  {
+    "owner": "ac",
+    "start": 602260,
+    "end": 602737,
+    "value": "Secondo quanto previsto dall’accordo territoriale stipulato ai sensi dell’art.5 comma 3 della legge 431/98, tra le organizzazioni sindacali dei locatori, CONFEDILIZIA, UPPI, ASPPI, FEDERPROPRIETA’ e dei conduttori SUNIA, SICET, UNIONE INQUILINI, depositato il 17/10/2019 presso il Comune di Padova, le parti concordano che la presente locazione ha natura transitoria in quanto il conduttore espressamente ha l’esigenza di abitare l’immobile frequentando il corso di studi in ",
+    "replacement": "Ai sensi dell’art. 5, comma 3, legge 431/1998, del D.M. 16 gennaio 2017 e dell’accordo territoriale di Padova sottoscritto il 14 febbraio 2023, depositato il 17 febbraio 2023, il conduttore dichiara la propria iscrizione al corso di studi in "
+  },
+  {
+    "owner": "ac",
+    "start": 602887,
+    "end": 602943,
+    "value": "; come da dichiarazione sostitutiva di certificazione.",
+    "replacement": "; come da documentazione allegata. Il conduttore risiede in un Comune diverso da quello sede del corso, come risulta dai dati anagrafici. L’iscrizione e i requisiti per il contratto studenti sono verificati prima della firma."
+  },
+  {
+    "owner": "ac",
+    "start": 604034,
+    "end": 604485,
+    "value": "/00) non imputabile in conto canoni e produttiva di interessi legali, riconosciuti al locatore al termine di ogni anno di locazione, salvo che la durata contrattuale minima non sia, ferma la proroga del contratto per due anni, di almeno cinque anni o superiore. Il deposito cauzionale così costituito viene reso al termine della locazione, previa verifica sia dello stato dell'unità immobiliare sia dell'osservanza di ogni obbligazione contrattuale.",
+    "replacement": "/00), non superiore a tre mensilità del canone e non imputabile ai canoni, produttivo di interessi legali corrisposti annualmente al conduttore. È restituito a fine locazione previa verifica dello stato dell’immobile e delle obbligazioni, salvi gli importi concordati o accertati nelle sedi competenti. La firma non quietanza somme non effettivamente ricevute."
+  },
+  {
+    "owner": "ac",
+    "start": 604555,
+    "end": 604884,
+    "value": "Per gli oneri accessori le parti fanno applicazione della tabella oneri accessori, allegato D al decreto emanato dal Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell'economia e delle finanze ai sensi dell'art 4, comma 2, della legge n. 431/98 di cui il presente contratto costituisce l'allegato A.",
+    "replacement": "Per gli oneri accessori le parti fanno applicazione della tabella oneri accessori, allegato D al decreto emanato dal Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell'economia e delle finanze ai sensi dell'art 4, comma 2, della legge n. 431/98 di cui il modello per studenti costituisce l’allegato C; per Padova si applica la tabella F dell’accordo territoriale."
+  },
+  {
+    "owner": "ac",
+    "start": 605963,
+    "end": 606470,
+    "value": "Le spese di bollo per il presente contratto e per le ricevute conseguenti sono a carico del conduttore, il locatore provvede alla registrazione del contratto, dandone documentata comunicazione al conduttore, che corrisponde la quota di Sua spettanza pari alla metà e all'amministratore del condominio ai sensi dell'art 13 legge 431/98. Le parti possono delegare alla registrazione del contratto una delle organizzazioni sindacali che abbia prestato assistenza ai fini della stipula del contratto medesimo.",
+    "replacement": "Le spese di bollo per il presente contratto e per le ricevute conseguenti sono a carico del conduttore, il locatore provvede alla registrazione del contratto, dandone documentata comunicazione al conduttore, che corrisponde la quota di Sua spettanza pari alla metà e all'amministratore del condominio ai sensi dell'art 13 legge 431/98. Le parti possono delegare alla registrazione del contratto una delle organizzazioni sindacali che abbia prestato assistenza ai fini della stipula del contratto medesimo. La registrazione è effettuata nei termini di legge: ove dovuta, entro trenta giorni; la documentata comunicazione segue nei successivi sessanta giorni. Restano le esenzioni per la cedolare secca validamente esercitata."
+  },
+  {
+    "owner": "ac",
+    "start": 608668,
+    "end": 609071,
+    "value": "Il conduttore non può apportare alcuna modifica, innovazione, miglioria o addizione ai locali locati ed alla loro destinazione, o agli impianti esistenti, senza il preventivo consenso scritto del locatore. Il conduttore esonera espressamente il locatore per danni diretti o indiretti che possono derivargli da fatti dei dipendenti del locatore medesimo nonché per interruzioni incolpevoli dei servizi.",
+    "replacement": "Il conduttore non può apportare alcuna modifica, innovazione, miglioria o addizione ai locali locati ed alla loro destinazione, o agli impianti esistenti, senza il preventivo consenso scritto del locatore. Le responsabilità del locatore e dei suoi ausiliari restano disciplinate dalla legge; non sono escluse le responsabilità per dolo, colpa grave o violazione di obblighi inderogabili, ai sensi dell’art. 1229 c.c."
+  },
+  {
+    "owner": "ac",
+    "start": 610996,
+    "end": 611056,
+    "value": "14) COMMISSIONE DI CONCILIAZIONE - CLAUSOLA COMPROMISSORIA",
+    "replacement": "14) NEGOZIAZIONE PARITETICA E CONCILIAZIONE"
+  },
+  {
+    "owner": "ac",
+    "start": 611945,
+    "end": 612634,
+    "value": "CLAUSOLA COMPROMISSORIA: In caso di contestazioni inerenti l'interpretazione, l'esecuzione o l'inesecuzione del presente contratto, la cui competenza non sia per legge riservata esclusivamente all'Autorità Giudiziaria, le parti si obbligano ad adire alla Camera di Mediazione Patavina n. 265 Reg. Ministero della Giustizia del cui Regolamento, pubblicato sull'omonimo sito WEB, dichiarano di essere a conoscenza e in caso di mancata conciliazione di compromettere la controversia davanti la Camera Arbitrale Patavina, secondo quanto stabilito dal Regolamento pubblicato sull'omonimo sito web della stessa e più precisamente con arbitrato irrituale secondo equità deciso da arbitro unico.",
+    "replacement": "È salva la tutela davanti all’autorità giudiziaria competente. La mediazione civile, quando condizione di procedibilità ai sensi del d.lgs. 28/2010, segue la disciplina vigente. Non è convenuto un arbitrato obbligatorio."
+  },
+  {
+    "owner": "ac",
+    "start": 612704,
+    "end": 614169,
+    "value": "La parte locatrice dichiara di esercitare l'opzione per il sistema denominato “cedolare secca” introdotto dall’art. 3 del D.Lgs 23/2011 restando pertanto esonerata dall'obbligo di inviare alla parte conduttrice la prevista comunicazione mediante lettera raccomandata e dall'obbligo di corrispondere l'imposta di registro e di bollo. L'opzione in oggetto comporta per il periodo corrispondente alla sua durata, il venir meno dell'obbligo del versamento delle imposte di registro e di bollo relative al presente contratto, comprese quelle dovute sulla risoluzione e sulle proroghe del contratto stesso. Non potrà essere applicata, negli anni di decorrenza del contratto, alcuna maggiorazione del canone, inclusa la variazione dell’ISTAT. Il locatore si riserva tuttavia la facoltà di revocare tale opzione in ciascuna annualità contrattuale successiva a quella in corso, da comunicarsi alla parte conduttrice a mezzo lettera raccomandata con ricevuta di ritorno prima della scadenza dell'annualità contrattuale. Se in futuro la parte locatrice decidesse di revocare l'applicazione di tale regime fiscale, sull'importo annuo del canone dovrà essere pagata l'imposta di registro la cui metà a carico della parte locatrice e metà a carico della parte conduttrice. In tal caso il canone sarà aggiornato nella misura del 75% della variazione in aumento dell'indice dei prezzi al consumo accertato dall'ISTAT seguendo quanto previsto dalla normativa della cedolare secca.",
+    "replacement": "Il locatore dichiara di optare per la cedolare secca ai sensi dell’art. 3 del d.lgs. 23/2011, verificandone i presupposti ed esercitando l’opzione nelle forme fiscali previste. Per il periodo di efficacia rinuncia a ogni aggiornamento del canone, incluso ISTAT. Le esenzioni dall’imposta di registro e di bollo operano nei limiti di legge, anche in presenza di più locatori. L’eventuale revoca è comunicata al conduttore; cessata l’opzione si applicano il regime ordinario e gli aggiornamenti contrattualmente ammessi, senza recupero degli aumenti rinunciati. Il presente testo non attesta l’esistenza dei requisiti fiscali. Fuori dal regime opzionale, l’aggiornamento pattuito non eccede il 75% dell’incremento ISTAT FOI, su richiesta e nei limiti dell’accordo territoriale."
+  },
+  {
+    "owner": "ac",
+    "start": 614312,
+    "end": 615379,
+    "value": "A tutti gli effetti del presente contratto, compresa la notifica degli atti esecutivi, e ai fini della competenza a giudicare, il conduttore elegge domicilio nei locali a lui locati e, ove egli più non li occupi o comunque detenga, presso l'ufficio di segreteria del Comune ove è situato l'immobile locato. Qualunque modifica al presente contratto non può aver luogo, e non può essere provata, se non con atto scritto. Il locatore ed il conduttore si autorizzano reciprocamente a comunicare a terzi i propri dati personali in relazione ad adempimenti connessi col rapporto di locazione (D.L. n. 196/03 - UE 679/2016). Per quanto non previsto dal contratto le parti rinviano a quanto in materia disposto dal Codice civile, dalle leggi n. 392/1978 e n. 431/1998 o comunque dalle norme vigenti e dagli usi locali nonché alla normativa ministeriale emanata in applicazione della legge n. 431/1998 ed all'accordo definito in sede locale. Si precisa, inoltre, che il lastrico solare condominiale non viene concesso in uso ai conduttori e che, pertanto, non è usufruibile.",
+    "replacement": "Per le comunicazioni contrattuali le parti utilizzano i recapiti indicati nel contratto, comunicandone tempestivamente le variazioni. Restano ferme le norme sulle notificazioni e sulla competenza inderogabile; non è eletto domicilio presso uffici comunali. Le modifiche contrattuali devono risultare per iscritto. I dati personali sono trattati per la stipula e l’esecuzione del rapporto e per gli obblighi di legge, secondo il Regolamento (UE) 2016/679 e il d.lgs. 196/2003 come modificato. Ciascun titolare fornisce l’informativa degli articoli 13 e 14 GDPR, ove applicabile, e comunica solo i dati necessari ai soggetti legittimati. La firma del contratto non costituisce consenso al marketing. Per quanto non previsto si applicano il codice civile, le leggi 392/1978 e 431/1998 e, per i contratti regolati, il D.M. 16 gennaio 2017 e l’accordo territoriale applicabile."
+  },
+  {
+    "owner": "ac",
+    "start": 615796,
+    "end": 616057,
+    "value": "A mente dell'articolo 1342, secondo comma, codice civile, le parti specificamente approvano i patti di cui agli art. n. 1-2-3-4-5-6-7 (clausola risolutiva espressa) -8-9-10-11-12-13-14 (clausola compromissoria) -15 (cedolare secca) -16 del presente contratto.",
+    "replacement": "Ai sensi degli articoli 1341 e 1342 c.c., ove applicabili, le parti approvano specificamente le pattuizioni degli articoli 7 (limiti alla sublocazione e al comodato), 10 (consenso alle modifiche), 12 (impianti) e 13 (accessi). La firma non sana clausole nulle o contrarie a norme inderogabili."
+  },
+  {
+    "owner": "oc",
+    "start": 618677,
+    "end": 618756,
+    "value": "L’immobile verrà consegnato ammobiliato come visto e conosciuto tra le Parti.",
+    "replacement": "Arredi e stato di consegna risultano dall’inventario e dal verbale allegati, da compilare e sottoscrivere dalle parti."
+  },
+  {
+    "owner": "oc",
+    "start": 618857,
+    "end": 619766,
+    "value": "La Parte Conduttrice dichiara di aver esaminato i locali oggetto del presente contratto e di averli trovati adatti al proprio uso ed in buono stato di manutenzione, riconoscendo che sono esenti da difetti che possano influire sulla salute di chi vi abita. Si obbliga a riconsegnarli alla scadenza del contratto nello stesso stato, salvo il deperimento d’uso, pena il risarcimento del danno. Si precisa che le pareti e i soffitti sono consegnati tinteggiati di fresco, pertanto alla riconsegna farà capo alla Parte Conduttrice l’onere della tinteggiatura delle pareti e dei soffitti. Ogni aggiunta o modifica che non possa essere tolta senza danneggiare l’immobile non potrà essere effettuata dalla Parte Conduttrice senza la preventiva autorizzazione scritta del proprietario e comunque resterà a beneficio dell’immobile senza che nulla sia dovuto alla Parte Conduttrice, neanche a titolo di rimborso spese.",
+    "replacement": "Le parti descrivono lo stato dell’immobile, degli impianti e degli arredi nel verbale di consegna allegato, indicando difetti e interventi concordati. Il conduttore restituisce l’immobile nello stato ricevuto, salvo il normale deterioramento d’uso; non sussiste un obbligo automatico di tinteggiatura per la normale usura. Restano le garanzie per vizi e le responsabilità previste dagli articoli 1575, 1578 e 1579 c.c. Modifiche, migliorie e addizioni richiedono il consenso scritto del locatore e sono disciplinate dagli articoli 1592 e 1593 c.c. e dagli accordi scritti leciti delle parti."
+  },
+  {
+    "owner": "oc",
+    "start": 620318,
+    "end": 620755,
+    "value": ". Tale durata si protrarrà automaticamente per un eguale periodo di anni 4, salvo che la Parte Locatrice, con raccomandata da recapitarsi 6 mesi prima della prima scadenza contrattuale, manifesti alla parte conduttrice la propria intenzione di adibire l’immobile agli usi od effettuare nello stesso le opere di cui all’art. 3 della legge n. 431/1998, ovvero vendere l’immobile alle condizioni e modalità previste nel medesimo articolo.",
+    "replacement": ". Tale durata si protrarrà automaticamente per un eguale periodo di anni 4, salvo che la Parte Locatrice, con raccomandata da recapitarsi 6 mesi prima della prima scadenza contrattuale, manifesti alla parte conduttrice la propria intenzione di adibire l’immobile agli usi od effettuare nello stesso le opere di cui all’art. 3 della legge n. 431/1998, ovvero vendere l’immobile alle condizioni e modalità previste nel medesimo articolo. Alla seconda scadenza ciascuna parte può proporre nuove condizioni o rinunciare al rinnovo con comunicazione almeno sei mesi prima; l’altra risponde entro sessanta giorni. In difetto di comunicazione il contratto si rinnova alle stesse condizioni, ai sensi dell’art. 2, comma 1, legge 431/1998."
+  },
+  {
+    "owner": "oc",
+    "start": 620960,
+    "end": 621012,
+    "value": " mesi, da recapitarsi a mezzo di raccomandata A/R.",
+    "replacement": " mesi, da recapitarsi a mezzo di raccomandata A/R. È comunque sempre salvo il recesso per gravi motivi con preavviso di sei mesi ai sensi dell’art. 3, comma 6, legge 431/1998, o il minore termine qui pattuito."
+  },
+  {
+    "owner": "oc",
+    "start": 621557,
+    "end": 622052,
+    "value": "Il canone così come contrattualmente stabilito sarà annualmente aggiornato, previa richiesta scritta della Parte Locatrice, nella misura della variazione assoluta accertata dall’ISTAT dell’indice dei prezzi al consumo per le famiglie di operai ed impiegati verificatasi nell’anno precedente. La Parte Locatrice ha diritto di aderire al regime di “cedolare secca”, di cui all'articolo 3 della legge n. 23/2011, con conseguente rinuncia alla facoltà di chiedere l'aggiornamento del canone ISTAT.",
+    "replacement": "Il canone è aggiornabile annualmente, su richiesta scritta, nella misura del 100% della variazione dell’indice ISTAT FOI al netto dei tabacchi, esclusivamente nei periodi in cui non opera la cedolare secca. Per i periodi di efficacia dell’opzione ai sensi dell’art. 3 del d.lgs. 23/2011 il locatore rinuncia a qualsiasi aggiornamento; non sono recuperabili gli aumenti rinunciati."
+  },
+  {
+    "owner": "oc",
+    "start": 623015,
+    "end": 623235,
+    "value": "Il mancato pagamento di una sola rata del canone, salvo quanto previsto dagli artt. 5 e 55 della legge n. 392/1978 o degli oneri accessori protratto per oltre 20 giorni, costituisce motivo di risoluzione del contratto.",
+    "replacement": "La morosità è disciplinata dagli articoli 5 e 55 della legge 392/1978: rileva il canone non pagato decorsi venti giorni dalla scadenza, oppure il mancato pagamento degli oneri accessori quando l’importo non pagato supera due mensilità del canone. Restano le tutele, le eccezioni consentite dalla legge e la sanatoria giudiziale nei casi previsti; non è consentito il rilascio forzoso fuori dalle procedure di legge."
+  },
+  {
+    "owner": "oc",
+    "start": 623299,
+    "end": 623484,
+    "value": "A titolo di garanzia delle obbligazioni assunte, la Parte Conduttrice ha versato alla Parte Locatrice (che con la firma del contratto ne rilascia, in caso, quietanza) la somma di Euro",
+    "replacement": "Il deposito cauzionale concordato, da documentare con separata ricevuta o prova di pagamento, è pari a Euro"
+  },
+  {
+    "owner": "oc",
+    "start": 623564,
+    "end": 624578,
+    "value": "/00), non imputabile in conto canoni. Il deposito cauzionale, come sopra costituito, sarà restituito al termine della locazione, previa verifica dello stato dell’unità immobiliare e dell’osservanza di ogni obbligazione contrattuale, dopo aver constatato l’assenza di danni e la mancanza di altre pendenze del conduttore verso il locatore. Alla riconsegna del bene i locali affittati saranno ispezionati e se non venissero riscontrati danni agli stessi ed alle suppellettili e se non vi fossero altre pendenze del conduttore verso il locatore allora quest’ultimo restituirà il fondo cauzionale così come gli è stato consegnato in quanto improduttivo di interessi, e si dichiarerà pienamente soddisfatto. In caso di riscontro di danni le parti quantificheranno le spese del ripristino e la somma sarà trattenuta dal fondo cauzionale, mentre l’eventuale parte residua sarà restituita. È in ogni caso fatto salvo il diritto da parte del locatore di rimborso per danni di maggiore entità rispetto al deposito versato.",
+    "replacement": "/00), comunque non superiore a tre mensilità del canone e non imputabile ai canoni. Il deposito produce interessi legali da corrispondere al conduttore annualmente. Alla riconsegna le parti redigono il verbale e il deposito è restituito previa verifica delle obbligazioni; eventuali trattenute devono essere motivate e concordate o accertate nelle sedi competenti, con restituzione della quota non contestata. La sottoscrizione non attesta un pagamento non eseguito."
+  },
+  {
+    "owner": "oc",
+    "start": 625473,
+    "end": 625670,
+    "value": "È fatto espresso divieto di sublocazione totale o parziale, di immettere nell’alloggio persone estranee al nucleo familiare del conduttore, di modificare l’uso convenuto o di cedere il contratto.",
+    "replacement": "È vietato sublocare, cedere il contratto o mutare la destinazione d’uso senza consenso scritto del locatore, salvi i casi previsti dalla legge. L’ordinaria ospitalità non costituisce di per sé sublocazione; restano i limiti di legge sull’occupazione e le comunicazioni obbligatorie."
+  },
+  {
+    "owner": "oc",
+    "start": 626038,
+    "end": 626264,
+    "value": "Spese e tasse del presente contratto, così come quelle delle eventuali rinnovazioni, sono a carico delle Parti in eguale misura. Le incombenze per la registrazione ed il rinnovo annuale saranno espletati a cura del locatore.",
+    "replacement": "Il locatore provvede alla registrazione entro trenta giorni e ne dà documentata comunicazione, nei successivi sessanta giorni, al conduttore e all’amministratore condominiale, ai sensi dell’art. 13 della legge 431/1998. L’imposta di registro, quando dovuta, è ripartita per metà; il bollo è a carico del conduttore. Restano gli adempimenti fiscali per proroghe, risoluzioni e annualità e le esenzioni applicabili in caso di valida opzione per la cedolare secca."
+  },
+  {
+    "owner": "oc",
+    "start": 626337,
+    "end": 626790,
+    "value": "La Parte Locatrice si riserva il diritto di visitare, anche a mezzo di persone delegate, i locali concessi in locazione anche durante il corso della locazione, previa richiesta e motivandone le ragioni. A tal fine la Parte Conduttrice si obbliga a concordare con la Parte Locatrice un giorno lavorativo della settimana in cui sarà consentita la visita. L’orario di visita verrà concordato tra le parti ed avrà una durata minima di due ore consecutive.",
+    "replacement": "Gli accessi del locatore e dei suoi incaricati richiedono un motivo giustificato, congruo preavviso e un appuntamento concordato, nel rispetto del godimento e della riservatezza del conduttore. Per visite a potenziali acquirenti o nuovi conduttori le parti concordano giorni, orari e durata ragionevoli. Restano gli interventi urgenti consentiti dalla legge."
+  },
+  {
+    "owner": "oc",
+    "start": 626867,
+    "end": 627101,
+    "value": "A tutti gli effetti del presente contratto, compresa la notifica di eventuali atti giudiziari la Parte Conduttrice elegge domicilio nell’immobile locato e presso l’ufficio di segreteria del Comune in cui è situato l’immobile locato.",
+    "replacement": "Per le comunicazioni contrattuali le parti utilizzano i recapiti indicati nel contratto, comunicandone tempestivamente le variazioni. Restano ferme le norme sulle notificazioni e sulla competenza inderogabile; non è eletto domicilio presso uffici comunali. Le modifiche contrattuali devono risultare per iscritto."
+  },
+  {
+    "owner": "oc",
+    "start": 627117,
+    "end": 627156,
+    "value": "16. AUTORIZZAZIONE COMUNICAZIONE DATI",
+    "replacement": "16. PROTEZIONE DEI DATI PERSONALI"
+  },
+  {
+    "owner": "oc",
+    "start": 627190,
+    "end": 627411,
+    "value": "La Parte Conduttrice autorizza espressamente la Parte Locatrice a fornire i propri dati personali all’amministratore dello stabile o a terzi per adempimenti riguardanti il rapporto locativo o comunque ad esso collegati.",
+    "replacement": "I dati personali sono trattati per la stipula e l’esecuzione del rapporto e per gli obblighi di legge, secondo il Regolamento (UE) 2016/679 e il d.lgs. 196/2003 come modificato. Ciascun titolare fornisce l’informativa degli articoli 13 e 14 GDPR, ove applicabile, e comunica solo i dati necessari ai soggetti legittimati. La firma del contratto non costituisce consenso al marketing."
+  },
+  {
+    "owner": "oc",
+    "start": 627875,
+    "end": 628237,
+    "value": "La Parte Conduttrice non ha diritto di prelazione nel caso di vendita dell’immobile locato, da esercitarsi secondo gli artt. 38 e 39 della Legge 27 Luglio 1978 n. 392. La Parte Conduttrice non ha diritto di prelazione nel caso di nuova locazione alla scadenza del contratto dell’immobile locato, da esercitarsi secondo l’art. della Legge 27 Luglio 1978 n. 392.",
+    "replacement": "Restano salvi i diritti di prelazione e di riscatto riconosciuti dalla legge nei casi applicabili, inclusa l’ipotesi dell’articolo 3, comma 1, lettera g), della legge 431/1998. Non sono pattuite rinunce preventive ai diritti inderogabili."
+  },
+  {
+    "owner": "sc",
+    "start": 631004,
+    "end": 631083,
+    "value": "L’immobile verrà consegnato ammobiliato come visto e conosciuto tra le Parti.",
+    "replacement": "Arredi e stato di consegna risultano dall’inventario e dal verbale allegati, da compilare e sottoscrivere dalle parti."
+  },
+  {
+    "owner": "sc",
+    "start": 631184,
+    "end": 631901,
+    "value": "La Parte Conduttrice dichiara di aver esaminato i locali oggetto del presente contratto e di averli trovati adatti al proprio uso ed in buono stato di manutenzione, riconoscendo che sono esenti da difetti che possano influire sulla salute di chi vi abita. Si obbliga a riconsegnarli alla scadenza del contratto nello stesso stato, salvo il deperimento d’uso, pena il risarcimento del danno. Ogni aggiunta o modifica che non possa essere tolta senza danneggiare l’immobile non potrà essere effettuata dalla Parte Conduttrice senza la preventiva autorizzazione scritta del proprietario e comunque resterà a beneficio dell’immobile senza che nulla sia dovuto alla Parte Conduttrice, neanche a titolo di rimborso spese.",
+    "replacement": "Le parti descrivono lo stato dell’immobile, degli impianti e degli arredi nel verbale di consegna allegato, indicando difetti e interventi concordati. Il conduttore restituisce l’immobile nello stato ricevuto, salvo il normale deterioramento d’uso; non sussiste un obbligo automatico di tinteggiatura per la normale usura. Restano le garanzie per vizi e le responsabilità previste dagli articoli 1575, 1578 e 1579 c.c. Modifiche, migliorie e addizioni richiedono il consenso scritto del locatore e sono disciplinate dagli articoli 1592 e 1593 c.c. e dagli accordi scritti leciti delle parti."
+  },
+  {
+    "owner": "sc",
+    "start": 632453,
+    "end": 632888,
+    "value": ". Tale durata si protrarrà automaticamente per un eguale periodo, salvo che la Parte Locatrice, con raccomandata o PEC da recapitarsi sei mesi prima della prima scadenza contrattuale, manifesti alla parte conduttrice la propria intenzione di adibire l’immobile agli usi od effettuare nello stesso le opere di cui all’art. 3 della legge n. 431/1998, ovvero vendere l’immobile alle condizioni e modalità previste nel medesimo articolo.",
+    "replacement": ". Tale durata si protrarrà automaticamente per un eguale periodo, salvo che la Parte Locatrice, con raccomandata o PEC da recapitarsi sei mesi prima della prima scadenza contrattuale, manifesti alla parte conduttrice la propria intenzione di adibire l’immobile agli usi od effettuare nello stesso le opere di cui all’art. 3 della legge n. 431/1998, ovvero vendere l’immobile alle condizioni e modalità previste nel medesimo articolo. Alla seconda scadenza ciascuna parte può proporre nuove condizioni o rinunciare al rinnovo con comunicazione almeno sei mesi prima; l’altra risponde entro sessanta giorni. In difetto di comunicazione il contratto si rinnova alle stesse condizioni, ai sensi dell’art. 2, comma 1, legge 431/1998."
+  },
+  {
+    "owner": "sc",
+    "start": 633093,
+    "end": 633151,
+    "value": " mesi, da recapitarsi a mezzo di raccomandata A/R o PEC.",
+    "replacement": " mesi, da recapitarsi a mezzo di raccomandata A/R o PEC. È comunque sempre salvo il recesso per gravi motivi con preavviso di sei mesi ai sensi dell’art. 3, comma 6, legge 431/1998, o il minore termine qui pattuito."
+  },
+  {
+    "owner": "sc",
+    "start": 633696,
+    "end": 634191,
+    "value": "Il canone così come contrattualmente stabilito sarà annualmente aggiornato, previa richiesta scritta della Parte Locatrice, nella misura della variazione assoluta accertata dall’ISTAT dell’indice dei prezzi al consumo per le famiglie di operai ed impiegati verificatasi nell’anno precedente. La Parte Locatrice ha diritto di aderire al regime di “cedolare secca”, di cui all'articolo 3 della legge n. 23/2011, con conseguente rinuncia alla facoltà di chiedere l'aggiornamento del canone ISTAT.",
+    "replacement": "Il canone è aggiornabile annualmente, su richiesta scritta, nella misura del 100% della variazione dell’indice ISTAT FOI al netto dei tabacchi, esclusivamente nei periodi in cui non opera la cedolare secca. Per i periodi di efficacia dell’opzione ai sensi dell’art. 3 del d.lgs. 23/2011 il locatore rinuncia a qualsiasi aggiornamento; non sono recuperabili gli aumenti rinunciati."
+  },
+  {
+    "owner": "sc",
+    "start": 634259,
+    "end": 635084,
+    "value": "Il locatore dichiara di volersi avvalere della modalità di tassazione sui redditi da locazione di fabbricati prevista dal D.Lgs. n. 23 del 14/03/2011 denominata “cedolare secca”. Pertanto la registrazione fiscale di tale contratto non comporterà alcun pagamento di imposta di registro o imposta di bollo. Non verrà inoltre applicata, negli anni di decorrenza del contratto, alcuna maggiorazione del canone sulla base dell’indice ISTAT di variazione dei prezzi al consumo per famiglie di operai e impiegati. Se in futuro il locatore decidesse di revocare l’applicazione di tale regime di tassazione, sull’importo annuo del canone dovrà essere pagata l’imposta di registro nella misura del 2% (di cui metà a carico del locatore e metà a carico del conduttore), e verrà applicato l’aumento del canone in base all’indice ISTAT.",
+    "replacement": "Il locatore dichiara di optare per la cedolare secca ai sensi dell’art. 3 del d.lgs. 23/2011, verificandone i presupposti ed esercitando l’opzione nelle forme fiscali previste. Per il periodo di efficacia rinuncia a ogni aggiornamento del canone, incluso ISTAT. Le esenzioni dall’imposta di registro e di bollo operano nei limiti di legge, anche in presenza di più locatori. L’eventuale revoca è comunicata al conduttore; cessata l’opzione si applicano il regime ordinario e gli aggiornamenti contrattualmente ammessi, senza recupero degli aumenti rinunciati. Il presente testo non attesta l’esistenza dei requisiti fiscali."
+  },
+  {
+    "owner": "sc",
+    "start": 636058,
+    "end": 636278,
+    "value": "Il mancato pagamento di una sola rata del canone, salvo quanto previsto dagli artt. 5 e 55 della legge n. 392/1978 o degli oneri accessori protratto per oltre 20 giorni, costituisce motivo di risoluzione del contratto.",
+    "replacement": "La morosità è disciplinata dagli articoli 5 e 55 della legge 392/1978: rileva il canone non pagato decorsi venti giorni dalla scadenza, oppure il mancato pagamento degli oneri accessori quando l’importo non pagato supera due mensilità del canone. Restano le tutele, le eccezioni consentite dalla legge e la sanatoria giudiziale nei casi previsti; non è consentito il rilascio forzoso fuori dalle procedure di legge."
+  },
+  {
+    "owner": "sc",
+    "start": 636344,
+    "end": 636529,
+    "value": "A titolo di garanzia delle obbligazioni assunte, la Parte Conduttrice ha versato alla Parte Locatrice (che con la firma del contratto ne rilascia, in caso, quietanza) la somma di Euro",
+    "replacement": "Il deposito cauzionale concordato, da documentare con separata ricevuta o prova di pagamento, è pari a Euro"
+  },
+  {
+    "owner": "sc",
+    "start": 636609,
+    "end": 637624,
+    "value": "/00), non imputabile in conto canoni. Il deposito cauzionale, come sopra costituito, sarà restituito al termine della locazione, previa verifica dello stato dell’unità immobiliare e dell’osservanza di ogni obbligazione contrattuale, dopo aver constatato l’assenza di danni e la mancanza di altre pendenze del conduttore verso il locatore. Alla riconsegna del bene i locali affittati saranno ispezionati e se non venissero riscontrati danni agli stessi ed alle suppellettili e se non vi fossero altre pendenze del conduttore verso il locatore allora quest’ultimo restituirà il fondo cauzionale così come gli è stato consegnato in quanto improduttivo si dichiara qui, sin da ora, pienamente soddisfatto. In caso di riscontro dei danni le parti quantificheranno le spese del ripristino e la somma sarà trattenuta dal fondo cauzionale, mentre la eventuale parte residua sarà restituita. È in ogni caso fatto salvo il diritto da parte del locatore di rimborso per danni di maggiore entità rispetto al deposito versato.",
+    "replacement": "/00), comunque non superiore a tre mensilità del canone e non imputabile ai canoni. Il deposito produce interessi legali da corrispondere al conduttore annualmente. Alla riconsegna le parti redigono il verbale e il deposito è restituito previa verifica delle obbligazioni; eventuali trattenute devono essere motivate e concordate o accertate nelle sedi competenti, con restituzione della quota non contestata. La sottoscrizione non attesta un pagamento non eseguito."
+  },
+  {
+    "owner": "sc",
+    "start": 638518,
+    "end": 638715,
+    "value": "È fatto espresso divieto di sublocazione totale o parziale, di immettere nell’alloggio persone estranee al nucleo familiare del conduttore, di modificare l’uso convenuto o di cedere il contratto.",
+    "replacement": "È vietato sublocare, cedere il contratto o mutare la destinazione d’uso senza consenso scritto del locatore, salvi i casi previsti dalla legge. L’ordinaria ospitalità non costituisce di per sé sublocazione; restano i limiti di legge sull’occupazione e le comunicazioni obbligatorie."
+  },
+  {
+    "owner": "sc",
+    "start": 639083,
+    "end": 639309,
+    "value": "Spese e tasse del presente contratto, così come quelle delle eventuali rinnovazioni, sono a carico delle Parti in eguale misura. Le incombenze per la registrazione ed il rinnovo annuale saranno espletati a cura del locatore.",
+    "replacement": "Il locatore provvede alla registrazione entro trenta giorni e ne dà documentata comunicazione, nei successivi sessanta giorni, al conduttore e all’amministratore condominiale, ai sensi dell’art. 13 della legge 431/1998. L’imposta di registro, quando dovuta, è ripartita per metà; il bollo è a carico del conduttore. Restano gli adempimenti fiscali per proroghe, risoluzioni e annualità e le esenzioni applicabili in caso di valida opzione per la cedolare secca."
+  },
+  {
+    "owner": "sc",
+    "start": 639382,
+    "end": 639835,
+    "value": "La Parte Locatrice si riserva il diritto di visitare, anche a mezzo di persone delegate, i locali concessi in locazione anche durante il corso della locazione, previa richiesta e motivandone le ragioni. A tal fine la Parte Conduttrice si obbliga a concordare con la Parte Locatrice un giorno lavorativo della settimana in cui sarà consentita la visita. L’orario di visita verrà concordato tra le parti ed avrà una durata minima di due ore consecutive.",
+    "replacement": "Gli accessi del locatore e dei suoi incaricati richiedono un motivo giustificato, congruo preavviso e un appuntamento concordato, nel rispetto del godimento e della riservatezza del conduttore. Per visite a potenziali acquirenti o nuovi conduttori le parti concordano giorni, orari e durata ragionevoli. Restano gli interventi urgenti consentiti dalla legge."
+  },
+  {
+    "owner": "sc",
+    "start": 639912,
+    "end": 640146,
+    "value": "A tutti gli effetti del presente contratto, compresa la notifica di eventuali atti giudiziari la Parte Conduttrice elegge domicilio nell’immobile locato e presso l’ufficio di segreteria del Comune in cui è situato l’immobile locato.",
+    "replacement": "Per le comunicazioni contrattuali le parti utilizzano i recapiti indicati nel contratto, comunicandone tempestivamente le variazioni. Restano ferme le norme sulle notificazioni e sulla competenza inderogabile; non è eletto domicilio presso uffici comunali. Le modifiche contrattuali devono risultare per iscritto."
+  },
+  {
+    "owner": "sc",
+    "start": 640162,
+    "end": 640201,
+    "value": "17. AUTORIZZAZIONE COMUNICAZIONE DATI",
+    "replacement": "17. PROTEZIONE DEI DATI PERSONALI"
+  },
+  {
+    "owner": "sc",
+    "start": 640235,
+    "end": 640456,
+    "value": "La Parte Conduttrice autorizza espressamente la Parte Locatrice a fornire i propri dati personali all’amministratore dello stabile o a terzi per adempimenti riguardanti il rapporto locativo o comunque ad esso collegati.",
+    "replacement": "I dati personali sono trattati per la stipula e l’esecuzione del rapporto e per gli obblighi di legge, secondo il Regolamento (UE) 2016/679 e il d.lgs. 196/2003 come modificato. Ciascun titolare fornisce l’informativa degli articoli 13 e 14 GDPR, ove applicabile, e comunica solo i dati necessari ai soggetti legittimati. La firma del contratto non costituisce consenso al marketing."
+  },
+  {
+    "owner": "sc",
+    "start": 640920,
+    "end": 641282,
+    "value": "La Parte Conduttrice non ha diritto di prelazione nel caso di vendita dell’immobile locato, da esercitarsi secondo gli artt. 38 e 39 della Legge 27 Luglio 1978 n. 392. La Parte Conduttrice non ha diritto di prelazione nel caso di nuova locazione alla scadenza del contratto dell’immobile locato, da esercitarsi secondo l’art. della Legge 27 Luglio 1978 n. 392.",
+    "replacement": "Restano salvi i diritti di prelazione e di riscatto riconosciuti dalla legge nei casi applicabili, inclusa l’ipotesi dell’articolo 3, comma 1, lettera g), della legge 431/1998. Non sono pattuite rinunce preventive ai diritti inderogabili."
+  },
+  {
+    "owner": "cc",
+    "start": 647919,
+    "end": 648244,
+    "value": " mensilità del canone, non imputabile in conto canoni e produttiva di interessi legali, riconosciuti al conduttore al termine della locazione. Il deposito cauzionale così costituito viene reso al termine della locazione previa verifica dello stato dell'unità immobiliare e dell'osservanza di ogni obbligazione contrattuale.",
+    "replacement": " mensilità del canone, comunque non oltre tre, non imputabile in conto canoni e produttiva di interessi legali, corrisposti al conduttore annualmente. Il deposito cauzionale così costituito viene reso al termine della locazione previa verifica dello stato dell'unità immobiliare e dell'osservanza di ogni obbligazione contrattuale."
+  },
+  {
+    "owner": "cc",
+    "start": 649556,
+    "end": 650080,
+    "value": "Le spese di bollo per il presente contratto e per le ricevute conseguenti sono a carico del conduttore. Il locatore provvede alla registrazione del contratto, dandone documentata comunicazione al conduttore - che corrisponde la quota di sua spettanza, pari alla metà - e all’amministratore del condominio ai sensi dell’art. 13 della legge 431 del 1998. Le parti possono delegare alla registrazione del contratto una delle organizzazioni sindacali che abbia prestato assistenza ai fini della stipula del contratto medesimo.",
+    "replacement": "Le spese di bollo per il presente contratto e per le ricevute conseguenti sono a carico del conduttore. Il locatore provvede alla registrazione del contratto, dandone documentata comunicazione al conduttore - che corrisponde la quota di sua spettanza, pari alla metà - e all’amministratore del condominio ai sensi dell’art. 13 della legge 431 del 1998. Le parti possono delegare alla registrazione del contratto una delle organizzazioni sindacali che abbia prestato assistenza ai fini della stipula del contratto medesimo. La registrazione è effettuata nei termini di legge: ove dovuta, entro trenta giorni; la documentata comunicazione segue nei successivi sessanta giorni. Restano le esenzioni per la cedolare secca validamente esercitata."
+  },
+  {
+    "owner": "cc",
+    "start": 652357,
+    "end": 652783,
+    "value": "Il conduttore non può apportare alcuna modifica, innovazione, miglioria o addizione ai locali locati ed alla loro destinazione, o agli impianti esistenti, senza il preventivo consenso scritto del locatore. Il conduttore esonera espressamente il locatore da ogni responsabilità per danni diretti o indiretti che possano derivargli da fatti dei dipendenti del locatore medesimo nonché per interruzioni incolpevoli dei servizi.",
+    "replacement": "Il conduttore non può apportare alcuna modifica, innovazione, miglioria o addizione ai locali locati ed alla loro destinazione, o agli impianti esistenti, senza il preventivo consenso scritto del locatore. Le responsabilità del locatore e dei suoi ausiliari restano disciplinate dalla legge; non sono escluse le responsabilità per dolo, colpa grave o violazione di obblighi inderogabili, ai sensi dell’art. 1229 c.c."
+  },
+  {
+    "owner": "cc",
+    "start": 655066,
+    "end": 655856,
+    "value": "La Commissione di cui all’articolo 6 del decreto del Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell’economia e delle finanze, emanato ai sensi dell’articolo 4, comma 2, della legge 431/98, è composta da due membri scelti fra appartenenti alle rispettive organizzazioni firmatarie dell'Accordo territoriale sulla base delle designazioni, rispettivamente, del locatore e del conduttore. L’operato della Commissione è disciplinato dal documento “Procedure di negoziazione e conciliazione stragiudiziale nonché modalità di funzionamento della Commissione”, Allegato G, al citato decreto. La richiesta di intervento della Commissione non determina la sospensione delle obbligazioni contrattuali. La richiesta di attivazione della Commissione non comporta oneri.",
+    "replacement": "La Commissione di cui all’articolo 6 del decreto del Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell’economia e delle finanze, emanato ai sensi dell’articolo 4, comma 2, della legge 431/98, è composta da due membri scelti fra appartenenti alle rispettive organizzazioni firmatarie dell'Accordo territoriale sulla base delle designazioni, rispettivamente, del locatore e del conduttore. L’operato della Commissione è disciplinato dal documento “Procedure di negoziazione e conciliazione stragiudiziale nonché modalità di funzionamento della Commissione”, Allegato E al D.M. 16 gennaio 2017 e Allegato G all’accordo territoriale di Padova. La richiesta di intervento della Commissione non determina la sospensione delle obbligazioni contrattuali. La richiesta di attivazione della Commissione non comporta oneri."
+  },
+  {
+    "owner": "cc",
+    "start": 655936,
+    "end": 657400,
+    "value": "La parte locatrice dichiara di esercitare l'opzione per il sistema denominato \"cedolare secca\" introdotto dall'art.3 del D.Lgs 23/2011 restando pertanto esonerata dall'obbligo di inviare alla parte conduttrice la prevista comunicazione mediante lettera raccomandata e dall'obbligo di corrispondere l'imposta di registro e di bollo. L'opzione in oggetto comporta per il periodo corrispondente alla sua durata, il venir meno dell'obbligo del versamento delle imposte di registro e di bollo relative al presente contratto, comprese quelle dovute sulla risoluzione e sulle proroghe del contratto stesso. Non potrà essere applicata, negli anni di decorrenza del contratto, alcuna maggiorazione del canone, inclusa la variazione dell'ISTAT. Il locatore si riserva tuttavia la facoltà di revocare tale opzione in ciascuna annualità contrattuale successiva a quella in corso, da comunicarsi alla parte conduttrice a mezzo lettera raccomandata con ricevuta di ritorno prima della scadenza dell'annualità contrattuale. Se in futuro la parte locatrice decidesse di revocare l'applicazione di tale regime fiscale, sull'importo annuo del canone dovrà essere pagata l'imposta di registro la cui metà a carico delle parte locatrice e metà a carico della parte conduttrice. In tal caso il canone sarà aggiornato nella misura del 75% della variazione in aumento dell'indice dei prezzi al consumo accertato dall'ISTAT seguendo quanto previsto dalla normativa della cedolare secca.",
+    "replacement": "Il locatore dichiara di optare per la cedolare secca ai sensi dell’art. 3 del d.lgs. 23/2011, verificandone i presupposti ed esercitando l’opzione nelle forme fiscali previste. Per il periodo di efficacia rinuncia a ogni aggiornamento del canone, incluso ISTAT. Le esenzioni dall’imposta di registro e di bollo operano nei limiti di legge, anche in presenza di più locatori. L’eventuale revoca è comunicata al conduttore; cessata l’opzione si applicano il regime ordinario e gli aggiornamenti contrattualmente ammessi, senza recupero degli aumenti rinunciati. Il presente testo non attesta l’esistenza dei requisiti fiscali. Fuori dal regime opzionale, l’aggiornamento pattuito non eccede il 75% dell’incremento ISTAT FOI, su richiesta e nei limiti dell’accordo territoriale."
+  },
+  {
+    "owner": "cc",
+    "start": 657553,
+    "end": 658483,
+    "value": "A tutti gli effetti del presente contratto, comprese la notifica degli atti esecutivi, e ai fini della competenza a giudicare, il conduttore elegge domicilio nei locali a lui locati e, ove egli più non li occupi o comunque detenga, presso l'ufficio di segreteria del Comune ove è situato l'immobile locato. Qualunque modifica al presente contratto non può aver luogo, e non può essere provata, se non con atto scritto. Il locatore ed il conduttore si autorizzano reciprocamente a comunicare a terzi i propri dati personali in relazione ad adempimenti connessi col rapporto di locazione (d.lgs. n. 196/03). Per quanto non previsto dal presente contratto le parti rinviano a quanto in materia disposto dal Codice civile, dalle leggi n. 392/78 e n. 431/98 o comunque dalle norme vigenti e dagli usi locali nonché alla normativa ministeriale emanata in applicazione della legge n. 431/98 ed agli Accordi di cui a gli articoli 2 e 3.",
+    "replacement": "Per le comunicazioni contrattuali le parti utilizzano i recapiti indicati nel contratto, comunicandone tempestivamente le variazioni. Restano ferme le norme sulle notificazioni e sulla competenza inderogabile; non è eletto domicilio presso uffici comunali. Le modifiche contrattuali devono risultare per iscritto. I dati personali sono trattati per la stipula e l’esecuzione del rapporto e per gli obblighi di legge, secondo il Regolamento (UE) 2016/679 e il d.lgs. 196/2003 come modificato. Ciascun titolare fornisce l’informativa degli articoli 13 e 14 GDPR, ove applicabile, e comunica solo i dati necessari ai soggetti legittimati. La firma del contratto non costituisce consenso al marketing. Per quanto non previsto si applicano il codice civile, le leggi 392/1978 e 431/1998 e, per i contratti regolati, il D.M. 16 gennaio 2017 e l’accordo territoriale applicabile."
+  },
+  {
+    "owner": "uc",
+    "start": 662348,
+    "end": 662392,
+    "value": "Il contratto è stipulato per la durata di ",
+    "replacement": "Il contratto è stipulato, per un periodo non superiore a diciotto mesi, per la durata di "
+  },
+  {
+    "owner": "uc",
+    "start": 662676,
+    "end": 663169,
+    "value": "Il conduttore, nel rispetto di quanto previsto dal decreto del Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell’economia e delle finanze, emanato ai sensi dell'articolo 4, comma 2, della legge n. 431/98 - di cui il presente tipo di contratto costituisce l’Allegato D - e dall'Accordo territoriale depositato presso il Comune di Padova, ovvero dall’Accordo integrativo sottoscritto che dichiara la seguente esigenza che giustifica la transitorietà del contratto ",
+    "replacement": "Il conduttore, nel rispetto di quanto previsto dal decreto del Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell’economia e delle finanze, emanato ai sensi dell'articolo 4, comma 2, della legge n. 431/98 - il cui modello transitorio è l’Allegato B, corrispondente all’Allegato D dell’accordo territoriale di Padova - e dall'Accordo territoriale depositato presso il Comune di Padova, ovvero dall’Accordo integrativo sottoscritto che dichiara la seguente esigenza che giustifica la transitorietà del contratto "
+  },
+  {
+    "owner": "uc",
+    "start": 665313,
+    "end": 665638,
+    "value": " mensilità del canone, non imputabile in conto canoni e produttiva di interessi legali, riconosciuti al conduttore al termine della locazione. Il deposito cauzionale così costituito viene reso al termine della locazione previa verifica dello stato dell'unità immobiliare e dell'osservanza di ogni obbligazione contrattuale.",
+    "replacement": " mensilità del canone, comunque non oltre tre, non imputabile in conto canoni e produttiva di interessi legali, corrisposti al conduttore annualmente. Il deposito cauzionale così costituito viene reso al termine della locazione previa verifica dello stato dell'unità immobiliare e dell'osservanza di ogni obbligazione contrattuale."
+  },
+  {
+    "owner": "uc",
+    "start": 666980,
+    "end": 667498,
+    "value": "Le spese di bollo per il presente contratto e per le ricevute conseguenti sono a carico del conduttore. Il locatore provvede alla registrazione del contratto, ove dovuta, dandone comunicazione al conduttore - che corrisponde la quota di sua spettanza, pari alla metà - e all’Amministratore del Condominio ai sensi dell’art. 13 della legge 431/98. Le parti possono delegare alla registrazione del contratto una delle organizzazioni sindacali che abbia prestato assistenza ai fini della stipula del contratto medesimo.",
+    "replacement": "Le spese di bollo per il presente contratto e per le ricevute conseguenti sono a carico del conduttore. Il locatore provvede alla registrazione del contratto, ove dovuta, dandone comunicazione al conduttore - che corrisponde la quota di sua spettanza, pari alla metà - e all’Amministratore del Condominio ai sensi dell’art. 13 della legge 431/98. Le parti possono delegare alla registrazione del contratto una delle organizzazioni sindacali che abbia prestato assistenza ai fini della stipula del contratto medesimo. La registrazione è effettuata nei termini di legge: ove dovuta, entro trenta giorni; la documentata comunicazione segue nei successivi sessanta giorni. Restano le esenzioni per la cedolare secca validamente esercitata."
+  },
+  {
+    "owner": "uc",
+    "start": 670246,
+    "end": 671201,
+    "value": "Il conduttore esonera espressamente il locatore da ogni responsabilità per danni diretti o indiretti che possano derivargli da fatti dei dipendenti del locatore medesimo nonché per interruzioni incolpevoli dei servizi. Il conduttore ha diritto di voto, in luogo del proprietario dell'unità immobiliare locatagli, nelle deliberazioni dell'assemblea condominiale relative alle spese ed alle modalità di gestione dei servizi di riscaldamento e di condizionamento d'aria. Ha inoltre diritto di intervenire, senza voto, sulle deliberazioni relative alla modificazione degli altri servizi comuni. Quanto stabilito in materia di riscaldamento e di condizionamento d'aria si applica anche ove si tratti di edificio non in condominio. In tale caso (e con l'osservanza, in quanto applicabili, delle disposizioni del codice civile sull'assemblea dei condomini) i conduttori si riuniscono in apposita assemblea, convocata dalla proprietà o da almeno tre conduttori.",
+    "replacement": "Le responsabilità del locatore e dei suoi ausiliari restano disciplinate dalla legge; non sono escluse le responsabilità per dolo, colpa grave o violazione di obblighi inderogabili, ai sensi dell’art. 1229 c.c. Il conduttore ha diritto di voto, in luogo del proprietario dell'unità immobiliare locatagli, nelle deliberazioni dell'assemblea condominiale relative alle spese ed alle modalità di gestione dei servizi di riscaldamento e di condizionamento d'aria. Ha inoltre diritto di intervenire, senza voto, sulle deliberazioni relative alla modificazione degli altri servizi comuni. Quanto stabilito in materia di riscaldamento e di condizionamento d'aria si applica anche ove si tratti di edificio non in condominio. In tale caso (e con l'osservanza, in quanto applicabili, delle disposizioni del codice civile sull'assemblea dei condomini) i conduttori si riuniscono in apposita assemblea, convocata dalla proprietà o da almeno tre conduttori."
+  },
+  {
+    "owner": "uc",
+    "start": 672584,
+    "end": 673378,
+    "value": "La Commissione di cui all’articolo 6 del decreto del Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell’economia e delle finanze, emanato ai sensi dell’articolo 4, comma 2, della legge 431/98, è composta da due membri scelti fra appartenenti alle rispettive organizzazioni firmatarie dell'Accordo territoriale sulla base delle designazioni, rispettivamente, del locatore e del conduttore. L’operato della Commissione è disciplinato dal documento “Procedure di negoziazione e conciliazione stragiudiziale nonché modalità di funzionamento della Commissione” Allegato G, al sopracitato decreto. La richiesta di intervento della Commissione non determina la sospensione delle obbligazioni contrattuali. La richiesta di attivazione della Commissione non comporta oneri.",
+    "replacement": "La Commissione di cui all’articolo 6 del decreto del Ministro delle infrastrutture e dei trasporti di concerto con il Ministro dell’economia e delle finanze, emanato ai sensi dell’articolo 4, comma 2, della legge 431/98, è composta da due membri scelti fra appartenenti alle rispettive organizzazioni firmatarie dell'Accordo territoriale sulla base delle designazioni, rispettivamente, del locatore e del conduttore. L’operato della Commissione è disciplinato dal documento “Procedure di negoziazione e conciliazione stragiudiziale nonché modalità di funzionamento della Commissione” Allegato E al D.M. 16 gennaio 2017 e Allegato G all’accordo territoriale di Padova. La richiesta di intervento della Commissione non determina la sospensione delle obbligazioni contrattuali. La richiesta di attivazione della Commissione non comporta oneri."
+  },
+  {
+    "owner": "uc",
+    "start": 673531,
+    "end": 674445,
+    "value": "A tutti gli effetti del presente contratto, comprese la notifica degli atti esecutivi, e ai fini della competenza a giudicare, il conduttore elegge domicilio nei locali a lui locati e, ove egli più non li occupi o comunque detenga, presso l'ufficio di segreteria del Comune ove è situato l'immobile locato. Qualunque modifica al presente contratto non può aver luogo, e non può essere provata, se non con atto scritto. Il locatore ed il conduttore si autorizzano reciprocamente a comunicare a terzi i propri dati personali in relazione ad adempimenti connessi col rapporto di locazione (d.lgs. n. 196/03). Per quanto non previsto dal presente contratto le parti rinviano a quanto in materia disposto dal Codice civile, dalle leggi n. 392/78 e n. 431/98 o comunque dalle norme vigenti e dagli usi locali nonché alla normativa ministeriale emanata in applicazione della legge n. 431/98 ed all'Accordo territoriale.",
+    "replacement": "Per le comunicazioni contrattuali le parti utilizzano i recapiti indicati nel contratto, comunicandone tempestivamente le variazioni. Restano ferme le norme sulle notificazioni e sulla competenza inderogabile; non è eletto domicilio presso uffici comunali. Le modifiche contrattuali devono risultare per iscritto. I dati personali sono trattati per la stipula e l’esecuzione del rapporto e per gli obblighi di legge, secondo il Regolamento (UE) 2016/679 e il d.lgs. 196/2003 come modificato. Ciascun titolare fornisce l’informativa degli articoli 13 e 14 GDPR, ove applicabile, e comunica solo i dati necessari ai soggetti legittimati. La firma del contratto non costituisce consenso al marketing. Per quanto non previsto si applicano il codice civile, le leggi 392/1978 e 431/1998 e, per i contratti regolati, il D.M. 16 gennaio 2017 e l’accordo territoriale applicabile."
+  },
+  {
+    "owner": "ac",
+    "start": 606763,
+    "end": 607147,
+    "value": ") non può venire sospeso o ritardato da pretese o eccezioni del conduttore, quale ne sia il titolo. Il mancato puntuale pagamento, per qualsiasi causa, anche di una sola rata del canone, nonché di quant'altro dovuto, ove di importo pari almeno di una mensilità del canone, costituisce in mora il conduttore, fatto salvo quanto previsto dall'art 55 della legge 27 luglio 1978 n. 392.",
+    "replacement": ") restano dovuti alle scadenze pattuite. Sono salve le eccezioni consentite dalla legge. Per la risoluzione dovuta a morosità e l’eventuale sanatoria giudiziale si applicano gli articoli 5 e 55 della legge 392/1978: canone non pagato decorsi venti giorni dalla scadenza oppure oneri accessori non pagati per importo superiore a due mensilità. Non è consentito il rilascio forzoso fuori dalle procedure di legge."
+  },
+  {
+    "owner": "cc",
+    "start": 650153,
+    "end": 650607,
+    "value": "Il pagamento del canone o di quant'altro dovuto anche per oneri accessori non può venire sospeso o ritardato da pretese o eccezioni del conduttore, quale ne sia il titolo. Il mancato puntuale pagamento, per qualsiasi causa, anche di una sola rata del canone (nonché di quant'altro dovuto, ove di importo pari almeno ad una mensilità del canone), costituisce in mora il conduttore, fatto salvo quanto previsto dall'articolo 5 e 55 della legge n. 392/78.",
+    "replacement": "Il canone e gli oneri accessori restano dovuti alle scadenze pattuite. Sono salve le eccezioni consentite dalla legge. Per la risoluzione dovuta a morosità e l’eventuale sanatoria giudiziale si applicano gli articoli 5 e 55 della legge 392/1978: canone non pagato decorsi venti giorni dalla scadenza oppure oneri accessori non pagati per importo superiore a due mensilità. Non è consentito il rilascio forzoso fuori dalle procedure di legge."
+  },
+  {
+    "owner": "uc",
+    "start": 667571,
+    "end": 668025,
+    "value": "Il pagamento del canone o di quant'altro dovuto anche per oneri accessori non può venire sospeso o ritardato da pretese o eccezioni del conduttore, qualunque ne sia il titolo. Il mancato puntuale pagamento, per qualunque causa, anche di una sola rata del canone (nonché di quant'altro dovuto, ove di importo pari almeno ad una mensilità del canone), costituisce in mora il conduttore, fatto salvo quanto previsto dall’articolo 55 della legge n. 392/78.",
+    "replacement": "Il canone e gli oneri accessori restano dovuti alle scadenze pattuite. Sono salve le eccezioni consentite dalla legge. Per la risoluzione dovuta a morosità e l’eventuale sanatoria giudiziale si applicano gli articoli 5 e 55 della legge 392/1978: canone non pagato decorsi venti giorni dalla scadenza oppure oneri accessori non pagati per importo superiore a due mensilità. Non è consentito il rilascio forzoso fuori dalle procedure di legge."
+  }
+]

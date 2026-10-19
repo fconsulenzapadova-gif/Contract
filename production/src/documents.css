@@ -1,0 +1,89 @@
+/* Preserve the supplied PNG: no recolouring, cropping or stretching. */
+.contract-header { margin-bottom: 5mm; }
+.contract-logo { width: 42mm !important; height: auto !important; max-height: 16mm !important; object-fit: contain; }
+.mediation-document { width: 100%; min-width: 0; }
+.med-header { display: flex; justify-content: space-between; align-items: center; gap: 8mm; padding-bottom: 4mm; margin-bottom: 5mm; border-bottom: 1px solid #bce4f4; }
+.med-header-meta { text-align: right; font-size: 7pt; font-weight: 700; letter-spacing: .08em; color: #354753; }
+.med-header-meta span { display: inline-block; font-size: 6.8pt; font-weight: 400; letter-spacing: 0; margin-top: 1mm; }
+.med-title { margin: 1mm 0 6mm; padding-bottom: 4mm; border-bottom: 2px solid #bce4f4; }
+.med-eyebrow { font-size: 7pt; font-weight: 600; letter-spacing: .18em; color: #526575; }
+.med-title h1 { font-size: 24pt; font-weight: 600; letter-spacing: -.035em; line-height: 1.15; margin: 2mm 0; color: #192a36; }
+.med-title p { font-size: 9pt; color: #526575; }
+.med-block { margin: 0 0 3.5mm; color: #15212a; }
+.med-block p { margin: 0 0 2mm; text-align: left; orphans: 3; widows: 3; }
+.med-section { display: flex; gap: 3mm; align-items: baseline; margin: 0 0 3mm; padding: 2mm 0; border-bottom: 1px solid #d8e6ec; font-size: 11pt; font-weight: 650; color: #203947; }
+.med-section > span { min-width: 6mm; color: #466f82; font-size: 8pt; letter-spacing: .07em; }
+.med-subheading { font-size: 9.5pt; font-weight: 650; margin: 0 0 2mm; }
+.med-fields { display: flex; flex-wrap: wrap; gap: 2mm 4%; margin-bottom: 2.2mm; }
+.med-field { display: block; flex: 1 1 100%; min-width: 0; margin: 0; }
+.med-field-label { display: block; font-size: 7pt; font-weight: 500; color: #425c69; line-height: 1.25; margin-bottom: .7mm; }
+.med-field .inline-input { width: 100%; display: block; max-width: 100%; box-sizing: border-box; border: 0; border-bottom: 1px solid #aabec8; border-radius: 0; min-height: 5.5mm; font: inherit; font-weight: 500; color: #101c24; background: #f6fafc; padding: .8mm 1mm; }
+.med-field .inline-input:focus { outline: 2px solid #93cfe6; outline-offset: 1px; }
+.med-insurance { margin: 1mm 0 2mm; padding: 1.5mm 2mm .5mm; border: 1px solid #d8e6ec; }
+.med-insurance-title { margin-bottom: 1.5mm; font-size: 7pt; font-weight: 600; color: #425c69; }
+.med-insurance .med-fields { margin-bottom: 0; }
+.med-insurance .med-field { flex-grow: 1; }
+/* The PDF exporter replaces inputs with spans, so restore writing lines there. */
+.a4-page .pdf-static-field { border-bottom: 1px solid #aabec8 !important; box-sizing: border-box; }
+.med-long { margin: 2mm 0 3mm; }
+.med-long textarea { resize: none; overflow: hidden; white-space: pre-wrap; }
+.med-choices { display: flex; flex-wrap: wrap; gap: 1.5mm 5mm; margin: 2mm 0 3mm; }
+.med-choice { padding: 1mm 0; text-align: left; display: inline-flex; align-items: baseline; gap: 2mm; font: inherit; color: inherit; background: transparent; border: 0; cursor: pointer; }
+.med-choice:focus-visible { outline: 2px solid #93cfe6; outline-offset: 2px; }
+.med-check { font-family: Arial, sans-serif; font-size: 11pt; }
+.med-signatures { display: flex; gap: 8mm; margin: 6mm 0 3mm; font-size: 8pt; }
+.med-signatures > div { flex: 1; }
+.med-signature-line { height: 8mm; border-bottom: 1px solid #788d97; margin-bottom: 1.5mm; }
+.med-editor-note { max-width: 440px; font-size: 12px; line-height: 1.4; color: #516572; }
+.pdf-static-field { overflow-wrap: anywhere; }
+.document-page-number { position: absolute; bottom: 6mm; right: 15mm; font-size: 7pt; color: #596b75; }
+@media print {
+  .mediation-document { width: auto; }
+  .med-field .inline-input { background: transparent; }
+  .med-editor-note { display: none; }
+  .med-choice { color: #000; }
+}
+/* gemutcapital.com: Minion, warm ink, quiet rules, pale blue identity.
+   Local font lookup only: proprietary OTF files are not redistributed. */
+@font-face { font-family: 'Gemut Minion'; src: local('Minion Pro'), local('MinionPro-Regular'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Gemut Minion'; src: local('Minion Pro Semibold'), local('MinionPro-Semibold'); font-style: normal; font-weight: 600 900; font-display: swap; }
+@font-face { font-family: 'Gemut Minion'; src: local('Minion Pro Italic'), local('MinionPro-It'); font-style: italic; font-weight: 400; font-display: swap; }
+:root { --primary: #637d88; --primary-light: #b3e5fc; }
+.a4-page:not(.allegato-b-page), .a4-page-measure {
+  font-family: 'Gemut Minion', 'Minion Pro', Georgia, serif !important;
+  font-size: 10pt !important; line-height: 1.38 !important;
+  color: #12130f; border: 1px solid #d8d4ca; border-left: 1px solid #d8d4ca;
+  padding: 12mm 15mm 15mm !important;
+}
+.a4-page-measure { border-color: transparent; }
+.a4-page:not(.allegato-b-page) *, .a4-page-measure * { font-family: inherit; }
+.a4-page:not(.allegato-b-page) p, .a4-page-measure p { font-size: 10pt !important; line-height: 1.38; margin-bottom: 2.5mm !important; text-align: left !important; }
+.a4-page:not(.allegato-b-page) h1, .a4-page-measure h1 { text-transform: none; font-size: 22pt; font-weight: 600; line-height: 1.12; text-align: left; margin: 2mm 0 5mm; }
+.a4-page:not(.allegato-b-page) h2, .a4-page-measure h2 { margin: 3mm 0 2mm; font-size: 12pt !important; }
+.a4-page:not(.allegato-b-page) h3, .a4-page-measure h3 { color: #12130f; font-size: 11pt !important; border-bottom: 1px solid #d8d4ca !important; padding-bottom: 1.5mm; }
+.gemut-document-heading { border-bottom: 1px solid #b3e5fc; padding-bottom: 3mm; margin-bottom: 4mm; }
+.gemut-document-heading > div { background: transparent !important; color: #12130f !important; text-align: left !important; text-transform: none !important; font-size: 17pt !important; letter-spacing: 0 !important; padding: 0 !important; }
+.gemut-document-heading > div.contract-header { margin-bottom: 2mm; }
+.gemut-document-heading .contract-logo { display:block; width:40mm !important; }
+.a4-page:not(.allegato-b-page) .inline-input, .a4-page-measure .inline-input { color:#12130f; background:#f7f5ef; border-bottom-color:#bcb8af; font-size:inherit; border-radius:0; max-width:100%; }
+.a4-page:not(.allegato-b-page) textarea.inline-input, .a4-page-measure textarea.inline-input { width:100%; box-sizing:border-box; resize:vertical; min-height:7mm; padding:1mm; white-space:pre-wrap; }
+.med-header-meta, .med-field-label, .med-title p, .med-eyebrow { color:#666861; }
+.med-title h1, .med-section, .med-block { color:#12130f; }
+.med-title, .med-header { border-color:#b3e5fc; }
+.med-section { border-color:#d8d4ca; }
+.med-fields { gap:2mm 3%; }
+.med-field { margin-bottom:2mm; }
+.document-page-number { color:#666861; font-variant-numeric:tabular-nums; }
+.allegato-b-slot, .allegato-b-slot input { font-family:'Gemut Minion','Minion Pro',Georgia,serif !important; }
+@media print {
+ .a4-page:not(.allegato-b-page), .a4-page-measure { border:none !important; box-shadow:none; }
+ .a4-page:not(.allegato-b-page) .inline-input { background:transparent; }
+}
+
+.gemut-document-heading .contract-header { justify-content:flex-start; border:0; padding:0; }
+.allegato-brand-logo { position:absolute; bottom:3mm; right:9mm; width:23mm; height:auto; pointer-events:none; }
+
+@media print {
+ .a4-document-container { display:block !important; }
+ .a4-page { break-inside:avoid !important; page-break-inside:avoid !important; }
+}

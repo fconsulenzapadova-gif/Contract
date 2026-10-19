@@ -1,0 +1,47 @@
+/* Allegato B is explicitly excluded. Geometry equals the PDF on every viewport. */
+.adaptive-document { width:210mm; min-width:210mm; flex:none; }
+.adaptive-document .a4-page,.adaptive-document .a4-page-measure { width:210mm!important; min-width:210mm!important; height:297mm!important; min-height:297mm!important; box-sizing:border-box!important; flex:none; padding:12mm 15mm 15mm!important; font-size:10pt!important; }
+.adaptive-document > .a4-page { margin-bottom:8mm; }
+.adaptive-document .a4-page p,.adaptive-document .a4-page-measure p { text-align:justify!important; text-align-last:auto; word-break:normal; overflow-wrap:normal; hyphens:none; orphans:3; widows:3; }
+.adaptive-document p[style*="text-align: center"],.adaptive-document p[style*="text-align:center"] { text-align:center!important; }
+.adaptive-document p[style*="text-align: right"],.adaptive-document p[style*="text-align:right"] { text-align:right!important; }
+.adaptive-document .inline-input,.adaptive-document .inline-select { white-space:nowrap; text-overflow:clip; box-sizing:border-box; vertical-align:baseline; font-size:inherit!important; transition:none!important; }
+.adaptive-document .contract-entry-section { gap:0; }
+.adaptive-document .contract-entry-group { box-shadow:none!important; background:transparent!important; border:0!important; border-radius:0!important; margin:0 0 .35rem!important; padding:0!important; }
+.adaptive-document textarea.inline-input { white-space:pre-wrap; overflow:hidden; width:100%!important; }
+.adaptive-document .pdf-filled-field { white-space:nowrap; word-break:normal!important; overflow-wrap:normal!important; border-bottom:0!important; }
+.adaptive-document .pdf-empty-field { border-bottom:1px solid #bcb8af!important; }
+.adaptive-document .med-field-label { text-align:left; }
+.adaptive-document .contract-individual-signature { border:0!important; text-align:left; page-break-inside:avoid; break-inside:avoid; }
+.adaptive-document .a4-flow-block { display:flow-root; }
+.adaptive-document .document-page-number { bottom:6mm; right:15mm; }
+.contract-editor-tools { display:grid; gap:6px; width:min(700px,100%); font-size:12px; line-height:1.35; }
+.contract-draft-tools { display:flex; flex-wrap:wrap; align-items:center; gap:6px; }
+.contract-editor-tools details { background:#f7f5ef; padding:5px 8px; border:1px solid #d8d4ca; border-radius:3px; }
+.contract-editor-tools summary { cursor:pointer; font-weight:600; }
+.contract-editor-tools details[open] { max-height:45vh; overflow:auto; }
+.contract-editor-tools .contract-party-controls { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+.contract-editor-tools .inline-input { color:#12130f; max-width:100%; background:white; border:1px solid #bcb8af; }
+.contract-editor-tools .contract-fiscal-assistant { margin:8px 0; padding:8px; border-top:1px solid #bcb8af; }
+@media print {
+ .contract-editor-tools,.a4-measure-shell { display:none!important; }
+ .adaptive-document > .a4-page { margin:0!important; }
+}
+
+.adaptive-document .a4-page.visit-sheet,.adaptive-document .a4-page-measure.visit-sheet { padding:16mm 21mm 18mm!important; }
+.adaptive-document .visit-sheet .document-page-number { bottom:3mm; right:21mm; }
+
+.adaptive-document .contract-inline-value { white-space:nowrap; }
+
+.adaptive-document .pdf-static-field { box-sizing:border-box; }
+.adaptive-document .inline-input,.adaptive-document .pdf-static-field { vertical-align:bottom!important; }
+
+.adaptive-document .contract-inline-value { display:inline-block; max-width:100%; }
+
+.contract-native-print-copy { display:none; }
+@media print {
+ body.contract-native-print > :not(.contract-native-print-copy) { display:none!important; }
+ body.contract-native-print > .contract-native-print-copy { display:block!important; }
+ .contract-native-print-copy > .a4-page { break-after:page; page-break-after:always; box-shadow:none; border:none!important; }
+ .contract-native-print-copy > .a4-page:last-child { break-after:auto; page-break-after:auto; }
+}

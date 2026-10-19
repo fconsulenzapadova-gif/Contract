@@ -1,0 +1,12 @@
+{
+  "versions": {
+    "tesseract.js": "7.0.0",
+    "tesseract.js-core": "7.0.0",
+    "pdfjs-dist": "5.6.205"
+  },
+  "languages": [
+    "ita",
+    "eng"
+  ],
+  "modelsSource": "https://cdn.jsdelivr.net/npm/@tesseract.js-data/{ita,eng}@1.0.0/4.0.0_best_int/"
+}

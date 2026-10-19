@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "npm run build && python3 scripts/serve.py",
+    "build": "tsc -b && python3 production/build.py && vite build && python3 scripts/integrate-sharing.py",
+    "typecheck": "tsc -b",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs production/tests/*.test.mjs",
+    "lint": "eslint src/sharing vite.config.ts",
+    "preview": "python3 scripts/serve.py"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

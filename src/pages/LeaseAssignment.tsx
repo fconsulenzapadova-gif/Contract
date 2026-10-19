@@ -26,7 +26,7 @@ export const LeaseAssignment: React.FC = () => {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
     setData(prev => ({ ...prev, [name]: value }));
   };
 

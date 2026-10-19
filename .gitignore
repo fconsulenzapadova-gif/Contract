@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+release-manifest.json
+qa-sharing/
+__pycache__/
+*.py[cod]
