@@ -48,6 +48,6 @@ Il progetto Vercel esistente è collegato a `fconsulenzapadova-gif/Contract`, pr
 
 ## Proposta d’acquisto dal PDF originale
 
-Dal 23 ottobre 2026 `/purchase-proposal` riproduce le due pagine del PDF fornito, con 31 campi nei rispettivi spazi e caselle libero/locato. Bozze, stampa A4 e compilazione su smartphone sono supportate. La stampa segnala i testi che superano gli spazi disponibili. Sorgenti in `src/purchase/`, integrazione deterministica in `scripts/integrate-purchase.py`, riferimento e asset in `public/purchase-template/`.
+Dal 23 ottobre 2026 `/purchase-proposal` riproduce le due pagine del PDF fornito, con 32 campi nei rispettivi spazi e caselle libero/locato. Bozze, stampa A4 e compilazione su smartphone sono supportate. La stampa segnala i testi che superano gli spazi disponibili. Sorgenti in `src/purchase/`, integrazione deterministica in `scripts/integrate-purchase.py`, riferimento e asset in `public/purchase-template/`.
 
 Verifica specifica: `node scripts/qa-purchase-template.mjs` (con `PLAYWRIGHT_MODULE_PATH` se Playwright è fornito dal runtime). Report e PDF sintetici in `qa-purchase/`, ignorata da Git. Dettagli in `docs/proposta-acquisto-2026-10-23.md`.

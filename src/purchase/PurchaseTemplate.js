@@ -32,6 +32,7 @@ export const FIELDS = [
  ['acceptanceReceipt','Data, ora e modalità di ricezione dell’accettazione; firma del Proponente per ricevuta',2,42.75,430.5,510,23.5],
  ['placeDate','Proponente: luogo e data',2,99,520.5,250,13],
  ['sellerPlaceDate','Venditore: luogo e data',2,108,630.5,84,12],
+ ['receiptPlaceDate','Presa visione accettazione: luogo e data',2,108,719.75,84,12],
 ];
 const fieldNames=new Set(FIELDS.map(f=>f[0]));
 const draftKey='gemut.contract.draft.v1:/purchase-proposal';
@@ -145,6 +146,14 @@ export function createPurchaseTemplate(React,Layout,Icon,useDraft) {
     data.statoImm===status&&h('path',{d:'M2.5 5L4.2 7.3L7.6 2.5',fill:'none',stroke:'#688897',strokeWidth:.7})));
   const preview=h('div',{ref:root,className:'purchase-template-pages'},[1,2].map(number=>h('article',{key:number,className:'a4-page purchase-template-page','aria-label':`Modulo di proposta d’acquisto, pagina ${number} di 2`},
    h('img',{className:'purchase-template-background',src:`/purchase-template/page-${number}.svg`,alt:'',draggable:false}),
+   number===2&&h('svg',{className:'purchase-acceptance-receipt',viewBox:'0 0 510 75',style:position(['','',2,42.75,675,510,75]),role:'group','aria-label':'Presa visione dell’avvenuta accettazione'},
+    h('rect',{x:.75,y:.75,width:508.5,height:73.5,fill:'white',stroke:'black',strokeWidth:1.5}),
+    h('text',{x:255,y:16.5,textAnchor:'middle',className:'purchase-receipt-title'},'PRESA VISIONE DELL’AVVENUTA ACCETTAZIONE'),
+    h('text',{x:8.88,y:33},'Il sottoscritto Proponente prende visione dell’avvenuta accettazione del Venditore.'),
+    h('text',{x:8.88,y:54},'Luogo e data:'),
+    h('line',{x1:65.25,y1:55,x2:150.25,y2:55,stroke:'black',strokeWidth:.5}),
+    h('text',{x:165.75,y:54},'Firma proponente:'),
+    h('line',{x1:253.5,y1:55,x2:338.5,y2:55,stroke:'black',strokeWidth:.5})),
    ...FIELDS.filter(f=>f[2]===number).map(f=>input(f)),
    number===1&&h('div',{role:'radiogroup','aria-label':'Stato immobile'},check('libero',157.95),check('locato',200.32)))));
   return h('div',{className:`purchase-template-workspace purchase-tab-${tab}`,onClickCapture:event=>{

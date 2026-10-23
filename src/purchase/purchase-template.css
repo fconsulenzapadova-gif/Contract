@@ -1,6 +1,8 @@
 .purchase-template-pages {width:210mm;min-width:210mm;flex:none;}
 .purchase-template-pages > .a4-page.purchase-template-page {position:relative;width:210mm!important;min-width:210mm!important;height:297mm!important;min-height:297mm!important;padding:0!important;margin:0 0 8mm!important;border:0!important;box-sizing:border-box!important;overflow:hidden;background:#fff;}
 .purchase-template-background {position:absolute;inset:0;display:block;width:100%!important;height:100%!important;max-width:none!important;pointer-events:none;user-select:none;}
+.purchase-acceptance-receipt {position:absolute;display:block;overflow:visible;font-family:inherit;font-size:10px;line-height:1;pointer-events:none;}
+.purchase-acceptance-receipt .purchase-receipt-title {font-size:9px;font-weight:600;}
 .purchase-template-page .purchase-template-field,.purchase-template-page .purchase-template-value {position:absolute;box-sizing:border-box!important;margin:0!important;border:0!important;border-radius:0!important;padding:0 1px!important;font-family:'Gemut Minion','Minion Pro',Georgia,serif!important;font-size:10pt!important;line-height:12pt!important;font-weight:400!important;color:#000!important;background:transparent!important;text-align:left!important;white-space:pre-wrap;overflow-wrap:break-word;resize:none;outline:0;box-shadow:none;min-width:0!important;min-height:0!important;max-width:none!important;max-height:none!important;vertical-align:top;}
 .purchase-template-page input.purchase-template-field {white-space:nowrap;}
 .purchase-template-page .purchase-template-field:focus {background:#eaf6fc!important;outline:1px solid #6a96a9!important;}

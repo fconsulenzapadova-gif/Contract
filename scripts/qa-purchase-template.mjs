@@ -13,7 +13,7 @@ page.on('pageerror',e=>errors.push(e.message));
 try{
  await page.goto(origin+'/purchase-proposal',{waitUntil:'networkidle'});
  assert.equal(await page.locator('.purchase-template-page').count(),2,'The proposal must use the two exact source pages');
- assert.equal(await page.locator('.purchase-template-field').count(),31);
+ assert.equal(await page.locator('.purchase-template-field').count(),32);
  assert.equal(await page.getByRole('radio',{name:'Immobile libero',exact:true}).getAttribute('aria-checked'),'true');
  async function print(name){
   const count=await page.evaluate(()=>window.__purchasePrints.length);
@@ -23,12 +23,18 @@ try{
   const printPage=await context.newPage();await printPage.setContent(html,{waitUntil:'networkidle'});await printPage.evaluate(()=>document.fonts.ready);
   await printPage.emulateMedia({media:'print'});
   assert.equal(await printPage.locator('.purchase-template-page').count(),2);
+  const receipt=printPage.locator('.purchase-acceptance-receipt');
+  assert.equal(await receipt.count(),1,'Receipt box must appear in the exported PDF');
+  const geometry=await receipt.evaluate(node=>{const rect=node.getBoundingClientRect(),paper=node.closest('.a4-page').getBoundingClientRect();return {bottom:rect.bottom-paper.top,height:paper.height};});
+  assert(geometry.bottom<geometry.height-50,'The receipt box must leave room for the existing page footer');
   assert.equal(await printPage.locator('.purchase-template-field').count(),0,'Export must use complete static values');
   await printPage.pdf({path:path.join(out,name+'.pdf'),format:'A4',preferCSSPageSize:true,printBackground:true,margin:{top:'0',right:'0',bottom:'0',left:'0'}});
   await printPage.close();return html;
  }
+ assert.equal(await page.locator('.purchase-acceptance-receipt').count(),1);
+ assert((await page.locator('.purchase-acceptance-receipt').textContent()).includes('PRESA VISIONE DELL’AVVENUTA ACCETTAZIONE'));
  await print('vuoto');
- const values={vNome:'Lucia Bianchi',vCF:'BNCLCU80A41G224X',vCitta:'Padova',p1Nome:'Mario Rossi',p1NatoIl:'01/01/1980',p1ResidenteA:'Padova',p1Via:'Via Roma 12',p1CF:'RSSMRA80A01G224X',p1Email:'mario@example.com',immComune:'Padova',immVia:'Via Verdi',immCivico:'24',immComposizione:'Appartamento con due camere e garage',c1F:'12',c1M:'345',c1S:'6',canoneAnnuo:'8.400',prezzoOfferto:'250.000',pag1Importo:'10.000',pag1AssegnoNum:'123456789',attoEntroIl:'31/12/2026',attoNotaio:'Notaio di prova',irrevocabileFino:'30/10/2026',note:'Nota di prova',documents:'APE e planimetria visionati',defects:'Da verificare con tecnico incaricato',payments:'Saldo di euro 240.000 al rogito',conditions:'Mutuo di euro 150.000 entro il 30/11/2026',acceptanceReceipt:'PEC del 28/10/2026 ore 12:00',placeDate:'Padova, 23/10/2026',sellerPlaceDate:'Padova, 24/10/2026'};
+ const values={vNome:'Lucia Bianchi',vCF:'BNCLCU80A41G224X',vCitta:'Padova',p1Nome:'Mario Rossi',p1NatoIl:'01/01/1980',p1ResidenteA:'Padova',p1Via:'Via Roma 12',p1CF:'RSSMRA80A01G224X',p1Email:'mario@example.com',immComune:'Padova',immVia:'Via Verdi',immCivico:'24',immComposizione:'Appartamento con due camere e garage',c1F:'12',c1M:'345',c1S:'6',canoneAnnuo:'8.400',prezzoOfferto:'250.000',pag1Importo:'10.000',pag1AssegnoNum:'123456789',attoEntroIl:'31/12/2026',attoNotaio:'Notaio di prova',irrevocabileFino:'30/10/2026',note:'Nota di prova',documents:'APE e planimetria visionati',defects:'Da verificare con tecnico incaricato',payments:'Saldo di euro 240.000 al rogito',conditions:'Mutuo di euro 150.000 entro il 30/11/2026',acceptanceReceipt:'PEC del 28/10/2026 ore 12:00',placeDate:'Padova, 23/10/2026',sellerPlaceDate:'Padova, 24/10/2026',receiptPlaceDate:'Padova, 25/10/2026'};
  for(const [name,value] of Object.entries(values))await page.locator(`[name="${name}"]`).fill(value);
  await page.getByRole('radio',{name:'Immobile locato',exact:true}).click();
  const html=await print('compilato');
@@ -71,7 +77,7 @@ try{
  await page.reload({waitUntil:'networkidle'});
  const mobile=await context.newPage();await mobile.setViewportSize({width:390,height:844});
  await mobile.goto(origin+'/purchase-proposal',{waitUntil:'networkidle'});
- assert.equal(await mobile.locator('.purchase-mobile-editor input,.purchase-mobile-editor textarea').count(),31);
+ assert.equal(await mobile.locator('.purchase-mobile-editor input,.purchase-mobile-editor textarea').count(),32);
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
  await mobile.getByLabel('Proponente: nome e cognome',{exact:true}).first().fill('Maria prova smartphone');
  await mobile.getByRole('button',{name:'Anteprima',exact:true}).click();
@@ -80,6 +86,6 @@ try{
  await mobile.waitForFunction(()=>window.__purchasePrints.length>0);
  assert((await mobile.evaluate(()=>window.__purchasePrints.at(-1))).includes('Maria prova smartphone'));
  assert.deepEqual(errors,[]);
- await fs.writeFile(path.join(out,'report.json'),JSON.stringify({pass:true,origin,fields:31,pages:2,drafts:true,nativePrint:true,overflowGuard:true,mobile:true,errors},null,2));
- console.log('PASS: exact two-page proposal, 31 fields, drafts, print, overflow guard, mobile');
+ await fs.writeFile(path.join(out,'report.json'),JSON.stringify({pass:true,origin,fields:32,pages:2,drafts:true,nativePrint:true,overflowGuard:true,mobile:true,errors},null,2));
+ console.log('PASS: exact two-page proposal, 32 fields, drafts, print, overflow guard, mobile');
 }finally{await browser.close();}
