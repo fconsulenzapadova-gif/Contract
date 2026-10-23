@@ -45,3 +45,9 @@ Se Playwright è fornito dal runtime dell'ambiente, impostare `PLAYWRIGHT_MODULE
 ## Rilascio
 
 Il progetto Vercel esistente è collegato a `fconsulenzapadova-gif/Contract`, produzione `main`. Prima del push eseguire i controlli sopra; verificare lo stato READY del rilascio e ripetere le prove sull'URL pubblico. Non creare un altro progetto Vercel.
+
+## Proposta d’acquisto dal PDF originale
+
+Dal 23 ottobre 2026 `/purchase-proposal` riproduce le due pagine del PDF fornito, con 31 campi nei rispettivi spazi e caselle libero/locato. Bozze, stampa A4 e compilazione su smartphone sono supportate. La stampa segnala i testi che superano gli spazi disponibili. Sorgenti in `src/purchase/`, integrazione deterministica in `scripts/integrate-purchase.py`, riferimento e asset in `public/purchase-template/`.
+
+Verifica specifica: `node scripts/qa-purchase-template.mjs` (con `PLAYWRIGHT_MODULE_PATH` se Playwright è fornito dal runtime). Report e PDF sintetici in `qa-purchase/`, ignorata da Git. Dettagli in `docs/proposta-acquisto-2026-10-23.md`.

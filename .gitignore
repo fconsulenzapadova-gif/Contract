@@ -27,3 +27,4 @@ release-manifest.json
 qa-sharing/
 __pycache__/
 *.py[cod]
+qa-purchase/
