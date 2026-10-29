@@ -1,69 +1,90 @@
 import type {ComponentType, ReactNode} from 'react';
-import {CHANNELS, MATERIAL_KINDS, MAX_MATERIALS, FIELD_LIMITS, normalizeSharingData, createMaterial, updateMaterial, contentIssues} from './model';
-import type {SharingData} from './model';
+import {CHANNELS, MATERIAL_KINDS, TEXT_FIELDS, normalizeSharingData, createMaterial, updateMaterial} from './model';
+import type {SharingData, SharingTextField} from './model';
+import {createTextMeasurer, paginateContinuationEntries, continuationPages} from '../purchase/Continuation.js';
+import type {ContinuationEntry, ContinuationFragment} from '../purchase/Continuation.js';
 import './sharing.css';
 
 type Runtime = typeof import('react');
 type DraftHook = <T>(runtime: Runtime, slot: string, initial: T, normalize: (value: unknown) => T) => [T, (value: T | ((previous: T) => T)) => void];
 interface LayoutProps {title: string; icon: ReactNode; preview: ReactNode; clientName?: string}
 
+const fieldLabels: Record<SharingTextField,string> = {name:'Nome e cognome',phone:'Telefono',email:'Email',address:'Indirizzo immobile',reference:'Riferimento immobile',consultant:'Consulente Gemüt',otherChannel:'Altro canale',sharingDate:'Data condivisione o richiesta',placeDate:'Luogo e data della conferma',privacyPlaceDate:'Luogo e data della presa visione privacy'};
+const deliveryLabel=(status: string)=>status==='sent'?'Già trasmesso / presentato':status==='pending'?'Da trasmettere dopo la firma':'Da indicare';
+
 /** Uses the existing application's React instance, draft store and PDF layout. */
 export function createPropertySharing(React: Runtime, Layout: ComponentType<LayoutProps>, Icon: ComponentType<{size: number}>, useContractDraft: DraftHook, installNativePrint: (root: HTMLElement) => () => void) {
+  const SharingPages=({rootRef,children}: {rootRef:import('react').Ref<HTMLDivElement>;children:ReactNode;identityTargets?:unknown[]}) => <div ref={rootRef} className="sharing-pages">{children}</div>;
   return function PropertySharing({closeSidebar}: {closeSidebar: (open: boolean) => void}) {
     const [data, setData] = useContractDraft(React, 'document', normalizeSharingData({}), normalizeSharingData);
     const [tab, setTab] = React.useState<'edit' | 'preview'>('edit');
-    const [notice, setNotice] = React.useState('');
+    const [expanded, setExpanded] = React.useState<SharingTextField | string | null>(null);
+    const [plan,setPlan] = React.useState<{references:Record<string,string>;pages:ContinuationFragment[][]}>({references:{},pages:[]});
     const previewRef = React.useRef<HTMLDivElement>(null);
     React.useEffect(() => {
-      if (window.innerWidth <= 760) closeSidebar(false);
+      if (window.innerWidth <= 1100) closeSidebar(false);
     }, [closeSidebar]);
-    React.useEffect(() => {
-      if (!previewRef.current) return;
-      const dispose = installNativePrint(previewRef.current);
-      const guardNativePrint = () => {
-        const copy = document.querySelector<HTMLElement>('.contract-native-print-copy');
-        if (!copy) return;
-        const overflow = Array.from(copy.querySelectorAll('.sharing-page-body')).some(body => body.scrollHeight > body.clientHeight + 1);
-        if (!contentIssues(data).length && !overflow) return;
-        const message = document.createElement('p');
-        message.className = 'sharing-print-error';
-        message.textContent = 'PDF non generato: il contenuto supera i limiti delle due pagine A4. Torna alla scheda, abbrevia i campi o suddividi i materiali prima di stampare.';
-        copy.replaceChildren(message);
+    React.useEffect(() => previewRef.current ? installNativePrint(previewRef.current) : undefined, []);
+    React.useLayoutEffect(() => {
+      let cancelled=false;
+      const calculate=()=>{
+        if(cancelled)return;
+        const measure=createTextMeasurer(),entries:ContinuationEntry[]=[],references:Record<string,string>={};
+        try {
+          for(const [index,key] of TEXT_FIELDS.entries()){
+            const width=['phone','email','reference','consultant','placeDate','privacyPlaceDate'].includes(key)?240:493;
+            if(!data[key]||measure.height(data[key],width,9.2,11.78)<=(key==='address'?24:12))continue;
+            const id='A'+(index+1);references[key]=id;
+            entries.push({key,id,label:fieldLabels[key],text:data[key],context:'Scheda di condivisione immobiliare · '+(key==='privacyPlaceDate'?'Informativa privacy, pagina 2':'Pagina 1')});
+          }
+          data.materials.forEach((row,index)=>{
+            if(index<3&&measure.height(row.description,248,8.5,10.88)<=22)return;
+            const key='material:'+row.id,id='M'+(index+1);references[key]=id;
+            entries.push({key,id,label:'Materiale '+(index+1),text:row.description||'Descrizione non indicata.',context:`${row.kind||'Tipo da indicare'} · ${deliveryLabel(row.status)}`});
+          });
+          setPlan({references,pages:paginateContinuationEntries(entries,measure)});
+        } finally {measure.dispose();}
       };
-      window.addEventListener('beforeprint', guardNativePrint);
-      return () => { dispose(); window.removeEventListener('beforeprint', guardNativePrint); };
-    }, [data]);
-    const change = (key: keyof typeof FIELD_LIMITS, value: string) => setData(previous => ({...previous, [key]: value}));
-    const issues = contentIssues(data);
-    const field = (key: keyof typeof FIELD_LIMITS, label: string, type = 'text') => <label className="sharing-input-label" key={key}>
-      <span>{label}</span><input name={key} type={type} value={data[key]} maxLength={FIELD_LIMITS[key]}
-        onChange={event => change(key, event.target.value)} autoComplete="off" />
-    </label>;
-    const value = (label: string, content: string) => <div className="sharing-value"><span>{label}</span><div>{content || '\u00a0'}</div></div>;
+      calculate();document.fonts?.ready.then(calculate);
+      return()=>{cancelled=true;};
+    },[data]);
+    React.useEffect(()=>{
+      if(!expanded)return;
+      const dialog=document.querySelector<HTMLDialogElement>('.sharing-expanded-editor');dialog?.showModal();dialog?.querySelector('textarea')?.focus();
+      return()=>dialog?.close();
+    },[expanded]);
+    const change = (key: SharingTextField, value: string) => setData(previous => ({...previous, [key]: value}));
+    const field = (key: SharingTextField, label: string, type = 'text') => <div className="sharing-editor-field" key={key}>
+      <label className="sharing-input-label"><span>{label}</span><textarea name={key} aria-label={label} value={data[key]} rows={2} inputMode={type==='tel'?'tel':type==='email'?'email':'text'}
+        onChange={event => change(key, event.target.value)} autoComplete="off" /></label>
+      <div className="sharing-field-tools"><small>{data[key].length.toLocaleString('it')} caratteri</small><button type="button" aria-label={`Espandi: ${label}`} onClick={()=>setExpanded(key)}>Espandi campo</button></div>
+    </div>;
+    const value = (label: string, content: string, key?: SharingTextField) => <div className="sharing-value"><span>{label}</span><div>{key&&plan.references[key]?'['+plan.references[key]+'] · Testo integrale in allegato':content || '\u00a0'}</div></div>;
     const signatures = (privacy = false) => <div className="sharing-signatures">
-      {value('Luogo e data', privacy ? data.privacyPlaceDate : data.placeDate)}
+      {value('Luogo e data', privacy ? data.privacyPlaceDate : data.placeDate, privacy?'privacyPlaceDate':'placeDate')}
       <div className="sharing-value"><span>Firma del destinatario</span><div className="sharing-signature-line">&nbsp;</div></div>
     </div>;
-    const page = (number: number, children: ReactNode) => <article className={`a4-page sharing-page${number === 1 && data.materials.length >= 4 ? ' sharing-compact' : ''}`} aria-label={`Pagina ${number} di 2`}>
-      <header className="sharing-header"><img src="/logo-gemut-2026.png" alt="GEMÜT" /><div>SCHEDA CONDIVISIONE<br />{number} / 02</div></header>
+    const page = (number: number, children: ReactNode) => <article className="a4-page sharing-page" aria-label={`Pagina ${number} di ${2+plan.pages.length}`}>
+      <header className="sharing-header"><img src="/logo-gemut-2026.png" alt="GEMÜT" /><div>SCHEDA CONDIVISIONE<br />{number} / {String(2+plan.pages.length).padStart(2,'0')}</div></header>
       <div className="sharing-page-body">{children}</div>
       <footer>GEMÜT CAPITAL SRL · Piazzale Mazzini 26, 35137 Padova · P. IVA 05791060287 · REA PD-492863 · info@gemutcapital.com</footer>
     </article>;
-    const preview = <div ref={previewRef} className="sharing-pages">
+    const identityTargets=[{id:'sharing-recipient',label:'Destinatario',fields:{fullName:{value:data.name,label:'Nome e cognome',props:{name:'name',type:'text',onChange:(event:{target:{value:string}})=>change('name',event.target.value)}}}}];
+    const preview = <SharingPages rootRef={previewRef} identityTargets={identityTargets}>
       {page(1, <>
         <div className="sharing-eyebrow">INFORMAZIONI E DOCUMENTI IMMOBILIARI</div>
         <h1>Scheda di condivisione immobiliare</h1>
         <p>Questa scheda identifica l’immobile e i materiali condivisi da Gemüt, anche a distanza. Non certifica una visita fisica e non comporta, di per sé, obblighi di acquisto o locazione.</p>
-        <section><h2>Il destinatario</h2>{value('Nome e cognome', data.name)}<div className="sharing-pair">{value('Telefono', data.phone)}{value('Email', data.email)}</div></section>
-        <section><h2>L’immobile e il referente</h2>{value('Indirizzo dell’immobile (se comunicato)', data.address)}<div className="sharing-pair">{value('Riferimento immobile', data.reference)}{value('Consulente Gemüt', data.consultant)}</div></section>
+        <section><h2>Il destinatario</h2>{value('Nome e cognome', data.name, 'name')}<div className="sharing-pair">{value('Telefono', data.phone, 'phone')}{value('Email', data.email, 'email')}</div></section>
+        <section><h2>L’immobile e il referente</h2>{value('Indirizzo dell’immobile (se comunicato)', data.address, 'address')}<div className="sharing-pair">{value('Riferimento immobile', data.reference, 'reference')}{value('Consulente Gemüt', data.consultant, 'consultant')}</div></section>
         <section><h2>Modalità di condivisione</h2>
           <div className="sharing-channel-list">{CHANNELS.map(channel => <span key={channel}><b aria-hidden="true">{data.channels.includes(channel) ? '☒' : '☐'}</b> {channel}</span>)}</div>
-          {data.channels.includes('Altro') && value('Altro canale', data.otherChannel)}
-          {value('Data della condivisione o della richiesta (se nota)', data.sharingDate)}
+          {data.channels.includes('Altro') && value('Altro canale', data.otherChannel, 'otherChannel')}
+          {value('Data della condivisione o della richiesta (se nota)', data.sharingDate, 'sharingDate')}
         </section>
         <section><h2>Materiali oggetto della condivisione</h2>
           <table className="sharing-material-table"><thead><tr><th>Materiale</th><th>File, link, oggetto o descrizione identificativa</th><th>Stato</th></tr></thead>
-            <tbody>{data.materials.map(row => <tr key={row.id}><td>{row.kind || '________________'}</td><td>{row.description || '____________________________'}</td><td>{row.status === 'sent' ? 'Già trasmesso / presentato' : row.status === 'pending' ? 'Da trasmettere dopo la firma' : 'Da indicare'}</td></tr>)}</tbody>
+            <tbody>{data.materials.slice(0,3).map(row => <tr key={row.id}><td>{row.kind || '________________'}</td><td>{plan.references['material:'+row.id]?'['+plan.references['material:'+row.id]+'] · Testo integrale in allegato':row.description || '____________________________'}</td><td>{deliveryLabel(row.status)}</td></tr>)}{data.materials.length>3&&<tr><td colSpan={3}>Altri {data.materials.length-3} materiali: allegati da [M4] a [M{data.materials.length}], con il rispettivo stato.</td></tr>}</tbody>
           </table>
           <p className="sharing-note">Lo stato è indicato per ciascun materiale. I documenti da inviare successivamente non sono dichiarati ricevuti o visionati.</p>
         </section>
@@ -85,16 +106,11 @@ export function createPropertySharing(React: Runtime, Layout: ComponentType<Layo
         <section><h2>I tuoi diritti</h2><p>Puoi chiedere accesso, rettifica, cancellazione, limitazione e, nei casi previsti, portabilità; puoi opporti al trattamento basato sul legittimo interesse. Hai il diritto di proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it). Questa scheda non comporta decisioni basate esclusivamente su trattamenti automatizzati.</p></section>
         <section><h2>Presa visione dell’informativa</h2><p>Con la firma dichiaro di avere ricevuto e potuto consultare questa informativa. La firma attesta esclusivamente la presa visione e non equivale al consenso per attività promozionali.</p>{signatures(true)}</section>
       </>)}
-    </div>;
-    return <div className={`sharing-workspace sharing-tab-${tab}`} onClickCapture={event => {
-      const target = event.target as HTMLElement;
-      if (!target.closest('button')?.textContent?.includes('Salva PDF')) return;
-      const overflow = Array.from(previewRef.current?.querySelectorAll('.sharing-page-body') || []).some(body => body.scrollHeight > body.clientHeight + 1);
-      if (issues.length || overflow) {
-        event.preventDefault(); event.stopPropagation(); setTab('edit');
-        setNotice(issues.join(' ') || 'Il contenuto supera le due pagine A4: abbrevia i campi o suddividi i materiali in più schede prima di salvare il PDF.');
-      }
-    }}>
+      {continuationPages(React,plan.pages,{kind:'sharing',title:'Scheda di condivisione immobiliare',signatures:['Destinatario']})}
+    </SharingPages>;
+    const expandedMaterial=expanded?.startsWith('material:')?data.materials.find(row=>'material:'+row.id===expanded):undefined;
+    const expandedValue=expandedMaterial?expandedMaterial.description:expanded?data[expanded as SharingTextField]:'';
+    return <div className={`sharing-workspace sharing-tab-${tab}`}>
       <button type="button" className="sharing-menu-close" aria-label="Chiudi menu laterale" onClick={() => closeSidebar(false)}>×</button>
       <div className="sharing-mobile-tabs" role="group" aria-label="Visualizzazione scheda">
         <button type="button" aria-pressed={tab === 'edit'} onClick={() => setTab('edit')}>Compila</button>
@@ -102,8 +118,7 @@ export function createPropertySharing(React: Runtime, Layout: ComponentType<Layo
       </div>
       <aside className="sharing-editor" aria-label="Compilazione scheda di condivisione">
         <h1>Scheda di condivisione immobiliare</h1><p>Registra le informazioni condivise, anche a distanza. Compila i campi e controlla l’anteprima prima di salvare il PDF.</p>
-        {notice && <p role="alert" className="sharing-alert">{notice}</p>}
-        {issues.length > 0 && <p role="alert" className="sharing-alert">{issues.join(' ')}</p>}
+        <p className="sharing-hint" aria-live="polite">{2+plan.pages.length} pagine in anteprima. I testi lunghi e gli ulteriori materiali proseguono su allegati numerati, con riferimento al campo e firma.</p>
         <fieldset><legend>1. Destinatario</legend>{field('name', 'Nome e cognome')}{field('phone', 'Telefono', 'tel')}{field('email', 'Email', 'email')}</fieldset>
         <fieldset><legend>2. Immobile e referente</legend>{field('address', 'Indirizzo immobile (se comunicato)')}{field('reference', 'Riferimento immobile')}{field('consultant', 'Consulente Gemüt')}</fieldset>
         <fieldset><legend>3. Modalità di condivisione</legend><p>Seleziona uno o più canali.</p>
@@ -114,15 +129,16 @@ export function createPropertySharing(React: Runtime, Layout: ComponentType<Layo
           {data.materials.map((row, index) => <div className="sharing-material-editor" key={row.id}>
             <div className="sharing-row-heading"><strong>Materiale {index + 1}</strong><button type="button" aria-label={`Rimuovi materiale ${index + 1}`} disabled={data.materials.length === 1} onClick={() => setData(previous => ({...previous, materials: previous.materials.filter(value => value.id !== row.id)}))}>Rimuovi</button></div>
             <label className="sharing-input-label"><span>Tipo di materiale {index + 1}</span><select aria-label={`Tipo di materiale ${index + 1}`} value={row.kind} onChange={event => setData(previous => updateMaterial(previous, row.id, {kind: event.target.value}))}><option value="">Seleziona</option>{MATERIAL_KINDS.map(kind => <option key={kind}>{kind}</option>)}</select></label>
-            <label className="sharing-input-label"><span>File, link o descrizione {index + 1}</span><textarea aria-label={`File, link o descrizione ${index + 1}`} value={row.description} rows={3} maxLength={160} onChange={event => setData(previous => updateMaterial(previous, row.id, {description: event.target.value}))} /><small>{row.description.length}/160 caratteri</small></label>
+            <label className="sharing-input-label"><span>File, link o descrizione {index + 1}</span><textarea aria-label={`File, link o descrizione ${index + 1}`} value={row.description} rows={4} onChange={event => setData(previous => updateMaterial(previous, row.id, {description: event.target.value}))} /><small>{row.description.length.toLocaleString('it')} caratteri</small></label><button type="button" className="sharing-expand-material" aria-label={`Espandi: materiale ${index+1}`} onClick={()=>setExpanded('material:'+row.id)}>Espandi campo</button>
             <label className="sharing-input-label"><span>Stato materiale {index + 1}</span><select aria-label={`Stato materiale ${index + 1}`} value={row.status} onChange={event => setData(previous => updateMaterial(previous, row.id, {status: event.target.value as SharingData['materials'][number]['status']}))}><option value="">Da indicare</option><option value="sent">Già trasmesso / presentato</option><option value="pending">Da trasmettere dopo la firma</option></select></label>
           </div>)}
-          <button type="button" className="btn btn-secondary" disabled={data.materials.length >= MAX_MATERIALS} onClick={() => setData(previous => ({...previous, materials: [...previous.materials, createMaterial()]}))}>Aggiungi materiale</button>
-          <p className="sharing-hint">Massimo {MAX_MATERIALS} materiali per mantenere la scheda in due pagine A4. Per ulteriori documenti, compila una seconda scheda.</p>
+          <button type="button" className="btn btn-secondary" onClick={() => setData(previous => ({...previous, materials: [...previous.materials, createMaterial()]}))}>Aggiungi materiale</button>
+
         </fieldset>
-        <fieldset><legend>5. Data e firme</legend>{field('placeDate', 'Luogo e data della conferma')}{field('privacyPlaceDate', 'Luogo e data della presa visione privacy')}<p>Gli spazi per la firma del destinatario sono presenti su entrambe le pagine del PDF.</p></fieldset>
+        <fieldset><legend>5. Data e firme</legend>{field('placeDate', 'Luogo e data della conferma')}{field('privacyPlaceDate', 'Luogo e data della presa visione privacy')}<p>Gli spazi per la firma del destinatario sono presenti sulle pagine del modulo e sugli allegati.</p></fieldset>
         <button type="button" className="btn btn-primary sharing-show-preview" onClick={() => setTab('preview')}>Controlla anteprima</button>
       </aside>
+      {expanded&&<dialog className="sharing-expanded-editor" aria-labelledby="sharing-expanded-title" onCancel={()=>setExpanded(null)}><h2 id="sharing-expanded-title">{expandedMaterial?'Descrizione materiale':fieldLabels[expanded as SharingTextField]}</h2><textarea aria-label="Testo integrale del campo" rows={16} value={expandedValue} onChange={event=>expandedMaterial?setData(previous=>updateMaterial(previous,expandedMaterial.id,{description:event.target.value})):change(expanded as SharingTextField,event.target.value)} /><p>{expandedValue.length.toLocaleString('it')} caratteri. Testo integrale conservato nella bozza e nel PDF.</p><button type="button" onClick={()=>setExpanded(null)}>Chiudi editor</button></dialog>}
       <div className="sharing-preview"><Layout title="Scheda di condivisione immobiliare" icon={<Icon size={20} />} clientName={data.name} preview={preview} /></div>
     </div>;
   };

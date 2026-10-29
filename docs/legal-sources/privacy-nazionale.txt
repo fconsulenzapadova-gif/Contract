@@ -1,0 +1,85 @@
+privacy-nazionale — selezione articoli consolidati
+
+Data richiesta di vigenza: 28/10/2026
+
+Acquisizione: 2026-10-28T21:28:37.314652+01:00
+
+Fonte: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196!vig=2026-10-28
+
+ultimo aggiornamento all'atto: 19/02/2026
+
+
+ARTICOLO 2
+
+Testo in vigore dal:  30-3-2023
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=003G0218&art.idArticolo=2&art.idSottoArticolo=11&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2003-07-29&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 2-undecies
+(Limitazioni ai diritti dell'interessato)
+1. I diritti di cui agli articoli da 15 a 22 del Regolamento non possono essere esercitati con richiesta al titolare del trattamento ovvero con reclamo ai sensi dell'articolo 77 del Regolamento qualora dall'esercizio di tali diritti possa derivare un pregiudizio effettivo e concreto:
+a) agli interessi tutelati in base alle disposizioni in materia di riciclaggio;
+b) agli interessi tutelati in base alle disposizioni in materia di sostegno alle vittime di richieste estorsive;
+c) all'attività di Commissioni parlamentari d'inchiesta istituite ai sensi dell'articolo 82 della Costituzione;
+d) alle attività svolte da un soggetto pubblico, diverso dagli enti pubblici economici, in base ad espressa disposizione di legge, per esclusive finalità inerenti alla politica monetaria e valutaria, al sistema dei pagamenti, al controllo degli intermediari e dei mercati creditizi e finanziari, nonché alla tutela della loro stabilità;
+e) allo svolgimento delle investigazioni difensive o all'esercizio di un diritto in sede giudiziaria;
+((f) alla riservatezza dell'identità della persona che segnala violazioni di cui sia venuta a conoscenza in ragione del proprio rapporto di lavoro o delle funzioni svolte, ai sensi del decreto legislativo recante attuazione della direttiva (UE) 2019/1937 del Parlamento europeo e del Consiglio del 23 ottobre 2019, riguardante la protezione delle persone che segnalano violazioni del diritto dell'Unione, ovvero che segnala violazioni ai sensi degli articoli 52-bis e 52-ter del decreto legislativo 1° settembre 1993, n. 385, o degli articoli 4-undecies e 4-duodecies del decreto legislativo 24 febbraio 1998, n. 58;))
+f-bis) agli interessi tutelati in materia tributaria e allo svolgimento delle attività di prevenzione e contrasto all'evasione fiscale.
+2. Nei casi di cui al comma 1, lettera c), si applica quanto previsto dai regolamenti parlamentari ovvero dalla legge o dalle norme istitutive della Commissione d'inchiesta.
+3. Nei casi di cui al comma 1, lettere a), b), d) e), f) e f-bis) i diritti di cui al medesimo comma sono esercitati conformemente alle disposizioni di legge o di regolamento che regolano il settore, che devono almeno recare misure dirette a disciplinare gli ambiti di cui all'articolo 23, paragrafo 2, del Regolamento. L'esercizio dei medesimi diritti può, in ogni caso, essere ritardato, limitato o escluso con comunicazione motivata e resa senza ritardo all'interessato, a meno che la comunicazione possa compromettere la finalità della limitazione, per il tempo e nei limiti in cui ciò costituisca una misura necessaria e proporzionata, tenuto conto dei diritti fondamentali e dei legittimi interessi dell'interessato, al fine di salvaguardare gli interessi di cui al comma 1, lettere a), b), d), e), f) e f-bis) . In tali casi, i diritti dell'interessato possono essere esercitati anche tramite il Garante con le modalità di cui all'articolo 160. In tale ipotesi, il Garante informa l'interessato di aver eseguito tutte le verifiche necessarie o di aver svolto un riesame, nonché del diritto dell'interessato di proporre ricorso giurisdizionale. Il titolare del trattamento informa l'interessato delle facoltà di cui al presente comma.
+---------------
+AGGIORNAMENTO (52)
+Il D.Lgs. 10 marzo 2023, n. 24, ha disposto (con l'art. 24, comma 1) che "Le disposizioni di cui al presente decreto hanno effetto a decorrere dal 15 luglio 2023".
+
+
+ARTICOLO 2
+
+Testo in vigore dal:  19-9-2018
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=003G0218&art.idArticolo=2&art.idSottoArticolo=14&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2003-07-29&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 2-quaterdecies
+(( (Attribuzione di funzioni e compiti a soggetti designati). ))
+((
+1. Il titolare o il responsabile del trattamento possono prevedere, sotto la propria responsabilità e nell'ambito del proprio assetto organizzativo, che specifici compiti e funzioni connessi al trattamento di dati personali siano attribuiti a persone fisiche, espressamente designate, che operano sotto la loro autorità.
+2. Il titolare o il responsabile del trattamento individuano le modalità più opportune per autorizzare al trattamento dei dati personali le persone che operano sotto la propria autorità diretta.
+))
+
+
+ARTICOLO 130
+
+Testo in vigore dal:  19-9-2018
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=40&art.flagTipoArticolo=0&art.codiceRedazionale=003G0218&art.idArticolo=130&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2003-07-29&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 130
+(Comunicazioni indesiderate)
+1. Fermo restando quanto stabilito dagli articoli 8 e 21 del decreto legislativo 9 aprile 2003, n. 70, l'uso di sistemi automatizzati di chiamata o di comunicazione di chiamata senza l'intervento di un operatore per l'invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale è consentito con il consenso del contraente o utente. ((Resta in ogni caso fermo quanto previsto dall'articolo 1, comma 14, della legge 11 gennaio 2018, n. 5.))
+2. La disposizione di cui al comma 1 si applica anche alle comunicazioni elettroniche, effettuate per le finalità ivi indicate, mediante posta elettronica, telefax, messaggi del tipo Mms (Multimedia Messaging Service) o Sms (Short Message Service) o di altro tipo.
+3. Fuori dei casi di cui ai commi 1 e 2, ulteriori comunicazioni per le finalità di cui ai medesimi commi effettuate con mezzi diversi da quelli ivi indicati, sono consentite ai sensi degli articoli ((6 e 7 del Regolamento))
+nonché ai sensi di quanto previsto dal comma 3-bis ((...))
+.
+3-bis. In deroga a quanto previsto dall'articolo 129, il trattamento dei dati di cui ((al comma 1 del predetto articolo,))
+mediante l'impiego del telefono e della posta cartacea per le finalità ((di invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale))
+, è consentito nei confronti di chi non abbia esercitato il diritto di opposizione, con modalità semplificate e anche in via telematica, mediante l'iscrizione della numerazione della quale è intestatario e degli altri dati personali di cui ((al comma 1 del predetto articolo,))
+in un registro pubblico delle opposizioni. (20)
+3-ter. Il registro di cui al comma 3-bis è istituito con decreto del Presidente della Repubblica da adottare ai sensi dell'articolo 17, comma 2, della legge 23 agosto 1988, n. 400, previa deliberazione del Consiglio dei ministri, acquisito il parere del Consiglio di Stato e delle Commissioni parlamentari competenti in materia, che si pronunciano entro trenta giorni dalla richiesta, nonché, per i relativi profili di competenza, il parere dell'Autorità per le garanzie nelle comunicazioni, che si esprime entro il medesimo termine, secondo i seguenti criteri e principi generali:
+a) attribuzione dell'istituzione e della gestione del registro ad un ente o organismo pubblico titolare di competenze inerenti alla materia;
+b) previsione che l'ente o organismo deputato all'istituzione e alla gestione del registro vi provveda con le risorse umane e strumentali di cui dispone o affidandone la realizzazione e la gestione a terzi, che se ne assumono interamente gli oneri finanziari e organizzativi, mediante contratto di servizio, nel rispetto del ((codice dei contratti pubblici di cui al decreto legislativo 18 aprile 2016, n. 50))
+. I soggetti che si avvalgono del registro per effettuare le comunicazioni corrispondono tariffe di accesso basate sugli effettivi costi di funzionamento e di manutenzione. Il Ministro dello sviluppo economico, con proprio provvedimento, determina tali tariffe;
+c) previsione che le modalità tecniche di funzionamento del registro consentano ad ogni utente di chiedere che sia iscritta la numerazione della quale è intestatario secondo modalità semplificate ed anche in via telematica o telefonica;
+d) previsione di modalità tecniche di funzionamento e di accesso al registro mediante interrogazioni selettive che non consentano il trasferimento del dati presenti nel registro stesso, prevedendo il tracciamento delle operazioni compiute e la conservazione dei dati relativi agli accessi;
+e) disciplina delle tempistiche e delle modalità dell'iscrizione al registro, senza distinzione di settore di attività o di categoria merceologica, e del relativo aggiornamento, nonché del correlativo periodo massimo di utilizzabilità dei dati verificati nel registro medesimo, prevedendosi che l'iscrizione abbia durata indefinita e sia revocabile in qualunque momento, mediante strumenti di facile utilizzo e gratuitamente;
+f)obbligo per i soggetti che effettuano trattamenti di dati per le finalità ((di invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale))
+, di garantire la presentazione dell'identificazione della linea chiamante e di fornire all'utente idonee informative, in particolare sulla possibilità e sulle modalità di iscrizione nel registro per opporsi a futuri contatti;
+g) previsione che l'iscrizione nel registro non precluda i trattamenti dei dati altrimenti acquisiti e trattati nel rispetto degli articoli ((6 e 7 del Regolamento))
+.
+3-quater. La vigilanza e il controllo sull'organizzazione e il funzionamento del registro di cui al comma 3-bis e sul trattamento dei dati sono attribuiti al Garante.
+4. Fatto salvo quanto previsto nel comma 1 , se il titolare del trattamento utilizza, a fini di vendita diretta di propri prodotti o servizi, le coordinate di posta elettronica fornite dall'interessato nel contesto della vendita di un prodotto o di un servizio, può non richiedere il consenso dell'interessato, sempre che si tratti di servizi analoghi a quelli oggetto della vendita e l'interessato, adeguatamente informato, non rifiuti tale uso, inizialmente o in occasione di successive comunicazioni. L'interessato, al momento della raccolta e in occasione dell'invio di ogni comunicazione effettuata per le finalità di cui al presente comma, è informato della possibilità di opporsi in ogni momento al trattamento, in maniera agevole e gratuitamente.
+5. È vietato in ogni caso l'invio di comunicazioni per le finalità di cui al comma 1 o, comunque, a scopo promozionale, effettuato camuffando o celando l'identità del mittente o in violazione dell'articolo 8 del decreto legislativo 9 aprile 2003, n. 70, o senza fornire un idoneo recapito presso il quale l'interessato possa esercitare i diritti di cui ((agli articoli da 15 a 22 del Regolamento))
+, oppure esortando i destinatari a visitare siti web che violino il predetto articolo 8 del decreto legislativo n. 70 del 2003.
+6. In caso di reiterata violazione delle disposizioni di cui al presente articolo il Garante può, provvedendo ai sensi ((dell'articolo 58 del Regolamento))
+, altresì prescrivere a fornitori di servizi di comunicazione elettronica di adottare procedure di filtraggio o altre misure praticabili relativamente alle coordinate di posta elettronica da cui sono stati inviate le comunicazioni.
+-------------
+AGGIORNAMENTO (20)
+Il D.L. 25 settembre 2009, n. 135, convertito con modificazioni dalla L. 20 novembre 2009, n. 166, ha disposto (con l'art. 20-bis comma 2) che il registro previsto dal comma 3-bis del presente articolo, è istituito entro sei mesi dalla data di entrata in vigore della legge di conversione del suddetto presente decreto. Fino al suddetto termine, restano in vigore i provvedimenti adottati dal Garante per la protezione dei dati personali ai sensi dell'articolo 154 del D.Lgs 196/2003.

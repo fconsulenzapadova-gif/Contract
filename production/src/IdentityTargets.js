@@ -1,5 +1,5 @@
 /** Adapters use the real React field callbacks, keeping state and printed values in sync. */
-const aliases={nome:'fullName',name:'fullName',nascita:'birthPlace',natoA:'birthPlace',dataNascita:'birthDate',natoIl:'birthDate',cf:'taxCode',CF:'taxCode',cognome:'surname',sesso:'sex',prov:'birthProvince',residenza:'residence',domicilioComune:'residence',residA:'residence',ci:'documentNumber',docNum:'documentNumber'};
+const aliases={nome:'fullName',name:'fullName',nascita:'birthPlace',natoA:'birthPlace',dataNascita:'birthDate',natoIl:'birthDate',cf:'taxCode',CF:'taxCode',cognome:'surname',sesso:'sex',prov:'birthProvince',residenza:'residence',domicilio:'domicile',domicilioComune:'residence',residA:'residence',ci:'documentNumber',docNum:'documentNumber'};
 const partyAliases={Nome:'fullName',NatoA:'birthPlace',NatoIl:'birthDate',CF:'taxCode',ResidenteA:'residence',Citta:'residence'};
 const partyLabels={p1:'Proponente 1',p2:'Proponente 2',v:'Venditore 1',v2:'Venditore 2',loc:'Locatore 1',loc2:'Locatore 2'};
 const proposerAliases={...aliases,nome:'givenNames',cognome:'surname',docIdentita:'documentNumber',residenzaComune:'residence'};
@@ -10,6 +10,7 @@ function visit(node,callback){
  visit(node.props.children,callback);
 }
 export function collectTargets(preview,path=''){
+ if(Array.isArray(preview?.props?.identityTargets))return preview.props.identityTargets;
  if(path==='/lease-allegato-b')return [];
  const groups=new Map();
  const add=(id,label,key,node)=>{if(!groups.has(id))groups.set(id,{id,label,fields:{}});groups.get(id).recordId ||= node.props['data-record-id'];groups.get(id).fields[key]={props:node.props,value:String(node.props.value||''),label:node.props['aria-label']||key};};
@@ -25,6 +26,7 @@ export function collectTargets(preview,path=''){
    if(party&&aliases[name]){add(block.key,(party[1].startsWith('condutt')?'Conduttore ':'Locatore ')+(Number(party[2])+1),aliases[name],node);return;}
    const prefix=typeof name==='string'&&name.match(/^(p[12]|v2?|loc2?)(Nome|NatoA|NatoIl|CF|ResidenteA|Citta)$/);
    if(prefix){add(prefix[1],partyLabels[prefix[1]],partyAliases[prefix[2]],node);return;}
+   if(path==='/aml'&&name==='nome'){add('client','Cliente','givenNames',node);return;}
    const aria=props['aria-label']||'';
    if(aria==='Cliente: nome e cognome / denominazione')add('client','Cliente','fullName',node);
    else if(aria==='Nascita, codice fiscale / P. IVA, residenza / sede')add('client','Cliente','identitySummary',node);
@@ -32,6 +34,7 @@ export function collectTargets(preview,path=''){
    else if(!party&&aliases[name])add('client',path==='/visit-sheet'?'La persona che visita':'Conferente / cliente',aliases[name],node);
   });
  }
+ for(const group of groups.values())if(group.fields.givenNames&&group.fields.surname)delete group.fields.fullName;
  return [...groups.values()].filter(g=>g.fields.fullName||(g.fields.givenNames&&g.fields.surname));
 }
 const accepted=(fields,key)=>fields[key]?.confirmed&&fields[key]?.value&&fields[key]?.status!=='inconsistent'?String(fields[key].value).trim():'';
@@ -54,4 +57,10 @@ export function applyImport(operations,allowReplacement=false){
  if(operations.some(op=>typeof op.props.onChange!=='function'))throw new Error('Il modulo è cambiato: ripetere la selezione.');
  for(const op of operations){const target={name:op.props.name,value:op.value,type:op.props.type||'text',checked:false};op.props.onChange({target,currentTarget:target,identityImport:true});}
  return operations.length;
+}
+
+/** Scalar roles point to the persisted person, so fiscal provenance cannot follow an old role occupant. */
+export function bindIdentityRecordIds(targets,ids={}){
+ const roles={client:'client','sharing-recipient':'client','purchase-seller':'owners','purchase-proposer':'buyers',v:'owners',p1:'buyers'};
+ return targets.map(target=>{const id=ids[roles[target.id]];return typeof id==='string'&&id?{...target,recordId:id}:target;});
 }

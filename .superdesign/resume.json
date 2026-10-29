@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "targets": {
+    "/": {
+      "projectId": "eac23abe-ed38-4029-b104-a9b359511a44",
+      "activeDraftId": "73d61350-07be-40d2-a2bb-b069042d6184",
+      "designSystemPath": ".superdesign/design-system.md",
+      "contextFiles": [
+        ".superdesign/design-system.md",
+        ".superdesign/init/layouts.md",
+        ".superdesign/init/components.md",
+        ".superdesign/init/theme.md",
+        ".superdesign/init/pages.md"
+      ],
+      "fingerprints": {
+        ".superdesign/design-system.md": "7ed9680f2daa7fd648f4b4b5e5898d6bd37c550ee9edfac57d1311db0ed8e848",
+        ".superdesign/init/layouts.md": "8e2f40e925dc08f6f4d8aacb516059e5bf791b4033c595380efef5f7ef1fc910",
+        ".superdesign/init/components.md": "ce0864eeeef0ce9676788ffdc75b6d2fa9b3a4a2a50d209bc9625daf6dea7663",
+        ".superdesign/init/theme.md": "7e9da731e35747fb1eeaf21852fd98d9adfd41a8cab605eadc4fb94f05e0e227",
+        ".superdesign/init/pages.md": "29a21cdd3331b88b7b2dc8bc8d9b4accb8dea2089c82532c65c715b2a0fab19d"
+      },
+      "referenceIds": [
+        "public-logo-gemut-2026.png"
+      ],
+      "brandAssets": {
+        "logo": {
+          "assetKey": "public-logo-gemut-2026.png",
+          "url": "https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/projects/eac23abe-ed38-4029-b104-a9b359511a44/brand-assets/public-logo-gemut-2026.png/logo.png",
+          "sourcePath": "production/public/logo.png"
+        }
+      },
+      "components": [],
+      "drafts": {
+        "73d61350-07be-40d2-a2bb-b069042d6184": {
+          "title": "Contratti \u00b7 direzione operativa GEM\u00dcT",
+          "visualDirection": "Warm GEM\u00dcT operational workspace; deterministic authored reference",
+          "currentVersion": 1
+        }
+      },
+      "updatedAt": "2026-10-28T20:41:57.509801+00:00"
+    }
+  }
+}

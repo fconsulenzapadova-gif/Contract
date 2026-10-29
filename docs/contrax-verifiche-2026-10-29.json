@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-29",
+  "base": "dfe6b0be9fcc961e5fb22b25f9d8a766430e93c7",
+  "branch": "codex/contrax-2026-10-28",
+  "unitTests": {
+    "passed": 114,
+    "failed": 0
+  },
+  "checks": {
+    "typecheck": true,
+    "lint": true,
+    "lintScope": "src/sharing and vite.config.ts",
+    "build": true,
+    "jsPythonSyntax": true,
+    "diffWhitespace": true
+  },
+  "browser": {
+    "engine": "Google Chrome headless / Chromium",
+    "routes": 14,
+    "longTextCommonCases": 16,
+    "exactVisibleTextCases": 16,
+    "longTextFixedCases": 8,
+    "responsiveCases": 45,
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 834,
+        "height": 1112
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "archiveTransferModels": [
+      "/lease-contract-4-4",
+      "/lease-contract-4-4-cedolare",
+      "/lease-contract-concordato",
+      "/lease-contract-students",
+      "/lease-contract-transitorio",
+      "/aml",
+      "/commission",
+      "/visit-sheet",
+      "/property-sharing"
+    ],
+    "fiscalRoutes": 13,
+    "externalFiscalRequests": [],
+    "errors": []
+  },
+  "pdfs": {
+    "commonFiles": 21,
+    "commonPages": 270,
+    "fixedFiles": 8,
+    "fixedPages": 68,
+    "syntheticDataOnly": true,
+    "printDialog": "captured real print iframe, rendered by Chromium; OS dialog and physical printer not tested"
+  },
+  "integrationContract1": {
+    "state": "waiting-for-iCloud-materialization",
+    "sourceFilesRead": false,
+    "originalFilesChanged": false,
+    "handoffWritten": true
+  },
+  "productionChanged": false,
+  "sourceSha256": {
+    "production/build.py": "d4495cdc53d7b9ddc3f9e522be42f7ddaf72f4cac31da0a149d9ab452b91093c",
+    "production/contract_integrations.py": "aea2768e50520207b1b8b3ce5a5eea41d1cc802d56dbd6bb7b24dbfad607c359",
+    "production/src/AccessibleFields.js": "2d5510ce426db406d043837dc92f22f10846a534c74146f67e2b13aeffb59a7b",
+    "production/src/AdaptiveDocument.js": "b2b501adf6a3ddb41139bfd24db3723ad06bfc36606001bf763e031c41b68b0d",
+    "production/src/CompanyData.js": "e027ec1cb7c954280cbd090f244e25d17152f143aa82af7cb89c7bb9942f1f17",
+    "production/src/ContractArchive.css": "96790978a63eee8ff3b1127bba89ea60ed18c2907c71c3f55b8727eb7a2fd7f5",
+    "production/src/ContractArchive.js": "a33a4feac8db46046932042a6b1614aabab8fe9b2f5eece5c39441372bd0d6d7",
+    "production/src/ContractArchiveUI.js": "074e5368763a1f4fbdea0c8ddca1ac52dff08389eba737e21f21bffd7deaeac2",
+    "production/src/ContractDraft.js": "b2dc47cd495ca5fc8863b9273a49608e98f5fcd819988fd04e637701c4b4044e",
+    "production/src/ContractEditorTools.js": "1165add5e0ae3b12c85c26a18c5bfaa67b38836fe9bfea2cee0fa72feb84a0d8",
+    "production/src/ContractGlue.js": "1c53326ca58e96020c76527f96dad8406f5be4ae001395789b9a1b93b14bf6ae",
+    "production/src/ContractRecords.js": "02e5012080fcc51090f5dfb5c3d492899ba624029ea9bea8194da05a723d1025",
+    "production/src/ContractRecordsUI.js": "e143448a2e03321cf425aa42f48119e4c2acb47ac814fa504688278b4e65bd60",
+    "production/src/DocumentInterop.js": "3bdc499945237199135c56af52d1341587606103236fe2d95625f3429bd292ab",
+    "production/src/DocumentReview.js": "662a8a1fbd57b1694fd88848a86f3df35c556024ca0a3580dfd97c6107fa75f5",
+    "production/src/DocumentTypography.js": "eca0d7626bae2d35886db98a8530112863aae0d26a5dcb73528b61d0c22a89e4",
+    "production/src/EditorNavigation.js": "801595fe595de1199457bb8c462182ff333083c4966ca7d6ad21442402f61a90",
+    "production/src/FiscalCode.js": "3b234f32f4c903512607b49d1897d96ee779f02c5b98c8b96b971c224422dd8e",
+    "production/src/FiscalCodeUI.js": "022eed7320d6326a4c35b32cc3009fbe2ed227e5b326be05560566e33a78112a",
+    "production/src/FlowPagination.js": "1a06e9d6fe9f8c677c0d215cb6c7216b9fc9fb74be3474b9e1569f6bede1a208",
+    "production/src/GemutTheme.css": "ba5649ed43b7e81d955d8d62be8f23e33bfecef85b6737e73067575fb512f35a",
+    "production/src/IdentityData.js": "ab5980c3232a7827310437b856e0500b457c51d27dd13cd353efe7126cef5f64",
+    "production/src/IdentityFiles.js": "c1968ac1cd7b9acceb9f6d5c7df6397bd15eaff0c3029b43bee30cc86f6d2ddb",
+    "production/src/IdentityLayout.js": "6b4ae625b36f9b676152c90186109ed7d92e67e792695b03b386867f3ecd9d02",
+    "production/src/IdentityReader.js": "5c54daf67670e01b90360c26ec812b168d4c7dbd73a8da731b3f6b2a09379fd3",
+    "production/src/IdentityTargets.js": "c7ed5882a144e421e7c2fabeed18cca28e0f41a25b8700208d92e0719d6831b4",
+    "production/src/InlineComposition.js": "5c76687419643acd580a2909259f1095aa17aaeebec405e1a5bcec9bc58724c3",
+    "production/src/LeaseMediationAssignment.js": "e010e29de8db3ab0c2bb4a493bb8f0cdace9e813f04c5c0966e6ab27b474ad29",
+    "production/src/MediationAssignment.js": "d65a70f3b974ea487fb054b6cd5528f558db0fab2baaf00c60773b3c80937687",
+    "production/src/NativePrint.js": "e84c4f919b24ebc5fd71cb3fb548f8588e27df236ccf5582d91210eb01c25914",
+    "production/src/OptionalPhysicalRecords.js": "a89d4d2dd3069da0ffabb5d2c5c9c80be0698ed5305303c5f0d55c66c59ee9da",
+    "production/src/ProfessionalDocuments.js": "229e970edffd27522ab0d330a77a09db1bd783079bb6735633924ce334d0f2e9",
+    "production/src/PropertyUnits.js": "6a12d002df5375fc4b67d95f6372af97f50c344fb801b10fe436749d122099ab",
+    "production/src/ProposalRecords.js": "c70030eb902d539d97d660ae5d337e1ee414e4216f610c631fab138a06d366a4",
+    "production/src/SharedPrint.js": "0556dd613091c85bc993c6cdfeb8a2f463e018a3ada358f4d2aaac61003c86f6",
+    "production/src/VisitSheet.js": "acb05ad2d9384f49f4444ac064528de73debe6337427cbe224d1699d87ac9db5",
+    "production/src/contract-layout.css": "4151c7ab419178bf5a3583f5d3e09e7812c6324d1fe8b101bb81d6ac2d4ffab3",
+    "production/src/documents.css": "b96fd17ec781040a1839d41e14748e7adfd9f222179e295fac7ec238c0c573c9",
+    "production/src/identity.css": "406fc681e24c210e0a2d0d3160d47260e718314c5a1c345b1557b316f7f115a5",
+    "production/src/visit-sheet.css": "51c7285d2077ba0d9796fd992e499f2aa25dd35e61443c16917fdd87fa51923e",
+    "scripts/integrate-purchase.py": "62dfcf4c91a40aed54488bf7b51447e89e69b7227100a1e4d4212618782e940a",
+    "scripts/integrate-sharing.py": "5a5ff7951cd1043fad0e13ce5200fe57536635a0e6d2d8be643e6380326a335e",
+    "src/purchase/Continuation.d.ts": "61b341c5dea0116e9b0dee89bf82616988e196e45330ba4b02139734eb45ff3f",
+    "src/purchase/Continuation.js": "f59786299960b2e0340eb493eb2c62efe7c46d146b2471cd779ee38546cdb2dd",
+    "src/purchase/PurchaseTemplate.js": "ffbf43981f29fb81ab2ef5eeab51035c06c3c31012d01917780a7a19f5c2fbe9",
+    "src/purchase/purchase-template.css": "edb2357174326b434f7d90e94aeab9e82722f4f1585771c249ea6ab4f3cf4006",
+    "src/sharing/PropertySharing.tsx": "e1103eeaebf1b604bc2d3e58b42351ab3340e73a6e5c2fd4c6ed49d427909cdf",
+    "src/sharing/model.ts": "4ef5b3df0741fd997cd63d59b6deb377642a67749b039a1ec90de3c991bac647",
+    "src/sharing/sharing.css": "16ae207fb2a5056f1533634d3ef748051144d7c06a9c358a8257f29d3dde3de0"
+  }
+}

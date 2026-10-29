@@ -1,7 +1,8 @@
 import {waitForFiscalUpdates} from './FiscalCodeUI.js';
 /** Content measurement uses the actual loaded font. A4 geometry never uses viewport width. */
 export const MINIMUM_POINT_SIZE=9;
-const nextFrame=win=>new Promise(resolve=>win.requestAnimationFrame(resolve));
+const nextFrame=win=>new Promise(resolve=>{const timer=win.setTimeout(resolve,80);win.requestAnimationFrame(()=>{win.clearTimeout(timer);resolve();});});
+export async function bounded(task,milliseconds,message){let timer;try{return await Promise.race([task,new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error(message)),milliseconds);})]);}finally{clearTimeout(timer);}}
 const excluded=el=>!!el.closest('.allegato-b-page');
 function paperWidth(field,win){const page=field.closest('.a4-page,.a4-page-measure');if(!page)return 680;const style=win.getComputedStyle(page);return page.clientWidth-(parseFloat(style.paddingLeft)||0)-(parseFloat(style.paddingRight)||0);}
 export function adaptDocument(root){
@@ -15,7 +16,7 @@ export function adaptDocument(root){
   if(field.tagName==='TEXTAREA'){
    field.style.height='auto';field.style.minHeight=field.dataset.blankHeight||'2em';
    if(!field.dataset.blankHeight)field.dataset.blankHeight=style.minHeight;
-   field.style.height=Math.max(field.scrollHeight,parseFloat(style.minHeight)||0)+'px';
+   field.style.height=Math.min(220,Math.max(field.scrollHeight,parseFloat(style.minHeight)||0))+'px';field.style.overflowY='auto';
    continue;
   }
   const block=field.closest('.med-fields')||field.closest('p,.contract-entry-group,.med-field,.a4-flow-block')||field.parentElement;
@@ -59,9 +60,9 @@ export function adaptDocument(root){
 export async function prepareDocument(root){
  if(!root)return;
  const doc=root.ownerDocument,win=doc.defaultView;
- await doc.fonts?.ready;
+ await bounded(doc.fonts?.ready||Promise.resolve(),8000,'Caricamento dei caratteri non completato. Riprovare la stampa.');
  await nextFrame(win);
- await waitForFiscalUpdates();
+ await bounded(waitForFiscalUpdates(),8000,'Assistenza fiscale ancora in elaborazione. Verificare i dati e riprovare.');
  await nextFrame(win);
  adaptDocument(root);
  win.dispatchEvent(new CustomEvent('contract-before-print'));
@@ -78,14 +79,15 @@ export function convertPrintableFields(root){
  for(const field of root.querySelectorAll('.inline-input,.inline-select')){
   if(excluded(field))continue;
   const style=win.getComputedStyle(field),span=doc.createElement('span');
-  const block=field.tagName==='TEXTAREA'||style.display==='block';
+  const block=field.tagName==='TEXTAREA'||style.display==='block'||Boolean(field.dataset.layoutIssue);
   let value=field.tagName==='SELECT'?field.options[field.selectedIndex]?.text||field.value:field.value;
   if(field.type==='date'&&value)value=value.slice(8,10)+'/'+value.slice(5,7)+'/'+value.slice(0,4);
   const empty=!value;
+  span.dataset.printField=field.name||field.getAttribute('aria-label')||'';
   span.className='pdf-static-field '+(empty?'pdf-empty-field':'pdf-filled-field');
   span.textContent=value||'\u00a0';
   span.style.cssText=field.style.cssText;
-  Object.assign(span.style,{display:block?'block':'inline-block',width:empty?style.width:(block?style.width:'auto'),maxWidth:block?'100%':'none',minHeight:style.height,margin:style.margin,padding:'0',background:'transparent',color:'#000',font:style.font,lineHeight:style.lineHeight,fontWeight:style.fontWeight,verticalAlign:'baseline',whiteSpace:block?'pre-wrap':'nowrap',wordBreak:'normal',overflowWrap:'normal',border:'none'});
+  Object.assign(span.style,{display:block?'block':'inline-block',width:empty?style.width:(block?style.width:'auto'),maxWidth:'100%',height:'auto',minHeight:empty?style.height:'0',margin:style.margin,padding:'0',background:'transparent',color:'#000',font:style.font,lineHeight:style.lineHeight,fontWeight:style.fontWeight,verticalAlign:'baseline',whiteSpace:block?'pre-wrap':'nowrap',wordBreak:'normal',overflowWrap:block?'anywhere':'normal',border:'none'});
   if(empty)span.style.setProperty('border-bottom','1px solid #bcb8af','important');
   field.replaceWith(span);
  }

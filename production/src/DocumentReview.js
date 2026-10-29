@@ -7,7 +7,7 @@ export function useReviewedBlocks(React, blocks) {
   const p = text => h('p', null, text);
   const field = (name, label) => h('label', {className:'med-field', key:name},
     h('span',{className:'med-field-label'},label),
-    h('textarea',{className:'inline-input', value:values[name]||'', 'aria-label':label,
+    h('textarea',{name,className:'inline-input', value:values[name]||'', 'aria-label':label,
       rows:Math.max(2,Math.ceil((values[name]||'').length/85)),
       onChange:e=>setValues(v=>({...v,[name]:e.target.value}))}));
   const block = (key, title, ...children) => ({key, node:h('section',{className:'med-block review-supplement'},h('h3',null,title),...children)});

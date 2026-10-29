@@ -9,7 +9,9 @@ BASE = ROOT / 'production/dist'
 OUTPUT = ROOT / 'dist'
 shutil.copytree(BASE, OUTPUT, dirs_exist_ok=True)
 source = (BASE / 'assets/app.js').read_text()
-expected = 'ee2610097436a626f0a3a3c6b541a5d6070f609ae14f3575b7dba69d8e8c1048'
+manifest=json.loads((BASE/'build-manifest.json').read_text())
+assert manifest['vendorSha256']=='0c058e87134321a34edda49b190d84b3855d37369dc5bc66a6b4fd52cf84ffce', 'Unexpected vendor provenance'
+expected=manifest['appSha256']
 assert hashlib.sha256((BASE / 'assets/app.js').read_bytes()).hexdigest() == expected, 'Production baseline has changed'
 
 def once(old, new):

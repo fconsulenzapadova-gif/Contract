@@ -67,13 +67,16 @@ export function createFiscalCodeUI(React,parser) {
     }
     const conflicts=(result?.conflicts||[]).map(item=>({item,kept:keep[item.field]===conflictKey(item)}));
     const hasCode=Boolean(code),hasNames=Boolean(person.nome||person.cognome),generated=person._fiscalCode?.fields?.cf?.source==='theoretical'&&normalizeFiscalCode(person._fiscalCode.fields.cf.value)===code;
-    if(!hasCode&&!hasNames&&!editingNames)return null;
+    // The empty state remains visible so the assistant explains how to start.
+
     const children=[];
     let summary='Compilare nome e cognome separati, sesso anagrafico, data completa e luogo di nascita: il codice teorico viene calcolato automaticamente.';
     if(code&&code.length<16&&!/^\d{11}$/.test(code))summary='Completare il codice fiscale per leggere i dati di nascita.';
     else if(checked.kind==='numeric')summary='Identificativo numerico: nessun dato anagrafico ricavabile. Non è possibile distinguere qui un codice provvisorio da quello di un soggetto diverso da persona fisica.';
     else if(generated)summary='Codice teorico calcolato dai dati inseriti. L’attribuzione e le eventuali omocodie vanno confrontate con il codice dell’Agenzia delle Entrate.';
     else if(checked.valid&&checked.kind==='individual')summary=checked.omocodia?'Struttura e controllo locale corretti; omocodia conservata.':'Struttura e controllo locale corretti.';
+    if(!hasCode&&!hasNames)children.push(h('div',{key:'start',role:'status'},'Inizia compilando la persona nel documento oppure inserisci il codice fiscale qui sotto.'));
+    else if(!result)children.push(h('div',{key:'processing',role:'status'},'Verifica locale in corso…'));
     children.push(h('div',{key:'summary'},h('strong',null,label+' · '),summary));
     const nameConfirmed=legacyFullName ? person._fiscalCode?.names?.confirmed&&person._fiscalCode.names.displayValue===person.nome : Boolean(person.nome&&person.cognome);
     const missing=[!nameConfirmed?'nome e cognome distinti':'',!person.sesso?'sesso anagrafico':'',!normalizeBirthDate(person.natoIl)?'data completa di nascita':'',!person.natoA?'Comune o Stato estero di nascita':''].filter(Boolean);

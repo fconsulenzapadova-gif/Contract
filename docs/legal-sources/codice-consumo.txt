@@ -1,0 +1,452 @@
+codice-consumo — selezione articoli consolidati
+
+Data richiesta di vigenza: 28/10/2026
+
+Acquisizione: 2026-10-28T21:26:25.614657+01:00
+
+Fonte: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206!vig=2026-10-28
+
+ultimo aggiornamento all'atto: 07/10/2026
+
+
+ARTICOLO 33
+
+Testo in vigore dal:  3-9-2015
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=33&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 33
+Clausole vessatorie nel contratto tra professionista e consumatore
+1. Nel contratto concluso tra il consumatore ed il professionista si considerano vessatorie le clausole che, malgrado la buona fede, determinano a carico del consumatore un significativo squilibrio dei diritti e degli obblighi derivanti dal contratto.
+2. Si presumono vessatorie fino a prova contraria le clausole che hanno per oggetto, o per effetto, di:
+a) escludere o limitare la responsabilità del professionista in caso di morte o danno alla persona del consumatore, risultante da un fatto o da un'omissione del professionista;
+b) escludere o limitare le azioni o i diritti del consumatore nei confronti del professionista o di un'altra parte in caso di inadempimento totale o parziale o di adempimento inesatto da parte del professionista;
+c) escludere o limitare l'opportunità da parte del consumatore della compensazione di un debito nei confronti del professionista con un credito vantato nei confronti di quest'ultimo;
+d) prevedere un impegno definitivo del consumatore mentre l'esecuzione della prestazione del professionista è subordinata ad una condizione il cui adempimento dipende unicamente dalla sua volontà;
+e) consentire al professionista di trattenere una somma di denaro versata dal consumatore se quest'ultimo non conclude il contratto o recede da esso, senza prevedere il diritto del consumatore di esigere dal professionista il doppio della somma corrisposta se è quest'ultimo a non concludere il contratto oppure a recedere;
+f) imporre al consumatore, in caso di inadempimento o di ritardo nell'adempimento, il pagamento di una somma di denaro a titolo di risarcimento, clausola penale o altro titolo equivalente d'importo manifestamente eccessivo;
+g) riconoscere al solo professionista e non anche al consumatore la facoltà di recedere dal contratto, nonché consentire al professionista di trattenere anche solo in parte la somma versata dal consumatore a titolo di corrispettivo per prestazioni non ancora adempiute, quando sia il professionista a recedere dal contratto;
+h) consentire al professionista di recedere da contratti a tempo indeterminato senza un ragionevole preavviso, tranne nel caso di giusta causa;
+i) stabilire un termine eccessivamente anticipato rispetto alla scadenza del contratto per comunicare la disdetta al fine di evitare la tacita proroga o rinnovazione;
+l) prevedere l'estensione dell'adesione del consumatore a clausole che non ha avuto la possibilità di conoscere prima della conclusione del contratto;
+m) consentire al professionista di modificare unilateralmente le clausole del contratto, ovvero le caratteristiche del prodotto o del servizio da fornire, senza un giustificato motivo indicato nel contratto stesso;
+n) stabilire che il prezzo dei beni o dei servizi sia determinato al momento della consegna o della prestazione;
+o) consentire al professionista di aumentare il prezzo del bene o del servizio senza che il consumatore possa recedere se il prezzo finale è eccessivamente elevato rispetto a quello originariamente convenuto;
+p) riservare al professionista il potere di accertare la conformità del bene venduto o del servizio prestato a quello previsto nel contratto o conferirgli il diritto esclusivo d'interpretare una clausola qualsiasi del contratto;
+q) limitare la responsabilità del professionista rispetto alle obbligazioni derivanti dai contratti stipulati in suo nome dai mandatari o subordinare l'adempimento delle suddette obbligazioni al rispetto di particolari formalità;
+r) limitare o escludere l'opponibilità dell'eccezione d'inadempimento da parte del consumatore;
+s) consentire al professionista di sostituire a sé un terzo nei rapporti derivanti dal contratto, anche nel caso di preventivo consenso del consumatore, qualora risulti diminuita la tutela dei diritti di quest'ultimo;
+t) sancire a carico del consumatore decadenze, limitazioni della facoltà di opporre eccezioni, deroghe alla competenza dell'autorità giudiziaria, limitazioni all'adduzione di prove, inversioni o modificazioni dell'onere della prova, restrizioni alla libertà contrattuale nei rapporti con i terzi;
+u) stabilire come sede del foro competente sulle controversie località diversa da quella di residenza o domicilio elettivo del consumatore;
+v) prevedere l'alienazione di un diritto o l'assunzione di un obbligo come subordinati ad una condizione sospensiva dipendente dalla mera volontà del professionista a fronte di un'obbligazione immediatamente efficace del consumatore. È fatto salvo il disposto dell'articolo 1355 del codice civile;
+((v-bis) imporre al consumatore che voglia accedere ad una procedura di risoluzione extragiudiziale delle controversie prevista dal titolo II-bis della parte V, di rivolgersi esclusivamente ad un'unica tipologia di organismi ADR o ad un unico organismo ADR;))
+((v-ter) rendere eccessivamente difficile per il consumatore l'esperimento della procedura di risoluzione extragiudiziale delle controversie prevista dal titolo II-bis della parte V.))
+((25))
+3. Se il contratto ha ad oggetto la prestazione di servizi finanziari a tempo indeterminato il professionista può, in deroga alle lettere h) e m) del comma 2:
+a) recedere, qualora vi sia un giustificato motivo, senza preavviso, dandone immediata comunicazione al consumatore;
+b) modificare, qualora sussista un giustificato motivo, le condizioni del contratto, preavvisando entro un congruo termine il consumatore, che ha diritto di recedere dal contratto.
+4. Se il contratto ha ad oggetto la prestazione di servizi finanziari il professionista può modificare, senza preavviso, semprechè vi sia un giustificato motivo in deroga alle lettere n) e o) del comma 2, il tasso di interesse o l'importo di qualunque altro onere relativo alla prestazione finanziaria originariamente convenuti, dandone immediata comunicazione al consumatore che ha diritto di recedere dal contratto.
+5. Le lettere h), m), n) e o) del comma 2 non si applicano ai contratti aventi ad oggetto valori mobiliari, strumenti finanziari ed altri prodotti o servizi il cui prezzo è collegato alle fluttuazioni di un corso e di un indice di borsa o di un tasso di mercato finanziario non controllato dal professionista, nonché la compravendita di valuta estera, di assegni di viaggio o di vaglia postali internazionali emessi in valuta estera.
+6. Le lettere n) e o) del comma 2 non si applicano alle clausole di indicizzazione dei prezzi, ove consentite dalla legge, a condizione che le modalità di variazione siano espressamente descritte.
+-------------
+AGGIORNAMENTO (25)
+Il D.Lgs. 6 agosto 2015, n. 130 ha disposto (con l'art. 2, comma 1) che "Le disposizioni del presente decreto, concernenti l'attuazione del regolamento (UE) n. 524/2013 del Parlamento europeo e del Consiglio, del 21 maggio 2013, relativo alla risoluzione delle controversie online dei consumatori, si applicano a decorrere dal 9 gennaio 2016".
+
+
+ARTICOLO 34
+
+Testo in vigore dal:  23-10-2005
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=34&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 34
+Accertamento della vessatorietà delle clausole
+1. La vessatorietà di una clausola è valutata tenendo conto della natura del bene o del servizio oggetto del contratto e facendo riferimento alle circostanze esistenti al momento della sua conclusione ed alle altre clausole del contratto medesimo o di un altro collegato o da cui dipende.
+2. La valutazione del carattere vessatorio della clausola non attiene alla determinazione dell'oggetto del contratto, né all'adeguatezza del corrispettivo dei beni e dei servizi, purché tali elementi siano individuati in modo chiaro e comprensibile.
+3. Non sono vessatorie le clausole che riproducono disposizioni di legge ovvero che siano riproduttive di disposizioni o attuative di principi contenuti in convenzioni internazionali delle quali siano parti contraenti tutti gli Stati membri dell'Unione europea o l'Unione europea.
+4. Non sono vessatorie le clausole o gli elementi di clausola che siano stati oggetto di trattativa individuale.
+5. Nel contratto concluso mediante sottoscrizione di moduli o formulari predisposti per disciplinare in maniera uniforme determinati rapporti contrattuali, incombe sul professionista l'onere di provare che le clausole, o gli elementi di clausola, malgrado siano dal medesimo unilateralmente predisposti, siano stati oggetto di specifica trattativa con il consumatore.
+
+
+ARTICOLO 35
+
+Testo in vigore dal:  23-10-2005
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=35&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 35
+Forma e interpretazione
+1. Nel caso di contratti di cui tutte le clausole o talune clausole siano proposte al consumatore per iscritto, tali clausole devono sempre essere redatte in modo chiaro e comprensibile.
+2. In caso di dubbio sul senso di una clausola, prevale l'interpretazione più favorevole al consumatore.
+3. La disposizione di cui al comma 2 non si applica nei casi di cui all'articolo 37.
+
+
+ARTICOLO 36
+
+Testo in vigore dal:  3-1-2006
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=36&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 36
+Nullità di protezione
+1. Le clausole considerate vessatorie ai sensi degli articoli 33 e 34 sono nulle mentre il contratto rimane valido per il resto.
+2. Sono nulle le clausole che, quantunque oggetto di trattativa, abbiano per oggetto o per effetto di:
+a) escludere o limitare la responsabilità del professionista in caso di morte o danno alla persona del consumatore, risultante da un fatto o da un'omissione del professionista;
+b) escludere o limitare le azioni del consumatore nei confronti del professionista o di un'altra parte in caso di inadempimento totale o parziale o di adempimento inesatto da parte del professionista;
+c) prevedere l'adesione del consumatore come estesa a clausole che non ha avuto, di fatto, la possibilità di conoscere prima della conclusione del contratto.
+3. La nullità opera soltanto a vantaggio del consumatore e può essere rilevata d'ufficio dal giudice.
+4. Il venditore ha diritto di regresso nei confronti del fornitore per i danni che ha subito in conseguenza della declaratoria di nullità delle clausole dichiarate abusive.
+5. È nulla ogni clausola contrattuale che, prevedendo l'applicabilità al contratto di una legislazione di un Paese extracomunitario, abbia l'effetto di privare il consumatore della protezione ((assicurata dal presente titolo))
+, laddove il contratto presenti un collegamento più stretto con il territorio di uno Stato membro dell'Unione europea.
+
+
+ARTICOLO 45
+
+Testo in vigore dal:  24-3-2026
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=4&art.idGruppo=16&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=45&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 45
+Definizioni
+1. Ai fini delle Sezioni da I a IV del presente capo, si intende per:
+a) "consumatore": la persona fisica, di cui all'articolo 3, comma 1, lettera a);
+b) "professionista": il soggetto, di cui all'articolo 3, comma 1, lettera c);
+b-bis) (("produttore": il fabbricante di un bene, l'importatore di un bene nel territorio dell'Unione europea o qualsiasi altra persona che si presenta come produttore apponendo sul bene il suo nome, marchio o altro segno distintivo;))
+((57))
+c) "beni":
+1) qualsiasi bene mobile materiale anche da assemblare, l'acqua, il gas e l'energia elettrica quando sono confezionati per la vendita in un volume delimitato o in quantità determinata;
+2) qualsiasi bene mobile materiale che incorpora, o è interconnesso con, un contenuto digitale o un servizio digitale in modo tale che la mancanza di detto contenuto digitale o servizio digitale impedirebbe lo svolgimento delle funzioni proprie del bene, anche denominati "beni con elementi digitali");
+3) gli animali vivi;
+d) "beni prodotti secondo le indicazioni del consumatore": qualsiasi bene non prefabbricato prodotto in base a una scelta o decisione individuale del consumatore;
+d-bis) "dato personale": dato personale quale definito dall'articolo 4, punto 1), del regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016;
+e) "contratto di vendita": qualsiasi contratto in base al quale il professionista trasferisce o si impegna a trasferire la proprietà di beni al consumatore, inclusi i contratti che hanno come oggetto sia beni che servizi;
+f) "contratto di servizi": qualsiasi contratto diverso da un contratto di vendita in base al quale il professionista fornisce o si impegna a fornire un servizio, compreso un servizio digitale, al consumatore;
+g) "contratto a distanza": qualsiasi contratto concluso tra il professionista e il consumatore nel quadro di un regime organizzato di vendita o di prestazione di servizi a distanza senza la presenza fisica e simultanea del professionista e del consumatore, mediante l'uso esclusivo di uno o più mezzi di comunicazione a distanza fino alla conclusione del contratto, compresa la conclusione del contratto stesso;
+h) "contratto negoziato fuori dei locali commerciali": qualsiasi contratto tra il professionista e il consumatore:
+1) concluso alla presenza fisica e simultanea del professionista e del consumatore, in un luogo diverso dai locali del professionista;
+2) per cui è stata fatta un'offerta da parte del consumatore, nelle stesse circostanze di cui al numero 1;
+3) concluso nei locali del professionista o mediante qualsiasi mezzo di comunicazione a distanza immediatamente dopo che il consumatore è stato avvicinato personalmente e singolarmente in un luogo diverso dai locali del professionista, alla presenza fisica e simultanea del professionista e del consumatore; oppure;
+4) concluso durante un viaggio promozionale organizzato dal professionista e avente lo scopo o l'effetto di promuovere e vendere beni o servizi al consumatore;
+i) "locali commerciali":
+1) qualsiasi locale immobile adibito alla vendita al dettaglio in cui il professionista esercita la sua attività su base permanente; oppure;
+2) qualsiasi locale mobile adibito alla vendita al dettaglio in cui il professionista esercita la propria attività a carattere abituale;
+l) "supporto durevole": ogni strumento che permetta al consumatore o al professionista di conservare le informazioni che gli sono personalmente indirizzate in modo da potervi accedere in futuro per un periodo di tempo adeguato alle finalità cui esse sono destinate e che permetta la riproduzione identica delle informazioni memorizzate;
+m) "contenuto digitale": i dati prodotti e forniti in formato digitale;
+n) "servizio finanziario": qualsiasi servizio di natura bancaria, creditizia, assicurativa, servizi pensionistici individuali, di investimento o di pagamento;
+o) "asta pubblica": metodo di vendita in cui beni o servizi sono offerti dal professionista ai consumatori che partecipano o cui è data la possibilità di partecipare all'asta di persona, mediante una trasparente procedura competitiva di offerte gestita da una casa d'aste e in cui l'aggiudicatario è vincolato all'acquisto dei beni o servizi;
+p) "garanzia": qualsiasi impegno di un professionista o di un produttore (il "garante"), assunto nei confronti del consumatore, in aggiunta agli obblighi di legge in merito alla garanzia di conformità, di rimborsare il prezzo pagato, sostituire, riparare, o intervenire altrimenti sul bene, qualora esso non corrisponda alle caratteristiche, o a qualsiasi altro requisito non relativo alla conformità, enunciati nella dichiarazione di garanzia o nella relativa pubblicità disponibile al momento o prima della conclusione del contratto;
+p-bis) (("garanzia commerciale di durabilità": una garanzia commerciale di durabilità del produttore di cui all'articolo 135-quinquies, in base alla quale il produttore è responsabile direttamente nei confronti del consumatore per la riparazione o la sostituzione dei beni nell'arco di tutto il periodo di durata della garanzia commerciale di durabilità in conformità all'articolo 135-ter, se i beni non mantengono la propria durabilità;))
+((57))
+p-ter) (("durabilità": la capacità dei beni di mantenere le loro specifiche funzioni e prestazioni attraverso un uso normale;))
+((57))
+p-quater) (("indice di riparabilità": indice che esprime l'idoneità di un bene ad essere riparato sulla base di requisiti armonizzati stabiliti a livello dell'Unione europea;))
+((57))
+p-quinquies) (("aggiornamento del software": aggiornamento gratuito, compreso un aggiornamento di sicurezza, necessario per mantenere conformi all'articolo 130 e all'articolo 135-undecies i beni comprendenti elementi digitali, contenuti digitali e servizi digitali, compreso un aggiornamento di sicurezza, oppure un aggiornamento delle funzionalità;))
+((57))
+q) "contratto accessorio": un contratto mediante il quale il consumatore acquista beni o servizi connessi a un contratto a distanza o negoziato fuori dei locali commerciali e in cui tali beni o servizi sono forniti dal professionista o da un terzo in base ad un accordo tra il terzo e il professionista.
+q-bis) "servizio digitale":
+1) un servizio che consente al consumatore di creare, trasformare, archiviare i dati o di accedervi in formato digitale; oppure
+2) un servizio che consente la condivisione di dati in formato digitale, caricati o creati dal consumatore e da altri utenti di tale servizio, o qualsiasi altra interazione con tali dati;
+q-ter) "mercato online": un servizio che utilizza un software, compresi siti web, parte di siti web o un'applicazione, gestito da o per conto del professionista, che permette ai consumatori di concludere contratti a distanza con altri professionisti o consumatori;
+q-quater) "fornitore di mercato online": qualsiasi professionista che fornisce un mercato online ai consumatori;
+q-quinquies) "compatibilità": la capacità del contenuto digitale o del servizio digitale di funzionare con hardware o software con cui sono normalmente utilizzati contenuti digitali o servizi digitali dello stesso tipo, senza che sia necessario convertire il contenuto digitale o il servizio digitale;
+q-sexies) "funzionalità": la capacità del contenuto digitale o del servizio digitale di svolgere tutte le sue funzioni in considerazione del suo scopo;
+q-septies) "interoperabilità": la capacità del contenuto digitale o del servizio digitale di funzionare con hardware o software diversi da quelli con cui sono normalmente utilizzati i contenuti digitali o i servizi digitali dello stesso tipo.))
+(24)
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+---------------
+AGGIORNAMENTO (57)
+Il D.Lgs. 20 febbraio 2026, n. 30, ha disposto (con l'art. 2, comma 1) che "Le disposizioni del presente decreto si applicano a decorrere dal 27 settembre 2026".
+
+
+ARTICOLO 47
+
+Testo in vigore dal:  23-1-2026
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=7&art.idGruppo=16&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=47&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 47
+Esclusioni
+1. Le disposizioni delle Sezioni da I a IV del presente Capo non si applicano ai contratti:
+a) per i servizi sociali, compresi gli alloggi popolari, l'assistenza all'infanzia e il sostegno alle famiglie e alle persone temporaneamente o permanentemente in stato di bisogno, ivi compresa l'assistenza a lungo termine;
+b) di assistenza sanitaria, per i servizi prestati da professionisti sanitari a pazienti, al fine di valutare, mantenere o ristabilire il loro stato di salute, ivi compresa la prescrizione, la somministrazione e la fornitura di medicinali e dispositivi medici, sia essa fornita o meno attraverso le strutture di assistenza sanitaria;
+c) di attività di azzardo che implicano una posta di valore pecuniario in giochi di fortuna, comprese le lotterie, i giochi d'azzardo nei casinò e le scommesse;
+d) ((di servizi finanziari non contemplati dalla sezione II-bis - parte III - titolo III - capo I;))
+((55))
+e) aventi ad oggetto la creazione di beni immobili o la costituzione o il trasferimento di diritti su beni immobili;
+f) per la costruzione di nuovi edifici, la trasformazione sostanziale di edifici esistenti e per la locazione di alloggi a scopo residenziale;
+g) che rientrano nell'ambito di applicazione della disciplina concernente i contratti del turismo organizzato, di cui al Capo I del Titolo VI dell'Allegato 1 al decreto legislativo 23 maggio 2011, n. 79;
+h) che rientrano nell'ambito di applicazione della disciplina concernente la tutela dei consumatori per quanto riguarda taluni aspetti dei contratti di multiproprietà, dei contratti relativi ai prodotti per le vacanze di lungo termine e dei contratti di rivendita e di scambio, di cui agli articoli da 69 a 81-bis del presente Codice;
+i) stipulati con l'intervento di un pubblico ufficiale, tenuto per legge all'indipendenza e all'imparzialità, il quale deve garantire, fornendo un'informazione giuridica completa, che il consumatore concluda il contratto soltanto sulla base di una decisione giuridica ponderata e con conoscenza della sua rilevanza giuridica;
+l) di fornitura di alimenti, bevande o altri beni destinati al consumo corrente nella famiglia e fisicamente forniti da un professionista in giri frequenti e regolari al domicilio, alla residenza o al posto di lavoro del consumatore;
+m) di servizi di trasporto passeggeri, fatti salvi l'articolo 51, comma 2, e gli articoli 62, 64 e 65; (49)
+n) conclusi tramite distributori automatici o locali commerciali automatizzati;
+o) conclusi con operatori delle telecomunicazioni impiegando telefoni pubblici a pagamento per il loro utilizzo o conclusi per l'utilizzo di un solo collegamento tramite telefono, Internet o fax, stabilito dal consumatore.
+o-bis) relativi ai beni oggetto di vendita forzata o comunque venduti secondo altre modalità dalle autorità giudiziarie.
+2. Le disposizioni delle Sezioni da I a IV del presente Capo non si applicano ai contratti negoziati fuori dei locali commerciali in base ai quali il corrispettivo che il consumatore deve pagare non è superiore a 50 euro. Tuttavia, si applicano le disposizioni del presente Capo nel caso di più contratti stipulati contestualmente tra le medesime parti, qualora l'entità del corrispettivo globale che il consumatore deve pagare, indipendentemente dall'importo dei singoli contratti, superi l'importo di 50 euro.
+(24)
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+-------------
+AGGIORNAMENTO (49)
+È stato ripristinato il testo già in vigore dal 2-4-2023 a seguito della modifica dell'art. 1, comma 5 del D.L. 10 agosto 2023, n. 104, che disponeva la modifica del comma 1, lettera m) del presente articolo, ad opera della L. 9 ottobre 2023, n. 136, di conversione del D.L. medesimo.
+-------------
+AGGIORNAMENTO (55)
+Il D.Lgs. 31 dicembre 2025, n. 209, ha disposto (con l'art. 4, comma 1) che "Le modifiche apportate dal presente decreto si applicano a decorrere dal 19 giugno 2026 e ai contratti conclusi successivamente a tale data".
+
+
+ARTICOLO 49
+
+Testo in vigore dal:  24-3-2026
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=49&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 49
+Obblighi di informazione nei contratti a distanza e nei contratti negoziati fuori dei locali commerciali
+1. Prima che il consumatore sia vincolato da un contratto a distanza o negoziato fuori dei locali commerciali o da una corrispondente offerta, il professionista fornisce al consumatore le informazioni seguenti, in maniera chiara e comprensibile:
+a) le caratteristiche principali dei beni o servizi, nella misura adeguata al supporto e ai beni o servizi;
+b) l'identità del professionista;
+c) l'indirizzo geografico dove il professionista è stabilito, il suo numero di telefono e il suo indirizzo elettronico. Inoltre, se il professionista fornisce qualsiasi altro mezzo di comunicazione elettronica che garantisca al consumatore di poter intrattenere con lui una corrispondenza scritta, che rechi la data e l'orario dei relativi messaggi, su un supporto durevole, il professionista deve fornire anche le informazioni relative a tale altro mezzo. Tutti questi mezzi di comunicazione forniti dal professionista devono consentire al consumatore di contattarlo rapidamente e di comunicare efficacemente con lui. Ove applicabile, il professionista fornisce anche l'indirizzo geografico e l'identità del professionista per conto del quale agisce;
+d) se diverso dall'indirizzo fornito in conformità della lettera c), l'indirizzo geografico della sede del professionista a cui il consumatore può indirizzare eventuali reclami e, se applicabile, quello del professionista per conto del quale agisce;
+e) il prezzo totale dei beni o dei servizi comprensivo delle imposte o, se la natura dei beni o servizi comporta l'impossibilità di calcolare ragionevolmente il prezzo in anticipo, le modalità di calcolo del prezzo e, se del caso, tutte le spese aggiuntive di spedizione, consegna o postali e ogni altro costo oppure, qualora tali spese non possano ragionevolmente essere calcolate in anticipo, l'indicazione che tali spese potranno essere addebitate al consumatore; nel caso di un contratto a tempo indeterminato o di un contratto comprendente un abbonamento, il prezzo totale include i costi totali per periodo di fatturazione; quando tali contratti prevedono l'addebitamento di una tariffa fissa, il prezzo totale equivale anche ai costi mensili totali; se i costi totali non possono essere ragionevolmente calcolati in anticipo, devono essere fornite le modalità di calcolo del prezzo;
+e-bis) se applicabile, l'informazione che il prezzo è stato personalizzato sulla base di un processo decisionale automatizzato, ferme le garanzie di cui all'articolo 22 del regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016;
+f) il costo dell'utilizzo del mezzo di comunicazione a distanza per la conclusione del contratto quando tale costo è calcolato su una base diversa dalla tariffa di base;
+g) ((le modalità di pagamento, consegna, incluse ove disponibili opzioni di consegna rispettose dell'ambiente, esecuzione, la data entro la quale il professionista si impegna a consegnare i beni o a prestare i servizi e, se del caso, il trattamento dei reclami da parte del professionista;))
+((57))
+h) in caso di sussistenza di un diritto di recesso, le condizioni, i termini e le procedure per esercitare tale diritto conformemente all'articolo 54, comma 1, nonché il modulo tipo di recesso di cui all'allegato I, parte B e, se del caso, le informazioni circa l'esistenza e la collocazione della funzione di recesso di cui all'articolo 54-bis; (55)
+i) se applicabile, l'informazione che il consumatore dovrà sostenere il costo della restituzione dei beni in caso di recesso e in caso di contratti a distanza qualora i beni per loro natura non possano essere normalmente restituiti a mezzo posta;
+l) che, se il consumatore esercita il diritto di recesso dopo aver presentato una richiesta ai sensi dell'articolo 50, comma 3, o dell'articolo 51, comma 8, egli è responsabile del pagamento al professionista di costi ragionevoli, ai sensi dell'articolo 57, comma 3;
+m) se non è previsto un diritto di recesso ai sensi dell'articolo 59, l'informazione che il consumatore non beneficerà di un diritto di recesso o, se del caso, le circostanze in cui il consumatore perde il diritto di recesso;
+n) ((un promemoria dell'esistenza della garanzia legale di conformità per i beni e dei suoi elementi principali, compresa la durata minima di due anni ai sensi dell'articolo 133, in modo visibile, utilizzando l'avviso armonizzato di cui all'articolo 65-ter;))
+((57))
+n-bis) ((se il produttore offre al consumatore una garanzia commerciale di durabilità senza costi aggiuntivi, che copre il bene nel suo complesso ed ha una durata superiore a due anni e mette tali informazioni a disposizione dell'operatore economico, l'informazione che tale bene beneficia di tale garanzia, l'indicazione della relativa durata e un promemoria dell'esistenza della garanzia legale di conformità, in modo visibile, mediante l'etichetta armonizzata di cui all'articolo 65-ter;))
+((57))
+n-ter) ((un promemoria dell'esistenza della garanzia legale di conformità per il contenuto digitale e i servizi digitali;))
+((57))
+n-quater) ((per i beni comprendenti elementi digitali, per i contenuti digitali o per i servizi digitali, se il produttore o il fornitore mette a disposizione dell'operatore economico tali informazioni, il periodo minimo, sia esso espresso mediante un termine o con riferimento a una data, per il quale il produttore o il fornitore fornisce aggiornamenti del software;))
+((57))
+o) se applicabili, l'esistenza e le condizioni dell'assistenza postvendita al consumatore, dei servizi postvendita e delle garanzie commerciali;
+p) l'esistenza di codici di condotta pertinenti, come definiti all'articolo 18, comma 1, lettera f), del presente Codice, e come possa esserne ottenuta copia, se del caso;
+q) la durata del contratto, se applicabile, o, se il contratto è a tempo indeterminato o è un contratto a rinnovo automatico, le condizioni per recedere dal contratto;
+r) se applicabile, la durata minima degli obblighi del consumatore a norma del contratto;
+s) se applicabili, l'esistenza e le condizioni di depositi o altre garanzie finanziarie che il consumatore è tenuto a pagare o fornire su richiesta del professionista;
+t) se applicabile, la funzionalità dei beni con elementi digitali, del contenuto digitale e dei servizi digitali, comprese le misure applicabili di protezione tecnica;
+u) qualsiasi compatibilità e interoperabilità pertinente dei beni con elementi digitali, del contenuto digitale e dei servizi digitali, di cui il professionista sia a conoscenza o di cui ci si può ragionevolmente attendere che sia venuto a conoscenza, se applicabile;
+v) se applicabile, la possibilità di servirsi di un meccanismo extra-giudiziale di reclamo e ricorso cui il professionista è soggetto e le condizioni per avervi accesso.
+v-bis) ((se applicabile, l'indice di riparabilità dei beni;))
+((57))
+v-ter) ((se la lettera v-bis) non è applicabile e a condizione che il produttore metta tali informazioni a disposizione del professionista, informazioni concernenti la disponibilità, il costo stimato e la procedura di ordinazione dei pezzi di ricambio necessari per mantenere la conformità del bene, informazioni sulla disponibilità di istruzioni per la riparazione e la manutenzione e informazioni sulle restrizioni alla riparazione.))
+((57))
+2. Gli obblighi di informazione precontrattuali, di cui al comma 1, si applicano anche ai contratti per la fornitura di acqua, gas o elettricità, quando non sono messi in vendita in un volume limitato o in quantità determinata, di teleriscaldamento o di contenuto digitale non fornito su un supporto materiale.
+3. Nel caso di un'asta pubblica, le informazioni di cui al comma 1, lettere b), c) e d), possono essere sostituite dai corrispondenti dati della casa d'aste.
+4. Le informazioni di cui al comma 1, lettere h), i) e l), possono essere fornite mediante le istruzioni tipo sul recesso di cui all'allegato I, parte A. Il professionista ha adempiuto agli obblighi di informazione di cui al comma 1, lettere h), i) e l), se ha presentato dette istruzioni al consumatore, debitamente compilate. I riferimenti al periodo di recesso di quattordici giorni nelle istruzioni tipo sul recesso di cui all'allegato I, parte A, sono sostituiti da riferimenti a un periodo di recesso di trenta giorni nei casi di cui all'articolo 52, comma 1-bis.
+5. Le informazioni di cui al comma 1 formano parte integrante del contratto a distanza o del contratto negoziato fuori dei locali commerciali e non possono essere modificate se non con accordo espresso delle parti.
+6. Se il professionista non adempie agli obblighi di informazione sulle spese aggiuntive o gli altri costi di cui al comma 1, lettera e), o sui costi della restituzione dei beni di cui al comma 1, lettera i), il consumatore non deve sostenere tali spese o costi aggiuntivi.
+7. Nel caso di utilizzazione di tecniche che consentono una comunicazione individuale, le informazioni di cui al comma 1 sono fornite, ove il consumatore lo richieda, in lingua italiana.
+8. Gli obblighi di informazione stabiliti nella presente sezione si aggiungono agli obblighi di informazione contenuti nel decreto legislativo 26 marzo 2010, n. 59, e successive modificazioni, e nel decreto legislativo 9 aprile 2003, n. 70, e successive modificazioni, e non ostano ad obblighi di informazione aggiuntivi previsti in conformità a tali disposizioni.
+9. Fatto salvo quanto previsto dal comma 8, in caso di conflitto tra una disposizione del decreto legislativo 26 marzo 2010, n. 59, e successive modificazioni, e del decreto legislativo 9 aprile 2003, n. 70, e successive modificazioni, sul contenuto e le modalità di rilascio delle informazioni e una disposizione della presente sezione, prevale quest'ultima.
+10. L'onere della prova relativo all'adempimento degli obblighi di informazione di cui alla presente sezione incombe sul professionista.
+(24)
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+-------------
+AGGIORNAMENTO (55)
+Il D.Lgs. 31 dicembre 2025, n. 209, ha disposto (con l'art. 4, comma 1) che "Le modifiche apportate dal presente decreto si applicano a decorrere dal 19 giugno 2026 e ai contratti conclusi successivamente a tale data".
+---------------
+AGGIORNAMENTO (57)
+Il D.Lgs. 20 febbraio 2026, n. 30, ha disposto (con l'art. 2, comma 1) che "Le disposizioni del presente decreto si applicano a decorrere dal 27 settembre 2026".
+
+
+ARTICOLO 50
+
+Testo in vigore dal:  2-4-2023
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=50&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 50
+Requisiti formali per i contratti negoziati fuori dei locali commerciali
+1. Per quanto riguarda i contratti negoziati fuori dei locali commerciali il professionista fornisce al consumatore le informazioni di cui all'articolo 49, comma 1, su supporto cartaceo o, se il consumatore è d'accordo, su un altro mezzo durevole. Dette informazioni devono essere leggibili e presentate in un linguaggio semplice e comprensibile.
+2. Il professionista fornisce al consumatore una copia del contratto firmato o la conferma del contratto su supporto cartaceo o, se il consumatore è d'accordo, su un altro mezzo durevole, compresa, se del caso, la conferma del previo consenso espresso e dell'accettazione del consumatore in conformità all'articolo 59, comma 1, lettera o).
+((
+3. Se un consumatore vuole che la prestazione dei servizi ovvero la fornitura di acqua, gas o elettricità, quando non sono messi in vendita in un volume limitato o in quantità determinata, o di teleriscaldamento inizi durante il periodo di recesso previsto all'articolo 52, comma 2, e il contratto impone al consumatore l'obbligo di pagare, il professionista esige che il consumatore ne faccia esplicita richiesta su un supporto durevole e chiede inoltre al consumatore di riconoscere che, una volta che il contratto sarà stato interamente eseguito dal professionista, il consumatore non avrà più il diritto di recesso.
+))
+4. Per i contratti negoziati fuori dei locali commerciali in cui il consumatore ha chiesto espressamente i servizi del professionista ai fini dell'effettuazione di lavori di riparazione o manutenzione e in virtù dei quali il professionista e il consumatore adempiono immediatamente ai propri obblighi contrattuali e l'importo a carico del consumatore non supera i 200 euro:
+a) il professionista fornisce al consumatore, prima che questi sia vincolato dal contratto, le informazioni di cui all'articolo 49, comma 1, lettere b) e c), e le informazioni concernenti il prezzo o le modalità di calcolo del prezzo, accompagnate da una stima del prezzo totale, su supporto cartaceo o, se il consumatore è d'accordo, su un altro mezzo durevole. Il professionista fornisce le informazioni di cui all'articolo 49, comma 1, lettere a), h) ed m), ma può scegliere di non fornirle su formato cartaceo o su un altro mezzo durevole se il consumatore ha espressamente acconsentito;
+b) la conferma del contratto fornita conformemente al comma 2 del presente articolo contiene tutte le informazioni di cui all'articolo 49, comma 1.
+(24)
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+
+
+ARTICOLO 51
+
+Testo in vigore dal:  19-4-2026
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=7&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=51&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 51
+Requisiti formali per i contratti a distanza
+1. Per quanto riguarda i contratti a distanza il professionista fornisce o mette a disposizione del consumatore le informazioni di cui all'articolo 49, comma 1, in modo appropriato al mezzo di comunicazione a distanza impiegato in un linguaggio semplice e comprensibile. Nella misura in cui dette informazioni sono presentate su un supporto durevole, esse devono essere leggibili.
+2. Se un contratto a distanza che deve essere concluso con mezzi elettronici impone al consumatore l'obbligo di pagare, l'operatore economico gli comunica in modo chiaro ed evidente le informazioni di cui all'articolo 49, comma 1, lettere a), e), n-bis), q) e r), direttamente prima che il consumatore inoltri l'ordine. Il professionista garantisce che, al momento di inoltrare l'ordine, il consumatore riconosca espressamente che l'ordine implica l'obbligo di pagare. Se l'inoltro dell'ordine implica di azionare un pulsante o una funzione analoga, il pulsante o la funzione analoga riportano in modo facilmente leggibile soltanto le parole "ordine con obbligo di pagare" o una formulazione corrispondente inequivocabile indicante che l'inoltro dell'ordine implica l'obbligo di pagare il professionista. Se il professionista non osserva il presente comma, il consumatore non è vincolato dal contratto o dall'ordine. (57)
+3. I siti di commercio elettronico indicano in modo chiaro e leggibile, al più tardi all'inizio del processo di ordinazione, se si applicano restrizioni relative alla consegna e quali mezzi di pagamento sono accettati.
+4. Se il contratto è concluso mediante un mezzo di comunicazione a distanza che consente uno spazio o un tempo limitato per comunicare le informazioni, il professionista fornisce, su o mediante quello specifico mezzo e prima della conclusione del contratto, almeno le informazioni precontrattuali riguardanti le caratteristiche principali dei beni o servizi, l'identità del professionista, il prezzo totale, il diritto di recesso, la durata del contratto e, nel caso di contratti a tempo indeterminato, le condizioni di risoluzione del contratto, come indicato rispettivamente all'articolo 49, comma 1, lettere a), b), e), h) e q), eccetto il modulo di recesso tipo figurante all'allegato I, parte B, di cui alla lettera h). Le altre informazioni di cui all'articolo 49, comma 1, compreso il modello del modulo di recesso, sono fornite dal professionista in un modo appropriato conformemente al comma 1 del presente articolo.
+5. Fatto salvo il comma 4, se il professionista telefona al consumatore al fine di concludere un contratto a distanza, all'inizio della conversazione con il consumatore egli deve rivelare la sua identità e, ove applicabile, l'identità della persona per conto della quale effettua la telefonata, nonché lo scopo commerciale della chiamata e l'informativa di cui all'articolo 10 del decreto del Presidente della Repubblica 7 settembre 2010, n. 178.
+6. Quando un contratto a distanza deve essere concluso per telefono, il professionista deve confermare l'offerta al consumatore, il quale è vincolato solo dopo aver firmato l'offerta o dopo averla accettata per iscritto; in tali casi il documento informatico può essere sottoscritto con firma elettronica ai sensi dell'articolo 21 del decreto legislativo 7 marzo 2005, n. 82, e successive modificazioni. Dette conferme possono essere effettuate, se il consumatore acconsente, anche su un supporto durevole. In ogni caso il consenso non è valido se il consumatore non ha preliminarmente confermato la ricezione del documento contenente tutte le condizioni contrattuali, trasmesse su supporto cartaceo o altro supporto durevole disponibile e accessibile.
+7. Il professionista fornisce al consumatore la conferma del contratto concluso su un mezzo durevole, entro un termine ragionevole dopo la conclusione del contratto a distanza e al più tardi al momento della consegna dei beni oppure prima che l'esecuzione del servizio abbia inizio. Tale conferma comprende:
+a) tutte le informazioni di cui all'articolo 49, comma 1, a meno che il professionista non abbia già fornito l'informazione al consumatore su un mezzo durevole prima della conclusione del contratto a distanza; e
+b) se del caso, la conferma del previo consenso espresso e dell'accettazione del consumatore conformemente all'articolo 59, lettera o).
+8. Se un consumatore vuole che la prestazione dei servizi ovvero la fornitura di acqua, gas o elettricità, quando non sono messi in vendita in un volume limitato o in quantità determinata, o di teleriscaldamento inizi durante il periodo di recesso previsto all'articolo 52, comma 2, e il contratto impone al consumatore l'obbligo di pagare, il professionista esige che il consumatore ne faccia richiesta esplicita e chiede inoltre al consumatore di riconoscere che, una volta che il contratto sarà stato interamente eseguito dal professionista, il consumatore non avrà più il diritto di recesso.
+8-bis.
+((Al fine di rafforzare la tutela dei clienti finali domestici e il loro diritto di scelta delle condizioni economiche, decorsi sessanta giorni dalla data di entrata in vigore della presente disposizione, è vietato effettuare sollecitazioni commerciali per telefono, anche mediante l'invio di messaggi a consumatori, finalizzate alla proposta o alla conclusione di contratti di fornitura di energia elettrica e gas. Il professionista può contattare il consumatore per telefono, anche mediante l'invio di messaggi, qualora vi sia stata una richiesta effettuata direttamente al professionista stesso attraverso interfacce informatiche di quest'ultimo oppure nel caso in cui il contatto sia stato effettuato nei confronti dei propri clienti di energia elettrica e gas che abbiano espresso specifico consenso a ricevere proposte commerciali. È onere del professionista dimostrare la validità del contatto.))
+8-ter.
+((I contatti telefonici di cui al comma 8-bis sono effettuati dal professionista da un numero che lo identifica univocamente. I contratti stipulati a seguito di contatto effettuato in violazione di quanto previsto dal comma 8-bis e dal presente comma sono nulli. Il consumatore può avvalersi degli strumenti di risoluzione alternativa delle controversie di cui alla parte V, titolo II-bis, e del servizio di conciliazione dell'Autorità di regolazione per energia, reti e ambiente.))
+8-quater.
+((Gli utenti possono segnalare al Garante per la protezione dei dati personali e all'Autorità per le garanzie nelle comunicazioni (AGCOM) i casi di chiamata effettuata in violazione di quanto previsto dai commi 8-bis e 8-ter, indicando il numero da cui proviene la chiamata. Qualora l'AGCOM, nell'ambito dell'attività istruttoria svolta d'ufficio o a seguito della segnalazione di cui al primo periodo, accerti che la chiamata proviene da numeri diversi da quelli assegnati al professionista, ordina al gestore telefonico competente l'immediata sospensione dell'utilizzo delle linee allo stesso assegnate. Il Garante per la protezione dei dati personali, nell'ambito della propria attività istruttoria, può chiedere all'AGCOM, in presenza di un numero significativo di segnalazioni di chiamate effettuate senza previo consenso, di procedere alla sospensione di cui al secondo periodo))
+.
+9. Il presente articolo lascia impregiudicate le disposizioni relative alla conclusione di contratti elettronici e all'inoltro di ordini per via elettronica conformemente agli articoli 12, commi 2 e 3, e 13 del decreto legislativo 9 aprile 2003, n. 70, e successive modificazioni.
+(24)
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+---------------
+AGGIORNAMENTO (57)
+Il D.Lgs. 20 febbraio 2026, n. 30, ha disposto (con l'art. 2, comma 1) che "Le disposizioni del presente decreto si applicano a decorrere dal 27 settembre 2026".
+
+
+ARTICOLO 52
+
+Testo in vigore dal:  2-4-2023
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=52&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 52
+Diritto di recesso
+1. Fatte salve le eccezioni di cui all'articolo 59, il consumatore dispone di un periodo di quattordici giorni per recedere da un contratto a distanza o negoziato fuori dei locali commerciali senza dover fornire alcuna motivazione e senza dover sostenere costi diversi da quelli previsti all'articolo 56, comma 2, e all'articolo 57.
+((1-bis. Il periodo di recesso di quattordici giorni di cui al comma 1 è prolungato a trenta giorni, per i contratti conclusi nel contesto di visite non richieste di un professionista presso l'abitazione di un consumatore oppure di escursioni organizzate da un professionista con lo scopo o con l'effetto di promuovere o vendere prodotti ai consumatori. La disposizione di cui al presente comma non si applica ai contratti conclusi nel contesto di visite domiciliari da parte di un professionista, richieste da un consumatore e non organizzate dal medesimo in forma collettiva))
+2.
+((Fatto salvo l'articolo 53, il periodo di recesso di cui al comma 1 del presente articolo termina dopo quattrodici giorni, o, nei casi di cui al comma 1-bis, dopo trenta giorni a decorrere:))
+a) nel caso dei contratti di servizi, dal giorno della conclusione del contratto;
+b) nel caso di contratti di vendita, dal giorno in cui il consumatore o un terzo, diverso dal vettore e designato dal consumatore, acquisisce il possesso fisico dei beni o:
+1) nel caso di beni multipli ordinati dal consumatore mediante un solo ordine e consegnati separatamente, dal giorno in cui il consumatore o un terzo, diverso dal vettore e designato dal consumatore, acquisisce il possesso fisico dell'ultimo bene;
+2) nel caso di consegna di un bene costituito da lotti o pezzi multipli, dal giorno in cui il consumatore o un terzo, diverso dal vettore e designato dal consumatore, acquisisce il possesso fisico dell'ultimo lotto o pezzo;
+3) nel caso di contratti per la consegna periodica di beni durante un determinato periodo di tempo, dal giorno in cui il consumatore o un terzo, diverso dal vettore e designato dal consumatore, acquisisce il possesso fisico del primo bene;
+c) nel caso di contratti per la fornitura di acqua, gas o elettricità, quando non sono messi in vendita in un volume limitato o in quantità determinata, di teleriscaldamento o di contenuto digitale non fornito su un supporto materiale, dal giorno della conclusione del contratto.
+3. Le parti del contratto possono adempiere ai loro obblighi contrattuali durante il periodo di recesso. Tuttavia, nel caso di contratti negoziati fuori dei locali commerciali, il professionista non può accettare, a titolo di corrispettivo, effetti cambiari che abbiano una scadenza inferiore a quindici giorni dalla conclusione del contratto per i contratti di servizi o dall'acquisizione del possesso fisico dei beni per i contratti di vendita e non può presentarli allo sconto prima di tale termine.
+((3-bis. Nel caso di cui al comma 1-bis, il professionista non può accettare, a titolo di corrispettivo, effetti cambiari che abbiano una scadenza inferiore a trentuno giorni dalla conclusione del contratto per i contratti di servizi o all'acquisizione del possesso fisico dei beni per i contratti di vendita e non può presentarli allo sconto prima di tale termine.))
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+
+
+ARTICOLO 53
+
+Testo in vigore dal:  2-4-2023
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=53&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 53
+Non adempimento dell'obbligo d'informazione sul diritto di recesso
+1. Se in violazione dell'articolo 49, comma 1, lettera h), il professionista non fornisce al consumatore le informazioni sul diritto di recesso, il periodo di recesso termina dodici mesi dopo la fine del periodo di recesso iniziale, come determinato a norma dell'articolo 52, comma 2.
+((2. Se il professionista fornisce al consumatore le informazioni di cui al comma 1 del presente articolo entro dodici mesi dalla data di cui all'articolo 52, comma 2, il periodo di recesso termina quattordici giorni dopo il giorno in cui il consumatore riceve le informazioni. Nel caso di contratti conclusi nel contesto di visite non richieste di un professionista presso l'abitazione di un consumatore oppure di escursioni organizzate da un professionista con lo scopo o con l'effetto di promuovere o vendere prodotti ai consumatori di cui all'articolo 52, comma 1-bis, tale periodo termina trenta giorni dopo il giorno in cui il consumatore riceve le informazioni.))
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+
+
+ARTICOLO 57
+
+Testo in vigore dal:  2-4-2023
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=57&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 57
+Obblighi del consumatore nel caso di recesso
+1. A meno che il professionista abbia offerto di ritirare egli stesso i beni, il consumatore restituisce i beni o li consegna al professionista o a un terzo autorizzato dal professionista a ricevere i beni, senza indebito ritardo e in ogni caso entro quattordici giorni dalla data in cui ha comunicato al professionista la sua decisione di recedere dal contratto ai sensi dell'articolo 54. Il termine è rispettato se il consumatore rispedisce i beni prima della scadenza del periodo di quattordici giorni. Il consumatore sostiene solo il costo diretto della restituzione dei beni, purché il professionista non abbia concordato di sostenerlo o abbia omesso di informare il consumatore che tale costo è a carico del consumatore.
+Nel caso di contratti negoziati fuori dei locali commerciali in cui i beni sono stati consegnati al domicilio del consumatore al momento della conclusione del contratto, il professionista ritira i beni a sue spese qualora i beni, per loro natura, non possano essere normalmente restituiti a mezzo posta.
+2. Il consumatore è responsabile unicamente della diminuzione del valore dei beni risultante da una manipolazione dei beni diversa da quella necessaria per stabilire la natura, le caratteristiche e il funzionamento dei beni. Il consumatore non è in alcun caso responsabile per la diminuzione del valore dei beni se il professionista ha omesso di informare il consumatore del suo diritto di recesso a norma dell'articolo 49, comma 1, lettera h).
+((
+2-bis. In caso di recesso dal contratto, il consumatore si astiene dall'utilizzare il contenuto digitale o il servizio digitale e dal metterlo a disposizione di terzi.
+))
+3. Qualora un consumatore eserciti il diritto di recesso dopo aver presentato una richiesta in conformità dell'articolo 50, comma 3, o dell'articolo 51, comma 8, il consumatore versa al professionista un importo proporzionale a quanto è stato fornito fino al momento in cui il consumatore ha informato il professionista dell'esercizio del diritto di recesso, rispetto a tutte le prestazioni previste dal contratto. L'importo proporzionale che il consumatore deve pagare al professionista è calcolato sulla base del prezzo totale concordato nel contratto. Se detto prezzo totale è eccessivo, l'importo proporzionale è calcolato sulla base del valore di mercato di quanto è stato fornito.
+4. Il consumatore non sostiene alcun costo per:
+a) la prestazione di servizi o la fornitura di acqua, gas o elettricità, quando non sono messi in vendita in un volume limitato o in quantità determinata, o di teleriscaldamento, in tutto o in parte, durante il periodo di recesso quando:
+1) il professionista ha omesso di fornire informazioni in conformità all'articolo 49, comma 1, lettere h) ed l); oppure
+2) il consumatore non ha espressamente chiesto che la prestazione iniziasse durante il periodo di recesso in conformità all'articolo 50, comma 3, e dell'articolo 51, comma 8; oppure
+b) la fornitura, in tutto o in parte, del contenuto digitale che non è fornito su un supporto materiale quando:
+((1) il consumatore non ha dato il suo previo consenso espresso circa l'inizio della prestazione prima della fine del periodo di quattordici o trenta giorni di cui all'articolo 52;))
+2) il consumatore non ha riconosciuto di perdere il diritto di recesso quando ha espresso il suo consenso; oppure
+3) il professionista ha omesso di fornire la conferma conformemente all'articolo 50, comma 2, o all'articolo 51, comma 7.
+5. Fatto salvo quanto previsto nell'articolo 56, comma 2, e nel presente articolo, l'esercizio del diritto di recesso non comporta alcuna responsabilità per il consumatore.
+(24)
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+
+
+ARTICOLO 59
+
+Testo in vigore dal:  2-4-2023
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=59&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 59
+Eccezioni al diritto di recesso
+1. Il diritto di recesso di cui agli articoli da 52 a 58 per i contratti a distanza e i contratti negoziati fuori dei locali commerciali è escluso relativamente a:
+((a) i contratti di servizi dopo la completa prestazione del servizio ma, se il contratto impone al consumatore l'obbligo di pagare, solo se l'esecuzione è iniziata con il previo consenso espresso del consumatore e l'accettazione del fatto che perderà il proprio diritto di recesso a seguito della completa esecuzione del contratto da parte del professionista;))
+b) la fornitura di beni o servizi il cui prezzo è legato a fluttuazioni nel mercato finanziario che il professionista non è in grado di controllare e che possono verificarsi durante il periodo di recesso;
+c) la fornitura di beni confezionati su misura o chiaramente personalizzati;
+d) la fornitura di beni che rischiano di deteriorarsi o scadere rapidamente;
+e) la fornitura di beni sigillati che non si prestano ad essere restituiti per motivi igienici o connessi alla protezione della salute e sono stati aperti dopo la consegna;
+f) la fornitura di beni che, dopo la consegna, risultano, per loro natura, inscindibilmente mescolati con altri beni;
+g) la fornitura di bevande alcoliche, il cui prezzo sia stato concordato al momento della conclusione del contratto di vendita, la cui consegna possa avvenire solo dopo trenta giorni e il cui valore effettivo dipenda da fluttuazioni sul mercato che non possono essere controllate dal professionista;
+h) i contratti in cui il consumatore ha specificamente richiesto una visita da parte del professionista ai fini dell'effettuazione di lavori urgenti di riparazione o manutenzione. Se, in occasione di tale visita, il professionista fornisce servizi oltre a quelli specificamente richiesti dal consumatore o beni diversi dai pezzi di ricambio necessari per effettuare la manutenzione o le riparazioni, il diritto di recesso si applica a tali servizi o beni supplementari;
+i) la fornitura di registrazioni audio o video sigillate o di software informatici sigillati che sono stati aperti dopo la consegna;
+l) la fornitura di giornali, periodici e riviste ad eccezione dei contratti di abbonamento per la fornitura di tali pubblicazioni;
+m) i contratti conclusi in occasione di un'asta pubblica;
+n) la fornitura di alloggi per fini non residenziali, il trasporto di beni, i servizi di noleggio di autovetture, i servizi di catering o i servizi riguardanti le attività del tempo libero qualora il contratto preveda una data o un periodo di esecuzione specifici;
+((o) i contratti per la fornitura di contenuto digitale mediante un supporto non materiale se l'esecuzione è iniziata e, se il contratto impone al consumatore l'obbligo di pagare, qualora:
+1) il consumatore abbia dato il suo previo consenso espresso a iniziare la prestazione durante il periodo di diritto di recesso;
+2) il consumatore abbia riconosciuto di perdere così il proprio diritto di recesso;
+3) il professionista abbia fornito la conferma conformemente all'articolo 50, comma 2, o all'articolo 51, comma 7.))
+((
+1-bis. Le eccezioni al diritto di recesso di cui al comma 1, lettere a), b), c) ed e), non si applicano ai contratti conclusi nel contesto di visite non richieste di un professionista presso l'abitazione di un consumatore oppure di escursioni organizzate da un professionista con lo scopo o con l'effetto di promuovere o vendere prodotti ai consumatori.
+1-ter. Nei contratti di servizio che impongono al consumatore l'obbligo di pagare quando il consumatore abbia specificamente richiesto una visita da parte del professionista ai fini dell'effettuazione di lavori di riparazione, il consumatore perde il diritto di recesso dopo che il servizio è stato interamente prestato, purché l'esecuzione abbia avuto inizio con il previo consenso espresso del consumatore medesimo.))
+-------------
+AGGIORNAMENTO (24)
+Il D.Lgs. 21 febbraio 2014, n. 21 ha disposto (con l'art. 2, comma 1) che le modifiche apportate al presente articolo si applicano ai contratti conclusi dopo il 13 giugno 2014.
+
+
+ARTICOLO 54 bis
+
+Testo in vigore dal:  23-1-2026
+
+URL articolo: https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=54&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026
+
+Art. 54-bis
+(( (Esercizio del diritto di recesso dai contratti a distanza conclusi mediante un'interfaccia online).))
+1.
+((Per i contratti a distanza conclusi mediante un'interfaccia online, il professionista consente al consumatore di recedere dal contratto anche utilizzando una funzione di recesso.))
+2.
+((La funzione di recesso consente al consumatore di inviare una dichiarazione di recesso online che informa il professionista della sua decisione di recedere dal contratto. Tale dichiarazione di recesso online consente al consumatore di fornire o confermare facilmente le seguenti informazioni:))
+a) ((il suo nome;))
+b) ((le informazioni che identificano il contratto dal quale intende recedere;))
+c) ((le informazioni relative al mezzo elettronico tramite il quale la conferma del recesso sarà inviata al consumatore.))
+3.
+((La funzione di recesso è indicata in modo facilmente leggibile con le parole: "recedere dal contratto qui" o con un'altra formulazione equivalente altrettanto inequivocabile. Tale funzione è resa disponibile in maniera continuativa per tutto il periodo in cui può essere esercitato il diritto di recesso, figura in modo ben visibile sull'interfaccia online ed è facilmente accessibile al consumatore.))
+4.
+((Una volta che il consumatore ha compilato la dichiarazione di recesso online a norma del comma 2, il professionista gli consente di presentarla mediante una funzione di conferma.))
+5.
+((La funzione di conferma è indicata in modo facilmente leggibile con le parole: "conferma recesso" o con un'altra formulazione altrettanto inequivocabile.))
+6.
+((Una volta che il consumatore ha attivato la funzione di conferma, il professionista invia al consumatore, senza indebito ritardo, un avviso di ricevimento del recesso su un supporto durevole, comprensivo del suo contenuto e della data e dell'ora della sua trasmissione.))
+7.
+((Il diritto di recesso si considera esercitato dal consumatore entro il termine di recesso previsto se la dichiarazione di recesso online è trasmessa dallo stesso consumatore prima della scadenza del termine di recesso.))
+((55))
+-------------
+AGGIORNAMENTO (55)
+Il D.Lgs. 31 dicembre 2025, n. 209, ha disposto (con l'art. 4, comma 1) che "Le modifiche apportate dal presente decreto si applicano a decorrere dal 19 giugno 2026 e ai contratti conclusi successivamente a tale data".

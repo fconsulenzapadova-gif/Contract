@@ -46,11 +46,12 @@ try{
  assert.equal(await page.locator('.contract-native-print-copy .purchase-template-page').count(),2);
  assert((await page.locator('.contract-native-print-copy').innerText()).includes('Mario Rossi'));
  await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
- await page.locator('[name="vNome"]').fill('Nominativo che supera largamente lo spazio disponibile '.repeat(8));
- const count=await page.evaluate(()=>window.__purchasePrints.length);
- await page.getByRole('button',{name:'Salva PDF',exact:true}).click();
- assert.equal(await page.evaluate(()=>window.__purchasePrints.length),count,'Long values must not be clipped in a PDF');
- assert((await page.getByRole('alert').allTextContents()).join(' ').includes('spazio'));
+ const longName='Nominativo che supera largamente lo spazio disponibile '.repeat(8);
+ await page.locator('[name="vNome"]').fill(longName);
+ await page.waitForFunction(()=>document.querySelector('[data-continuation-key="vNome"]'));
+ const overflowHtml=await print('continuazione-nominativo');
+ assert(overflowHtml.includes(longName),'Long values must continue in the exported PDF');
+ assert(overflowHtml.includes('contract-continuation-page'));
  await page.locator('[name="vNome"]').fill(values.vNome);
  await page.screenshot({path:path.join(out,'desktop.png')});
  // Imported legacy data stays recoverable, and omitted terms require a review.
@@ -70,7 +71,8 @@ try{
  await download.saveAs(path.join(out,'bozza-legacy.json'));
  const draft=JSON.parse(await fs.readFile(path.join(out,'bozza-legacy.json'),'utf8'));
  assert.equal(draft.slots.document.pag2Importo,'25.000');
- await Promise.all([page.waitForEvent('load'),page.locator('.contract-draft-tools input[type=file]').setInputFiles(path.join(out,'bozza-legacy.json'))]);
+ await page.locator('.contract-draft-tools input[type=file]').setInputFiles(path.join(out,'bozza-legacy.json'));
+ await Promise.all([page.waitForEvent('load'),page.getByRole('button',{name:'Conferma sostituzione bozza',exact:true}).click()]);
  await page.waitForLoadState('networkidle');
  assert.equal(await page.locator('[name="p1Nome"]').inputValue(),'Mario Rossi');
  await page.evaluate(({key,current})=>localStorage.setItem(key,current),{key,current});
@@ -86,6 +88,6 @@ try{
  await mobile.waitForFunction(()=>window.__purchasePrints.length>0);
  assert((await mobile.evaluate(()=>window.__purchasePrints.at(-1))).includes('Maria prova smartphone'));
  assert.deepEqual(errors,[]);
- await fs.writeFile(path.join(out,'report.json'),JSON.stringify({pass:true,origin,fields:32,pages:2,drafts:true,nativePrint:true,overflowGuard:true,mobile:true,errors},null,2));
- console.log('PASS: exact two-page proposal, 32 fields, drafts, print, overflow guard, mobile');
+ await fs.writeFile(path.join(out,'report.json'),JSON.stringify({pass:true,origin,fields:32,pages:2,drafts:true,nativePrint:true,overflowContinuation:true,mobile:true,errors},null,2));
+ console.log('PASS: exact two-page proposal, 32 fields, drafts, print, measured continuations, mobile');
 }finally{await browser.close();}

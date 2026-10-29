@@ -1,0 +1,397 @@
+Fonte: https://www.comune.padova.it/sites/default/files/attachment/All%20B%20SCHEDA%20canone%20ACCORDI%20PADOVA%2017.10.2019.pdf
+
+Acquisizione: 28/10/2026
+
+SHA256 PDF: a1be3035e3847347b1843b0e9d45c8ed4df7b9bae19d69f4e64900bdca298ab8
+
+
+PAGINA PDF 1
+
+INDIRIZZO ALLOGGIO:
+COMUNE FOGLIO PARTICELLA SUBALTERNO
+COMUNE FOGLIO PARTICELLA SUBALTERNO
+COMUNE FOGLIO PARTICELLA SUBALTERNO
+TIPO CONTRATTO:
+min (€/mq) max (€/mq) min (€/mq) max (€/mq) min (€/mq) max (€/mq) min (€/mq) max (€/mq) min (€/mq) max (€/mq)
+€ 4,50 € 9,25 € 4,00 € 8,03 € 3,50 € 7,10 € 3,15 € 6,44 € 2,86 € 5,98
+COEFF.
+SUPERFICIE 
+LOCATIVA  
+(mq)
+-
+1,00
+-
+1,10
+-
+1,25
+0,60
+0,30
+0,50
+0,20
+/
+1 Selezione Valutazione
+1.a
+1.b
+1.c
+2 Selezione Valutazione
+2.a
+2.b
+2.c
+Compilare i campi evidenziati in giallo - indicare una sola selezione apponendo una "X". 
+N.B. VALUTAZIONE 1.a = OTTIMO, 1.b = BUONO, 1.c = NORMALE
+N.B. VALUTAZIONE 2.a = OTTIMO, 2.b = BUONO, 2.c = NORMALE
+NUOVA COSTRUZIONE O PESANTE RISTRUTTURAZIONE:
+ANTERIORE   AL    01/01/1979
+A
+BALCONI E TERRAZZE
+> mq. 100,00
+AREA SCOPERTA ESCLUSIVA fino ad un massimo mq. 
+20,00 al netto di eventuale posto auto
+Compilare i campi evidenziati in giallo - indicare la superficie calpestabile (espressa in mq) utilizzando la virgola.
+DEFINIZIONE SUBFASCIA DI APPARTENENZA
+TIPOLOGIA SUPERFICI (CALPESTABILI)
+ > = mq. 65,00 a < = mq. 100,00
+ > = mq.  59,00 a < 65,00  =    mq. 65,00
+ > = mq.  45,00 a < 59,00
+ > = mq.  36,00 a < 45,00   =    mq. 45,00
+ < a mq. 36,00
+AUTORIMESSA SINGOLA
+POSTO AUTO esterno riservato al conduttore
+MANSARDA/TAVERNA altezza o H media >= m. 2,40
+B C D
+A B C D E
+ZONA APPARTENENZA:
+E
+SUPERFICIE LOCATIVA DELL'ALLOGGIO
+Compilare i campi evidenziati in giallo - "Zona di appartenenza" indicare la zona apponendo una "X".  N.B. E' da inserire una sola selezione.
+ZONIZZAZIONE
+SUPERFICIE 
+CALPESTABILE (mq)
+SCHEDA PER LA DETERMINAZIONE DEL CANONE DI LOCAZIONE COMUNE DI PADOVA
+AI SENSI DELL’ACCORDO TERRITORIALE PER LE LOCAZIONI DEL COMUNE DI PADOVA SOTTOSCRITTO IL                                 DALLE ORGANIZZAZIONI DELLA PROPRIETA’ E DEI 
+RICHIEDENTE :
+DATI CATASTALI - NCEU 
+DATI CATASTALI - NCEU 
+DATI CATASTALI - NCEU 
+Compilare i campi evidenziati in giallo - indicare una sola selezione apponendo una "X". 
+L'attribuzione della subfascia segue il principio della valutazione per livello di qualità. Nella fattispecie si considera una scala di valori di tre livelli: Normale, Buono e Ottimo per ogni
+categoria di elementi. La valutazione finale sarà determinata dal livello di qualità prevalente risultante dalla sommatoria delle seguenti categorie considerate: Tipologia Edilizia,
+Vetustà, Posizione/Contesto urbano, Accessori in dotazione, Dotazione tecnologica, Indice prestazione energetica e Valore rendita catastale.
+0,20
+TOTALE SUPERFICIE LOCATIVA
+TIPOLOGIA EDILIZIA
+UNITA' ISOLATA UNIFAMILIARE O AGGREGATA CON INGRESSO
+INDIPENDENTE FINO A 4 UNITA' - UNITA' AL PIANO ATTICO CON
+TERRAZZO PANORAMICO.
+UNITA' IN CONDOMINIO O SCALA CON MAX 10 UNITA' ABITATIVE
+UNITA' IN CONDOMINIO A SCALA UNICA CON PIU' DI 10 UNITA'
+ABITATIVE -  CONDOMINIO A BLOCCO O IN LINEA CON PIU' SCALE.
+VETUSTA'
+NUOVA COSTRUZIONE O PESANTE RISTRUTTURAZIONE:
+DAL  01/01/2001
+NUOVA COSTRUZIONE O PESANTE RISTRUTTURAZIONE:
+DAL  01/01/1979   AL  31/12/2000
+N.B.  Alla superficie calpestabile eccedente mq 100,00 è 
+applicato un coefficiente riduttivo di 0,60.               
+Formula:                                                                                           
+Sup. locativa = [(Sup.calpestbile - 100,00)* 0,60]+ 100,00
+Pagina 1
+
+
+PAGINA PDF 2
+
+3 COEFF. ELEMENTO 
+PRESENTE
+SINGOLO 
+ELEMENTO
+3.a 1,00
+3.b 1,00
+3.c 1,00
+3.d 0,01 VALUTAZIONE
+TOTALE
+SINGOLO 
+ELEMENTO
+4.a 1,00
+4.b 0,80
+4.c 0,80
+4.d 1,20
+4.e 1,40
+4.f 1,00
+4.g 0,50
+4.h 1,00
+4.i 1,00
+4.l 0,70
+4.m 0,01
+SINGOLO 
+ELEMENTO
+5.a 1,40
+5.b 1,20
+5.c 1,60
+5.d 1,10
+5.e 1,20
+5.f 1,00
+5.g 1,10
+5.h 0,70
+5.i 1,40
+5.l 1,40
+5.m 1,00
+5.n 1,00
+5.o 1,20
+5.p 1,40
+5.q 1,00
+5.r 0,50
+5.s 0,01
+6 Selezione Valore
+6.a
+6.b
+6.c
+N.B. VALUTAZIONE da 0,01 a 1 = NORMALE, 2 = BUONO, 3 = OTTIMO
+VALUTAZIONE
+VALUTAZIONE
+Compilare i campi evidenziati in giallo - indicare sel l'elemento è presente apponendo una "X".
+N.B. VALUTAZIONE da 0,01 a 3,10 = NORMALE, da > 3,10 a 6,20 = BUONO, da > 6,20 = OTTIMO
+N.B. VALUTAZIONE 6.a = OTTIMO, 6.b = BUONO, 6.c = NORMALE
+VALORE TOTALE ELEMENTI PRESENTI
+Voci riguardanti la produzione di acqua calda sanitaria
+LINEA TELEFONICA
+PRESENZA DI ALMENO UN SERVIZIO DI PUBBLICA ISTRUZIONE DI 
+OGNI ORDINE E GRADO - ENTRO 500 ml.
+POSIZIONE/CONTESTO URBANO
+SERVIZI POSTALI, BANCARI, SANITARI E ALIMENTARI -                           
+ENTRO 500 ml. 
+Compilare i campi evidenziati in giallo - indicare se l'elemento è presente apponendo una "X".
+ELEMENTO PRESENTE
+VALORE
+ACCESSORI IN DOTAZIONE
+DOPPI SERVIZI IGIENICI
+SOFFITTA PRATICABILE IN USO ESCLUSIVO
+AVVOLGIBILI/OSCURANTI AUTOMATIZZATI
+PORTONCINO D'INGRESSO DELL'ALLOGGIO CON SERRATURA DI SICUREZZA
+PORTONCINO D'INGRESSO BLINDATO
+POSTO AUTO, CICLI E MOTOCICLI IN AUTORIMESSA
+Compilare i campi evidenziati in giallo - indicare una sola selezione apponendo una "X". 
+SERRAMENTI A RISPARMIO ENERGETICO DELL'INTERO ALLOGGIO
+IMPIANTO ALLARME, OGNI GENERE
+CANTINA/RIPOSTIGLIO IN USO ESCLUSIVO
+PRODUZIONE ACQUA CALDA SANITARIA DA IMPIANTO AUTONOMO (caldaia)
+PRODUZIONE ACQUA CALDA SANITARIA CENTRALIZZATA
+PRODUZIONE ACQUA CALDA SANITARIA DA CORPO SEPARATO A GAS (boiler)
+PRODUZIONE ACQUA CALDA SANITARIA DA CORPO SEPARATO ELETTRICO (boiler) 
+PRODUZIONE ACQUA CALDA SANITARIA SOLARE TERMICO AUTONOMO/POMPA DI CALORE O FONTE 
+RINNOVABILE
+IMPIANTO CONDIZIONAMENTO, OGNI GENERE
+CONNESSIONE WI-FI
+RISCALDAMENTO CENTRALIZZATO CONTABILIZZATO
+RISCALDAMENTO AUTONOMO A POMPA DI CALORE O FONTE RINNOVABILE
+RISCALDAMENTO AUTONOMO A GAS A CAMERA STAGNA
+RISCALDAMENTO AUTONOMO A GAS A CONDENSAZIONE
+Compilare i campi evidenziati in giallo - indicare se l'elemento è presente apponendo una "X".
+N.B. VALUTAZIONE da 0,01 a 2,70 = NORMALE, da > 2,70 a 5,40 = BUONO, da > 5,40 = OTTIMO
+INDICE PRESTAZIONE ENERGETICA
+VALORE TOTALE ELEMENTI PRESENTI
+ELEMENTO PRESENTE
+SERVIZI PUBBLICO TRASPORTO - ENTRO 500 ml.
+NESSUNO DEI SERVIZI SOPRA INDICATI
+4
+5 DOTAZIONE TECNOLOGICA
+A.P.E. IN CLASSE: A - B 
+A.P.E. IN CLASSE: C - D - E 
+A.P.E. IN CLASSE: F - G
+BASCULANTE E/O CANCELLO CARRAIO AUTOMATIZZATO
+ASCENSORE/ELEVATORE, ESCLUSO UNITA' NON SERVITA
+VIDEOCITOFONO
+CITOFONO
+VALORE
+NESSUNO DEGLI ACCESSORI SOPRA INDICATI
+NESSUNO DEGLI ACCESSORI SOPRA INDICATI
+VERDE E/O SCOPERTO CONDOMINIALI
+Voci riguardanti l'impianto di riscaldamento
+Pagina 2
+
+
+PAGINA PDF 3
+
+7 Selezione Valutazione
+7.a
+7.b
+7.c
+NORMALE BUONO OTTIMO ZONA SUBFASCIA MIN. MAX
+Subfascia 1 Subfascia 2 Subfascia 3 1 € 4,50 € 6,28
+1 2 € 4,50 € 7,81
+2 3 € 4,50 € 9,25
+3 1 € 4,00 € 5,67
+4 2 € 4,00 € 7,00
+5 3 € 4,00 € 8,03
+6 1 € 3,50 € 4,98
+7 2 € 3,50 € 6,12
+3 € 3,50 € 7,10
+1 € 3,15 € 4,50
+2 € 3,15 € 5,57
+3 € 3,15 € 6,44
+1 € 2,86 € 4,26
+2 € 2,86 € 5,25
+3 € 2,86 € 5,98
+ZONA SUBFASCIA
+VEDASI SPECIFICHE OPERATIVE
+N.B. VALUTAZIONE 7.a = OTTIMO, 7.b = BUONO, 7.c = NORMALE
+TABELLA RIASSUNTIVA DEGLI ELEMENTI CARATTERIZZANTI
+RENDITA > 900 €
+RENDITA < = 400 €
+RENDITA DA > 400 € A < = 900 €
+B
+C
+D
+INDICE PRESTAZIONE ENERGETICA
+VALORE RENDITA CATASTALE
+TOTALE
+LIVELLO DI QUALITA' PREVALENTE
+E
+VALORE RENDITA CATASTALE
+TIPOLOGIA EDILIZIA
+VETUSTA'
+POSIZIONE/CONTESTO URBANO
+ACCESSORI IN DOTAZIONE
+DOTAZIONE TECNOLOGICA
+ELEMENTI CARATTERIZZANTI
+A
+Compilare i campi evidenziati in giallo - indicare una sola selezione apponendo una "X". 
+Compilare i campi evidenziati in giallo - indicare un solo livello di qualità prevalente apponendo una "X". 
+Compilare i campi evidenziati in giallo - indicare il valore min e valore max utilizzando la virgola.
+CANONE CONCORDATO IN CASO DI MANCANZA TOTALE DI ARREDO
+VALORE MAX (€/mq) CANONE MENSILE MAX
+Compilare i campi evidenziati in giallo - indicare il canone concordato tra le parti utilizzando la virgola.
+CALCOLO DEL CANONE
+SUPERFICIE LOCATIVA (mq) VALORE MIN (€/mq) CANONE MENSILE MIN
+CANONE CONCORDATO TRA LE PARTI
+Pagina 3
+
+
+PAGINA PDF 4
+
+COEFFICIENTE ELEMENTO 
+PRESENTE
+SINGOLO 
+ELEMENTO
+ELEMENTO 
+PRESENTE
+SINGOLO 
+ELEMENTO
+1 1,5
+2 1,5
+3 1,5
+4 1,0
+5 2,0
+6 2,0
+7 1,0
+8 1,5
+9 1,5
+10 1,0
+11 0,5
+12 1,0
+13 0,5
+14 1,5
+15 1,5
+16 2,0
+17 1,0
+18 0,5
+19 1,5
+20 1,5
+21 1,5
+22 1,5
+23 1,5
+24 1,5
+25 1,0
+26 0,5
+27 1,0
+28 1,0
+29 2,0
+30 1,0
+31 0,5
+32 1,5
+33 1,0
+34 0,5
+TOTALE TOTALE TOTALE
+                     ZONA CUCINA
+UNITA' > mq 65,00 
+(superficie locativa escluse 
+pertinenze)
+Lavastoviglie
+Set stoviglie completo (piatti, posate, bicchieri e pentole)
+Credenza  (escluso per immobili fino a mq 65,00)
+Tavolo con n. 4 sedie  (escluso per immobili fino a mq 65,00)
+Poltrona o divano
+Lampadario/punto luce
+UNITA' < = mq 65,00 
+(superficie locativa escluse 
+pertinenze)
+PRESENZA ARREDO
+Tendaggi
+Lampadario/punto luce
+Letto completo di materasso
+Armadio
+Poltrona o divano
+Comodino con luce
+Tendaggi
+Mobile base e pensili
+Piano cottura a gas di rete o elettrico o induzione
+Frigorifero
+Lavello
+Cassettiera (escluso per immobili fino a mq 65,00)
+Forno a gas di rete o elettrico
+Tavolo con n. 4 sedie
+Forno a microonde
+Scrivania con luce
+Mobile porta-oggetti  (escluso per immobili fino a mq 65,00)
+Appendi abiti  (escluso per immobili fino a mq 65,00)
+CANONE MENSILE MIN PERCENTUALE ARREDO
+N.B.  La percentuale di arredo viene calcolata con la formula:                                                               
+Percentuale arredo = (totale elementi presenti *30%)/33
+CANONE MIN LOCAZIONE DI CALCOLO
+CANONE MAX LOCAZIONE DI CALCOLO
+CANONE MENSILE MAX PERCENTUALE ARREDO
+CANONE DI LOCAZIONE CON ARREDO
+UNITA' < = mq. 65 (Superficie locativa escluse pertinenze)
+Compilare i campi evidenziati in giallo - indicare la tipologia di incremento apponendo una "X".
+Lampadario/punto luce  (escluso per immobili fino a mq 65,00)
+Libreria
+                     ZONA BAGNO
+                     ZONA INGRESSO
+                     ZONA GIORNO
+                     ZONA LETTO
+Lampadario/punto luce
+Lampadario/punto luce (escluso per immobili fino a mq 65,00)
+Mobile porta-oggetti
+Specchio, porta-asciugamano e porta-sapone
+Lavatrice
+Tendaggi
+Tendaggi (escluso per immobili fino a mq 65,00)
+Televisore
+Pagina 4
+
+
+PAGINA PDF 5
+
+Compilare i campi evidenziati in giallo - indicare il canone concordato tra le parti utilizzando la virgola.
+CANONE MIN LOCAZIONE DI CALCOLO
+CANONE MENSILE MIN PERCENTUALE ARREDO
+CANONE CONCORDATO TRA LE PARTI
+CONTRATTO AGEVOLATO    5+2 6%
+CONTRATTO AGEVOLATO    6+2 10%
+INCREMENTO SU CANONE MIN
+CONTRATTO AGEVOLATO    4+2 3%
+CONTRATTO AGEVOLATO    6+2 10%
+Compilare i campi evidenziati in giallo - indicare la tipologia di incremento apponendo una "X".
+CONTRATTO AGEVOLATO    5+2 6%
+INCREMENTO SU CANONE MAX
+INCREMENTO SU CANONE MIN INCREMENTO SU CANONE MAX
+CONTRATTO AGEVOLATO    4+2 3%
+PERCENTUALE ARREDO
+Compilare i campi evidenziati in giallo - indicare la tipologia di incremento apponendo una "X".
+INCREMENTO DURATA CONTRATTO
+UNITA' < = mq. 65 (Superficie locativa escluse pertinenze)
+UNITA' > mq. 65 (Superficie locativa escluse pertinenze)
+N.B.  La percentuale di arredo viene calcolata con la formula:                                                               
+Percentuale arredo = (totale elementi presenti *30%)/42CANONE MAX LOCAZIONE DI CALCOLO
+CANONE MENSILE MAX
+UNITA' > mq. 65 (Superficie locativa escluse pertinenze)
+Pagina 5

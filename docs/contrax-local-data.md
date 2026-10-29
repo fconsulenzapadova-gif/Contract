@@ -1,0 +1,13 @@
+# Dati locali, copie e recupero
+
+Nell'architettura esaminata non è presente un servizio remoto per anagrafiche o documenti. L'OCR usa worker, PDF.js e lingue serviti dallo stesso sito; il codice gestisce annullamento e distruzione dei worker. Le prove browser fiscali non rilevano richieste esterne. Non è stata effettuata lettura di documenti d'identità reali.
+
+- Le bozze conservano il prefisso `gemut.contract.draft.v1:` e schema1. L'archivio aggiunge `gemut.contract.archive.v1`; nessuna migrazione distruttiva automatica.
+- Importazione, apertura e nuovo documento conservano una copia precedente nel recupero. File corrotti e cambiamenti concorrenti bloccano la scrittura. Quota esaurita o storage disabilitato producono errori visibili e mantengono il documento precedente; la modifica fallita non viene presentata come salvata.
+- I record nominati possono essere duplicati. Una finalizzazione crea dati e template congelati, con risorse locali deduplicate; modifiche successive alle anagrafiche o alla bozza non riscrivono quella versione. Non equivale a firma elettronica o conservazione a norma. Restano limiti di spazio del browser.
+- L'esportazione generica AML contiene solo campi cliente riconosciuti. Dati interni noti **e payload sconosciuti** restano nello storage locale, recuperabili soltanto con esportazione interna/completa esplicita. Non entrano nei dati comuni né nella clipboard. Le versioni finalizzate interne sono escluse dall'esportazione generica.
+- La clipboard è scritta solo dopo un'azione esplicita. Importazione e riuso mostrano ruoli, campi precedenti e proposti, richiedono conferma, non fondono anagrafiche per solo nome. I consensi e le clausole non vengono copiati insieme all'identità.
+- Su un dispositivo condiviso chi accede allo stesso profilo browser può leggere questi dati: non vi sono account o isolamento fra operatori. Proteggere concretamente dispositivo/profilo/file esportati secondo l'organizzazione. Le informazioni interne non sono protette da un selettore grafico.
+- Esportare copie periodiche su un supporto autorizzato. Cancellare i dati del sito rimuove bozze, archivio e recuperi da quel browser: prima esportare e verificare le copie. Non è stata introdotta cancellazione automatica né un termine unico per tutti i documenti. La retention del fascicolo AML va definita separatamente con il soggetto obbligato; non si estende automaticamente a visite, marketing o bozze.
+
+Il dossier giuridico descrive le fonti e i punti che richiedono validazione professionale. Il confronto FIMAA e il riscontro con formulari depositati restano subordinati ai file e alle ricevute effettivi.

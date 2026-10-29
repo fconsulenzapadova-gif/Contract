@@ -1,0 +1,492 @@
+[
+  {
+    "id": "legge-39-1989",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1989-02-03;39!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 5,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  27-8-2022",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=0&art.flagTipoArticolo=0&art.codiceRedazionale=089G0062&art.idArticolo=5&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1989-02-09&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1888
+      },
+      {
+        "article": 6,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  24-2-1989",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=0&art.flagTipoArticolo=0&art.codiceRedazionale=089G0062&art.idArticolo=6&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1989-02-09&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 351
+      }
+    ]
+  },
+  {
+    "id": "d-lgs-231-2007",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2007-11-21;231!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 1,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  10-8-2025",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=10&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 28911
+      },
+      {
+        "article": 3,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  29-4-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=7&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=3&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 11239
+      },
+      {
+        "article": 17,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  23-7-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=8&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=17&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 6035
+      },
+      {
+        "article": 18,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  17-7-2020",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=18&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 4630
+      },
+      {
+        "article": 19,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  1-3-2022",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=19&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 8005
+      },
+      {
+        "article": 20,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  10-11-2019",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=20&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 2907
+      },
+      {
+        "article": 22,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  23-7-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=22&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 5261
+      },
+      {
+        "article": 23,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  10-11-2019",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=23&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 5315
+      },
+      {
+        "article": 24,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  30-12-2024",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=24&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 6071
+      },
+      {
+        "article": 25,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  10-11-2019",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=6&art.idGruppo=6&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=25&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 7538
+      },
+      {
+        "article": 31,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  10-11-2019",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=4&art.idGruppo=9&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=31&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 2029
+      },
+      {
+        "article": 32,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  23-7-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=4&art.idGruppo=9&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=32&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 2285
+      },
+      {
+        "article": 35,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  4-7-2017",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=10&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=35&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 4003
+      },
+      {
+        "article": 39,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  10-11-2019",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=4&art.idGruppo=10&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=39&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 3398
+      },
+      {
+        "article": 42,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  4-7-2017",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=11&art.flagTipoArticolo=0&art.codiceRedazionale=007X0246&art.idArticolo=42&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2007-12-14&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1919
+      }
+    ]
+  },
+  {
+    "id": "codice-consumo",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-09-06;206!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 33,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  3-9-2015",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=33&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 6915
+      },
+      {
+        "article": 34,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  23-10-2005",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=34&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1355
+      },
+      {
+        "article": 35,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  23-10-2005",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=35&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 408
+      },
+      {
+        "article": 36,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  3-1-2006",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=12&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=36&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1418
+      },
+      {
+        "article": 45,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  24-3-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=4&art.idGruppo=16&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=45&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 8034
+      },
+      {
+        "article": 47,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  23-1-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=7&art.idGruppo=16&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=47&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 4125
+      },
+      {
+        "article": 49,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  24-3-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=49&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 10590
+      },
+      {
+        "article": 50,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  2-4-2023",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=50&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 2722
+      },
+      {
+        "article": 51,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=7&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=51&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 7944
+      },
+      {
+        "article": 52,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  2-4-2023",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=52&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 3462
+      },
+      {
+        "article": 53,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  2-4-2023",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=53&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1240
+      },
+      {
+        "article": 57,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  2-4-2023",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=57&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 3896
+      },
+      {
+        "article": 59,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  2-4-2023",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=59&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 4079
+      },
+      {
+        "article": 54,
+        "sub": 2,
+        "vigore": "Testo in vigore dal:  23-1-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=18&art.flagTipoArticolo=0&art.codiceRedazionale=005G0232&art.idArticolo=54&art.idSottoArticolo=2&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2005-10-08&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 2344
+      }
+    ]
+  },
+  {
+    "id": "legge-431-1998",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1998-12-09;431!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 1,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  29-1-2002",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=098G0483&art.idArticolo=1&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1998-12-15&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1641
+      },
+      {
+        "article": 2,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  1-1-2020",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=9&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=098G0483&art.idArticolo=2&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1998-12-15&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 9116
+      },
+      {
+        "article": 3,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  30-12-1998",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=098G0483&art.idArticolo=3&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1998-12-15&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 9755
+      },
+      {
+        "article": 5,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  29-1-2002",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=098G0483&art.idArticolo=5&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1998-12-15&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1096
+      },
+      {
+        "article": 13,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  1-1-2016",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=098G0483&art.idArticolo=13&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1998-12-15&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 3583
+      }
+    ]
+  },
+  {
+    "id": "legge-392-1978",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1978-07-27;392!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 4,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  30-7-1978",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=078U0392&art.idArticolo=4&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1978-07-29&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 497
+      },
+      {
+        "article": 8,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  30-7-1978",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=078U0392&art.idArticolo=8&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1978-07-29&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 145
+      },
+      {
+        "article": 9,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  30-8-1993\nal: 31-12-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=078U0392&art.idArticolo=9&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1978-07-29&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1462
+      },
+      {
+        "article": 11,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  30-7-1978",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=1&art.flagTipoArticolo=0&art.codiceRedazionale=078U0392&art.idArticolo=11&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1978-07-29&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 212
+      }
+    ]
+  },
+  {
+    "id": "d-lgs-23-2011",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-03-14;23!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 3,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  1-3-2020\nal: 31-12-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=15&art.idGruppo=0&art.flagTipoArticolo=0&art.codiceRedazionale=011G0066&art.idArticolo=3&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2011-03-23&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 11648
+      }
+    ]
+  },
+  {
+    "id": "dpr-131-1986",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-04-26;131!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 10,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  1-1-2007\nal: 31-12-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=2&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=086U0131&art.idArticolo=10&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1986-04-30&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 1234
+      },
+      {
+        "article": 13,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  3-10-2024\nal: 31-12-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=8&art.idGruppo=2&art.flagTipoArticolo=0&art.codiceRedazionale=086U0131&art.idArticolo=13&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1986-04-30&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 2692
+      },
+      {
+        "article": 57,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  3-10-2024\nal: 31-12-2026",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=4&art.idGruppo=5&art.flagTipoArticolo=0&art.codiceRedazionale=086U0131&art.idArticolo=57&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1986-04-30&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 4246
+      }
+    ]
+  },
+  {
+    "id": "codice-civile",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 1229,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=151&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1229&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 395
+      },
+      {
+        "article": 1326,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=165&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1326&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 630
+      },
+      {
+        "article": 1329,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=165&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1329&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 355
+      },
+      {
+        "article": 1335,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=165&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1335&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 319
+      },
+      {
+        "article": 1341,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=165&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1341&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 827
+      },
+      {
+        "article": 1342,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=165&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1342&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 480
+      },
+      {
+        "article": 1351,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=168&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1351&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 155
+      },
+      {
+        "article": 1353,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=169&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1353&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 165
+      },
+      {
+        "article": 1385,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=172&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1385&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 679
+      },
+      {
+        "article": 1386,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=172&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1386&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 285
+      },
+      {
+        "article": 1754,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=219&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1754&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 217
+      },
+      {
+        "article": 1755,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=219&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1755&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 345
+      },
+      {
+        "article": 1757,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=219&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1757&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 485
+      },
+      {
+        "article": 1759,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-4-1942",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=219&art.flagTipoArticolo=2&art.codiceRedazionale=042U0262&art.idArticolo=1759&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=1942-04-04&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 351
+      }
+    ]
+  },
+  {
+    "id": "privacy-nazionale",
+    "source": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196!vig=2026-10-28",
+    "requested_vigency": "2026-10-28",
+    "articles": [
+      {
+        "article": 2,
+        "sub": 11,
+        "vigore": "Testo in vigore dal:  30-3-2023",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=3&art.idGruppo=3&art.flagTipoArticolo=0&art.codiceRedazionale=003G0218&art.idArticolo=2&art.idSottoArticolo=11&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2003-07-29&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 3455
+      },
+      {
+        "article": 2,
+        "sub": 14,
+        "vigore": "Testo in vigore dal:  19-9-2018",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=1&art.idGruppo=4&art.flagTipoArticolo=0&art.codiceRedazionale=003G0218&art.idArticolo=2&art.idSottoArticolo=14&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2003-07-29&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 606
+      },
+      {
+        "article": 130,
+        "sub": 1,
+        "vigore": "Testo in vigore dal:  19-9-2018",
+        "url": "https://www.normattiva.it/atto/caricaArticolo?art.versione=5&art.idGruppo=40&art.flagTipoArticolo=0&art.codiceRedazionale=003G0218&art.idArticolo=130&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2003-07-29&art.progressivo=0&dataVigenza=28/10/2026",
+        "chars": 7059
+      }
+    ]
+  }
+]

@@ -28,3 +28,7 @@ qa-sharing/
 __pycache__/
 *.py[cod]
 qa-purchase/
+
+# Local verification artifacts and design working files
+work/
+.superdesign/tmp/

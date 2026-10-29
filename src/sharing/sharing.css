@@ -60,7 +60,7 @@
  .sharing-workspace { grid-template-columns:minmax(260px,300px) minmax(0,1fr); }
  .sharing-editor { padding:18px; }
 }
-@media (max-width:760px) {
+@media (max-width:1100px) {
  .grid-cols-2:has(a[href="/property-sharing"]) { grid-template-columns:minmax(0,1fr); }
  body:has(.sharing-workspace) .sidebar { position:fixed; left:0; top:0; box-shadow:0 0 0 100vmax #0005; }
  body:has(.sharing-workspace) .sidebar.closed { box-shadow:none; }
@@ -83,3 +83,18 @@
  .sharing-page { break-after:page; page-break-after:always; margin:0!important; box-shadow:none; }
  .sharing-page:last-child { break-after:auto; page-break-after:auto; }
 }
+.sharing-editor-field {margin-bottom:18px;}
+.sharing-editor-field .sharing-input-label {margin-bottom:4px;}
+.sharing-input-label textarea {font-size:16px;line-height:1.45;min-height:76px;}
+.sharing-field-tools {display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.sharing-field-tools small,.sharing-material-editor small {font-size:12px;color:#596269;}
+.sharing-field-tools button,.sharing-expand-material {border:0;background:transparent;color:#285e73;text-decoration:underline;min-height:36px;cursor:pointer;}
+.sharing-expand-material {margin:-8px 0 12px;}
+.sharing-expanded-editor {width:min(820px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:24px;border:1px solid #9db0b8;border-radius:8px;box-sizing:border-box;color:#242720;}
+.sharing-expanded-editor::backdrop {background:#132e3c80;}
+.sharing-expanded-editor h2 {font-size:20px;margin:0 0 16px;}
+.sharing-expanded-editor textarea {width:100%;min-height:45dvh;max-height:65dvh;resize:vertical;font:16px/1.5 system-ui,sans-serif;padding:14px;box-sizing:border-box;border:1px solid #8da4b0;border-radius:4px;}
+.sharing-expanded-editor p {font-size:13px;line-height:1.4;}
+.sharing-expanded-editor button {min-height:44px;padding:10px 24px;border:1px solid #527e90;border-radius:4px;background:#eaf3f7;color:#183c4d;}
+@media(max-width:1100px){.sharing-expanded-editor{padding:16px;}}
+@media print{.sharing-expanded-editor{display:none!important;}}

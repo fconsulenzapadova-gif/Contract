@@ -1,0 +1,680 @@
+Fonte: https://www.garanteprivacy.it/documents/10160/0/Regolamento+UE+2016+679.+Arricchito+con+riferimenti+ai+Considerando+Aggiornato+alle+rettifiche+pubblicate+sulla+Gazzetta+Ufficiale++dell%27Unione+europea+127+del+23+maggio+2018.pdf/1bd9bde0-d074-4ca8-b37d-82a3478fd5d3?version=1.9
+Acquisizione: 28/10/2026
+Versione informativa Garante aggiornata alle rettifiche GUUE 127 del 23/05/2018; NON valore ufficiale (avvertenza della fonte).
+SHA256 PDF: 16c0bb358414707b194678bdf80d7e4ba721a0d9cb0e76965569257b75be3e58
+
+Articolo 5 
+Principi applicabili al trattamento di dati personali 
+1. I dati personali sono: (C39) 
+a) trattati in modo lecito, corre tto e trasparente nei confronti dell'interessato («liceità, corre ttezza 
+e trasparenza»); 
+b) raccolti per finalità determinate, esplicite e legittime, e successivamente trattati in modo che 
+non sia incompatibile con tali finalità; un ulteriore trattamento d ei dati personali a fini di 
+archiviazione nel pubblico interesse, di ricerca scientifica o storica o a fini statistici non è, 
+conformemente all'articolo 89, paragrafo 1, considerato incompatibile con le finalità iniziali 
+(«limitazione della finalità»); 
+c) adeguati, pertinenti e limitati a quanto necessario rispetto alle finalità per le quali sono tratta ti 
+(«minimizzazione dei dati»); 
+d) esatti e, se necessario, aggiornati; devono essere adottate tutte le misure ragionevoli per 
+cancellare o rettificare tempestivamente i dati inesatti rispetto alle finalità per le quali  sono trattati 
+(«esattezza»); 
+e) conservati in una forma che consenta l'identificazione degli interessati per un arco di tempo non 
+superiore al conseguimento delle finalità per le quali sono tra ttati; i dati personali possono essere 
+conservati per periodi più lunghi a condizione che siano trattati esclusivamente a fini di 
+archiviazione nel pubblico interesse, di ricerca scientifica o storica o a fini statistici, conformemente 
+all'articolo 89, par agrafo 1, fatta salva l'attuazione di misure tecniche e organizzative adeguate 
+richieste dal presente regolamento a tutela dei diritti e delle libertà dell'interessato («lim itazione 
+della conservazione»); 
+f) trattati in maniera da garantire un'adeguata sicurezza dei dati personali, compresa la protezione, 
+mediante misure tecniche e organizzative adeguate, da trattamenti non autorizzati o illeciti e dalla 
+perdita, dalla distruzione o dal danno accidentali («integrità e riservatezza»). 
+2. Il titolare del trattamento è competente per il rispetto del paragrafo 1 e in grado di comprovarlo 
+(«responsabilizzazione»). (C74) 
+ 
+
+
+Articolo 6 
+Liceità del trattamento 
+1. Il trattamento è lecito solo se e nella misura in cui ricorre almeno una delle seguenti condizioni: 
+(C40) 
+a) l'interessato ha espresso il consenso al trattamento dei propri dati personali per una o più 
+specifiche finalità; (C42, C43) 
+b) il trattamento è necessario all'esecuzione di un contratto di cui l'interessato è parte o 
+all'esecuzione di misure precontrattuali adottate su richiesta dello stesso; (C44) 
+c) il trattamento è necessario per adempiere un obbligo legale al quale è soggetto il titolare del 
+trattamento; (C45) 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+d) il trattamento è necessario per la salvaguardia degli interessi vitali dell'interessato  o di un'altra 
+persona fisica; (C46) 
+e) il trattamento è necessario per l'esecuzione di un compito di interesse pubblico o connesso 
+all'esercizio di pubblici poteri di cui è investito il titolare del trattamento; (C45, C46) 
+f) il trattamento è necessario p er il perseguimento del legittimo interesse del titolare del 
+trattamento o di terzi, a condizione che non prevalgano gli interessi o i diritti e le libertà 
+fondamentali dell'interessato che richiedono la protezione dei dati personali, in particolare se 
+l'interessato è un minore. (C47-C50) 
+La lettera f) del primo comma non si applica al trattamento di dati effettuato dalle autorità 
+pubbliche nell'esecuzione dei loro compiti. 
+2. Gli Stati membri possono mantenere o introdurre disposizioni più specifiche per a deguare 
+l'applicazione delle norme del presente regolamento con riguardo al trattamento, in conformità del 
+paragrafo 1, lettere c) ed e), determinando con maggiore precisione requisiti specifici per il 
+trattamento e altre misure atte a garantire un trattam ento lecito e corretto anche per le altre 
+specifiche situazioni di trattamento di cui al capo IX. (C8, C10, C41, C45, C51) 
+3. La base su cui si fonda il trattamento dei dati di cui al paragrafo 1, lettere c) ed e), deve essere 
+stabilita: (C8, C10, C41, C45, C51) 
+a) dal diritto dell'Unione; o 
+b) dal diritto dello Stato membro cui è soggetto il titolare del trattamento. 
+La finalità del trattamento è determinata in tale base giuridica o, per quanto riguarda il 
+trattamento di cui al paragrafo 1, lettera e), è n ecessaria per l'esecuzione di un compito svolto nel 
+pubblico interesse o connesso all'esercizio di pubblici poteri di cui è investito il titolare del 
+trattamento. Tale base giuridica potrebbe contenere disposizioni specifiche per adeguare 
+l'applicazione de lle norme del presente regolamento, tra cui: le condizioni generali relative alla 
+liceità del trattamento da parte del titolare del trattamento; le tipologie di dati oggetto del 
+trattamento; gli interessati; i soggetti cui possono essere comunicati i dati personali e le finalità 
+per cui sono comunicati; le limitazioni della finalità, i periodi di conservazione e le operazioni e 
+procedure di trattamento, comprese le misure atte a garantire un trattamento lecito e corretto, 
+quali quelle per altre specifiche s ituazioni di trattamento di cui al capo IX. Il diritto dell'Unione o 
+degli Stati membri persegue un obiettivo di interesse pubblico ed è proporzionato all'obiettivo 
+legittimo perseguito. 
+4. Laddove il trattamento per una finalità diversa da quella per la q uale i dati personali sono stati 
+raccolti non sia basato sul consenso dell'interessato o su un atto legislativo dell'Unione o degli Stati 
+membri che costituisca una misura necessaria e proporzionata in una società democratica per la 
+salvaguardia degli obiettivi di cui all'articolo 23, paragrafo 1, al fine di verificare se il trattamento 
+per un'altra finalità sia compatibile con la finalità per la quale i dati personali sono stati inizialmente 
+raccolti, il titolare del trattamento tiene conto, tra l'altro: (C50) 
+a) di ogni nesso tra le finalità per cui i dati personali sono stati raccolti e le finalità dell' ulteriore 
+trattamento previsto; 
+b) del contesto in cui i dati personali sono stati raccolti, in particolare relativamente alla relazione 
+tra l'interessato e il titolare del trattamento; 
+c) della natura dei dati personali, specialmente se siano trattate categorie particolari di dati 
+personali ai sensi dell'articolo 9, oppure se siano trattati dati relativi a condanne penali e a r eati ai 
+sensi dell'articolo 10; 
+d) delle possibili conseguenze dell'ulteriore trattamento previsto per gli interessati; 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+e) dell'esistenza di garanzie adeguate, che possono comprendere la cifratura o la 
+pseudonimizzazione. 
+ 
+
+
+Articolo 7 
+Condizioni per il consenso (C42, C43) 
+1. Qualora il trattamento sia basato sul consenso, il titolare del trattamento deve essere in grado di 
+dimostrare che l'interessato ha prestato il proprio consenso al trattamento dei propri dati personali. 
+2. Se il consenso dell'interessato è prestato nel contesto di u na dichiarazione scritta che riguarda 
+anche altre questioni, la richiesta di consenso è presentata in modo chiaramente distinguibile dalle 
+altre materie, in forma comprensibile e facilmente accessibile, utilizzando un linguaggio semplice e 
+chiaro. Nessuna parte di una tale dichiarazione che costituisca una violazione del presente 
+regolamento è vincolante. 
+3.  L'interessato ha il diritto di revocare il proprio consenso in qualsiasi momento. La revoca del 
+consenso non pregiudica la liceità del trattamento basata sul consenso prima della revoca. Prima di 
+prestare il proprio consenso, l'interessato è informato di ciò. Il consenso è revocato con la stessa 
+facilità con cui è accordato. 
+4. Nel valutare se il consenso sia stato liberamente prestato, si tiene nella massima considerazione 
+l'eventualità, tra le altre, che l'esecuzione di un contratto, compresa la prestazione di un servizio, 
+sia condizionata alla prestazione del consenso al trattamento di dati personali non necessario 
+all'esecuzione di tale contratto. 
+ 
+
+
+Articolo 13 
+Informazioni da fornire qualora i dati personali siano raccolti presso 
+l'interessato (C60-C62) 
+1. In caso di raccolta presso l'interessato di dati che lo riguardano, il titolare del trattamento 
+fornisce all'interessato, nel momento in cui i dati personali sono ottenuti, le seguenti informazioni: 
+a) l'identità e  i dati di contatto del titolare del trattamento e, ove appli cabile, del suo 
+rappresentante; 
+b) i dati di contatto del responsabile della protezione dei dati, ove applicabile; 
+c) le finalità del trattamento cui sono destinati i dati personali nonché la base giuridica del 
+trattamento; 
+d) qualora il trattamento si basi sull'articolo 6, paragrafo 1, lettera f), i legittimi interessi perseguiti 
+dal titolare del trattamento o da terzi; 
+e) gli eventuali destinatari o le eventuali categorie di destinatari dei dati personali; 
+f) ove applicabile, l'intenzione del titolare del trattamento di trasferire dati personali a un paese 
+terzo o a un'organizzazione internazionale e l'esistenza o l'assenza di una decisione di adeguatezza 
+della Commissione o, nel caso dei trasfer imenti di cui all'articolo 46 o 47, o all'articolo 49, 
+paragrafo 1, secondo comma, il riferimento alle garanzie appropriate o opportune e i mezzi per 
+ottenere una copia di tali garanzie o il luogo dove sono state rese disponibili. 
+2. In aggiunta alle infor mazioni di cui al paragrafo 1, nel momento in cui i dati personali sono 
+ottenuti, il titolare del trattamento fornisce all'interessato le seguenti ulteriori informazioni 
+necessarie per garantire un trattamento corretto e trasparente: 
+a) il periodo di conse rvazione dei dati personali oppure, se non è possibile, i criteri utilizzat i per 
+determinare tale periodo; 
+b) l'esistenza del diritto dell'interessato di chiedere al titolare del trattamento l'accesso ai dati 
+personali e la rettifica o la cancellazione deg li stessi o la limitazione del trattamento dei dati 
+personali che lo riguardano o di opporsi al loro trattamento, oltre al diritto alla portabilità dei dati; 
+c) qualora il trattamento sia basato sull'articolo 6, paragrafo 1, lettera a), oppure sull'articol o 9, 
+paragrafo 2, lettera a), l'esistenza del diritto di revocare il consenso in qualsiasi momento senza 
+pregiudicare la liceità del trattamento basata sul consenso prestato prima della revoca; 
+d) il diritto di proporre reclamo a un'autorità di controllo; 
+e) se la comunicazione di dati personali è un obbligo legale o contrattuale oppure un requisito 
+necessario per la conclusione di un contratto, e se l'interessato ha l'obbligo di fornire i dati 
+personali nonché le possibili conseguenze della mancata comunicazione di tali dati; 
+f) l'esistenza di un processo decisionale automatizzato, compresa la profilazione di cui all'articolo 
+22, paragrafi 1 e 4, e, almeno in tali casi, informazioni significative sulla logica utilizzata, nonché 
+l'importanza e le conseguenze previste di tale trattamento per l'interessato. 
+3. Qualora il titolare del trattamento intenda trattare ulteriormente i dati personali per una finalità 
+diversa da quella per cui essi sono stati raccolti, prima di tale ulteriore trattamento fornisce 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+all'interessato informazioni in merito a tale diversa finalità e ogni ulteriore informazione pertinente 
+di cui al paragrafo 2. 
+4. I paragrafi 1, 2 e 3 non si applicano se e nella misura in cui l'interessato dispone già delle 
+informazioni. 
+ 
+
+
+Articolo 14 
+Informazioni da fornire qualora i dati personali non siano stati ottenuti presso 
+l'interessato (C60-C62) 
+1. Qualora i dati non siano stati ottenuti presso l'interessato, il titolare del trattamento fornisce 
+all'interessato le seguenti informazioni: 
+a) l'identità e i  dati di contatto del titolare del trattamento e, ove appli cabile, del suo 
+rappresentante; 
+b) i dati di contatto del responsabile della protezione dei dati, ove applicabile; 
+c) le finalità del trattamento cui sono destinati i dati personali nonché la base giuridica del 
+trattamento; 
+d) le categorie di dati personali in questione; 
+e) gli eventuali destinatari o le eventuali categorie di destinatari dei dati personali; 
+f) ove applicabile, l'intenzione del titolare del trattamento di trasferire dati personali a  un 
+destinatario in un paese terzo o a un'organizzazione internazionale e l'esistenza o l'assenza di una 
+decisione di adeguatezza della Commissione o, nel caso dei trasferimenti di cui all'articolo 46 o 47, 
+o all'articolo 49, paragrafo 1, secondo comma, il riferimento alle garanzie adeguate o opportune e i 
+mezzi per ottenere una copia di tali garanzie o il luogo dove sono state rese disponibili. 
+2. Oltre alle informazioni di cui al paragrafo 1, il titolare del trattamento fornisce all'interessato le 
+seguenti informazioni necessarie per garantire un trattamento corretto e trasparente nei confronti 
+dell'interessato: 
+a) il periodo di conservazione dei dati personali oppure, se non è possibile, i criteri utilizzati per 
+determinare tale periodo; 
+b) qualora il trattamento si basi sull'articolo 6, paragrafo 1, lettera f), i legittimi interessi perseguiti 
+dal titolare del trattamento o da terzi; 
+c) l'esistenza del diritto dell'interessato di chiedere al titolare del trattamento l'accesso ai dati 
+personali e la rettif ica o la cancellazione degli stessi o la limitazione del trattamento dei dati 
+personali che lo riguardano e di opporsi al loro trattamento, oltre al diritto alla portabilità dei dati; 
+d) qualora il trattamento sia basato sull'articolo 6, paragrafo 1, lette ra a), oppure sull'articolo 9, 
+paragrafo 2, lettera a), l'esistenza del diritto di revocare il consenso in qualsiasi momento senza 
+pregiudicare la liceità del trattamento basata sul consenso prima della revoca; 
+e) il diritto di proporre reclamo a un'autorità di controllo; 
+f) la fonte da cui hanno origine i dati personali e, se del caso, l'eventualità che i dati provengano 
+da fonti accessibili al pubblico; 
+g) l'esistenza di un processo decisionale automatizzato, compresa la profilazione di cui all'articolo 
+22, paragrafi 1 e 4, e, almeno in tali casi, informazioni significative sulla logica utilizzata, nonché 
+l'importanza e le conseguenze previste di tale trattamento per l'interessato. 
+3. Il titolare del trattamento fornisce le informazioni di cui ai paragrafi 1 e 2: 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+a) entro un termine ragionevole dall'ottenimento dei dati personali, ma al più tardi entro un mese, 
+in considerazione delle specifiche circostanze in cui i dati personali sono trattati; 
+b) nel caso in cui i dati personali siano destinati alla comunicazione con l'interessato, al più tardi al 
+momento della prima comunicazione all'interessato; oppure 
+c) nel caso sia prevista la comunicazione ad altro destinatario, non oltre la prima comunicazione 
+dei dati personali. 
+4. Qualora il titolare del trattamento intenda trattare ulteriormente i dati personali per una finalità 
+diversa da quella per cui essi sono stati ottenuti, prima di tale ulteriore trattamento fornisce 
+all'interessato informazioni in merito a tale diversa finalità e ogni informazione pertinen te di cui al 
+paragrafo 2. 
+5. I paragrafi da 1 a 4 non si applicano se e nella misura in cui: 
+a) l'interessato dispone già delle informazioni; 
+b) comunicare tali informazioni risulta impossibile o implicherebbe uno sforzo sproporzionato; in 
+particolare per il trattamento a fini di archiviazione nel pubblico interesse, di ricerca scientifica o 
+storica o a fini statistici, fatte salve le condizioni e le garanzie di cui all'articolo 89, paragrafo 1, o 
+nella misura in cui l'obbligo di cui al paragrafo 1 del presente articolo rischi di rendere impossibile o 
+di pregiudicare gravemente il conseguimento delle finalità di tale trattamento. In tali casi, il titolare 
+del trattamento adotta misure appropriate per tutelare i diritti, le libertà e i legittimi interessi 
+dell'interessato, anche rendendo pubbliche le informazioni; 
+c) l'ottenimento o la comunicazione sono espressamente previsti dal diritto dell'Unione o dello 
+Stato membro cui è soggetto il titolare del trattamento e che prevede misure appropriate per 
+tutelare gli interessi legittimi dell'interessato; oppure 
+d) qualora i dati personali debbano rimanere riservati conformemente a un obbligo di segreto 
+professionale disciplinato dal diritto dell'Unione o degli Stati membri, compreso un obbligo di 
+segretezza previsto per legge. 
+ 
+
+
+Articolo 15 
+Diritto di accesso dell'interessato (C63, C64) 
+1. L'interessato ha il diritto di ottenere dal titolare del trattamento la conferma che sia o meno in 
+corso un trattamento di dati personali che lo riguardano e in tal caso, di ottener e l'accesso ai dati 
+personali e alle seguenti informazioni: 
+a) le finalità del trattamento; 
+b) le categorie di dati personali in questione; 
+c) i destinatari o le categorie di destinatari a cui i dati personali sono stati o saranno comunicati, in 
+particolare se destinatari di paesi terzi o organizzazioni internazionali; 
+d) quando possibile, il periodo di conservazione dei dati personali previsto oppure, se non è 
+possibile, i criteri utilizzati per determinare tale periodo; 
+e) l'esistenza del diritto dell'int eressato di chiedere al titolare del trattamento la rettifica o la 
+cancellazione dei dati personali o la limitazione del trattamento dei dati personali che lo riguardano 
+o di opporsi al loro trattamento; 
+f) il diritto di proporre reclamo a un'autorità di controllo; 
+g) qualora i dati non siano raccolti presso l'interessato, tutte le informazioni disponibili sulla loro 
+origine; 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+h) l'esistenza di un processo decisionale automatizzato, compresa la profilazione di cui all'articolo 
+22, paragrafi 1 e 4, e, almeno in tali casi, informazioni significative sulla logica utilizzata, nonché 
+l'importanza e le conseguenze previste di tale trattamento per l'interessato. 
+2. Qualora i dati personali siano trasferiti a un paese terzo o a un'organizzazione internazionale, 
+l'interessato ha il diritto di essere informato dell'esistenza di garanzie adeguate ai sensi dell'articolo 
+46 relative al trasferimento. 
+3. Il titolare del trattamento fornisce una copia dei dati personali oggetto di trattamento. In caso di 
+ulteriori copie rich ieste dall'interessato, il titolare del trattamento può addebitare un contributo 
+spese ragionevole basato sui costi amministrativi. Se l'interessato presenta la richiesta mediante 
+mezzi elettronici, e salvo indicazione diversa dell'interessato, le informaz ioni sono fornite in un 
+formato elettronico di uso comune. 
+4. Il diritto di ottenere una copia di cui al paragrafo 3 non deve ledere i diritti e le libertà altrui. 
+ 
+ 
+Sezione 3 
+Rettifica e cancellazione 
+ 
+
+
+Articolo 17 
+Diritto alla cancellazione («diritto all'oblio») (C65, C66) 
+1. L'interessato ha il diritto di ottenere dal titolare del trattamento la cancellazione dei dati 
+personali che lo rig uardano senza ingiustificato ritardo e il titolare del trattamento ha l'obbligo di 
+cancellare senza ingiustificato ritardo i dati personali, se sussiste uno dei motivi seguenti: 
+a) i dati personali non sono più necessari rispetto alle finalità per le quali  sono stati raccolti o 
+altrimenti trattati; 
+b) l'interessato revoca il consenso su cui si basa il trattamento conformemente all'articolo 6, 
+paragrafo 1, lettera a), o all'articolo 9, paragrafo 2, lettera a), e se non sussiste altro fondament o 
+giuridico per il trattamento; 
+c) l'interessato si oppone al trattamento ai sensi dell'articolo 21, paragrafo 1, e non sussiste alcun 
+motivo legittimo prevalente per procedere al trattamento, oppure si oppone al trattamento ai sensi 
+dell'articolo 21, paragrafo 2; 
+d) i dati personali sono stati trattati illecitamente; 
+e) i dati personali devono essere cancellati per adempiere un obbligo giuridico previsto dal diritto 
+dell'Unione o dello Stato membro cui è soggetto il titolare del trattamento; 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+f) i dati personali sono stat i raccolti relativamente all'offerta di servizi della società 
+dell'informazione di cui all'articolo 8, paragrafo 1. 
+2. Il titolare del trattamento, se ha reso pubblici dati personali ed è obbligato, ai sensi del 
+paragrafo 1, a cancellarli, tenendo conto de lla tecnologia disponibile e dei costi di attuazione 
+adotta le misure ragionevoli, anche tecniche, per informare i titolari del trattamento che stanno 
+trattando i dati personali della richiesta dell'interessato di cancellare qualsiasi link, copia o 
+riproduzione dei suoi dati personali. 
+3. I paragrafi 1 e 2 non si applicano nella misura in cui il trattamento sia necessario: 
+a) per l'esercizio del diritto alla libertà di espressione e di informazione; 
+b) per l'adempimento di un obbligo giuridico che richieda il trattamento previsto dal diritto 
+dell'Unione o dello Stato membro cui è soggetto il titolare del trattamento o per l'esecuzione di un 
+compito svolto nel pubblico interesse oppure nell'esercizio di pubblici poteri di cui è investi to il 
+titolare del trattamento; 
+c) per motivi di interesse pubblico nel settore della sanità pubblica in conformità dell'articolo 9, 
+paragrafo 2, lettere h) e i), e dell'articolo 9, paragrafo 3; 
+d) a fini di archiviazione nel pubblico interesse, di ricerca scientifica o storica o  a fini statistici 
+conformemente all'articolo 89, paragrafo 1, nella misura in cui il diritto di cui al paragrafo 1 rischi 
+di rendere impossibile o di pregiudicare gravemente il conseguimento degli o biettivi di tale 
+trattamento; o 
+e) per l'accertamento, l'esercizio o la difesa di un diritto in sede giudiziaria. 
+ 
+
+
+Articolo 21 
+Diritto di opposizione (C69, C70) 
+1. L'interessato ha il diritto di opporsi in qualsiasi momento, per motivi connessi alla sua situazione 
+particolare, al trattamento dei dati personali che lo riguardano ai sensi dell'articolo 6, paragrafo 1, 
+lettere e) o f), compres a la profilazione sulla base di tali disposizioni. Il titolare del trattamento si 
+astiene dal trattare ulteriormente i dati personali salvo che egli dimostri l'esistenza di motivi 
+legittimi cogenti per procedere al trattamento che prevalgono sugli interess i, sui diritti e sulle 
+libertà dell'interessato oppure per l'accertamento, l'esercizio o la difesa di un diritto in sede 
+giudiziaria. 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+2. Qualora i dati personali siano trattati per finalità di marketing diretto, l'interessato ha il diritto di 
+opporsi in qualsiasi momento al trattamento dei dati personali che lo riguardano effettuato per tali 
+finalità, compresa la profilazione nella misura in cui sia connessa a tale marketing diretto. 
+3. Qualora l'interessato si opponga al trattamento per finalità di marketi ng diretto, i dati personali 
+non sono più oggetto di trattamento per tali finalità. 
+4. Il diritto di cui ai paragrafi 1 e 2 è esplicitamente portato all'attenzione dell'interessato ed è 
+presentato chiaramente e separatamente da qualsiasi altra informazione  al più tardi al momento 
+della prima comunicazione con l'interessato. 
+5. Nel contesto dell'utilizzo di servizi della società dell'informazione e fatta salva la direttiva 
+2002/58/CE, l'interessato può esercitare il proprio diritto di opposizione con mezzi a utomatizzati 
+che utilizzano specifiche tecniche. 
+6. Qualora i dati personali siano trattati a fini di ricerca scientifica o storica o a fini statistici a 
+norma dell'articolo 89, paragrafo 1, l'interessato, per motivi connessi alla sua situazione 
+particolare, ha il diritto di opporsi al trattamento di dati personali che lo riguardano, salvo se il 
+trattamento è necessario per l'esecuzione di un compito di interesse pubblico. 
+ 
+
+
+Articolo 24 
+Responsabilità del titolare del trattamento (C74-C78) 
+1. Tenuto conto della natura, dell'ambito di a pplicazione, del contesto e delle finalità del 
+trattamento, nonché dei rischi aventi probabilità e gravità diverse per i diritti e le libertà delle 
+persone fisiche, il titolare del trattamento mette in atto misure tecniche e organizzative adeguate 
+per garantire, ed essere in grado di dimostrare, che il trattamento è effettuato conformemente al 
+presente regolamento. Dette misure sono riesaminate e aggiornate qualora necessario. 
+2. Se ciò è proporzionato rispetto alle attività di trattamento, le misure di cui  al paragrafo 1 
+includono l'attuazione di politiche adeguate in materia di protezione dei dati da parte del titolare 
+del trattamento. 
+3. L'adesione ai codici di condotta di cui all'articolo 40 o a un meccanismo di certificazione di cui 
+all'articolo 42 può essere utilizzata come elemento per dimostrare il rispetto degli obblighi del 
+titolare del trattamento. 
+
+
+Articolo 25 
+Protezione dei dati fin dalla progettazione e protezione dei dati per 
+impostazione predefinita (C75-C78) 
+1. Tenendo conto dello stato dell'arte e dei costi di attuazione, nonché della natura, dell'ambito di 
+applicazione, del contesto e delle finalità del trattamento, come anche dei rischi aventi probabilità 
+e gravità diverse per i diritti e le libertà delle persone fisiche costituiti dal tratt amento, sia al 
+momento di determinare i mezzi del trattamento sia all'atto del trattamento stesso il titolare del 
+trattamento mette in atto misure tecniche e organizzative adeguate, quali la pseudonimizzazione, 
+volte ad attuare in modo efficace i principi di protezione dei dati, quali la minimizzazione, e a 
+integrare nel trattamento le necessarie garanzie al fine di soddisfare i requisiti del presente 
+regolamento e tutelare i diritti degli interessati. 
+2. Il titolare del trattamento mette in atto misure tec niche e organizzative adeguate per garantire 
+che siano trattati, per impostazione predefinita, solo i dati personali necessari per ogni specifica 
+finalità del trattamento. Tale obbligo vale per la quantità dei dati personali raccolti, la portata del 
+trattamento, il periodo di conservazione e l'accessibilità. In particolare, dette misure garantiscono 
+che, per impostazione predefinita, non siano resi accessibili dati personali a un numero indefinito di 
+persone fisiche senza l'intervento della persona fisica. 
+3. Un meccanismo di certificazione approvato ai sensi dell'articolo 42 può essere utilizzato come 
+elemento per dimostrare la conformità ai requisiti di cui ai paragrafi 1 e 2 del presente articolo. 
+ 
+ 
+ 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+
+
+Articolo 28 
+Responsabile del trattamento (C81) 
+1. Qualora un trattamento debba essere effettuato per conto del titolare del trattamento, 
+quest'ultimo ricorre unicamente a responsabili del trattamento che presentino garanzie sufficienti  
+per mettere in atto misure tecniche e organizzative adeguate in modo tale che il trattamento 
+soddisfi i requisiti del presente regolamento e garantisca la tutela dei diritti dell'interessato. 
+2. Il responsabile del trattamento non ricorre a un altro respo nsabile senza previa autorizzazione 
+scritta, specifica o generale, del titolare del trattamento. Nel caso di autorizzazione scritta 
+generale, il responsabile del trattamento informa il titolare del trattamento di eventuali modifiche 
+previste riguardanti l'aggiunta o la sostituzione di altri responsabili del trattamento, dando così al 
+titolare del trattamento l'opportunità di opporsi a tali modifiche. 
+3. I trattamenti da parte di un responsabile del trattamento sono disciplinati da un contratto o da 
+altro atto giuridico a norma del diritto dell'Unione o degli Stati membri, che vincoli il responsabile 
+del trattamento al titolare del trattamento e che stipuli la materia disciplinata e la durata del 
+trattamento, la natura e la finalità del trattamento, il tipo d i dati personali e le categorie di 
+interessati, gli obblighi e i diritti del titolare del trattamento. Il contratto o altro atto giuridico 
+prevede, in particolare, che il responsabile del trattamento: 
+a) tratti i dati personali soltanto su istruzione docum entata del titolare del trattamento, anche in 
+caso di trasferimento di dati personali verso un paese terzo o un'organizzazione internazionale, 
+salvo che lo richieda il diritto dell'Unione o nazionale cui è soggetto il responsabile del trattamento; 
+in tal c aso, il responsabile del trattamento informa il titolare del trattamento circa tale obbligo 
+giuridico prima del trattamento, a meno che il diritto vieti tale informazione per rilevant i motivi di 
+interesse pubblico; 
+b) garantisca che le persone autorizzate al trattamento dei dati personali si siano impegnate alla 
+riservatezza o abbiano un adeguato obbligo legale di riservatezza; 
+c) adotti tutte le misure richieste ai sensi dell'articolo 32; 
+d) rispetti le condizioni di cui ai paragrafi 2 e 4 per ricorrere a un altr o responsabile del 
+trattamento; 
+e) tenendo conto della natura del trattamento, assista il titolare del trattamento con misure 
+tecniche e organizzative adeguate, nella misura in cui ciò sia possibile, al fine di soddisfare 
+l'obbligo del titolare del trattamento di dare seguito alle richieste per l'esercizio dei diritti 
+dell'interessato di cui al capo III; 
+f) assista il titolare del trattamento nel garantire il rispetto degli obblighi di cui agli articoli da 32 a 
+36, tenendo conto della natura del trattamento e delle informazioni a disposizione del responsabile 
+del trattamento; 
+g) su scelta del titolare del trattamento, cancelli o gli restituisca tutti i dati personali dopo che è 
+terminata la prestazione dei servizi relativi al trattamento e cancelli le  copie esistenti, salvo che il 
+diritto dell'Unione o degli Stati membri preveda la conservazione dei dati; e 
+h) metta a disposizione del titolare del trattamento tutte le informazioni necessarie per dimostrare 
+il rispetto degli obblighi di cui al presente articolo e consenta e contribuisca alle attività di 
+revisione, comprese le ispezioni, realizzati dal titolare del trattamento o da un altro soggetto da 
+questi incaricato.  
+Con riguardo alla lettera h) del primo comma, il responsabile del trattamento inform a 
+immediatamente il titolare del trattamento qualora, a suo parere, un'istruzione violi il presente 
+regolamento o altre disposizioni, nazionali o dell'Unione, relative alla protezione dei dati. 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+4. Quando un responsabile del trattamento ricorre a un altro r esponsabile del trattamento per 
+l'esecuzione di specifiche attività di trattamento per conto del titolare del trattamento, su tale altro 
+responsabile del trattamento sono imposti, mediante un contratto o un altro atto giuridico a norma 
+del diritto dell'Uni one o degli Stati membri, gli stessi obblighi in materia di protezione dei dati 
+contenuti nel contratto o in altro atto giuridico tra il titolare del trattamento e il responsabile del 
+trattamento di cui al paragrafo 3, prevedendo in particolare garanzie sufficienti per mettere in atto 
+misure tecniche e organizzative adeguate in modo tale che il trattamento soddisfi i requisiti del 
+presente regolamento. Qualora l'altro responsabile del trattamento ometta di adempiere ai propri 
+obblighi in materia di protezio ne dei dati, il responsabile iniziale conserva nei confronti del titolare 
+del trattamento l'intera responsabilità dell'adempimento degli obblighi dell'altro responsabile. 
+5. L'adesione da parte del responsabile del trattamento a un codice di condotta appro vato di cui 
+all'articolo 40 o a un meccanismo di certificazione approvato di cui all'articolo 42 può essere 
+utilizzata come elemento per dimostrare le garanzie sufficienti di cui ai paragrafi 1 e 4 del presente 
+articolo. 
+6. Fatto salvo un contratto individ uale tra il titolare del trattamento e il responsabile del 
+trattamento, il contratto o altro atto giuridico di cui ai paragrafi 3 e 4 del presente articolo può 
+basarsi, in tutto o in parte, su clausole contrattuali tipo di cui ai paragrafi 7 e 8 del presen te 
+articolo, anche laddove siano parte di una certificazione concessa al titolare del trattamento o al 
+responsabile del trattamento ai sensi degli articoli 42 e 43. 
+7. La Commissione può stabilire clausole contrattuali tipo per le materie di cui ai paragrafi 3 e 4 del 
+presente articolo e secondo la procedura d'esame di cui all'articolo 93, paragrafo 2. 
+8. Un'autorità di controllo può adottare clausole contrattuali tipo per le materie di cui ai paragrafi 3 
+e 4 del presente articolo in conformità del meccanismo di coerenza di cui all'articolo 63. 
+9. Il contratto o altro atto giuridico di cui ai paragrafi 3 e 4 è stipulato in forma scritta, anche in 
+formato elettronico. 
+10. Fatti salvi gli articoli 82, 83 e 84, se un responsabile del trattamento viola il presen te 
+regolamento, determinando le finalità e i mezzi del trattamento, è considerato un titolare del 
+trattamento in questione. 
+ 
+
+
+Articolo 30 
+Registri delle attività di trattamento (C82) 
+1. Ogni titolare del trattamento e, ove applicabile, il suo rappresentante tengono un registro delle 
+attività di trattamento svolte sotto la propria responsabilità. Tale registro contiene tutte le seguenti 
+informazioni: 
+a) il nome e i dati di contatto del titolare del trattamento e, ove applicabile, del contitolare del 
+trattamento, del rappresentante del titolare del trattamento e del responsabile della protezione dei 
+dati; 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+b) le finalità del trattamento; 
+c) una descrizione delle categorie di interessati e delle categorie di dati personali; 
+d) le categorie di destinatari a cui i dati personali sono stati o saranno comunicati, compresi i 
+destinatari di paesi terzi od organizzazioni internazionali; 
+e) ove applicabile, i trasferimenti di dati personali verso un paese terzo o un'organizzazione 
+internazionale, compresa l'identificazione del paese terzo o dell'organizzazione internazionale e, per 
+i trasferimenti di cui al seco ndo comma dell'articolo 49, la document azione delle garanzie 
+adeguate; 
+f) ove possibile, i termini ultimi previsti per la cancellazione delle diverse categorie di dati; 
+g) ove possibile, una descrizione generale delle misure di sicurezza tecniche e organiz zative di cui 
+all'articolo 32, paragrafo 1. 
+2. Ogni responsabile del trattamento e, ove applicabile, il suo rappresentante tengono un registro 
+di tutte le categorie di attività relative al trattamento svolte per conto di un titolare del 
+trattamento, contenente: 
+a) il nome e i dati di contatto del responsabile o dei responsabili del trattamento, di ogni titolare 
+del trattamento per conto del quale agisce il responsabile del trattamento, del rappresentante del 
+titolare del trattamento o del responsabile del trattamento e, ove applicabile, del responsabile della 
+protezione dei dati; 
+b) le categorie dei trattamenti effettuati per conto di ogni titolare del trattamento; 
+c) ove applicabile, i trasferimenti di dati personali verso un paese terzo o un'organizzazione  
+internazionale, compresa l'identificazione del paese terzo o dell'organizzazione internazionale e, per 
+i trasferimenti di cui al secondo comma dell'articolo 49, la document azione delle garanzie 
+adeguate; 
+d) ove possibile, una descrizione generale delle mi sure di sicurezza tecniche e organizzative di cui 
+all'articolo 32, paragrafo 1. 
+3. I registri di cui ai paragrafi 1 e 2 sono tenuti in forma scritta, anche in formato elettronico. 
+4. Su richiesta, il titolare del trattamento o il responsabile del trattamen to e, ove applicabile, il 
+rappresentante del titolare del trattamento o del responsabile del trattamento mettono il registro a 
+disposizione dell'autorità di controllo. 
+5. Gli obblighi di cui ai paragrafi 1 e 2 non si applicano alle imprese o organizzazioni  con meno di 
+250 dipendenti, a meno che il trattamento che esse effettuano possa presentare un rischio per i 
+diritti e le libertà dell'interessato, il trattamento non sia occasionale o includa il trattamento di 
+categorie particolari di dati di cui all'arti colo 9, paragrafo 1, o i dati personali relativi a condanne 
+penali e a reati di cui all'articolo 10. 
+ 
+
+
+Articolo 32 
+Sicurezza del trattamento (C83) 
+1. Tenendo conto dello stato dell'arte e dei costi di attuazione, nonché della natura, dell'oggetto, 
+del contesto e delle finalità del trattamento, come anche del rischio di varia probabilità e gravità 
+per i diritti e le libertà delle persone fisiche, il titolare del trattamento e il responsabile del 
+trattamento mettono in atto  misure tecniche e organizzative adeguate per garantire un livello di 
+sicurezza adeguato al rischio, che comprendono, tra le altre, se del caso: 
+a) la pseudonimizzazione e la cifratura dei dati personali; 
+b) la capacità di assicurare su base permanente la riservatezza, l'integrità, la disponibilità e la 
+resilienza dei sistemi e dei servizi di trattamento; 
+c) la capacità di ripristinare tempestivamente la disponibilità e l'accesso dei dati personali in caso di 
+incidente fisico o tecnico; 
+d) una procedura per testare, verificare e valutare regolarmente l'efficacia delle misure tecniche e 
+organizzative al fine di garantire la sicurezza del trattamento. 
+2. Nel valutare l'adeguato livello di sicurezza, si tiene conto in special modo dei rischi presentati dal 
+trattamento che derivano in particolare dalla distruzione, dalla perdita, dalla modifica, dalla 
+divulgazione non autorizzata o dall'accesso, in modo accidentale o illegale, a dati personali 
+trasmessi, conservati o comunque trattati. 
+3. L'adesione a un codice d i condotta approvato di cui all'articolo 40 o a un meccanismo di 
+certificazione approvato di cui all'articolo 42 può essere utilizzata come elemento per dimostrare la 
+conformità ai requisiti di cui al paragrafo 1 del presente articolo. 
+4. Il titolare del trattamento e il responsabile del trattamento fanno sì che chiunque agisca sotto la 
+loro autorità e abbia accesso a dati personali non tratti tali dati se non è istruito in tal senso dal 
+titolare del trattamento, salvo che lo richieda il diritto dell'Unione o degli Stati membri. 
+ 
+
+
+Articolo 44 
+Principio generale per il trasferimento (C101, C102) 
+Qualunque trasferimento di dati personali oggetto di un trattamento o destinati a essere oggetto di 
+un trattamento dopo il t rasferimento verso un paese terzo o un'organizzazione internazionale, 
+compresi trasferimenti successivi di dati personali da un paese terzo o un'organizzazione 
+internazionale verso un altro paese terzo o un'altra organizzazione internazionale, ha luogo 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+soltanto se il titolare del trattamento e il responsabile del trattamento rispettano le condizioni di cui 
+al presente capo, fatte salve le altre disposizioni del presente regolamento. Tutte le disposizioni del 
+presente capo sono applicate al fine di assicurar e che il livello di protezione delle persone fisiche 
+garantito dal presente regolamento non sia pregiudicato. 
+ 
+
+
+Articolo 45 
+Trasferimento sulla base di una decisione di adeguatezza  
+(C103, C107, C167-C169) 
+1. Il trasferimento di dati personali verso un paes e terzo o un'organizzazione internazionale è 
+ammesso se la Commissione ha deciso che il paese terzo, un territorio o uno o più settori specifici 
+all'interno del paese terzo, o l'organizzazione internazionale in questione garantiscono un livello di 
+protezione adeguato. In tal caso il trasferimento non necessita di autorizzazioni specifiche. 
+2. Nel valutare l'adeguatezza del livello di protezione, la Commissione prende in considerazione in 
+particolare i seguenti elementi: 
+a) lo stato di diritto, il rispetto d ei diritti umani e delle libertà fondamentali, la pertinente 
+legislazione generale e settoriale (anche in materia di sicurezza pubblica, difesa, sicurezza 
+nazionale, diritto penale e accesso delle autorità pubbliche ai dati personali), così come l'attuazione 
+di tale legislazione, le norme in materia di protezione dei dati, le norme professionali e le misure di 
+sicurezza, comprese le norme per il trasferimento successivo dei dati personali verso un altro 
+paese terzo o un'altra organizzazione internazionale o sservate nel paese o dall'organizzazione 
+internazionale in questione, la giurisprudenza nonché i diritti effettivi e azionabili degli interessati e 
+un ricorso effettivo in sede amministrativa e giudiziaria per gli interessati i cui dati personali  sono 
+oggetto di trasferimento; 
+b) l'esistenza e l'effettivo funzionamento di una o più autorità di controllo indipendenti nel paese 
+terzo o cui è soggetta un'organizzazione internazionale, con competenza per garantire e 
+controllare il rispetto delle norme in materi a di protezione dei dati, comprensiva di adeguati poteri 
+di esecuzione, per assistere e fornire consulenza agli interessati in merito all'esercizio dei loro diritti 
+e cooperare con le autorità di controllo degli Stati membri; e 
+c) gli impegni internazional i assunti dal paese terzo o dall'organizzazione internazionale in 
+questione o altri obblighi derivanti da convenzioni o strumenti giuridicamente vincolanti come pure 
+dalla loro partecipazione a sistemi multilaterali o regionali, in particolare in relazione alla protezione 
+dei dati personali. 
+3. La Commissione, previa valutazione dell'adeguatezza del livello di protezione, può decidere, 
+mediante atti di esecuzione, che un paese terzo, un territorio o uno o più settori specifici all'interno 
+di un paese terzo,  o un'organizzazione internazionale garantiscono un livello di protezione 
+adeguato ai sensi del paragrafo 2 del presente articolo. L'atto di esecuzione prevede un 
+meccanismo di riesame periodico, almeno ogni quattro anni, che tenga conto di tutti gli svilu ppi 
+pertinenti nel paese terzo o nell'organizzazione internazionale. L'atto di esecuzione specifica il 
+proprio ambito di applicazione geografico e settoriale e, ove applicabile, identifica la o le autorità di 
+controllo di cui al paragrafo 2, lettera b), de l presente articolo. L'atto di esecuzione è adottato 
+secondo la procedura d'esame di cui all'articolo 93, paragrafo 2. 
+4. La Commissione controlla su base continuativa gli sviluppi nei paesi terzi e nelle organizzazioni 
+internazionali che potrebbero incide re sul funzionamento delle decisioni adottate a norma del 
+paragrafo 3 del presente articolo e delle decisioni adottate sulla base dell'articolo 25, paragrafo 6, 
+della direttiva 95/46/CE. 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+5. Se risulta dalle informazioni disponibili, in particolare in segui to al riesame di cui al paragrafo 3 
+del presente articolo, che un paese terzo, un territorio o uno o più settori specifici all'interno di un 
+paese terzo, o un'organizzazione internazionale non garantiscono più un livello di protezione 
+adeguato ai sensi del  paragrafo 2 del presente articolo, la Commissione revoca, modifica o 
+sospende nella misura necessaria la decisione di cui al paragrafo 3 del presente articolo mediante 
+atti di esecuzione senza effetto retroattivo. Tali atti di esecuzione sono adottati sec ondo la 
+procedura d'esame di cui all'articolo 93, paragrafo 2, o, in casi di estrema urgenza, secondo la 
+procedura di cui all'articolo 93, paragrafo 3. 
+Per imperativi motivi di urgenza debitamente giustificati, la Commissione adotta atti di esecuzione 
+immediatamente applicabili secondo la procedura di cui all'articolo 93, paragrafo 3. 
+6. La Commissione avvia consultazioni con il paese terzo o l'organizzazione internazionale per 
+porre rimedio alla situazione che ha motivato la decisione di cui al paragrafo 5. 
+7. Una decisione ai sensi del paragrafo 5 del presente articolo lascia impregiudicato il trasferimento 
+di dati personali verso il paese terzo, il territorio o uno o più settori specifici all'interno del paese 
+terzo, o verso l'organizzazione internazionale in questione, a norma degli articoli da 46 a 49. 
+8. La Commissione pubblica nella Gazzetta ufficiale dell'Unione europea e sul suo sito web l'elenco 
+dei paesi terzi, dei territori e settori specifici all'interno di un paese terzo, e delle organizzazioni 
+internazionali per i quali ha deciso che è o non è più garantito un livello di protezione adeguato. 
+9. Le decisioni adottate dalla Commissione in base all'articolo 25, paragrafo 6, della direttiva 
+95/46/CE restano in vigore fino a quando non sono modificat e, sostituite o abrogate da una 
+decisione della Commissione adottata conformemente al paragrafo 3 o 5 del presente articolo. 
+ 
+
+
+Articolo 46 
+Trasferimento soggetto a garanzie adeguate (C108, C109, C114) 
+1. In mancanza di una decisione ai sensi dell'articolo 45, paragrafo 3, il titolare del trattamento o il 
+responsabile del trattamento può trasferire dati personali verso un paese terzo o un'organizzazione 
+internazionale solo se ha fornito garanzie adeguate e a condizione che gli interessati dispongano di 
+diritti azionabili e mezzi di ricorso effettivi. 
+2. Possono costituire garanzie adeguate di cui al paragrafo 1 senza necessitare di autorizzazioni 
+specifiche da parte di un'autorità di controllo: 
+a) uno strumento giuridicamente vincolante e avente efficacia esec utiva tra autorità pubbliche o 
+organismi pubblici; 
+b) le norme vincolanti d'impresa in conformità dell'articolo 47; 
+c) le clausole tipo di protezione dei dati adottate dalla Commissione secondo la procedura d'esame 
+di cui all'articolo 93, paragrafo 2; 
+d) le clausole tipo di protezione dei dati adottate da un'autorità di controllo e approvate dalla 
+Commissione secondo la procedura d'esame di cui all'articolo 93, paragrafo 2; 
+e) un codice di condotta approvato a norma dell'articolo 40,unitamente all'impegno v incolante ed 
+esecutivo da parte del titolare del trattamento o del responsabile del trattamento nel paese terzo 
+ad applicare le garanzie adeguate, anche per quanto riguarda i diritti degli interessati; o 
+f) un meccanismo di certificazione approvato a norma  dell'articolo 42, unitamente all'impegno 
+vincolante ed esigibile da parte del titolare del trattamento o del responsabile del trattamento nel 
+paese terzo ad applicare le garanzie adeguate, anche per quanto riguarda i diritti degli interessati. 
+ 
+ 
+REGOLAMENTO GENERALE SULLA PROTEZIONE DEI DATI   Garante per la protezione dei dati personali 
+ 
+3. Fatta sa lva l'autorizzazione dell'autorità di controllo competente, possono altresì costituire in 
+particolare garanzie adeguate di cui al paragrafo 1: 
+a) le clausole contrattuali tra il titolare del trattamento o il responsabile del trattamento e il titolare 
+del trattamento, il responsabile del trattamento o il destinatario dei dati personali nel paese terzo o 
+nell'organizzazione internazionale; o 
+b) le disposizioni da inserire in accordi amministrativi tra autorità pubbliche o organismi pubblici 
+che comprendono diritti effettivi e azionabili per gli interessati. 
+4. L'autorità di controllo applica il meccanismo di coerenza di cui all'articolo 63 nei casi di cui al 
+paragrafo 3 del presente articolo. 
+5. Le autorizzazioni rilasciate da uno Stato membro o dall'autorità di controllo in base all'articolo 
+26, paragrafo 2, della direttiva 95/46/CE restano valide fino a quando non vengono modificate, 
+sostituite o abrogate, se necessario, dalla medesima autorità di controllo. Le decisioni adottate 
+dalla Commissione in base all 'articolo 26, paragrafo 4, della direttiva 95/46/CE restano in vigore 
+fino a quando non vengono modificate, sostituite o abrogate, se necessario, da una decisione della 
+Commissione adottata conformemente al paragrafo 2 del presente articolo. 
+ 

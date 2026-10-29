@@ -20,6 +20,7 @@ once(':convertPrintableFields(e),m=()=>', ':(convertPurchaseFields(e),convertPri
 source = 'import {createPurchaseTemplate,convertPurchaseFields} from "./PurchaseTemplate.js";\n' + source
 (OUTPUT / 'assets/app.js').write_text(source)
 shutil.copyfile(ROOT / 'src/purchase/PurchaseTemplate.js', OUTPUT / 'assets/PurchaseTemplate.js')
+shutil.copyfile(ROOT / 'src/purchase/Continuation.js', OUTPUT / 'assets/Continuation.js')
 shutil.copyfile(ROOT / 'src/purchase/purchase-template.css', OUTPUT / 'assets/purchase-template.css')
 shutil.copytree(ROOT / 'public/purchase-template', OUTPUT / 'purchase-template', dirs_exist_ok=True)
 html = (OUTPUT / 'index.html').read_text().replace('</head>', '<link rel="stylesheet" href="/assets/purchase-template.css"></head>')
@@ -27,4 +28,4 @@ html = (OUTPUT / 'index.html').read_text().replace('</head>', '<link rel="styles
 manifest = json.loads((ROOT / 'release-manifest.json').read_text())
 manifest['files'] = {str(p.relative_to(OUTPUT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUTPUT.rglob('*')) if p.is_file()}
 (ROOT / 'release-manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
-print('Integrated exact two-page /purchase-proposal')
+print('Integrated original two-page /purchase-proposal with measured continuation pages')

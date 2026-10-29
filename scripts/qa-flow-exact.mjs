@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import {chromium} from '/Users/Gemut/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';import fs from 'node:fs/promises';
+const b=await chromium.launch({channel:'chrome',headless:true}),p=await b.newPage({viewport:{width:1440,height:1000}}),results=[];
+try{await p.goto('http://localhost:5178/');for(const [route,slot,key] of [['/aml','document','purpose'],['/sales-assign','document','note'],['/lease-contract-students','supplement','attachments'],['/visit-sheet','document','address']])for(const n of [500,5000,10000,30000]){
+ const text=('À Padova è già sera. 👤\nUn paragrafo con righe molto lunghe '+ 'L'.repeat(130)+'\n').repeat(Math.ceil(n/180)).slice(0,n)+'\nFINE_ESATTA_'+n;
+ await p.evaluate(({route,slot,key,text})=>localStorage.setItem('gemut.contract.draft.v1:'+route,JSON.stringify({schema:1,model:route,slots:{[slot]:{[key]:text}}})),{route,slot,key,text});await p.goto('http://localhost:5178'+route,{waitUntil:'networkidle'});
+ const visible=p.locator('.adaptive-document>.a4-page');const spans=visible.locator('[data-print-field]');
+ const source=await spans.evaluateAll((es,{key})=>es.filter(e=>e.dataset.printField===key||key==='attachments'&&e.dataset.printField.startsWith('Elenco degli allegati')).map(e=>e.textContent).join(''),{key});
+ if(source){if(source!==text){let at=0;while(at<source.length&&source[at]===text[at])at++;console.log(JSON.stringify({route,n,actual:source.length,expected:text.length,firstDifference:at,actualNear:source.slice(Math.max(0,at-40),at+80),expectedNear:text.slice(Math.max(0,at-40),at+80)}));}assert(source===text,route+' flow exact '+n);}else{const fields=visible.locator(`[name="${key}"]`);assert.equal(await fields.first().inputValue(),text,route+' '+key+' '+n);}
+ results.push({route,n,exact:true});
+}await fs.writeFile('work/qa-core/exact-flow-report.json',JSON.stringify({pass:true,results},null,2));console.log('PASS16exact visible flow source checks, Unicode and newlines preserved');}finally{await b.close();}

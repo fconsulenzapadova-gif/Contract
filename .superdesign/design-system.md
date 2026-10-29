@@ -1,0 +1,2 @@
+# Gemüt · Contratti
+Contract workspace: warm paper shell, verified GEMÜT tokens, real unaltered logo. Preserve14 routes. Dashboard create/resume/search local archive. Data stay in browser, errors explicit. Editor offers people/property/fiscal/verification/export, bounded panels and extended text modal. Blue selected states with dark ink. No hero photography. Typography uses locally installed Avenir/Minion with licensed browser fallbacks.

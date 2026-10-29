@@ -69,14 +69,33 @@ def integrate(root: Path, source: str):
             part=part.replace('f=e=>{let t=d(e);return t?Ri(t,`yyyy-MM-dd`):``}','f=e=>normalizeBirthDate(e)')
         source=source[:start]+part+source[end:]
     # Shared header exposes record controls outside the A4 document and the fiscal assistant.
-    once('i=identityHeader(_,n,i);','i=toolsHeader(_,n,identityHeader(_,n,i),Is);')
+    once('i=identityHeader(_,n,i);','i=withSectionNavigation(_,toolsHeader(_,n,identityHeader(_,n,i),Is));')
     once('c(!0),await new Promise(e=>setTimeout(e,300));','c(!0),await prepareDocument(a.current);')
+    # A single shared local archive is reachable from the dashboard too.
+    once('function Lc(){','const DashboardArchive=createArchiveTools(_),Dashboard=()=>_.createElement(_.Fragment,null,_.createElement(DashboardArchive),_.createElement(Ic));function Lc(){')
+    once('path:`/`,element:(0,P.jsx)(Ic,{})','path:`/`,element:(0,P.jsx)(Dashboard,{})')
+    once("Seleziona un tipo di contratto per iniziare. Potrai compilare i dati a sinistra e visualizzarne un'anteprima impaginata a destra, pronta per il salvataggio o il download in PDF.","Crea un documento o riprendi una bozza dall’archivio locale. I dati restano in questo browser: esporta una copia per conservarli.")
+    once('(0,P.jsx)(`div`,{className:`logo-icon`,children:(0,P.jsx)(ur,{size:20})})','(0,P.jsx)(`img`,{src:`/logo-gemut-2026.png`,alt:`GEMÜT`,className:`contrax-app-logo`})')
+    # Accessible names for all fixed Allegato B slots, including its checkboxes.
+    assert source.count('name:e.name,')==2, 'Allegato field naming integration changed'
+    source=source.replace('name:e.name,','name:e.name,"aria-label":fieldLabel(e.name),')
+    once('style:t,"aria-pressed":r,children:r?`X`:``','style:t,"aria-pressed":r,"aria-label":fieldLabel(e.name),children:r?`X`:``')
+    # Bounded shared print orchestration; original field converters remain route-specific.
+    start=source.index('g=async()=>{if(a.current){c(!0),await prepareDocument(a.current);')
+    end=source.index(';(0,_.useEffect)(()=>{let e=new ResizeObserver',start)
+    source=source[:start]+"g=async()=>{if(!a.current||s)return;c(!0);try{await printDocument(a.current,{filename:m(),convert:p})}catch(error){alert(error.message||`Impossibile preparare il PDF. Riprova.`)}finally{c(!1)}}"+source[end:]
+    once('[n,r]=(0,_.useState)(()=>Object.fromEntries(e.map(e=>[e.name,``])))','[n,r]=useContractDraft(_,"allegatoFields",()=>Object.fromEntries(e.map(e=>[e.name,``])))')
+    once('[i,a]=(0,_.useState)(()=>Object.fromEntries(t.map(e=>[e.name,!1])))','[i,a]=useContractDraft(_,"allegatoChecks",()=>Object.fromEntries(t.map(e=>[e.name,!1])))')
     # Keep the old converter byte-for-byte for Allegato B, which has its own overlay geometry.
     start=source.index('p=e=>{e.querySelectorAll(`.pdf-hide`)');end=source.index('},m=()=>',start)+1
     old=source[start:end]
     original=old[len('p='):]
     source=source[:start]+'p=e=>e.querySelector(`.allegato-b-page`)?('+original+')(e):convertPrintableFields(e)'+source[end:]
-    imports='''import {useProposalRecords,mergeProposalBlocks} from "./ProposalRecords.js";
+    imports='''import {withSectionNavigation} from "./EditorNavigation.js";
+import {createArchiveTools} from "./ContractArchiveUI.js";
+import {fieldLabel} from "./AccessibleFields.js";
+import {printDocument} from "./SharedPrint.js";
+import {useProposalRecords,mergeProposalBlocks} from "./ProposalRecords.js";
 import {partyGrammar} from "./ContractRecords.js";
 import {recordsUI} from "./ContractGlue.js";
 import {createParty,createUnit,migrateParties,migrateStudentParties,migrateUnits,updateRecord,removeRecord,moveRecord} from "./ContractRecords.js";

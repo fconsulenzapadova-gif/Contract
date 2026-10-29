@@ -1,3 +1,4 @@
+import {COMPANY} from './CompanyData.js';
 import {useOptionalPhysicalRecords} from './OptionalPhysicalRecords.js';
 import {useContractDraft} from './ContractDraft.js';
 /** Separate compensation agreement and customer declaration; neither certifies compliance. */
@@ -5,10 +6,11 @@ export function createProfessionalDocument(React, Layout, Pages, Icon, kind) {
  const h=React.createElement;
  return function ProfessionalDocument(){
   const [data,setData]=useContractDraft(React,"document",{
-   agency:'Gemüt Capital Srl · P. IVA 05791060287 · REA PD - 492863',
+   agency:COMPANY.name+' · P. IVA '+COMPANY.vat+' · REA '+COMPANY.rea,
    office:'Sede legale: Piazzale Mazzini 26, Padova (PD) 35137 · Sede operativa: Via Savonarola 13, Padova (PD)',
-   contact:'info@gemutcapital.com · gemutcapital@pec.it · 049 0981631'
+   contact:COMPANY.email+' · '+COMPANY.pec+' · '+COMPANY.phone
   });
+  const [internal,setInternal]=React.useState(false);
   const representatives=useOptionalPhysicalRecords(React,'representatives','Rappresentante');
   const beneficial=useOptionalPhysicalRecords(React,'beneficialOwners','Titolare effettivo');
   const field=(name,label)=>h('label',{className:'med-field',key:name},h('span',{className:'med-field-label'},label),h('textarea',{className:'inline-input',name,value:data[name]||'',rows:Math.max(1,Math.ceil((data[name]||'').length/85)),'aria-label':label,onChange:e=>setData(d=>({...d,[name]:e.target.value}))}));
@@ -19,7 +21,10 @@ export function createProfessionalDocument(React, Layout, Pages, Icon, kind) {
   const title=fee?'Accordo sul compenso di mediazione':'Dichiarazione del cliente · Antiriciclaggio';
   const blocks=[{key:'title',node:h('div',{className:'med-title'},h('div',{className:'med-eyebrow'},'GEMÜT CAPITAL · MEDIAZIONE IMMOBILIARE'),h('h1',null,title))},
    block('parties','01 · Identificazione',field('name','Cliente: nome e cognome / denominazione'),field('identity','Nascita, codice fiscale / P. IVA, residenza / sede'),field('natoA','Persona fisica: Comune o Stato estero di nascita'),field('natoIl','Persona fisica: data completa di nascita'),field('cf','Codice fiscale / identificativo numerico'),field('representative','Esecutore o rappresentante: generalità, codice fiscale e poteri documentati'),field('agency','Impresa di mediazione'),field('office','Sedi dell’impresa'),field('agent','Agente abilitato operante'),field('contact','Contatti dell’impresa'),field('operation','Immobile, tipo di operazione, parti e riferimento all’incarico / proposta'))];
-  blocks.push(...representatives.blocks,...(!fee?beneficial.blocks:[]));
+  if(fee||data.hasRepresentative)blocks.push(...representatives.blocks);
+  if(!fee&&(data.subjectType==='entity'||data.actsForOthers))blocks.push(...beneficial.blocks);
+  if(!fee&&data.subjectType==='physical'){const identity=blocks.find(b=>b.key==='parties');identity.node=h('section',{className:'med-block'},h('h2',{className:'med-section'},'01 · Identificazione della persona fisica'),field('nome','Nome / nomi'),field('cognome','Cognome'),field('name','Nominativo completo / dato precedente da verificare'),field('identity','Identificazione precedente: dati da verificare'),field('natoA','Persona fisica: Comune o Stato estero di nascita'),field('natoIl','Persona fisica: data completa di nascita'),field('cf','Codice fiscale / identificativo numerico'),field('residenza','Residenza'),field('domicilio','Domicilio, se diverso'),field('email','Email'),field('telefono','Telefono'),...(data.hasRepresentative?[field('representative','Esecutore o rappresentante: generalità, codice fiscale e poteri documentati')]:[]),field('agency','Impresa di mediazione'),field('office','Sedi dell’impresa'),field('agent','Agente abilitato operante'),field('contact','Contatti dell’impresa'),field('operation','Immobile, tipo di operazione, parti e riferimento all’incarico / proposta'));}
+  if(!fee&&data.subjectType==='entity'){const identity=blocks.find(b=>b.key==='parties');identity.node=h('section',{className:'med-block'},h('h2',{className:'med-section'},'01 · Identificazione della persona giuridica'),field('denominazione','Denominazione'),field('entityCf','Codice fiscale dell’ente'),field('piva','Partita IVA'),field('sede','Sede legale'),field('powers','Rappresentante e poteri documentati'),field('name','Nominativo / denominazione precedente da verificare'),field('identity','Identificazione precedente da verificare'),field('agency','Impresa di mediazione'),field('office','Sedi dell’impresa'),field('agent','Agente abilitato operante'),field('contact','Contatti dell’impresa'),field('operation','Immobile, tipo di operazione, parti e riferimento all’incarico / proposta'));}
   if(fee)blocks.push(
    block('amount','02 · Compenso concordato separatamente',
     p('Il presente accordo disciplina il compenso per l’attività di mediazione, separatamente dall’incarico. Il cliente e il Mediatore concordano una sola modalità di determinazione, completando gli importi e cancellando le alternative non pattuite.'),
@@ -40,7 +45,7 @@ export function createProfessionalDocument(React, Layout, Pages, Icon, kind) {
     p('Il compenso qui concordato riguarda il solo cliente sottoscrittore. Restano gli obblighi di correttezza e informazione del Mediatore. Per il consumatore è competente il giudice del luogo di residenza o domicilio, ove previsto; negli altri casi valgono i criteri legali. I dati sono trattati per esecuzione e obblighi di legge secondo l’informativa GDPR consegnata, senza consenso implicito al marketing.'),field('date','Luogo e data'),signatures('Il cliente','Il Mediatore'))
   );else blocks.push(
    block('document','02 · Documento e soggetto per conto del quale si opera',
-    field('id','Documento: tipo, numero, autorità e data di rilascio, scadenza; estremi della copia acquisita'),field('account','Si opera per conto proprio o altrui? Identificare il soggetto e il titolo'),field('beneficial','Titolare/i effettivo/i: generalità, nascita, residenza, codice fiscale e criterio di individuazione'),
+    field('id','Documento: tipo, numero, autorità e data di rilascio, scadenza; estremi della copia acquisita'),field('account','Si opera per conto proprio o altrui? Identificare il soggetto e il titolo'),(data.subjectType==='entity'||data.actsForOthers||data.beneficial?field('beneficial','Titolare/i effettivo/i: generalità, nascita, residenza, codice fiscale e criterio di individuazione'):null),
     p('Per soggetti diversi dalle persone fisiche indicare assetto proprietario e di controllo e fornire i documenti necessari a individuare il titolare effettivo secondo l’art. 20 del d.lgs. 231/2007. Non è sufficiente indicare automaticamente il rappresentante legale.')),
    block('purpose','03 · Scopo, provenienza e persone politicamente esposte',
     field('purpose','Scopo e natura dell’operazione, attività del cliente, valore e modalità previste di pagamento'),field('funds','Provenienza dei fondi e documenti, nella misura richiesta dalla valutazione del rischio'),field('pep','Condizione di persona politicamente esposta, familiare o soggetto con notori stretti legami: dichiarazione e dettagli pertinenti'),
@@ -53,6 +58,9 @@ export function createProfessionalDocument(React, Layout, Pages, Icon, kind) {
     field('verification','Addetto, data, modalità di identificazione, fonti e verifiche su cliente, esecutore e titolare effettivo'),field('risk','Riferimento al fascicolo riservato: valutazione del rischio, controlli PEP e approfondimenti'),field('outcome','Esito e adempimenti di controllo costante; eventuali elementi mancanti e azioni conseguenti'),
     p('In caso di impossibilità di completare l’adeguata verifica si applica l’art. 42; gli obblighi di segnalazione e il divieto di comunicazione al cliente seguono gli articoli 35 e 39. Le valutazioni riservate e le eventuali segnalazioni sono gestite nel fascicolo protetto, separatamente dalla copia destinata al cliente.'),signatures('Addetto alla verifica'))
   );
-  return h(Layout,{title,icon:h(Icon,{size:20}),clientName:data.name,preview:h(Pages,{blocks,pageStyle:{fontSize:'10pt',lineHeight:'1.38',padding:'12mm 15mm 14mm'}})});
+  const selected=fee||internal?blocks:blocks.filter(b=>b.key!=='professional');
+  const hidden=[!data.hasRepresentative&&data.representative?'representative':'',!(data.subjectType==='entity'||data.actsForOthers)&&data.beneficial?'beneficial':''].filter(Boolean);
+  const amlTools=!fee&&h('div',{className:'aml-editor-tools'},h('p',null,'Dati conservati in questo browser. La bozza locale non è un sistema di conservazione del fascicolo AML.'),h('label',null,'Tipo di cliente ',h('select',{'aria-label':'Tipo di cliente',value:data.subjectType||'',onChange:e=>setData(d=>({...d,subjectType:e.target.value}))},h('option',{value:''},'Da verificare'),h('option',{value:'physical'},'Persona fisica'),h('option',{value:'entity'},'Persona giuridica'))),...[["hasRepresentative","È presente un rappresentante / esecutore"],["actsForOthers","Si opera per conto di un altro soggetto"]].map(([key,label])=>h('label',{key},h('input',{type:'checkbox',checked:!!data[key],onChange:e=>setData(d=>({...d,[key]:e.target.checked}))}),label)),h('label',null,'Documento da stampare ',h('select',{'aria-label':'Copia antiriciclaggio',value:internal?'internal':'customer',onChange:e=>setInternal(e.target.value==='internal')},h('option',{value:'customer'},'Copia cliente · senza valutazioni interne'),h('option',{value:'internal'},'Fascicolo interno · include sezione riservata'))),hidden.length>0&&h('details',null,h('summary',null,'Dati precedenti conservati: verifica prima della firma'),...hidden.map(key=>field(key,key==='representative'?'Rappresentante: testo precedente':'Titolare effettivo: testo precedente'))));
+  return h(Layout,{title,headerAside:amlTools,icon:h(Icon,{size:20}),clientName:data.name,preview:h(Pages,{blocks:selected,pageStyle:{fontSize:'10pt',lineHeight:'1.38',padding:'12mm 15mm 14mm'}})});
  };
 }

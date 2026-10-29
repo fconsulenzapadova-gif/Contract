@@ -1,7 +1,9 @@
-import {collectTargets} from './IdentityTargets.js';
+import {readEnvelope} from './ContractArchive.js';
+import {collectTargets,bindIdentityRecordIds} from './IdentityTargets.js';
 import {createDraftTools,useContractDraft} from './ContractDraft.js';
 import {normalizeBirthDate} from './FiscalCode.js';
 import {createFiscalCodeUI} from './FiscalCodeUI.js';
+import {createArchiveTools} from './ContractArchiveUI.js';
 const cache=new WeakMap();
 function walk(node,callback){
  if(Array.isArray(node)){node.forEach(n=>walk(n,callback));return;}
@@ -24,20 +26,24 @@ export function removeEditorControls(React,node){
  return React.cloneElement(node,null,removeEditorControls(React,node.props.children));
 }
 export function toolsHeader(React,preview,existing,adapter){
- if(location.pathname==='/lease-allegato-b')return existing;
  let Tools=cache.get(React);
  if(!Tools){
-  const h=React.createElement,{FiscalCodeAssistant}=createFiscalCodeUI(React,adapter),DraftTools=createDraftTools(React);
+  const h=React.createElement,{FiscalCodeAssistant}=createFiscalCodeUI(React,adapter),DraftTools=createDraftTools(React),ArchiveTools=createArchiveTools(React);
   Tools=function ContractTools({preview,existing}){
    const [extra,setExtra]=useContractDraft(React,'fiscalMetadata',{});
-   const targets=collectTargets(preview,location.pathname);
+   const [recordIds,setRecordIds]=React.useState({});
+   React.useEffect(()=>{
+    const refresh=()=>{try{const ids=readEnvelope(localStorage,location.pathname).slots.recordIds||{};setRecordIds(previous=>JSON.stringify(previous)===JSON.stringify(ids)?previous:ids);}catch{}};
+    refresh();window.addEventListener('contract-draft-saved',refresh);return()=>window.removeEventListener('contract-draft-saved',refresh);
+   },[]);
+   const targets=bindIdentityRecordIds(collectTargets(preview,location.pathname),recordIds);
    const activeIds=JSON.stringify(targets.map(target=>target.recordId||target.id));
    React.useEffect(()=>{
     const active=new Set(JSON.parse(activeIds));
     setExtra(previous=>Object.keys(previous).some(id=>!active.has(id))?Object.fromEntries(Object.entries(previous).filter(([id])=>active.has(id))):previous);
    },[activeIds]);
    const controls=editableControls(preview);
-   return h('div',{className:'contract-editor-tools'},existing,h(DraftTools),
+   return h('div',{className:'contract-editor-tools'},existing,h(DraftTools),h(ArchiveTools,{targets}),
     controls.length>0&&h('details',{className:'contract-editor-records'},h('summary',null,'Parti, trattamento e unità immobiliari'),...controls.map((node,i)=>h('div',{key:'editor-'+i},node))),
     targets.length>0&&h('details',{className:'contract-fiscal-tools'},h('summary',null,'Anagrafiche e codice fiscale'),...targets.map(target=>{
      const fields=target.fields,stable=target.recordId||target.id;

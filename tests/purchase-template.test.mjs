@@ -42,3 +42,23 @@ test('seller information with no corresponding PDF field is shown for review',()
  const slots={owners:[{nome:'Lucia',via:'Via Roma',numero:'12',email:'lucia@example.com',natoIl:'01/01/1980'}]};
  assert(legacyNeedsReview(slots));assert(legacyOmittedValues(slots).some(v=>v.includes('lucia@example.com')));
 });
+
+
+test('continuations preserve every character while splitting a single oversized field',async()=>{
+ const {splitTextToFit}=await import('../src/purchase/Continuation.js');
+ for(const size of [500,5000,10000,30000]){
+  const source=('Paragrafo con àèìòù e accenti.\n\n'+ 'riga-senza-spazi'.repeat(20)+'\n').repeat(100).slice(0,size);
+  const chunks=splitTextToFit(source,value=>value.length<=293);
+  assert.equal(chunks.join(''),source);
+  assert(chunks.every(chunk=>chunk.length<=293));
+  assert(chunks.length>1);
+ }
+});
+
+test('continuation splits never break a surrogate pair',async()=>{
+ const {splitTextToFit}=await import('../src/purchase/Continuation.js');
+ const source='à🌿\n'.repeat(1000);
+ const chunks=splitTextToFit(source,value=>value.length<=299);
+ assert.equal(chunks.join(''),source);
+ assert(chunks.every(chunk=>!/^[\uDC00-\uDFFF]|[\uD800-\uDBFF]$/.test(chunk)));
+});

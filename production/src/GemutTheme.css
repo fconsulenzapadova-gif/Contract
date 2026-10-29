@@ -1,0 +1,62 @@
+/* Identity tokens checked against the public GEMÜT website on 2026-10-28.
+   Proprietary fonts are looked up locally; no unlicensed files are redistributed. */
+:root {
+ --gemut-paper:#ece9e2; --gemut-paper-soft:#f7f5ef; --gemut-ink:#12130f;
+ --gemut-graphite:#666861; --gemut-line:#d8d4ca; --gemut-blue:#b3e5fc;
+ --gemut-sage:#7d8777; --gemut-clay:#b55d42;
+ --background:var(--gemut-paper); --surface:var(--gemut-paper-soft); --text-primary:var(--gemut-ink);
+ --text-main:var(--gemut-ink); --text-muted:var(--gemut-graphite); --font-heading:var(--font-sans); --secondary:#334b56; --surface-hover:#e3dfd5; --primary-hover:#203943;
+ --text-secondary:#50524b; --primary:#334b56; --primary-light:var(--gemut-blue); --border:var(--gemut-line);
+ --font-sans:'Avenir Next',Avenir,'Segoe UI',Arial,sans-serif;
+ --font-display:'Minion Variable Concept','Minion Pro',Georgia,serif;
+}
+body { font-family:var(--font-sans)!important; color:var(--gemut-ink); background:var(--gemut-paper); }
+button,input,textarea,select { font-family:inherit; }
+h1,h2,h3 { letter-spacing:-.025em; }
+:focus-visible { outline:3px solid #334b56!important; outline-offset:3px; }
+.btn,.contract-control-btn,.preview-zoom-btn { border-radius:5px; min-height:36px; }
+.btn-primary { background:#334b56!important; color:#fff!important; border-color:#334b56; }
+.btn-primary:hover { background:#203943!important; }
+.nav-item { min-height:42px; color:var(--gemut-ink); border-radius:5px; }
+.nav-item.active { background:var(--gemut-blue)!important; color:var(--gemut-ink)!important; box-shadow:none; }
+.contract-editor-tools { width:min(760px,100%); gap:8px; }
+.contract-editor-tools summary { padding:4px 0; }
+.contract-control-btn { padding:6px 10px; border:1px solid #b2afa5; background:#fff; color:var(--gemut-ink); cursor:pointer; }
+.contract-control-btn:disabled { opacity:.6; cursor:default; }
+.document-preview-container { background:var(--gemut-paper)!important; }
+.contract-editor-tools [role=alert] { color:#8c3528; }
+input:not(.purchase-template-field):focus,textarea:focus,select:focus { outline-color:#334b56; }
+@media(max-width:760px){
+ .contract-editor-tools { font-size:13px; }
+ .contract-draft-tools { align-items:stretch; }
+ .contract-control-btn,.contract-editor-tools button { min-height:40px; }
+ .preview-toolbar { flex-wrap:wrap; }
+ .cf-assistant { max-width:100%; overflow-wrap:anywhere; }
+ .contract-editor-tools details[open] { max-height:55vh; }
+}
+@media(prefers-reduced-motion:reduce){ *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+@media print { body { background:#fff!important; } }
+.contrax-app-logo { display:block; width:85px; height:auto; object-fit:contain; flex:none; }
+.sidebar-header { gap:10px; padding:22px 16px; }
+.sidebar-title { white-space:normal; font-size:16px!important; }
+.sidebar { background:var(--gemut-paper-soft)!important; border-right:1px solid var(--gemut-line); box-shadow:none!important; }
+.sidebar .nav-section-title { color:#666861; letter-spacing:.08em; font-size:10px; }
+.card { box-shadow:none!important; border:1px solid var(--gemut-line); border-radius:8px; background:var(--gemut-paper-soft); }
+.card:hover { border-color:#7d8777; }
+.contrax-archive-launch { margin:6px 0; }
+.main-content>.flex-1>.contrax-archive-launch { padding:20px 32px 0; }
+.contrax-editor-workspace { display:grid; gap:8px; width:100%; }
+.contrax-section-nav { display:flex; flex-wrap:wrap; align-items:center; gap:7px; font-size:12px; }
+.contrax-section-nav select { max-width:min(100%,450px); padding:5px; border:1px solid #b2afa5; border-radius:4px; background:#fff; }
+@media print { .contrax-section-nav { display:none!important; } }
+
+.sidebar-header { background:var(--gemut-ink); }
+.sidebar-header .sidebar-title { color:var(--gemut-paper-soft)!important; background:none!important; -webkit-text-fill-color:var(--gemut-paper-soft)!important; }
+/* Conditional AML controls wrap as complete labelled controls on narrow screens. */
+.contrax-editor-workspace,.contract-editor-tools,.aml-editor-tools { min-width:0; max-width:100%; }
+.aml-editor-tools { width:100%; }
+.aml-editor-tools>label { flex-wrap:wrap; }
+.aml-editor-tools select { flex:1 1 220px; min-width:0; max-width:100%; font:inherit; }
+.contrax-editor-workspace,.contract-editor-tools { grid-template-columns:minmax(0,1fr); }
+.contract-editor-tools>* { min-width:0; max-width:100%; }
+.contrax-section-nav select { min-width:0; }

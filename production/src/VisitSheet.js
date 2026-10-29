@@ -1,3 +1,4 @@
+import {COMPANY} from './CompanyData.js';
 import {useContractDraft} from './ContractDraft.js';
 /** Editable transcription of the supplied two-page visit and privacy form. */
 export function createVisitSheet(React, Layout, Icon, Pages) {
@@ -21,7 +22,7 @@ export function createVisitSheet(React, Layout, Icon, Pages) {
     value:data[name] || '', autoComplete:'off',
     ...(options.type ? {type:options.type} : {rows:Math.max(1, (data[name] || '').split('\n').length, Math.ceil((data[name] || '').length / 72))}),
      placeholder:options.placeholder || '',
-    onChange:event=>setData(previous=>({...previous, [name]:event.target.value.replace(/[\r\n]+/g, ' ')}))
+    onChange:event=>setData(previous=>({...previous, [name]:event.target.value}))
    }));
   const p = text => h('p', null, text);
   const section = (title, ...children) => h('section', {className:'visit-section'}, h('h2', null, title), ...children);
@@ -35,7 +36,7 @@ export function createVisitSheet(React, Layout, Icon, Pages) {
   const page = (number, className, ...children) => h('article', {className:'a4-page visit-sheet ' + className, key:number},
    h('header', {className:'visit-header'}, h('img', {src:'/logo.png', alt:'GEMÜT', className:'contract-logo'}), h('div', null, 'SCHEDA VISITA', h('br'), `0${number} / 02`)),
    ...children,
-   h('footer', {className:'visit-footer'}, 'GEMÜT CAPITAL SRL · Piazzale Mazzini 26, 35137 Padova · P. IVA 05791060287 · REA PD-492863 · info@gemutcapital.com'));
+   h('footer', {className:'visit-footer'}, COMPANY.name+' · '+COMPANY.legalAddress+' · P. IVA '+COMPANY.vat+' · REA '+COMPANY.rea+' · '+COMPANY.email));
   return h(Layout, {
    title:'Scheda visita', icon:h(Icon, {size:20}), clientName:data.name,
    preview:h(VisitPages, {blocks:[

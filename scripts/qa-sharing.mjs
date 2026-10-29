@@ -27,7 +27,8 @@ async function snapshot(){
  return page.evaluate(()=>window.__sharingSnapshots.at(-1));
 }
 async function pdf(name, expectedText=[]){
- const snap=await snapshot();assert.equal(snap.pages,2);
+ const planned=await page.locator('.sharing-pages > .a4-page').count();
+ const snap=await snapshot();assert.equal(snap.pages,planned);
  for(const text of expectedText)assert(snap.text.includes(text),`Missing printed value: ${text}`);
  assert(!snap.text.includes('Aggiungi materiale'),'Editor must not be printed');
  const print=await context.newPage();await print.setContent(snap.html,{waitUntil:'networkidle'});await print.evaluate(()=>document.fonts.ready);await print.emulateMedia({media:'print'});
@@ -40,7 +41,7 @@ async function pdf(name, expectedText=[]){
  }));
  assert(metrics.every(m=>m.overflow<=1&&m.footerOverlap===0&&m.horizontalOverflow<=1),JSON.stringify(metrics));
  await print.pdf({path:path.join(out,name+'.pdf'),format:'A4',printBackground:true,preferCSSPageSize:true,margin:{top:'0',bottom:'0',left:'0',right:'0'}});
- await print.close();report.pdfs.push({file:name+'.pdf',pages:2,metrics});return snap;
+ await print.close();report.pdfs.push({file:name+'.pdf',pages:snap.pages,metrics});return snap;
 }
 const key='gemut.contract.draft.v1:/property-sharing';
 try{
@@ -79,7 +80,8 @@ try{
  assert.equal(await page.getByLabel('Stato materiale 2',{exact:true}).inputValue(),'pending');
  await page.getByRole('button',{name:'Rimuovi materiale 1',exact:true}).click();
  assert.equal(await page.getByLabel('File, link o descrizione 1',{exact:true}).inputValue(),'APE e documentazione tecnica da inviare');
- await page.locator('.contract-draft-tools input[type=file]').setInputFiles(path.join(out,'bozza-test.json'));await page.waitForLoadState('networkidle');await ready();
+ await page.locator('.contract-draft-tools input[type=file]').setInputFiles(path.join(out,'bozza-test.json'));
+ await Promise.all([page.waitForEvent('load'),page.getByRole('button',{name:'Conferma sostituzione bozza',exact:true}).click()]);await page.waitForLoadState('networkidle');await ready();
  assert.equal(await page.getByLabel('Stato materiale 1',{exact:true}).inputValue(),'sent');
  assert.equal(await page.getByLabel('Stato materiale 2',{exact:true}).inputValue(),'pending');
  report.drafts={immediateLastValue:true,reload:true,exportImport:true,stableMaterialRemoval:true};
@@ -87,19 +89,18 @@ try{
  await page.evaluate(({key,stress})=>localStorage.setItem(key,JSON.stringify({schema:1,model:'/property-sharing',slots:{document:stress}})),{key,stress});
  await page.reload({waitUntil:'networkidle'});await ready();
  await pdf('scheda-cinque-materiali');await page.screenshot({path:path.join(out,'desktop.png')});
- // Imported content over the supported A4 limits must remain editable and must not print a clipped PDF.
- await page.evaluate(({key,stress})=>localStorage.setItem(key,JSON.stringify({schema:1,model:'/property-sharing',slots:{document:{...stress,name:'x'.repeat(101)}}})),{key,stress});
+ // Imported long content is preserved and routed into measured continuation pages.
+ const longName='x'.repeat(501);
+ await page.evaluate(({key,stress,longName})=>localStorage.setItem(key,JSON.stringify({schema:1,model:'/property-sharing',slots:{document:{...stress,name:longName}}})),{key,stress,longName});
  await page.reload({waitUntil:'networkidle'});await ready();
- const before=await page.evaluate(()=>window.__sharingSnapshots.length);
- await page.getByRole('button',{name:'Salva PDF',exact:true}).click();
- assert.equal(await page.evaluate(()=>window.__sharingSnapshots.length),before);
- assert((await page.getByRole('alert').allTextContents()).join(' ').includes('100 caratteri'));
- assert.equal((await page.getByLabel('Nome e cognome',{exact:true}).inputValue()).length,101,'Imported text must not be silently truncated');
+ await page.waitForFunction(()=>document.querySelector('[data-continuation-key="name"]'));
+ assert.equal(await page.getByLabel('Nome e cognome',{exact:true}).inputValue(),longName);
+ await pdf('scheda-continuazione-nome',[longName]);
  await page.evaluate(()=>window.dispatchEvent(new Event('beforeprint')));
- assert.equal(await page.locator('.contract-native-print-copy .sharing-page').count(),0);
- assert((await page.locator('.sharing-print-error').innerText()).includes('PDF non generato'));
+ assert.equal(await page.locator('.contract-native-print-copy .sharing-page').count(),2);
+ assert((await page.locator('.contract-native-print-copy').innerText()).includes(longName));
  await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
- report.overflowGuard=true;
+ report.overflowContinuation=true;
  await page.evaluate(({key,saved})=>localStorage.setItem(key,JSON.stringify(saved)),{key,saved});await page.reload({waitUntil:'networkidle'});await ready();
  await page.evaluate(()=>window.dispatchEvent(new Event('beforeprint')));
  assert.equal(await page.locator('.contract-native-print-copy .sharing-page').count(),2);

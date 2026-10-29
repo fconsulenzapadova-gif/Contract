@@ -62,7 +62,7 @@ export function createContractRecordsUI(React) {
  }
  function unitField(unit,index,field,label,width,onChange,legacyChange) {
   const id = unit.id ?? index;
-  return h('input',{type:'text', name:`unit-${id}-${field}`, 'aria-label':`Unità ${index+1}: ${label}`,
+  return h(field==='descrizione'?'textarea':'input',{...(field==='descrizione'?{rows:2}:{type:'text'}), name:`unit-${id}-${field}`, 'aria-label':`Unità ${index+1}: ${label}`,
    'data-unit-field':field, 'data-unit-id':String(id), value:unit[field] ?? '',
    className:'inline-input',autoComplete:'off',style:inputStyle(width),onChange:event => {
     if (onChange) onChange(id,field,event.target.value);

@@ -33,9 +33,12 @@ test('empty materials never certify delivery and rows keep stable unique identit
  assert.deepEqual(rows.map(row=>row.status),['sent','pending']);
 });
 
-test('oversized imported descriptions remain intact but cannot produce a clipped two-page document', async()=>{
+test('unlimited descriptions and materials remain printable without changing delivery states', async()=>{
  const {normalizeSharingData,contentIssues}=await import('../src/sharing/model.ts');
- const data=normalizeSharingData({materials:[{description:'riga\n'.repeat(30)}]});
- assert.equal(data.materials[0].description,'riga\n'.repeat(30));
- assert(contentIssues(data).length>0,'Too many line breaks must require editing before print');
+ const data=normalizeSharingData({name:'à'.repeat(10000),materials:Array.from({length:12},(_,i)=>({id:String(i),description:'riga\n'.repeat(6000),status:i%2?'pending':'sent'}))});
+ assert.equal(data.materials[0].description,'riga\n'.repeat(6000));
+ assert.equal(data.materials.length,12);
+ assert.equal(data.name.length,10000);
+ assert.deepEqual(data.materials.map(row=>row.status),Array.from({length:12},(_,i)=>i%2?'pending':'sent'));
+ assert.deepEqual(contentIssues(data),[],'Length limits must be handled by pagination, never by blocking printing');
 });

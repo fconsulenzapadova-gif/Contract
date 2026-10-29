@@ -45,3 +45,19 @@
  .contract-native-print-copy > .a4-page { break-after:page; page-break-after:always; box-shadow:none; border:none!important; }
  .contract-native-print-copy > .a4-page:last-child { break-after:auto; page-break-after:auto; }
 }
+
+/* Readable long text: bounded editor; static fragments flow across measured A4 pages. */
+.adaptive-document textarea.inline-input { max-height:220px; overflow-y:auto; }
+.adaptive-document .pdf-filled-field[style*="pre-wrap"], .contract-flow-fragment .pdf-filled-field { white-space:pre-wrap!important; overflow-wrap:anywhere!important; word-break:normal!important; max-width:100%!important; }
+.contract-flow-fragment { overflow-wrap:anywhere; }
+.long-text-edit { position:relative; margin:0 0 4px; font:12px Arial,sans-serif; }
+.contract-long-editor { width:min(850px,92vw); max-height:88vh; padding:24px; border:1px solid #d8d4ca; border-radius:8px; background:#f7f5ef; color:#12130f; font:15px/1.5 Avenir,Arial,sans-serif; }
+.contract-long-editor::backdrop { background:rgb(18 19 15 / 45%); }
+.contract-long-editor label { display:block; margin:12px 0; }
+.contract-expanded-text { display:block; width:100%; min-height:45vh; max-height:65vh; box-sizing:border-box; padding:12px; overflow:auto; resize:vertical; white-space:pre-wrap; font:inherit; }
+@media print { .contract-flow-fragment,.contract-flow-fragment * { overflow:visible!important; } .long-text-edit,.contract-long-editor { display:none!important; } }
+.a4-flow-block:has(>.long-text-edit),.a4-flow-block:has(.long-text-edit) { position:relative; }
+.long-text-edit { position:absolute; right:0; top:-22px; z-index:1; margin:0; min-height:20px; padding:1px 5px; }
+.aml-editor-tools { display:grid; gap:7px; font-size:12px; max-width:720px; }
+.aml-editor-tools>label { display:flex; align-items:center; gap:7px; }
+.aml-editor-tools p { margin:0; color:#666861; }

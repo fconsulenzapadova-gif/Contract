@@ -104,3 +104,19 @@ test('expiry warning reflects a corrected date',()=>{
  fields.expiryDate.value='2030-01-01';assert.equal(isExpired(fields,now),false);
 });
 test('Allegato B never exposes identity import targets',()=>assert.deepEqual(collectTargets({props:{blocks:[]}},'/lease-allegato-b'),[]));
+
+test('AML structured names take precedence over a separate legacy full-name field',async()=>{
+ const {collectTargets}=await import('../src/IdentityTargets.js');
+ const field=(name,value)=>({type:'textarea',props:{name,value,onChange(){},'aria-label':name==='name'?'Cliente: nome e cognome / denominazione':name}});
+ const preview={props:{blocks:[{key:'parties',node:{type:'section',props:{children:[field('nome','Mario'),field('cognome','Rossi'),field('name','')]}}}]}};
+ const [target]=collectTargets(preview,'/aml');
+ assert.equal(target.fields.givenNames?.value,'Mario');assert.equal(target.fields.surname?.value,'Rossi');assert.equal(target.fields.fullName,undefined);
+});
+
+test('scalar fiscal targets follow persisted person identities while repeated records keep their own IDs',async()=>{
+ const {bindIdentityRecordIds}=await import('../src/IdentityTargets.js');
+ assert.equal(typeof bindIdentityRecordIds,'function');
+ const targets=[{id:'client',fields:{}},{id:'purchase-seller',recordId:'purchase-seller',fields:{}},{id:'person-row',recordId:'stable-row',fields:{}}];
+ const first=bindIdentityRecordIds(targets,{client:'person-a',owners:'person-owner'}),second=bindIdentityRecordIds(targets,{client:'person-b',owners:'person-owner'});
+ assert.equal(first[0].recordId,'person-a');assert.equal(second[0].recordId,'person-b');assert.equal(first[1].recordId,'person-owner');assert.equal(first[2].recordId,'stable-row');
+});

@@ -1,3 +1,4 @@
+import {COMPANY} from './CompanyData.js';
 import {useOptionalPhysicalRecords} from './OptionalPhysicalRecords.js';
 import {usePropertyUnits} from './PropertyUnits.js';
 import {recordsUI} from './ContractGlue.js';
@@ -13,11 +14,11 @@ export function createMediationAssignment(React, ContractLayout, PaginatedA4Docu
   const initial = {
     nome: '', nascita: '', dataNascita: '', cf: '', residenza: '', email: '', telefono: '',
     qualita: '', altriConferenti: '',
-    agenzia: 'Gemüt Capital Srl', sede: 'Piazzale Mazzini 26, Padova (PD) 35137',
+    agenzia: COMPANY.name, sede: 'Piazzale Mazzini 26, Padova (PD) 35137',
     sedeOperativa: 'Via Savonarola 13, Padova (PD)', piva: '05791060287', camera: 'Padova', rea: 'PD - 492863',
     mediatore: '', polizzaCompagnia: 'Generali Assicurazioni S.P.A. Sede Padova Pedrocchi',
     polizzaNumero: '460051359', polizzaScadenza: '22/06/2027',
-    agEmail: 'info@gemutcapital.com', agPec: 'gemutcapital@pec.it', agTelefono: '049 0981631',
+    agEmail: COMPANY.email, agPec: COMPANY.pec, agTelefono: COMPANY.phone,
     comune: '', indirizzo: '', uso: '', pertinenze: '', catasto: '', titolo: '',
     occupazione: '', prezzo: '', disponibilita: '', condizioni: '',
     documenti: '', criticita: '', canali: '', limiti: '', report: '',

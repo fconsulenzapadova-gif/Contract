@@ -1,0 +1,67 @@
+[
+  {
+    "id": "padova-accordo-2023-accessibile",
+    "url": "https://www.comune.padova.it/sites/default/files/2026-05/Accordo%20territoriale%20di%20locazione%20per%20Padova%20-%20accessibile.pdf",
+    "bytes": 192281,
+    "sha256": "4a732c3c6a7623464995bb63d4198d2e1f7d1f910a5aa1cfa91339b24986baba",
+    "local_text": "padova-accordo-2023-accessibile.txt"
+  },
+  {
+    "id": "padova-allegato-b",
+    "url": "https://www.comune.padova.it/sites/default/files/attachment/All%20B%20SCHEDA%20canone%20ACCORDI%20PADOVA%2017.10.2019.pdf",
+    "bytes": 445560,
+    "sha256": "a1be3035e3847347b1843b0e9d45c8ed4df7b9bae19d69f4e64900bdca298ab8",
+    "local_text": "padova-allegato-b.txt"
+  },
+  {
+    "id": "padova-allegato-c",
+    "url": "https://www.comune.padova.it/sites/default/files/attachment/All.%20C.%20contratto%20concertato%20abitativo%203%2B2.pdf",
+    "bytes": 106567,
+    "sha256": "35ecf719da85cdbf32dee27d4c566e959ac23f1c3b2fd10464e2a8a31ee98170",
+    "local_text": "padova-allegato-c.txt"
+  },
+  {
+    "id": "padova-allegato-d",
+    "url": "https://www.comune.padova.it/sites/default/files/attachment/All.%20D%20contratto%20locazione%20abitativa%20di%20natura%20transitoria.pdf",
+    "bytes": 151173,
+    "sha256": "c9c07ced37f0c36022377dcbff70d892f7eb7a4f1dec460286ee78df946819d9",
+    "local_text": "padova-allegato-d.txt"
+  },
+  {
+    "id": "padova-allegato-e",
+    "url": "https://www.comune.padova.it/sites/default/files/attachment/All.%20E.%20contratto%20locazione%20abitativa%20per%20studenti%20universitari.pdf",
+    "bytes": 104023,
+    "sha256": "82857388e23f27249e561eef68e0f8476d115f7e8307dc1d206586ee1288d6b8",
+    "local_text": "padova-allegato-e.txt"
+  },
+  {
+    "id": "padova-casa-mia-ania",
+    "url": "https://www.comune.padova.it/sites/default/files/2025-05/accordo%20territoriale%20Comune%20di%20Padova%20organizzazioni%20CASA%20MIA%20ANIA.pdf",
+    "bytes": 18538861,
+    "sha256": "477c70eea598c7cf6797ea17abb493888a9523b7674605088ebc11747a049e21",
+    "local_text": "padova-casa-mia-ania.txt"
+  },
+  {
+    "id": "cciaa-padova-formulari",
+    "url": "https://www.pd.camcom.it/it/avvia-impresa/albi-ruoli-e-licenze/agenti-daffari-in-mediazione",
+    "bytes": 533349,
+    "sha256": "a4db81ed14bd191f407180e619d8d23909e6d9adbd279f47fd1081a6f69eeb50",
+    "local_text": "cciaa-padova-formulari.txt"
+  },
+  {
+    "id": "gdpr",
+    "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:02016R0679-20160504",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local_text": "gdpr.txt",
+    "status": "download diretto fallito/vuoto; vedere README per fonte sostitutiva/estratto indicizzato"
+  },
+  {
+    "id": "aml-regolamento-2024-1624",
+    "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32024R1624",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local_text": "aml-regolamento-2024-1624.txt",
+    "status": "download diretto fallito/vuoto; vedere README per fonte sostitutiva/estratto indicizzato"
+  }
+]
