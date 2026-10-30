@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run build && python3 scripts/serve.py",
-    "build": "tsc -b && python3 production/build.py && vite build && python3 scripts/integrate-sharing.py && python3 scripts/integrate-purchase.py",
+    "build": "tsc -b && python3 production/build.py && vite build && python3 scripts/integrate-sharing.py && python3 scripts/integrate-purchase.py && python3 scripts/integrate-closing.py",
     "typecheck": "tsc -b",
     "test": "node --experimental-strip-types --test tests/*.test.mjs production/tests/*.test.mjs",
     "lint": "eslint src/sharing vite.config.ts",

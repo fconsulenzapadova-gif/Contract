@@ -2,6 +2,7 @@ import {clone,recordId,validateEnvelope} from './ContractArchive.js';
 import {displayName} from './ContractRecords.js';
 
 export const MODELS={
+ '/key-return':'Riconsegna chiavi','/practice-release':'Liberatoria e chiusura della pratica',
  '/purchase-proposal':'Proposta d’acquisto','/lease-proposal':'Proposta di locazione','/sales-assign':'Incarico di mediazione','/lease-assign':'Incarico di locazione',
  '/lease-contract-4-4':'Locazione 4+4','/lease-contract-4-4-cedolare':'Locazione 4+4 cedolare','/lease-contract-concordato':'Locazione concordata','/lease-contract-students':'Locazione studenti','/lease-contract-transitorio':'Locazione transitoria',
  '/lease-allegato-b':'Allegato B','/aml':'Antiriciclaggio','/commission':'Accordo sul compenso','/visit-sheet':'Scheda visita','/property-sharing':'Condivisione immobiliare'
@@ -38,6 +39,7 @@ function factFields(model){
  return {};
 }
 export function modelAdapter(model){
+ if(['/key-return','/practice-release'].includes(model))return {kind:'closing',roles:[['clients','Clienti / conduttori'],['owners','Proprietari / destinatari']],property:'summary',slot:'document'};
  if(model.startsWith('/lease-contract-'))return {kind:'records',roles:[['landlords','Locatore'],['tenants','Conduttore']],property:'units',slot:'document'};
  if(model==='/lease-proposal')return {kind:'records',roles:[['owners','Locatore'],['proposers','Proponente / futuro conduttore']],property:'units',slot:'document'};
  if(model==='/purchase-proposal')return {kind:'purchase',roles:[['owners','Venditore'],['buyers','Proponente']],property:'fixed',slot:'purchaseTemplate'};
@@ -60,7 +62,8 @@ export function documentFacts(envelope,{documentId}={}){
    if(model==='/aml')person.subjectType=data.subjectType||'';
    if(!person.nome)person.nome=text(data.name);
    add(role,label,person);
-  }else if(adapter.kind==='purchase')add(role,label,scalarParty(data,role==='owners'?purchaseOwners:purchaseBuyers,scalarId(role)));
+  }else if(adapter.kind==='closing')add(role,label,scalarParty(data,{nome:role},scalarId(role)));
+  else if(adapter.kind==='purchase')add(role,label,scalarParty(data,role==='owners'?purchaseOwners:purchaseBuyers,scalarId(role)));
   else if(model==='/lease-proposal')add(role,label,{...legacyProposalPerson(data,role==='owners'?'loc':'p1'),id:scalarId(role)});
  }
  // Old aggregated additional conferents survive as one raw record, without guessing people.
@@ -72,7 +75,7 @@ export function documentFacts(envelope,{documentId}={}){
    if(useful(unit))properties.push({id:unit.id,data:unit});
   }
  }else{
-  const map=adapter.kind==='purchase'?purchaseProperty:model==='/lease-proposal'?{via:'immUbicazione',descrizione:'immComposizione',foglio:'foglio',particella:'part',subalterno:'sub',zc:'zc',categoria:'cat',classe:'classe',vani:'consVani',rendita:'rendita',catastoLegacy:'idCatastali'}:adapter.kind==='assignment'?{comune:'comune',via:'indirizzo',descrizione:'pertinenze',catastoLegacy:'catasto'}:adapter.kind==='contact'?{via:'address',reference:'reference'}:contractProperty;
+  const map=adapter.kind==='purchase'?purchaseProperty:model==='/lease-proposal'?{via:'immUbicazione',descrizione:'immComposizione',foglio:'foglio',particella:'part',subalterno:'sub',zc:'zc',categoria:'cat',classe:'classe',vani:'consVani',rendita:'rendita',catastoLegacy:'idCatastali'}:adapter.kind==='assignment'?{comune:'comune',via:'indirizzo',descrizione:'pertinenze',catastoLegacy:'catasto'}:adapter.kind==='closing'?{via:'address'}:adapter.kind==='contact'?{via:'address',reference:'reference'}:contractProperty;
   const unit=portableProperty(Object.fromEntries(Object.entries(map).map(([key,field])=>[key,text(data[field])])),scalarId('property'));
   if(useful(unit))properties.push({id:unit.id,data:unit});
  }
@@ -105,12 +108,17 @@ export function planDocumentImport(envelope,source,{parties=[],properties=[],inc
  validateEnvelope(envelope);
  if(source?.schema!==1||source.format!=='contrax.document-facts')throw Error('Sorgente di interoperabilità non valida.');
  const adapter=modelAdapter(envelope.model),next=clone(envelope),operations=[],slots=next.slots;
- const data=slots[adapter.slot]||(slots[adapter.slot]={}),scalarRoles=new Set();
+ const data=slots[adapter.slot]||(slots[adapter.slot]={}),scalarRoles=new Set(),closingPeople=new Map();
  for(const mapping of parties){
   const sourcePerson=source.parties.find(person=>person.id===mapping.sourceId);
   const role=adapter.roles.find(([key])=>key===mapping.role);
   if(!sourcePerson||!role)throw Error('Selezionare una persona e un ruolo compatibili.');
   const person=portableParty(sourcePerson.data,sourcePerson.id),label=role[1];
+  if(adapter.kind==='closing'){
+   const names=closingPeople.get(mapping.role)||[];
+   names.push([personLabel(person),person.cf&&'· C.F. '+person.cf].filter(Boolean).join(' '));
+   closingPeople.set(mapping.role,names);continue;
+  }
   const arrayRole=adapter.kind==='records'||mapping.role==='contributors';
   if(arrayRole){
    const list=slots[mapping.role]||(slots[mapping.role]=[]);
@@ -138,6 +146,7 @@ export function planDocumentImport(envelope,source,{parties=[],properties=[],inc
    }
   }
  }
+ for(const [role,names] of closingPeople)patchObject(data,{[role]:names.join('\n')},[adapter.slot],adapter.roles.find(([key])=>key===role)[1],operations);
  const selected=properties.map(id=>source.properties.find(unit=>unit.id===id));
  if(selected.some(unit=>!unit))throw Error('Immobile sorgente non trovato.');
  if(adapter.property==='units')for(const item of selected){
@@ -159,7 +168,7 @@ export function planDocumentImport(envelope,source,{parties=[],properties=[],inc
    selected.forEach(({id,data:unit},index)=>{(slots.recordIds||(slots.recordIds={}))['property'+(index+1)]=id;patchObject(data,{[`cat${index+1}Comune`]:unit.comune||'',[`cat${index+1}Foglio`]:unit.foglio||'',[`cat${index+1}Particella`]:unit.particella||'',[`cat${index+1}Subalterno`]:unit.subalterno||'',...(index===0?{indirizzoAlloggio:[unit.via,unit.numero].filter(Boolean).join(' ')}:{})},[adapter.slot],'Immobile '+(index+1),operations);});
   }else{
    const address=selected.map(item=>propertyLabel(item.data)).join('\n');
-   const patch=adapter.kind==='professional'?{operation:address}:{address,reference:selected.map(item=>item.data.reference||'').filter(Boolean).join(' · ')};
+   const patch=adapter.kind==='professional'?{operation:address}:adapter.kind==='closing'?{address}:{address,reference:selected.map(item=>item.data.reference||'').filter(Boolean).join(' · ')};
    if(selected.length===1)(slots.recordIds||(slots.recordIds={})).property=selected[0].id;
    patchObject(data,patch,[adapter.slot],'Immobile',operations);
   }
@@ -168,6 +177,7 @@ export function planDocumentImport(envelope,source,{parties=[],properties=[],inc
   const fields=factFields(envelope.model);
   patchObject(data,Object.fromEntries(Object.entries(fields).map(([key,field])=>[field,text(source.facts[key])])),[adapter.slot],'Dati economici e date',operations);
  }
+ if(adapter.kind==='closing'&&operations.length)patchObject(data,{proposalStatus:'unknown'},[adapter.slot],'Verificare nuovamente la proposta',operations);
  return {envelope:next,operations,sourceModel:source.model,targetModel:envelope.model};
 }
 /** Callback adapter for a visible party; no automatic inference or clipboard writes. */

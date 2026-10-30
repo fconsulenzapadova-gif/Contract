@@ -1,0 +1,24 @@
+/* Native fields and paper reuse the shared contract typography and columns. */
+.closing-root{min-width:0;width:100%;height:100%}
+.closing-controls{font-size:12px;line-height:1.45;min-width:0;width:100%}
+.closing-source{margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid var(--gemut-line)}
+.closing-source p,.closing-info{font-size:12px;color:var(--text-muted);margin:8px 0}
+.closing-controls select{width:100%;min-width:0;font:inherit;background:var(--surface);border:1px solid var(--gemut-line);border-radius:4px;padding:7px;margin:5px 0}
+.closing-field{display:block;min-width:0;margin:0 0 3mm}
+.closing-field>span{display:block;font-size:8pt;color:#666861;margin-bottom:1mm}
+.closing-document .closing-field .inline-input{display:block;width:100%;max-width:100%;box-sizing:border-box;font:inherit;font-weight:400;border:0;border-bottom:0;box-shadow:inset 0 -1px #aabec8;border-radius:0;min-height:18.4px;line-height:18.4px;background:#f7f5ef;padding:0;resize:none}
+.closing-document .closing-field .inline-input:focus{outline:2px solid #93cfe6;outline-offset:1px}
+.closing-errors{padding:10px;border:1px solid #a46b36;border-radius:5px;background:#fff8ef}
+.closing-errors ul{padding-left:18px;margin:6px 0}
+.closing-document .med-title{border:0;padding-bottom:0;margin-bottom:3mm}
+.closing-document p,.closing-document .closing-signature{overflow-wrap:anywhere!important}
+.closing-value{margin:0 0 3mm;white-space:pre-wrap;overflow-wrap:anywhere}
+.closing-value>span{display:block;font-size:8pt;color:#666861}
+.closing-key-heading,.closing-key-record{display:grid;grid-template-columns:minmax(0,1fr) 16mm minmax(0,1fr);gap:1mm 4mm;margin:0 0 3mm;padding:2mm 0;border-bottom:1px solid #d8d4ca;overflow-wrap:anywhere}
+.closing-key-heading{font-size:8pt;color:#666861}
+.closing-key-record .closing-field>span{display:none}
+.closing-field-row{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.closing-signature{break-inside:avoid;margin:2mm 0;min-height:16mm}
+.closing-signature .med-signature-line{height:7mm;margin:0 0 1mm}
+.closing-print-error{font:12pt Georgia,serif;margin:20mm;white-space:normal}
+@media print{.closing-controls{display:none!important}.closing-document .closing-key-record{break-inside:avoid}}

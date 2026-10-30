@@ -59,6 +59,8 @@ export function adaptDocument(root){
 }
 export async function prepareDocument(root){
  if(!root)return;
+ const issue=(root.closest?.('[data-document-issues]')||root.querySelector?.('[data-document-issues]'))?.dataset.documentIssues;
+ if(issue)throw Error(issue);
  const doc=root.ownerDocument,win=doc.defaultView;
  await bounded(doc.fonts?.ready||Promise.resolve(),8000,'Caricamento dei caratteri non completato. Riprovare la stampa.');
  await nextFrame(win);

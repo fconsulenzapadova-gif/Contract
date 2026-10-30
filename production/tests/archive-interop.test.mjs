@@ -72,8 +72,8 @@ test('proposal-to-contract mapping previews replacements and keeps names, econom
  assert.equal(result.envelope.slots.units[0].id,'flat-a');assert(result.operations.some(op=>op.previous==='old'&&op.replacement));assert.deepEqual(target.slots.landlords[0].nome,'Previous');
 });
 
-test('all fourteen modules have shared adapters and receive only pertinent identity/property facts',()=>{
- assert.equal(Object.keys(MODELS).length,14);
+test('all sixteen modules have shared adapters and receive only pertinent identity/property facts',()=>{
+ assert.equal(Object.keys(MODELS).length,16);
  for(const model of Object.keys(MODELS)){
   const adapter=modelAdapter(model),result=planDocumentImport(envelope(model,{}),documentFacts(source),{parties:[{sourceId:'tenant-a',role:adapter.roles[0][0],targetId:'new'}],properties:['flat-a'],includeFacts:true});
   assert(result.operations.length>0,model);assert(!JSON.stringify(result.envelope).includes('DO NOT TRANSFER LEGAL TEXT'));
@@ -155,4 +155,31 @@ test('concordato transfers the chosen tenant and selected cadastral units to All
 test('imported models cannot navigate outside the local application',()=>{
  for(const model of ['//example.invalid','/\\example.invalid','/path?redirect=https://example.invalid','https://example.invalid'])assert.throws(()=>validateEnvelope(envelope(model,{})),/modello|formato/);
  assert.equal(validateEnvelope(envelope('/lease-contract-4-4',{})).model,'/lease-contract-4-4');
+});
+
+
+test('closing adapters preserve literal party text and transfer only selected facts, never closure or receipt attestations',()=>{
+ const input=envelope('/key-return',{document:{clients:'Anna Rossi · C.F. AAA\nMario Bianchi · C.F. BBB',owners:'Proprietà',address:'Via Prove 4',authorization:'PRIVATE_AUTHORITY',keys:[{quantity:'2'}],observations:'PRIVATE_RECEIPT'}});
+ const facts=documentFacts(input);
+ assert.equal(facts.parties[0].data.nome,input.slots.document.clients);
+ assert.equal(facts.properties[0].data.via,'Via Prove 4');
+ assert(!JSON.stringify(facts).includes('PRIVATE_'));
+ const result=planDocumentImport(envelope('/practice-release',{document:{proposalStatus:'not-accepted'}}),documentFacts(source),{parties:[{sourceId:'tenant-a',role:'clients'}],properties:['flat-a'],includeFacts:true});
+ assert.equal(result.envelope.slots.document.clients,'Maria Luisa De Rossi · C.F. TENANT');
+ assert.equal(result.envelope.slots.document.address,'Padova · Via Roma · 8');
+ assert.equal(result.envelope.slots.document.proposalStatus,'unknown');
+ assert.equal(result.envelope.slots.document.authorization,undefined);
+ assert.equal(result.envelope.slots.document.reference,undefined);
+});
+
+test('closing archive import combines every selected person per role and previews the full replacement',()=>{
+ const multiple=structuredClone(source);
+ multiple.slots.proposers.push({id:'tenant-b',nome:'Anna Bianchi',cf:'SECOND'});
+ const target=envelope('/practice-release',{document:{clients:'Vecchio cliente',owners:'Vecchia proprietà',proposalStatus:'not-accepted'}});
+ const result=planDocumentImport(target,documentFacts(multiple),{parties:[{sourceId:'tenant-a',role:'clients'},{sourceId:'tenant-b',role:'clients'},{sourceId:'owner-a',role:'owners'}]});
+ assert.equal(result.envelope.slots.document.clients,'Maria Luisa De Rossi · C.F. TENANT\nAnna Bianchi · C.F. SECOND');
+ assert.equal(result.envelope.slots.document.owners,'Mario Rossi · C.F. OWNER');
+ assert.equal(result.envelope.slots.document.proposalStatus,'unknown');
+ assert(result.operations.some(op=>op.previous==='Vecchio cliente'&&op.value.includes('Anna Bianchi')&&op.replacement));
+ assert.equal(target.slots.document.clients,'Vecchio cliente');
 });
