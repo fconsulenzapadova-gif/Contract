@@ -10,14 +10,22 @@
         ".superdesign/init/layouts.md",
         ".superdesign/init/components.md",
         ".superdesign/init/theme.md",
-        ".superdesign/init/pages.md"
+        ".superdesign/init/pages.md",
+        "production/src/ColumnLayout.js",
+        "production/src/ColumnLayout.css",
+        "src/purchase/PurchaseTemplate.js",
+        "src/sharing/PropertySharing.tsx"
       ],
       "fingerprints": {
         ".superdesign/design-system.md": "7ed9680f2daa7fd648f4b4b5e5898d6bd37c550ee9edfac57d1311db0ed8e848",
-        ".superdesign/init/layouts.md": "8e2f40e925dc08f6f4d8aacb516059e5bf791b4033c595380efef5f7ef1fc910",
+        ".superdesign/init/layouts.md": "7e891d02c336125a7af4d3dbe83843c3a8142badc0db655b30ffbc8a62584320",
         ".superdesign/init/components.md": "ce0864eeeef0ce9676788ffdc75b6d2fa9b3a4a2a50d209bc9625daf6dea7663",
         ".superdesign/init/theme.md": "7e9da731e35747fb1eeaf21852fd98d9adfd41a8cab605eadc4fb94f05e0e227",
-        ".superdesign/init/pages.md": "29a21cdd3331b88b7b2dc8bc8d9b4accb8dea2089c82532c65c715b2a0fab19d"
+        ".superdesign/init/pages.md": "29a21cdd3331b88b7b2dc8bc8d9b4accb8dea2089c82532c65c715b2a0fab19d",
+        "production/src/ColumnLayout.js": "34df14a87fa2e36505d1aba0d2debdbaa86c8d1655cc6adce05ea8e8cbb6d094",
+        "production/src/ColumnLayout.css": "9f1e619fef64c142aaff4cfd235961c1b430d47bacd56fbedc1fedfcf45ab707",
+        "src/purchase/PurchaseTemplate.js": "730a4cd561aa52e397bc55da1575ba18bdc570b601eaca8a00646a836148b16f",
+        "src/sharing/PropertySharing.tsx": "2b5df16f99e03ad81a49eb48df104f512f1681b492e6869e633eeb0f14081b2d"
       },
       "referenceIds": [
         "public-logo-gemut-2026.png"
@@ -32,12 +40,12 @@
       "components": [],
       "drafts": {
         "73d61350-07be-40d2-a2bb-b069042d6184": {
-          "title": "Contratti \u00b7 direzione operativa GEM\u00dcT",
-          "visualDirection": "Warm GEM\u00dcT operational workspace; deterministic authored reference",
-          "currentVersion": 1
+          "title": "Contratti · direzione operativa GEMÜT",
+          "visualDirection": "GEMÜT operational workspace in vertical navigation, tools, compilation and document columns; no header over preview",
+          "currentVersion": 3
         }
       },
-      "updatedAt": "2026-10-28T20:41:57.509801+00:00"
+      "updatedAt": "2026-10-30T09:47:34.929555+00:00"
     }
   }
 }

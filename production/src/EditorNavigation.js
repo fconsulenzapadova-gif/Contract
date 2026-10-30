@@ -15,7 +15,7 @@ export function withSectionNavigation(React,children){
     });};
     const observer=new MutationObserver(update),root=document.querySelector('.document-preview-container');if(root)observer.observe(root,{childList:true,subtree:true});update();return()=>{observer.disconnect();cancelAnimationFrame(frame);};
    },[]);
-   return h('div',{className:'contrax-editor-workspace'},children,sections.length>0&&h('label',{className:'contrax-section-nav'},'Vai alla sezione',h('select',{'aria-label':'Vai a una sezione del documento',value:'',onChange:event=>{if(event.target.value==='')return;const node=nodes.current[Number(event.target.value)];if(node){node.setAttribute('tabindex','-1');node.scrollIntoView({block:'start',behavior:'auto'});node.focus({preventScroll:true});}}},h('option',{value:''},'Scegli una sezione'),...sections.map((title,index)=>h('option',{value:index,key:title},title)))));
+   return h('div',{className:'contrax-editor-workspace'},children,sections.length>0&&h('label',{className:'contrax-section-nav'},'Vai alla sezione',h('select',{'aria-label':'Vai a una sezione del documento',value:'',onChange:event=>{if(event.target.value==='')return;const node=nodes.current[Number(event.target.value)];if(node){node.setAttribute('tabindex','-1');requestAnimationFrame(()=>{node.scrollIntoView({block:'start',behavior:'auto'});node.focus({preventScroll:true});});}}},h('option',{value:''},'Scegli una sezione'),...sections.map((title,index)=>h('option',{value:index,key:title},title)))));
   };components.set(React,Navigator);
  }
  return React.createElement(Navigator,null,children);

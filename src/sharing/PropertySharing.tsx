@@ -7,7 +7,7 @@ import './sharing.css';
 
 type Runtime = typeof import('react');
 type DraftHook = <T>(runtime: Runtime, slot: string, initial: T, normalize: (value: unknown) => T) => [T, (value: T | ((previous: T) => T)) => void];
-interface LayoutProps {title: string; icon: ReactNode; preview: ReactNode; clientName?: string}
+interface LayoutProps {title: string; icon: ReactNode; preview: ReactNode; clientName?: string; editorColumn?: ReactNode}
 
 const fieldLabels: Record<SharingTextField,string> = {name:'Nome e cognome',phone:'Telefono',email:'Email',address:'Indirizzo immobile',reference:'Riferimento immobile',consultant:'Consulente Gemüt',otherChannel:'Altro canale',sharingDate:'Data condivisione o richiesta',placeDate:'Luogo e data della conferma',privacyPlaceDate:'Luogo e data della presa visione privacy'};
 const deliveryLabel=(status: string)=>status==='sent'?'Già trasmesso / presentato':status==='pending'?'Da trasmettere dopo la firma':'Da indicare';
@@ -17,7 +17,6 @@ export function createPropertySharing(React: Runtime, Layout: ComponentType<Layo
   const SharingPages=({rootRef,children}: {rootRef:import('react').Ref<HTMLDivElement>;children:ReactNode;identityTargets?:unknown[]}) => <div ref={rootRef} className="sharing-pages">{children}</div>;
   return function PropertySharing({closeSidebar}: {closeSidebar: (open: boolean) => void}) {
     const [data, setData] = useContractDraft(React, 'document', normalizeSharingData({}), normalizeSharingData);
-    const [tab, setTab] = React.useState<'edit' | 'preview'>('edit');
     const [expanded, setExpanded] = React.useState<SharingTextField | string | null>(null);
     const [plan,setPlan] = React.useState<{references:Record<string,string>;pages:ContinuationFragment[][]}>({references:{},pages:[]});
     const previewRef = React.useRef<HTMLDivElement>(null);
@@ -110,13 +109,7 @@ export function createPropertySharing(React: Runtime, Layout: ComponentType<Layo
     </SharingPages>;
     const expandedMaterial=expanded?.startsWith('material:')?data.materials.find(row=>'material:'+row.id===expanded):undefined;
     const expandedValue=expandedMaterial?expandedMaterial.description:expanded?data[expanded as SharingTextField]:'';
-    return <div className={`sharing-workspace sharing-tab-${tab}`}>
-      <button type="button" className="sharing-menu-close" aria-label="Chiudi menu laterale" onClick={() => closeSidebar(false)}>×</button>
-      <div className="sharing-mobile-tabs" role="group" aria-label="Visualizzazione scheda">
-        <button type="button" aria-pressed={tab === 'edit'} onClick={() => setTab('edit')}>Compila</button>
-        <button type="button" aria-pressed={tab === 'preview'} onClick={() => setTab('preview')}>Anteprima</button>
-      </div>
-      <aside className="sharing-editor" aria-label="Compilazione scheda di condivisione">
+    const editorColumn=<aside className="sharing-editor" aria-label="Compilazione scheda di condivisione">
         <h1>Scheda di condivisione immobiliare</h1><p>Registra le informazioni condivise, anche a distanza. Compila i campi e controlla l’anteprima prima di salvare il PDF.</p>
         <p className="sharing-hint" aria-live="polite">{2+plan.pages.length} pagine in anteprima. I testi lunghi e gli ulteriori materiali proseguono su allegati numerati, con riferimento al campo e firma.</p>
         <fieldset><legend>1. Destinatario</legend>{field('name', 'Nome e cognome')}{field('phone', 'Telefono', 'tel')}{field('email', 'Email', 'email')}</fieldset>
@@ -136,10 +129,10 @@ export function createPropertySharing(React: Runtime, Layout: ComponentType<Layo
 
         </fieldset>
         <fieldset><legend>5. Data e firme</legend>{field('placeDate', 'Luogo e data della conferma')}{field('privacyPlaceDate', 'Luogo e data della presa visione privacy')}<p>Gli spazi per la firma del destinatario sono presenti sulle pagine del modulo e sugli allegati.</p></fieldset>
-        <button type="button" className="btn btn-primary sharing-show-preview" onClick={() => setTab('preview')}>Controlla anteprima</button>
-      </aside>
+      </aside>;
+    return <div className="sharing-workspace">
       {expanded&&<dialog className="sharing-expanded-editor" aria-labelledby="sharing-expanded-title" onCancel={()=>setExpanded(null)}><h2 id="sharing-expanded-title">{expandedMaterial?'Descrizione materiale':fieldLabels[expanded as SharingTextField]}</h2><textarea aria-label="Testo integrale del campo" rows={16} value={expandedValue} onChange={event=>expandedMaterial?setData(previous=>updateMaterial(previous,expandedMaterial.id,{description:event.target.value})):change(expanded as SharingTextField,event.target.value)} /><p>{expandedValue.length.toLocaleString('it')} caratteri. Testo integrale conservato nella bozza e nel PDF.</p><button type="button" onClick={()=>setExpanded(null)}>Chiudi editor</button></dialog>}
-      <div className="sharing-preview"><Layout title="Scheda di condivisione immobiliare" icon={<Icon size={20} />} clientName={data.name} preview={preview} /></div>
+      <div className="sharing-preview"><Layout title="Scheda di condivisione immobiliare" icon={<Icon size={20} />} clientName={data.name} preview={preview} editorColumn={editorColumn} /></div>
     </div>;
   };
 }

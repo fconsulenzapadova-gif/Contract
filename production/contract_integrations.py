@@ -70,6 +70,17 @@ def integrate(root: Path, source: str):
         source=source[:start]+part+source[end:]
     # Shared header exposes record controls outside the A4 document and the fiscal assistant.
     once('i=identityHeader(_,n,i);','i=withSectionNavigation(_,toolsHeader(_,n,identityHeader(_,n,i),Is));')
+    # Preserve the shared preview's refs/actions while putting its UI in side columns.
+    once('wr=({title:e,icon:t,preview:n,clientName:r,headerAside:i})=>{',
+         'wr=({title:e,icon:t,preview:n,clientName:r,headerAside:i,editorColumn})=>{')
+    start=source.index('wr=({title:');end=source.index(',Tr=38',start)
+    layout=source[start:end]
+    marker='return(0,P.jsxs)(`div`,{className:`flex flex-col h-full w-full bg-background'
+    assert layout.count(marker)==1 and layout.endswith('})}')
+    layout=layout.replace(marker,'return documentColumns(_,(0,P.jsxs)(`div`,{className:`flex flex-col h-full w-full bg-background',1)
+    source=source[:start]+layout[:-1]+',editorColumn)}'+source[end:]
+    once('function Lc(){let[e,t]=(0,_.useState)(!0);',
+         'function Lc(){return columnShell(_,useLegacyContractShell());}function useLegacyContractShell(){let[e,t]=(0,_.useState)(()=>innerWidth>1100);')
     once('c(!0),await new Promise(e=>setTimeout(e,300));','c(!0),await prepareDocument(a.current);')
     # A single shared local archive is reachable from the dashboard too.
     once('function Lc(){','const DashboardArchive=createArchiveTools(_),Dashboard=()=>_.createElement(_.Fragment,null,_.createElement(DashboardArchive),_.createElement(Ic));function Lc(){')
@@ -91,7 +102,8 @@ def integrate(root: Path, source: str):
     old=source[start:end]
     original=old[len('p='):]
     source=source[:start]+'p=e=>e.querySelector(`.allegato-b-page`)?('+original+')(e):convertPrintableFields(e)'+source[end:]
-    imports='''import {withSectionNavigation} from "./EditorNavigation.js";
+    imports='''import {columnShell,documentColumns} from "./ColumnLayout.js";
+import {withSectionNavigation} from "./EditorNavigation.js";
 import {createArchiveTools} from "./ContractArchiveUI.js";
 import {fieldLabel} from "./AccessibleFields.js";
 import {printDocument} from "./SharedPrint.js";

@@ -9,6 +9,8 @@ npm run dev
 
 Anteprima locale: **http://localhost:5178/**. Per servire una build già generata: `npm run preview`.
 
+Navigazione, strumenti, compilazione e anteprima occupano colonne verticali separate, senza barre sopra il foglio. Nella proposta puoi scrivere direttamente sul documento; l'editor esteso si apre solo con “Espandi campo”. Sui dispositivi stretti usa il selettore verticale laterale. Dettagli e prove: `docs/anteprima-colonne-2026-10-30.md`.
+
 Sono conservati i comandi precedenti: `python3 build.py` esegue la build npm completa; `python3 serve.py` avvia il server locale dalla directory corretta. Richiedono le dipendenze installate con `npm ci`.
 
 ## Build e sorgenti effettivi

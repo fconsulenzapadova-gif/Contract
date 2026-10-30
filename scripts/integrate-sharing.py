@@ -24,7 +24,7 @@ once('path:`/visit-sheet`,element:', 'path:`/property-sharing`,element:(0,P.jsx)
 once('(0,P.jsxs)(Mn,{to:`/visit-sheet`,', '(0,P.jsxs)(Mn,{to:`/property-sharing`,className:({isActive:e})=>`nav-item ${e?`active`:``}`,children:[(0,P.jsx)(lr,{size:18}),(0,P.jsx)(`span`,{children:`Condivisione immobiliare`})]}),(0,P.jsxs)(Mn,{to:`/visit-sheet`,')
 once('{title:`Scheda visita`,', '{title:`Scheda di condivisione immobiliare`,description:`Registra informazioni e materiali condivisi via email, WhatsApp, link o videochiamata, anche senza visita.`,icon:(0,P.jsx)(lr,{size:32}),path:`/property-sharing`,color:`text-primary`},{title:`Scheda visita`,')
 # A closed initial mobile sidebar leaves room for the dashboard's new card.
-once('let[e,t]=(0,_.useState)(!0);return', 'let[e,t]=(0,_.useState)(window.innerWidth>760);return')
+assert source.count('function useLegacyContractShell(){let[e,t]=(0,_.useState)(()=>innerWidth>1100);') == 1, 'Expected responsive column navigation'
 once('children:`Compila direttamente sul documento`', 'children:window.location.pathname==="/property-sharing"?`Compila i campi e controlla l’anteprima`:`Compila direttamente sul documento`')
 source = 'import {createPropertySharing} from "./PropertySharing.js";\nimport {installNativePrint} from "./NativePrint.js";\n' + source
 (OUTPUT / 'assets/app.js').write_text(source)

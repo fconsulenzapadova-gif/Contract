@@ -1,0 +1,264 @@
+{
+  "observedAtUtc": "2026-10-30T09:47:34.866555+00:00",
+  "workingDirectory": "/Users/Gemut/Desktop/GEMUT-Contratti-Lavoro/webapp",
+  "baseCommit": "5b3d791d4465c5c9aa6731e6c335cc5b1cf89521",
+  "tests": {
+    "passed": 114,
+    "failed": 0
+  },
+  "lint": "sharing/Vite passed",
+  "build": "passed, includes TypeScript and guarded integrations",
+  "syntax": "JS/Python passed",
+  "browser": {
+    "base": "http://localhost:5178",
+    "inline": true,
+    "explicitEditor": true,
+    "layouts": [
+      {
+        "route": "/purchase-proposal",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-proposal",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/sales-assign",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-assign",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-4-4",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-4-4-cedolare",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-concordato",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-students",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-transitorio",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/lease-allegato-b",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/property-sharing",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/visit-sheet",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/aml",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/commission",
+        "width": 1600,
+        "pass": true
+      },
+      {
+        "route": "/purchase-proposal",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-proposal",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/sales-assign",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-assign",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-4-4",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-4-4-cedolare",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-concordato",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-students",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-transitorio",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/lease-allegato-b",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/property-sharing",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/visit-sheet",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/aml",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/commission",
+        "width": 834,
+        "pass": true
+      },
+      {
+        "route": "/purchase-proposal",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-proposal",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/sales-assign",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-assign",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-4-4",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-4-4-cedolare",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-concordato",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-students",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-contract-transitorio",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/lease-allegato-b",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/property-sharing",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/visit-sheet",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/aml",
+        "width": 390,
+        "pass": true
+      },
+      {
+        "route": "/commission",
+        "width": 390,
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "longText": true,
+    "nativePrint": true,
+    "pdf": true,
+    "longTextTools": true,
+    "pass": true
+  },
+  "pdf": {
+    "inline-continuazioni": {
+      "pages": 7,
+      "lastLine": true,
+      "nonEmptyPages": true,
+      "characterBounds": true,
+      "sha256": "28dc1e3bb780d9e334f4133f26a904b43e0de0df6bfaa942995046b30127ba06"
+    },
+    "aml-testi-laterali": {
+      "pages": 4,
+      "lastLine": true,
+      "nonEmptyPages": true,
+      "characterBounds": true,
+      "sha256": "308974b98ebd9fed6ba177f459353c4f13f26241e8006e258f5dcbb4fb132d26"
+    }
+  },
+  "visualReview": "All 11 PDF pages reviewed in contact sheets; desktop and compact UI reviewed.",
+  "servedAssets": {
+    "app.js": "8049c1dfe1ff99a6d02f865e1d6710dd6942649e2b1e70a503c4ac5682ff25d4",
+    "app.css": "92c6d3700cda06cb6ada17472387c038f156c0728533d45e89c9fe7268412808",
+    "ColumnLayout.js": "34df14a87fa2e36505d1aba0d2debdbaa86c8d1655cc6adce05ea8e8cbb6d094",
+    "AdaptiveDocument.js": "f4fd3539fd843e0e7d2642f6b23574ebc96f46c783b5feeb7d8e9cba2fe6b6cc",
+    "PurchaseTemplate.js": "730a4cd561aa52e397bc55da1575ba18bdc570b601eaca8a00646a836148b16f",
+    "PropertySharing.js": "3dc31db94aad790ca893b35048dcf122c4b601a3a399b7f268898fed21908f9d"
+  },
+  "review": "No actionable findings remain after section navigation, height and long-text editor checks.",
+  "userTab": "Reloaded and left on preview; no contract data modified.",
+  "push": false,
+  "deploy": false
+}

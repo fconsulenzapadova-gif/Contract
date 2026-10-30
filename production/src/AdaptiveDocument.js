@@ -3,6 +3,7 @@ import {adaptDocument,convertPrintableFields} from './DocumentTypography.js';
 import {removeEditorControls} from './ContractEditorTools.js';
 import {splitFlowElement} from './FlowPagination.js';
 import {installNativePrint} from './NativePrint.js';
+import {columnEditorContext} from './ColumnLayout.js';
 function nodes(React,node){return React.Children.toArray(node?.props?.children||[]).flatMap(c=>c?.type===React.Fragment?nodes(React,c):Array.isArray(c)?c:[c]);}
 function isHeading(node){
  const text=typeof node?.props?.children==='string'?node.props.children:'';
@@ -62,6 +63,17 @@ export function createAdaptiveDocument(React,brandHeader,useReviewedBlocks){
   const [layout,setLayout]=React.useState({pages:[parts.map(b=>b.key)],fragments:{}}),[editing,setEditing]=React.useState(null);
   const {pages,fragments}=layout;
   const editorRef=React.useRef(null),opener=React.useRef(null);
+  const registerEditors=React.useContext(columnEditorContext(React));
+  React.useEffect(()=>{
+   if(!registerEditors)return;
+   const entries=Object.values(fragments).filter(fragment=>fragment.first);
+   registerEditors(entries.map((fragment,index)=>{
+    const template=document.createElement('template');template.innerHTML=fragment.html;
+    const label=template.content.querySelector('h2,h3')?.textContent.trim()||'Testo esteso '+(index+1);
+    return {key:fragment.source,label,open:element=>{opener.current=element;setEditing(fragment.source);}};
+   }));
+   return()=>registerEditors([]);
+  },[registerEditors,fragments]);
   React.useEffect(()=>{if(editing){editorRef.current?.showModal();}else if(editorRef.current?.open){editorRef.current.close();opener.current?.focus();}},[editing]);
   const byKey=new Map(parts.map(b=>[b.key,b.node]));
   React.useEffect(()=>installNativePrint(shell.current),[]);
@@ -110,7 +122,7 @@ export function createAdaptiveDocument(React,brandHeader,useReviewedBlocks){
    h('div',{className:'a4-measure-shell','aria-hidden':'true',inert:true},h('div',{className:'a4-page-measure '+pageClass,style:pageStyle,ref:measure},
     header&&h('div',{ref:headerRef,className:'a4-running-header',style:{display:'flow-root'}},header),...parts.map(b=>h('div',{className:'a4-flow-block',key:'measure-'+b.key,ref:e=>refs.current[b.key]=e},b.node)))),
    ...pages.map((keys,index)=>h('div',{className:'a4-page '+pageClass,style:pageStyle,key:'page-'+index},header&&h('div',{className:'a4-running-header',style:{display:'flow-root'}},header),
-    ...keys.map(key=>h('div',{className:'a4-flow-block',key,'data-block-key':key},fragments[key]?h(React.Fragment,null,fragments[key].first&&h('button',{type:'button',className:'pdf-hide contract-control-btn long-text-edit',onClick:event=>{opener.current=event.currentTarget;setEditing(fragments[key].source);}},'Modifica il testo completo'),h('div',{className:'contract-flow-fragment',dangerouslySetInnerHTML:{__html:fragments[key].html}})):byKey.get(key))),
+    ...keys.map(key=>h('div',{className:'a4-flow-block',key,'data-block-key':key},fragments[key]?h(React.Fragment,null,!registerEditors&&fragments[key].first&&h('button',{type:'button',className:'pdf-hide contract-control-btn long-text-edit',onClick:event=>{opener.current=event.currentTarget;setEditing(fragments[key].source);}},'Modifica il testo completo'),h('div',{className:'contract-flow-fragment',dangerouslySetInnerHTML:{__html:fragments[key].html}})):byKey.get(key))),
     pageFooter,h('footer',{className:'document-page-number'},`pagina ${index+1} di ${pages.length}`))),
    h('dialog',{ref:editorRef,className:'contract-long-editor pdf-hide',onCancel:()=>setEditing(null),onClose:()=>setEditing(null),'aria-label':'Modifica testo completo'},h('h2',null,'Modifica il testo completo'),h('p',null,'Il testo viene conservato integralmente e distribuito sulle pagine necessarie.'),...editableFields(byKey.get(editing)).map((field,index)=>h('label',{key:index},field.props['aria-label']||field.props.name||'Testo',React.cloneElement(field,{className:'contract-expanded-text',rows:12,style:{},'aria-label':field.props['aria-label']||field.props.name||'Testo'}))),h('button',{type:'button',onClick:()=>setEditing(null)},'Chiudi')));
  };

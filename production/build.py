@@ -131,7 +131,7 @@ css = (ROOT / 'vendor/deployed-app.css').read_text()
 remote_fonts = '@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap";'
 assert css.count(remote_fonts) == 1, 'Expected original font import'
 css = css.replace(remote_fonts, '@import "/fonts/app-fonts.css";', 1)
-(OUTPUT / 'assets/app.css').write_text(css + '\n' + (ROOT / 'src/documents.css').read_text() + '\n' + (ROOT / 'src/identity.css').read_text() + '\n' + (ROOT / 'src/visit-sheet.css').read_text() + '\n' + (ROOT / 'src/contract-layout.css').read_text() + '\n' + (ROOT / 'src/ContractArchive.css').read_text() + '\n' + (ROOT / 'src/GemutTheme.css').read_text())
+(OUTPUT / 'assets/app.css').write_text(css + '\n' + (ROOT / 'src/documents.css').read_text() + '\n' + (ROOT / 'src/identity.css').read_text() + '\n' + (ROOT / 'src/visit-sheet.css').read_text() + '\n' + (ROOT / 'src/contract-layout.css').read_text() + '\n' + (ROOT / 'src/ContractArchive.css').read_text() + '\n' + (ROOT / 'src/GemutTheme.css').read_text() + '\n' + (ROOT / 'src/ColumnLayout.css').read_text())
 for item in (ROOT / 'public').iterdir():
     if item.is_dir(): shutil.copytree(item, OUTPUT / item.name, dirs_exist_ok=True)
     else: shutil.copyfile(item, OUTPUT / item.name)

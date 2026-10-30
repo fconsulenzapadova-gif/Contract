@@ -92,7 +92,8 @@ export function convertPurchaseFields(root) {
  for(const input of root.querySelectorAll('.purchase-template-field')){
   const span=root.ownerDocument.createElement('span');
   span.className='purchase-template-value';span.style.cssText=input.style.cssText;
-  span.textContent=input.matches('input,textarea')?input.value:input.textContent;span.setAttribute('aria-label',input.getAttribute('aria-label'));
+  const reference=input.getAttribute('data-continuation-reference');
+  span.textContent=reference?'['+reference+']':input.matches('input,textarea')?input.value:input.textContent;span.setAttribute('aria-label',input.getAttribute('aria-label'));
   input.replaceWith(span);
  }
  for(const button of root.querySelectorAll('.purchase-template-check')){
@@ -103,14 +104,13 @@ export function convertPurchaseFields(root) {
 export function createPurchaseTemplate(React,Layout,Icon,useDraft) {
  const h=React.createElement;
  const PurchasePages=({rootRef,children})=>h('div',{ref:rootRef,className:'purchase-template-pages'},children);
- return function PurchaseTemplate({closeSidebar}) {
+ return function PurchaseTemplate() {
   const [data,setData]=useDraft(React,'purchaseTemplate',()=>legacyTemplate(readSlots()),normalizeTemplate);
   const [reviewed,setReviewed]=useDraft(React,'purchaseTemplateReviewed',false);
-  const [mobile,setMobile]=React.useState(()=>innerWidth<=760),[tab,setTab]=React.useState('edit'),[notice,setNotice]=React.useState(''),[expanded,setExpanded]=React.useState(null);
+  const [notice,setNotice]=React.useState(''),[expanded,setExpanded]=React.useState(null);
   const [plan,setPlan]=React.useState({references:{},pages:[]});
+  const [inline,setInline]=React.useState(null);
   const root=React.useRef(null);
-  React.useEffect(()=>{const media=matchMedia('(max-width:760px)'),resize=()=>setMobile(media.matches);media.addEventListener('change',resize);return()=>media.removeEventListener('change',resize);},[]);
-  React.useEffect(()=>{if(mobile)closeSidebar(false);},[mobile,closeSidebar]);
   const needsReview=legacyNeedsReview(readSlots())&&!reviewed;
   const change=(key,value)=>{if(fieldNames.has(key)||key==='statoImm'){setData(previous=>({...previous,[key]:value}));setNotice('');}};
   React.useLayoutEffect(()=>{
@@ -155,7 +155,7 @@ export function createPurchaseTemplate(React,Layout,Icon,useDraft) {
   },[data,needsReview]);
   const input=(definition,editor=false)=>{
    const [key,label]=definition;
-   if(!editor)return h('button',{key,type:'button',className:'purchase-template-field','aria-label':'Modifica: '+label,style:position(definition),title:plan.references[key]?`${label}: testo integrale nell’allegato ${plan.references[key]}`:label,onClick:()=>setExpanded(key)},plan.references[key]?'['+plan.references[key]+']':data[key]);
+   if(!editor)return h('textarea',{key,rows:1,className:'purchase-template-field','aria-label':'Modifica: '+label,style:position(definition),title:plan.references[key]?`${label}: testo integrale nell’allegato ${plan.references[key]}`:label,'data-continuation-reference':plan.references[key],value:inline===key||!plan.references[key]?data[key]:'['+plan.references[key]+']',autoComplete:'off',spellCheck:false,onFocus:()=>setInline(key),onBlur:()=>setInline(null),onChange:event=>change(key,event.target.value)});
    return h('textarea',{key,name:key,rows:3,'aria-label':label,value:data[key],autoComplete:'off',spellCheck:false,onChange:event=>change(key,event.target.value)});
   };
   const check=(status,x)=>h('button',{key:status,type:'button',role:'radio','aria-label':'Immobile '+status,'aria-checked':data.statoImm===status,
@@ -177,22 +177,21 @@ export function createPurchaseTemplate(React,Layout,Icon,useDraft) {
     h('line',{x1:253.5,y1:55,x2:338.5,y2:55,stroke:'black',strokeWidth:.5})),
    ...FIELDS.filter(f=>f[2]===number).map(f=>input(f)),
    number===1&&h('div',{role:'radiogroup','aria-label':'Stato immobile'},check('libero',157.95),check('locato',200.32)))),...continuationPages(React,plan.pages,{kind:'purchase',title:'Proposta d’acquisto',signatures:['Proponente','Venditore']}));
-  return h('div',{className:`purchase-template-workspace purchase-tab-${tab}`,onClickCapture:event=>{
-   if(!event.target.closest('button')?.textContent?.includes('Salva PDF'))return;
-   const errors=issues();if(errors.length){event.preventDefault();event.stopPropagation();setNotice(errors.join(' '));}
-  }},
+  const editorColumn=h('section',{className:'purchase-mobile-editor purchase-editor','aria-label':'Compilazione proposta d’acquisto'},
    needsReview&&h('div',{className:'purchase-template-notice',role:'alert'},'La bozza precedente contiene dati senza uno spazio corrispondente nel nuovo modulo. I dati originali sono conservati nella bozza esportabile. Riporta le informazioni necessarie nei campi prima di stampare. ',
     h('details',null,h('summary',null,'Dati precedenti da verificare'),h('ul',null,...legacyOmittedValues(readSlots()).map((value,index)=>h('li',{key:index},value)))),
     h('button',{type:'button',onClick:()=>{setReviewed(true);setNotice('');}},'Confermo di avere verificato tutti i dati')),
    notice&&h('p',{className:'purchase-template-notice',role:'alert'},notice),
-   mobile&&h('div',{className:'purchase-mobile-tabs'},h('button',{type:'button','aria-pressed':tab==='edit',onClick:()=>setTab('edit')},'Compila'),h('button',{type:'button','aria-pressed':tab==='preview',onClick:()=>setTab('preview')},'Anteprima')),
-   h('section',{className:'purchase-mobile-editor purchase-editor','aria-label':'Compilazione proposta d’acquisto'},
     h('h1',null,'Proposta d’acquisto'),h('p',null,'Compila i campi. Il testo che supera gli spazi originali prosegue su allegati numerati, con il riferimento al campo e gli spazi per le firme.'),
     h('a',{href:'/purchase-template/original.pdf',download:'Proposta_acquisto_modulo_originale.pdf'},'Scarica il modulo originale'),
     h('p',{className:'purchase-page-count','aria-live':'polite'},`${2+plan.pages.length} pagine in anteprima`),
     ...FIELDS.map(definition=>h('div',{className:'purchase-editor-field',key:definition[0]},h('label',null,h('span',null,definition[1]),input(definition,true)),h('div',{className:'purchase-field-tools'},h('small',null,`${data[definition[0]].length.toLocaleString('it')} caratteri`),h('button',{type:'button',onClick:()=>setExpanded(definition[0]),'aria-label':'Espandi: '+definition[1]},'Espandi campo')))),
-    h('label',null,'Stato immobile',h('select',{value:data.statoImm,onChange:e=>change('statoImm',e.target.value)},h('option',{value:'libero'},'Libero'),h('option',{value:'locato'},'Locato')))),
-   h('div',{className:'purchase-preview'},h(Layout,{title:'Modulo Proposta Acquisto',icon:h(Icon,{size:20}),clientName:data.p1Nome,preview})),
+    h('label',null,'Stato immobile',h('select',{value:data.statoImm,onChange:e=>change('statoImm',e.target.value)},h('option',{value:'libero'},'Libero'),h('option',{value:'locato'},'Locato'))));
+  return h('div',{className:'purchase-template-workspace',onClickCapture:event=>{
+   if(!event.target.closest('button')?.textContent?.includes('Salva PDF'))return;
+   const errors=issues();if(errors.length){event.preventDefault();event.stopPropagation();setNotice(errors.join(' '));}
+  }},
+   h('div',{className:'purchase-preview'},h(Layout,{title:'Modulo Proposta Acquisto',icon:h(Icon,{size:20}),clientName:data.p1Nome,preview,editorColumn})),
    expanded&&h('dialog',{className:'purchase-expanded-editor',onCancel:()=>setExpanded(null),'aria-labelledby':'purchase-expanded-title'},h('h2',{id:'purchase-expanded-title'},FIELDS.find(field=>field[0]===expanded)?.[1]),h('textarea',{'aria-label':'Testo integrale del campo',value:data[expanded],onChange:event=>change(expanded,event.target.value),rows:16}),h('p',null,`${data[expanded].length.toLocaleString('it')} caratteri. Il testo viene salvato nella bozza e impaginato integralmente.`),h('button',{type:'button',onClick:()=>setExpanded(null)},'Chiudi editor')));
  };
 }

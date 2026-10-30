@@ -1,0 +1,64 @@
+/* Application information occupies vertical columns; the paper has no header UI. */
+.contract-app-columns {display:flex;height:100dvh;overflow:hidden;}
+.contract-app-columns>.contract-navigation-column {position:relative!important;inset:auto!important;flex:0 0 220px;width:220px!important;height:100dvh;overflow:hidden;transform:none!important;transition:none;box-shadow:none!important;}
+.contract-app-columns>.contract-navigation-column.closed {flex-basis:46px;width:46px!important;}
+.contract-navigation-column .sidebar-header {display:flex;flex-wrap:wrap;align-items:center;padding:14px 12px;gap:10px;min-height:0;}
+.contract-navigation-column .sidebar-header .sidebar-title {flex:1;font-size:13px!important;}
+.contract-navigation-column .contrax-app-logo {width:64px;}
+.contract-menu-toggle {display:flex;align-items:center;justify-content:center;flex:none;width:32px;height:36px;color:#f7f5ef;border:0;background:transparent;cursor:pointer;}
+.contract-navigation-column.closed .sidebar-header {padding:8px 6px;}
+.contract-navigation-column.closed .sidebar-header>:not(.contract-menu-toggle),.contract-navigation-column.closed .sidebar-nav {display:none;}
+.contract-navigation-column .sidebar-nav {height:calc(100dvh - 90px);overflow:auto;padding:14px 10px;}
+.contract-navigation-column .nav-item {font-size:13px;gap:8px;padding:10px 8px;}
+.contract-main-column {flex:1;min-width:0;min-height:0;margin:0!important;width:auto!important;overflow:hidden;}
+.contract-route-column {height:100%;min-width:0;min-height:0;overflow:auto;padding:0;}
+.contract-route-column>.mediation-document {height:100%;min-height:0;}
+.contract-document-columns {position:relative;display:grid;grid-template-columns:244px minmax(0,1fr);width:100%;height:100%;min-width:0;min-height:0;overflow:hidden;}
+.contract-document-columns.has-editor {grid-template-columns:244px 280px minmax(0,1fr);}
+.contract-document-tools {padding:20px 16px;overflow:auto;background:var(--gemut-paper-soft);border-right:1px solid var(--gemut-line);min-width:0;}
+.contract-column-title {margin-bottom:22px;}
+.contract-column-title>div {align-items:flex-start;gap:8px;}
+.contract-column-title h1 {font-size:19px;white-space:normal;overflow:visible;line-height:1.25;margin:0 0 6px;}
+.contract-column-title p {font-size:12px;line-height:1.45;}
+.contract-document-actions {padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid var(--gemut-line);}
+.contract-document-actions h2 {font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin:0 0 12px;color:#666861;}
+.contract-document-actions .preview-toolbar {display:flex;flex-direction:column;align-items:stretch;width:100%;gap:12px;}
+.contract-document-actions .preview-zoom-controls {justify-content:space-between;width:100%;box-sizing:border-box;}
+.contract-document-tools .contract-editor-tools {display:grid;width:100%;gap:16px;}
+.contract-document-tools :is(.contract-draft-tools,.aml-editor-tools) {display:flex;flex-direction:column;align-items:stretch;gap:8px;}
+.contract-document-tools :is(.contract-control-btn,.btn) {white-space:normal;}
+.contract-document-tools .contract-draft-tools>span {font-size:12px;line-height:1.5;}
+.contract-document-tools .contract-editor-tools details[open] {max-height:none;}
+.contract-document-tools :is(.cf-assistant,.identity-reader) {width:100%;min-width:0;box-sizing:border-box;}
+.contract-document-tools .contrax-section-nav {display:grid;margin-top:16px;}
+.contract-text-tools {border-top:1px solid var(--gemut-line);margin-top:20px;padding-top:16px;}
+.contract-text-tools h2 {font-size:14px;margin:0 0 12px;}
+.contract-text-tools>div {margin-bottom:16px;}
+.contract-text-tools p {font-size:12px;line-height:1.4;margin:0 0 6px;}
+.contract-document-tools .aml-editor-tools>label {display:grid;}
+.contract-document-tools .aml-editor-tools select {flex:auto;width:100%;}
+.contract-compilation-column {min-width:0;min-height:0;overflow:hidden;background:#fff;}
+.contract-compilation-column>:is(.purchase-editor,.sharing-editor) {height:100%;box-sizing:border-box;padding:20px 18px;overflow:auto;}
+.contract-document-columns>.contract-preview-column {position:relative;min-width:0;min-height:0;height:100%;max-height:none!important;overflow:auto;}
+.contract-column-switcher {display:none;}
+.purchase-template-workspace,.sharing-workspace {display:block!important;height:100%!important;min-height:0;}
+.purchase-template-workspace>.purchase-preview,.sharing-workspace>.sharing-preview {position:static!important;visibility:visible!important;width:100%!important;height:100%!important;}
+.contract-document-columns .purchase-template-pages {position:static!important;visibility:visible!important;}
+.contract-compilation-column .purchase-editor {display:block!important;}
+.purchase-mobile-tabs,.sharing-mobile-tabs,.sharing-menu-close {display:none!important;}
+@media(max-width:1100px) {
+ .contract-document-columns,.contract-document-columns.has-editor {grid-template-columns:54px minmax(0,1fr);}
+ .contract-column-switcher {display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:10px 3px;background:var(--gemut-paper-soft);border-right:1px solid var(--gemut-line);overflow:auto;}
+ .contract-column-switcher button {border:1px solid transparent;border-radius:4px;background:transparent;color:#334b56;min-height:64px;padding:6px 2px;font-size:9px;line-height:1.3;cursor:pointer;white-space:nowrap;}
+ .contract-column-switcher button[aria-pressed=true] {background:var(--gemut-blue);border-color:#96bbc9;color:var(--gemut-ink);}
+ .contract-document-tools,.contract-compilation-column {display:none;}
+ .contract-document-columns[data-column=tools]>.contract-document-tools,.contract-document-columns[data-column=edit]>.contract-compilation-column {display:block;}
+ .contract-document-columns:not([data-column=preview])>.contract-preview-column {position:absolute;left:-10000px;top:0;width:calc(100% - 54px);visibility:hidden;}
+ .contract-column-title h1 {font-size:20px;}
+ .contract-document-columns>.contract-preview-column {padding:12px 8px!important;}
+}
+@media print {
+ .contract-navigation-column,.contract-document-tools,.contract-compilation-column,.contract-column-switcher {display:none!important;}
+ .contract-app-columns,.contract-main-column,.contract-route-column,.contract-document-columns {display:block!important;height:auto!important;overflow:visible!important;}
+ .contract-document-columns>.contract-preview-column {position:static!important;width:auto!important;height:auto!important;visibility:visible!important;overflow:visible!important;}
+}
