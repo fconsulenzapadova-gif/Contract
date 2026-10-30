@@ -1,0 +1,85 @@
+{
+  "observedAtUtc": "2026-10-30T09:04:56.051149+00:00",
+  "canonicalDirectory": "/Users/Gemut/Desktop/GEMUT-Contratti-Lavoro/webapp",
+  "baseCommit": "32cef0da41279d2e2f2dd262789b446b9fee540f",
+  "backup": {
+    "directory": "/Users/Gemut/Desktop/GEMUT-Contratti-Lavoro/work/backups/2026-10-30/webapp-precedente",
+    "files": 57,
+    "allHashesMatch": true
+  },
+  "checks": {
+    "npmCi": true,
+    "tests": {
+      "passed": 114,
+      "failed": 0
+    },
+    "typecheck": true,
+    "lint": {
+      "passed": true,
+      "scope": "src/sharing vite.config.ts"
+    },
+    "pythonBuildLauncher": true,
+    "syntax": true
+  },
+  "buildComparison": {
+    "files": 286,
+    "referenceFiles": 286,
+    "differentFiles": [],
+    "equal": true
+  },
+  "server": {
+    "url": "http://localhost:5178/",
+    "pid": 27064,
+    "workingDirectory": "/Users/Gemut/Desktop/GEMUT-Contratti-Lavoro/webapp",
+    "assetSha256": "1ce88360ae3aa8292cb497b844175119a2ea8a349cf21cef1081dcbfeebaee25",
+    "matchesLocalBuild": true
+  },
+  "browser": {
+    "base": "http://localhost:5178",
+    "routes": [
+      "/purchase-proposal",
+      "/lease-proposal",
+      "/sales-assign",
+      "/lease-assign",
+      "/lease-contract-4-4",
+      "/lease-contract-4-4-cedolare",
+      "/lease-contract-concordato",
+      "/lease-contract-students",
+      "/lease-contract-transitorio",
+      "/lease-allegato-b",
+      "/property-sharing",
+      "/visit-sheet",
+      "/aml",
+      "/commission"
+    ],
+    "errors": [],
+    "external": [],
+    "syntheticData": true,
+    "draftReload": true,
+    "pdfContinuation": true,
+    "namedArchive": true,
+    "amlCustomerSeparation": true,
+    "mobileViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "pass": true
+  },
+  "pdf": {
+    "pages": 6,
+    "lastLinePresent": true,
+    "allPagesText": true,
+    "pageBounds": true,
+    "sha256": "57dae28c992d34ec604dfb767e08dddbf9b4ae2822fd744ef6c580fdb2e03aa5",
+    "visualReview": "All six pages in contact sheet; first and last page details."
+  },
+  "userBrowserProfileTouched": false,
+  "pushExecuted": false,
+  "deployExecuted": false,
+  "productionCommitObserved": "dfe6b0be9fcc961e5fb22b25f9d8a766430e93c7",
+  "limitations": [
+    "No full rerun of previous 29-PDF suite; all 286 generated files are identical.",
+    "OS print dialog and physical devices/printers not verified.",
+    "FIMAA models and evidence of deposited forms unavailable."
+  ]
+}
